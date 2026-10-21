@@ -27,7 +27,10 @@ LEDGER_FIELDS = ["date", "ticker", "segment", "price", "qqq", "smh", "rating", "
 PAPER_CASH = 10_000
 QUOTA = re.compile(r"RESOURCE_EXHAUSTED|quota|429", re.I)
 OVERLOADED = re.compile(r"503|UNAVAILABLE|high demand|overloaded", re.I)
-OVERLOAD_WAITS = [60, 180, 300]  # seconds to wait before each retry when Gemini is overloaded
+# When Gemini is overloaded, retry after these waits, alternating the quick model with a fallback
+# that has its own capacity. Each entry is (seconds to wait, quick model or None for the default).
+FALLBACK_QUICK = os.environ.get("GENE_FALLBACK_QUICK_LLM", "gemini-3.5-flash-lite")
+ATTEMPTS = [(0, None), (30, FALLBACK_QUICK), (180, None), (300, FALLBACK_QUICK)]
 
 
 def verdict(text, label):
@@ -35,12 +38,15 @@ def verdict(text, label):
     return m.group(1).capitalize() if m else None
 
 
-def run_one(ticker):
+def run_one(ticker, quick_model=None):
     from tradingagents.default_config import DEFAULT_CONFIG
     from tradingagents.graph.trading_graph import TradingAgentsGraph
     from tradingagents.portfolio import PortfolioContext
 
-    ta = TradingAgentsGraph(debug=False, config=DEFAULT_CONFIG.copy())
+    config = DEFAULT_CONFIG.copy()
+    if quick_model:
+        config["quick_think_llm"] = quick_model
+    ta = TradingAgentsGraph(debug=False, config=config)
     book = PortfolioContext(cash=PAPER_CASH, currency="USD", positions=[])
     state, rating = ta.propagate(ticker, today(), portfolio=book)
     inv, risk = state.get("investment_debate_state", {}), state.get("risk_debate_state", {})
@@ -101,10 +107,11 @@ def main():
             result = prev  # already ran today; a rerun of this stage costs no Gemini quota
         else:
             start = time.time()
-            for wait in [0, *OVERLOAD_WAITS]:
+            for wait, quick in ATTEMPTS:
                 time.sleep(wait)
                 try:
-                    result = run_one(t)
+                    result = run_one(t, quick)
+                    result["quick_model"] = quick or os.environ["TRADINGAGENTS_QUICK_THINK_LLM"]
                     break
                 except Exception as e:
                     msg = f"{type(e).__name__}: {str(e)[:300]}"
