@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-21",
+  "picks": [
+    {
+      "ticker": "TLN",
+      "segment": "power_nuclear",
+      "why": "Talen is the cheapest way on the shortlist into the power-bottleneck thesis: about 12x forward earnings, revenue up 111%, a 7% free-cash-flow yield and 19% below its high. It sells power from existing plants, so it gains from the constraint without the build risk of pre-revenue nuclear.",
+      "risk": "Its operating margin is negative on the latest numbers, so the cash flow may rest on one-off items rather than the core business.",
+      "thesis_ids": ["power-is-the-binding-constraint"]
+    },
+    {
+      "ticker": "SNDK",
+      "segment": "memory_storage",
+      "why": "SanDisk trades near 5x forward earnings with 78% operating margins and revenue up 372%, yet sits 41% below its high. It is the most discounted large memory name if the supercycle has further to run.",
+      "risk": "A 5x multiple on record margins is what peak-cycle memory looks like; a turn in NAND pricing would cut earnings fast.",
+      "thesis_ids": ["memory-supercycle-priced-as-peak"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "MU", "reason": "Same segment as SNDK and the most-covered name on the list (46 analysts)." },
+    { "ticker": "CORZ", "reason": "Neocloud segment is underweight, and 87x forward earnings is not a margin of safety." },
+    { "ticker": "HPE", "reason": "Already 48% above its 200-day average; servers are neutral." },
+    { "ticker": "WDC", "reason": "Memory is already covered by SNDK." },
+    { "ticker": "ONTO", "reason": "Equipment is neutral; revisit if foundry spending turns up." },
+    { "ticker": "JBL", "reason": "Lowest score; thin 6% operating margin." }
+  ]
+}

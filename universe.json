@@ -1,0 +1,18 @@
+{
+  "_note": "AI-bottleneck universe. Edit freely: add tickers to a segment or add a segment. Benchmarks are used for tracking, not picking.",
+  "benchmarks": ["QQQ", "SMH", "SPY"],
+  "segments": {
+    "compute": ["NVDA", "AMD", "AVGO", "MRVL", "ARM"],
+    "foundry_equipment": ["TSM", "ASML", "AMAT", "LRCX", "KLAC", "TER", "ONTO", "CAMT"],
+    "memory_storage": ["MU", "WDC", "STX", "SNDK"],
+    "networking_optical": ["ANET", "CIEN", "COHR", "LITE", "CRDO", "ALAB", "FN", "AAOI"],
+    "servers": ["SMCI", "DELL", "HPE", "CLS", "JBL"],
+    "power_nuclear": ["CEG", "VST", "TLN", "NRG", "OKLO", "SMR", "CCJ", "BWXT", "LEU"],
+    "grid_electrical": ["GEV", "ETN", "PWR", "HUBB", "POWL", "NVT", "PRIM", "MTZ"],
+    "cooling_thermal": ["VRT", "MOD", "AAON", "TT"],
+    "datacenter_neocloud": ["EQIX", "DLR", "IREN", "NBIS", "CORZ", "CIFR", "WULF", "APLD", "CRWV"],
+    "hyperscalers": ["MSFT", "GOOGL", "AMZN", "META", "ORCL"],
+    "ai_software": ["PLTR", "NOW", "SNOW", "DDOG", "CRWD"]
+  },
+  "market_news_symbols": ["^GSPC", "^IXIC", "SPY", "QQQ", "SMH", "^TNX", "CL=F", "GC=F", "DX-Y.NYB", "BTC-USD"]
+}

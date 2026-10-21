@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-21",
+  "previous": null,
+  "headline": "A relief rally after the October AI selloff: demand signals are strong, but the money is moving from leveraged builders to whoever owns power and memory.",
+  "regime": "AI-bottleneck stocks bounced on Oct 21 (semis ETF +2.0%, servers +4.2%) after SpaceX's earnings and Super Micro's preliminary beat, but the month is still deeply red: semis -6.5%, memory -17%, neoclouds -26%. With the 10-year yield above 5.1% and crude near $97, the market is paying for cash flow and punishing debt-funded capacity. Software was the only segment up over the month.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 75,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Musk calls power, cooling and electrical equipment the limiting factor for AI (2f7c642d23d0)",
+        "Analysts project 194 GW of hyperscaler demand by 2035 against a grid that is not ready (72e5a06e0019)",
+        "NextDC's 40% drop came from power constraints and local opposition slowing its build (81d7dcc8478c)",
+        "Venture Global's GE Vernova deal could unlock up to 10 GW for data centres (603f95f12f4e)"
+      ],
+      "change": "new",
+      "change_note": "First worldview. The strongest and most repeated theme in today's news."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 70,
+      "segments": ["compute", "servers", "hyperscalers"],
+      "evidence": [
+        "Google Cloud is turning away customers for lack of AI capacity (7376ff0b73c3)",
+        "Super Micro's preliminary quarter came in far above guidance on AI platform demand (4141a906919e)",
+        "SpaceX says its AI chips pay for themselves in under a year (a5c4a0c75798)",
+        "Anthropic has committed over $600B to compute and wants more (63abd5d5150d)"
+      ],
+      "change": "new",
+      "change_note": "First worldview. The October selloff was about financing and valuation, not a demand miss."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 70,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "CoreWeave debt fell again after a Korean neocloud IPO flopped (f981148c26f6)",
+        "Michael Burry is short Nebius (a5c4a0c75798)",
+        "CoreWeave and NuScale hit 52-week lows while other AI names recovered (31401af0fb90)",
+        "The neocloud segment is down 26% in a month, the worst of any segment"
+      ],
+      "change": "new",
+      "change_note": "First worldview. Matches this week's TradingAgents calls: IREN Sell, NBIS Underweight."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 55,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Micron trades near 5x earnings with 81-87% margins (3e89bedcd3a2)",
+        "Micron has contracts stretching toward 2030 yet fell hard last week (4db3a1b67d58)",
+        "Memory names are down 17% in a month despite revenue growth above 300% at Micron and SanDisk"
+      ],
+      "change": "new",
+      "change_note": "First worldview. Confidence held to 55 because a 5x P/E on peak margins is the classic cyclical trap."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 55,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Meta's free cash flow fell 91% as data-centre costs climb (57ca0d6a99f5)",
+        "Amazon plans $200B of capex with deeply negative free cash flow (4a273cb1dec4)",
+        "Alphabet is down about $860B from its peak while Apple, which avoided the race, is near highs (2178e0d1afb7)"
+      ],
+      "change": "new",
+      "change_note": "First worldview. Good for suppliers, bad for the spenders' own returns."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 50,
+      "segments": ["compute", "memory_storage"],
+      "evidence": [
+        "NVIDIA and Micron alone are 36% of S&P 500 earnings growth (4d4eb482ab87)",
+        "Ken Griffin calls AI 'almost certainly' a bubble (6b4b1290b7a3)",
+        "Berkshire hit a record as investors rotated out of chips, a dot-com-era signal (15143826f116)",
+        "The US 10-year yield is 5.11%"
+      ],
+      "change": "new",
+      "change_note": "First worldview. The main reason to size AI exposure as a slice, not the whole portfolio."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "Demand is real but these are the most crowded names; -11% in a month." },
+    "foundry_equipment": { "stance": "neutral", "note": "Moody's upgraded TSMC; equipment names still down 10% in a month." },
+    "memory_storage": { "stance": "overweight", "note": "Cheapest earnings in the universe after a 17% monthly drop; cyclical risk is the catch." },
+    "networking_optical": { "stance": "neutral", "note": "Growth is strong (Credo, Arista) but the segment fell 13% in a month." },
+    "servers": { "stance": "neutral", "note": "Super Micro's beat lifted the group; thin margins limit the upside." },
+    "power_nuclear": { "stance": "overweight", "note": "The bottleneck thesis; prefer generators with cash flow over pre-revenue nuclear." },
+    "grid_electrical": { "stance": "overweight", "note": "Transformers and grid equipment are the slowest part of the build to expand." },
+    "cooling_thermal": { "stance": "overweight", "note": "Vertiv earnings next week will test this." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "Credit stress, dilution and no-customer projects; avoid until financing clears." },
+    "hyperscalers": { "stance": "neutral", "note": "Capacity-constrained growth, but capex is crushing free cash flow." },
+    "ai_software": { "stance": "neutral", "note": "Only segment up over the month; momentum, not value." }
+  },
+  "risks": [
+    "A 10-year yield above 5% compresses valuations across the whole AI chain.",
+    "Memory earnings at 5x may be peak-cycle; a pricing turn would cut them fast.",
+    "Credit stress at neoclouds could spread to their suppliers through cancelled orders.",
+    "Market concentration: two chip names carry over a third of S&P earnings growth."
+  ],
+  "watch": [
+    "Meta and Tesla earnings after the close: capex guidance and data-centre spend.",
+    "Vertiv earnings next week as a read on cooling demand.",
+    "CoreWeave bond prices as the stress gauge for leveraged AI capacity.",
+    "Whether the Oct 21 bounce holds in semis or fades like the neocloud names."
+  ]
+}

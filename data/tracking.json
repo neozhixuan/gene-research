@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-21",
+  "summary": {
+    "picks": 2,
+    "avg_vs_qqq": 0.0015,
+    "beating_qqq": 2
+  },
+  "scorecard": {},
+  "rules": {
+    "grade_after_days": 28,
+    "hold_band": 0.05
+  },
+  "picks": [
+    {
+      "date": "2026-10-21",
+      "ticker": "TLN",
+      "segment": "power_nuclear",
+      "price": "364.46",
+      "qqq": "727.57",
+      "smh": "558.34",
+      "rating": "",
+      "trader": "",
+      "research_manager": "",
+      "now": 365.48,
+      "return": 0.0028,
+      "vs_qqq": 0.0025,
+      "vs_smh": 0.0018,
+      "age_days": 0,
+      "correct": null
+    },
+    {
+      "date": "2026-10-21",
+      "ticker": "SNDK",
+      "segment": "memory_storage",
+      "price": "1393.54",
+      "qqq": "727.57",
+      "smh": "558.34",
+      "rating": "",
+      "trader": "",
+      "research_manager": "",
+      "now": 1394.49,
+      "return": 0.0007,
+      "vs_qqq": 0.0004,
+      "vs_smh": -0.0003,
+      "age_days": 0,
+      "correct": null
+    }
+  ]
+}

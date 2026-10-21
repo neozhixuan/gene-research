@@ -1,0 +1,14 @@
+{
+  "yahoo-rss ^GSPC,^IXIC,SPY,QQQ,SMH,^TNX,CL=F,GC=F,DX-Y.NYB,BTC-USD": "ok (20)",
+  "yahoo-rss NVDA,AMD,AVGO,MRVL,ARM,TSM,ASML,AMAT,LRCX,KLAC": "ok (19)",
+  "yahoo-rss TER,ONTO,CAMT,MU,WDC,STX,SNDK,ANET,CIEN,COHR": "ok (20)",
+  "yahoo-rss LITE,CRDO,ALAB,FN,AAOI,SMCI,DELL,HPE,CLS,JBL": "ok (18)",
+  "yahoo-rss CEG,VST,TLN,NRG,OKLO,SMR,CCJ,BWXT,LEU,GEV": "ok (18)",
+  "yahoo-rss ETN,PWR,HUBB,POWL,NVT,PRIM,MTZ,VRT,MOD,AAON": "ok (20)",
+  "yahoo-rss TT,EQIX,DLR,IREN,NBIS,CORZ,CIFR,WULF,APLD,CRWV": "ok (19)",
+  "yahoo-rss MSFT,GOOGL,AMZN,META,ORCL,PLTR,NOW,SNOW,DDOG,CRWD": "ok (16)",
+  "CNBC Markets": "failed: URLError: <urlopen error Tunnel connection failed: 403 Forbidden>",
+  "CNBC Tech": "failed: URLError: <urlopen error Tunnel connection failed: 403 Forbidden>",
+  "MarketWatch": "failed: URLError: <urlopen error Tunnel connection failed: 403 Forbidden>",
+  "Investing.com": "failed: URLError: <urlopen error Tunnel connection failed: 403 Forbidden>"
+}
