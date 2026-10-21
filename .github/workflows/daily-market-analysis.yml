@@ -1,0 +1,29 @@
+name: Daily Market Analysis Template
+
+on:
+  schedule:
+    - cron: "0 12 * * *" # 20:00 SGT
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  run-template-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run non-Claude template steps
+        run: |
+          python fetch.py
+          python digest.py
+          python screen.py
+          python track.py
+          python site.py
