@@ -5,6 +5,9 @@ on:
     - cron: "0 12 * * *" # 20:00 SGT
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   run-template-pipeline:
     runs-on: ubuntu-latest
