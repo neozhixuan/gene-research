@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-22",
+  "previous": "2026-10-21",
+  "headline": "A second bounce day (semis +1.9%) leaves every AI segment still down 8-27% on the month, with a 5.15% 10-year and rising VIX capping the rebound.",
+  "regime": "AI-bottleneck stocks rose again on the close (semis ETF +1.9%, servers +4.3%, neoclouds +2.9%), but five-day returns are still negative in nearly every hardware segment and the VIX is up 28% in a month to 18.1. The 10-year yield rose to 5.15% and headlines cite oil above $110 on Iran tensions, so the market is still paying for cash flow and software, the only segment up over the month (+4.5%). Demand news is strong (Super Micro's preliminary quarter, Micron's $61.5B guide); the pressure is on financing and valuation, not orders.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 75,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "NextDC's 40% selloff came from power constraints and community opposition (81d7dcc8478c)",
+        "Google's 1 GW bring-your-own-capacity deal in PJM shows hyperscalers paying to secure grid capacity (1e6dc66c2306)",
+        "Nvidia and Vertiv's 14-day modular AI factory design targets deployment speed, the other half of the constraint (dba2adf82ddc)"
+      ],
+      "change": "unchanged",
+      "change_note": "More evidence of the same theme, but grid and power equipment fell 4% over five days (PWR -9%), so no reason to add confidence."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 72,
+      "segments": ["compute", "servers", "hyperscalers"],
+      "evidence": [
+        "Super Micro raised fiscal Q1 revenue guidance to $18.5-19.5B on AI platform demand (6ae19d904b11)",
+        "Micron posted a $54.2B quarter and guided to $61.5B (99e1010ac86e)",
+        "Super Micro and Nvidia launched a 256-CPU Vera rack for agentic AI (e83799b6a0c6)"
+      ],
+      "change": "stronger",
+      "change_note": "Two more hard supplier numbers beat expectations; +2 because the order book is confirmed by revenue, not by commentary."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 72,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "CoreWeave bond yields top 15% and a credit expert calls it the canary for AI distress (00ac2b0c193a, e402e9592e49)",
+        "Galaxy Digital faces scrutiny over CoreWeave's rising debt at its Helios site (ac158c89587a)",
+        "Nebius took a $3.5B financing facility, which funds growth but adds leverage (740a51ba79ec)",
+        "The segment is down 26.6% over a month despite +2.9% today"
+      ],
+      "change": "stronger",
+      "change_note": "Bond yields above 15% are the clearest stress reading so far; a one-day bounce does not change it."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 55,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Micron's $61.5B guide and 379% revenue growth sit beside a 4.4x forward P/E (99e1010ac86e)",
+        "Analysts upgraded Seagate on hard-drive demand tied to data centres (6cc3bd881946)",
+        "The segment is down 21.6% in a month, the second worst after neoclouds"
+      ],
+      "change": "unchanged",
+      "change_note": "Fundamentals improved but the stock reaction was negative again (Micron fell Thursday), which is what a market pricing peak margins does. Held at 55."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 55,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Meta reported a nearly $10B hit in Q3 even as revenue outlook was strong, and META fell 5.4% over five days (035c5aafa782)",
+        "Oracle is selling stock, adding debt and using customer prepayments to fund its AI push (d7cd1007b7eb)",
+        "Microsoft is committing a $700B moat in AI spend through 2030, funded by cash flow (0563b598faef)"
+      ],
+      "change": "unchanged",
+      "change_note": "Microsoft shows the funded version and Oracle the strained one; nothing today moves the aggregate view."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 55,
+      "segments": ["compute", "memory_storage"],
+      "evidence": [
+        "The 10-year yield rose to 5.15% and SoftBank's value is poised to halve from its peak on higher borrowing costs (35bbe47a6ae8)",
+        "Fidelity's Timmer places the bubble risk in debt, not stock valuations (00ac2b0c193a)",
+        "Nasdaq futures fell premarket as AI spending worries resurfaced (d1579c98041e)"
+      ],
+      "change": "stronger",
+      "change_note": "+5: yields are higher, the VIX is up and the premarket reaction to good news was selling."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "Demand is solid but the group is down 12% on the month and still crowded." },
+    "foundry_equipment": { "stance": "neutral", "note": "Down 4.7% over five days and Lam Research led premarket losses on AI spending doubts." },
+    "memory_storage": { "stance": "overweight", "note": "Micron at 4.4x forward earnings after a 22% monthly drop; the cycle-peak risk is the price of entry." },
+    "networking_optical": { "stance": "neutral", "note": "Down 5.2% in five days; strong growth but no valuation cushion." },
+    "servers": { "stance": "neutral", "note": "Super Micro's raise lifted the group, but HPE is -7.8% over five days and margins stay thin." },
+    "power_nuclear": { "stance": "overweight", "note": "Prefer cash-generating producers such as NRG; pre-revenue nuclear is down over 60% this year." },
+    "grid_electrical": { "stance": "overweight", "note": "Slowest part of the build to expand, but down 4% over five days and Quanta is -9%." },
+    "cooling_thermal": { "stance": "overweight", "note": "Vertiv's modular design with Nvidia is a good sign ahead of its earnings next week." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "Bond yields above 15% at CoreWeave; avoid until financing clears." },
+    "hyperscalers": { "stance": "neutral", "note": "Only segment down on the day (-0.5%); capex still outruns free cash flow." },
+    "ai_software": { "stance": "neutral", "note": "Up 4.5% on the month and 4.0% today; momentum, not a bottleneck play." }
+  },
+  "risks": [
+    "A 10-year yield at 5.15% and rising compresses valuations across the AI chain.",
+    "Oil above $110 in headlines (the tape shows $99) on Iran tensions could feed inflation and keep rates high.",
+    "Memory earnings at 4x may be peak-cycle; a pricing turn would cut them fast.",
+    "Credit stress at CoreWeave could spread to its suppliers through cancelled orders.",
+    "A rising VIX (+28% in a month) signals the market is paying for protection."
+  ],
+  "watch": [
+    "Whether Thursday's close holds after futures fell sharply on Meta and Tesla earnings.",
+    "Vertiv earnings next week as a read on cooling demand.",
+    "CoreWeave bond yields against the 15% level.",
+    "The 10-year yield against 5.15% and the VIX against 18.",
+    "Western Digital and Seagate earnings for a read on hard-drive pricing."
+  ]
+}

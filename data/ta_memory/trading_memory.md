@@ -28,3 +28,33 @@ DECISION:
 
 <!-- ENTRY_END -->
 
+[2026-10-22 | NRG | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Initiate a tiered accumulation of NRG starting with a 1% portfolio allocation at the current price of 99.80. Scale in slowly with an optional second tranche if support holds near 95.00, utilizing a dynamic stop-loss structure based on key support at 97.00. Maintain a medium-term horizon to capture the AI data center power demand tailwind.
+
+**Investment Thesis**: The decision to take an Overweight stance on NRG is driven by the powerful fundamental catalyst of accelerating power demand from the AI data center build-out and a strong financial turnaround, highlighted by Q2 operating cash flow surging to $1.117 billion and aggressive share repurchases. While the conservative and neutral perspectives rightfully highlight legitimate risks—including a heavy debt load of $23.47 billion, high quarterly interest costs, and technical weakness trading below the 50 and 200 SMAs alongside downward target revisions from Morgan Stanley and Jefferies—the aggressive and moderate arguments win out on valuation mispricing. Waiting for a complete reclamation of the 200 SMA at 136.63 is overly restrictive for a utility undergoing an operational pivot. Instead, adopting the moderate analyst's tiered entry approach mitigates the danger of short-term volatility measured by the 4.63 ATR while securing exposure to fundamental cash flow growth. This thesis would change if the 97.00 support level breaks decisively on high volume or if debt-service constraints begin to outweigh operational cash generation.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-10-22 | MU | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Initiate a gradual long position in MU through staggered tranches to balance explosive fundamental growth with near-term technical volatility. Allocate a moderate 10% total portfolio size, with initial entry near the lower Bollinger Band around $855.41 while holding reserve capital for potential drawdown management. Maintain a clear stop-loss at $750.00 with a medium-term horizon of 3-6 months.
+
+**Investment Thesis**: The investment thesis is anchored by Micron Technology, Inc.'s massive fundamental transformation, highlighted by quarterly revenue scaling past $41 billion and surging net income over $28 billion, alongside a robust $25 billion cash reserve and aggressive debt reduction. While the conservative and neutral analysts correctly point out short-term technical headwinds including a bearish MACD state, an RSI of 40.46, and high volatility represented by an ATR of $47.59, these concerns are outweighed by the structural demand driving AI infrastructure. Institutional validation via $106 million in ETF inflows and the stock testing the lower Bollinger Band support at $855.41 create an attractive accumulation zone. To mitigate the risk of catching a falling knife, execution will follow the neutral analyst's scalable entry approach rather than a single lump-sum commitment. The thesis would be invalidated if macroeconomic pressures or geopolitical instability break the $750.00 support level, causing a catastrophic breakdown in the broader semiconductor cycle.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+

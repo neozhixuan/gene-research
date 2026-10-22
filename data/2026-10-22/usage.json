@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-22",
+  "claude": {},
+  "gemini": {
+    "calls": 35,
+    "input_tokens": 140174,
+    "output_tokens": 14923
+  },
+  "tradingagents_runs": 2
+}

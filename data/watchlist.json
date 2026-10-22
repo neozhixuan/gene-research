@@ -1,4 +1,28 @@
 {
+  "MU": {
+    "segment": "memory_storage",
+    "added": "2026-10-22",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-10-22",
+        "rating": "Overweight",
+        "kind": "new"
+      }
+    ]
+  },
+  "NRG": {
+    "segment": "power_nuclear",
+    "added": "2026-10-22",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-10-22",
+        "rating": "Overweight",
+        "kind": "new"
+      }
+    ]
+  },
   "SNDK": {
     "segment": "memory_storage",
     "added": "2026-10-21",

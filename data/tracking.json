@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "summary": {
-    "picks": 2,
-    "avg_vs_qqq": -0.009,
+    "picks": 4,
+    "avg_vs_qqq": -0.0045,
     "beating_qqq": 0
   },
   "scorecard": {},
@@ -11,6 +11,42 @@
     "hold_band": 0.05
   },
   "picks": [
+    {
+      "date": "2026-10-22",
+      "ticker": "NRG",
+      "kind": "new",
+      "segment": "power_nuclear",
+      "price": "99.8",
+      "qqq": "725.2",
+      "smh": "556.7",
+      "rating": "Overweight",
+      "trader": "Buy",
+      "research_manager": "Overweight",
+      "now": 99.8,
+      "return": 0.0,
+      "vs_qqq": 0.0,
+      "vs_smh": 0.0,
+      "age_days": 0,
+      "correct": null
+    },
+    {
+      "date": "2026-10-22",
+      "ticker": "MU",
+      "kind": "new",
+      "segment": "memory_storage",
+      "price": "913.67",
+      "qqq": "725.2",
+      "smh": "556.7",
+      "rating": "Overweight",
+      "trader": "Buy",
+      "research_manager": "Overweight",
+      "now": 913.67,
+      "return": -0.0,
+      "vs_qqq": -0.0,
+      "vs_smh": -0.0,
+      "age_days": 0,
+      "correct": null
+    },
     {
       "date": "2026-10-21",
       "ticker": "TLN",
@@ -26,7 +62,7 @@
       "return": -0.0136,
       "vs_qqq": -0.0104,
       "vs_smh": -0.0107,
-      "age_days": 0,
+      "age_days": 1,
       "correct": null
     },
     {
@@ -44,7 +80,7 @@
       "return": -0.011,
       "vs_qqq": -0.0077,
       "vs_smh": -0.0081,
-      "age_days": 0,
+      "age_days": 1,
       "correct": null
     }
   ]

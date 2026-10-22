@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-22",
+  "picks": [
+    {
+      "ticker": "NRG",
+      "segment": "power_nuclear",
+      "why": "A cash-generating power producer at 9.2x forward earnings, 48% off its high with a 4% FCF yield, which fits the power-is-the-binding-constraint thesis without pre-revenue nuclear risk. The watchlist holds only one power name (TLN), so the overweight segment is thinly covered.",
+      "risk": "A drop in power prices or regulatory pushback on utility bills would cut earnings before data-centre demand arrives.",
+      "thesis_ids": ["power-is-the-binding-constraint"]
+    },
+    {
+      "ticker": "MU",
+      "segment": "memory_storage",
+      "why": "Micron guided to a record $61.5B quarter with 379% revenue growth and 81% operating margin, yet trades at 4.4x forward earnings and 27% below its high. That is the cheapest earnings in the universe, with the cycle-peak risk priced in.",
+      "risk": "Memory prices turn down and peak margins collapse, which is why a 4x P/E can be a trap.",
+      "thesis_ids": ["memory-supercycle-priced-as-peak", "ai-demand-exceeds-supply"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "HPE", "reason": "Servers is neutral and margins are only 13%." },
+    { "ticker": "WDC", "reason": "Same segment as MU and below its 200-day average." },
+    { "ticker": "STX", "reason": "Same segment as MU; 1% FCF yield." },
+    { "ticker": "ONTO", "reason": "Foundry equipment is neutral and down 42% from its high." },
+    { "ticker": "CORZ", "reason": "Neocloud segment is underweight and the forward P/E is 88x." },
+    { "ticker": "JBL", "reason": "Servers is neutral and operating margin is 6%." }
+  ]
+}

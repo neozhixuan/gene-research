@@ -1,0 +1,12 @@
+[
+  {
+    "ticker": "NRG",
+    "segment": "power_nuclear",
+    "kind": "new"
+  },
+  {
+    "ticker": "MU",
+    "segment": "memory_storage",
+    "kind": "new"
+  }
+]
