@@ -22,20 +22,11 @@ from datetime import date
 
 import yfinance as yf
 
-from common import DATA, read_json, segment_of, today, write_json
+from utils.common import DATA, read_json, segment_of, today, write_json
+from utils.scoring import correct
 
 GRADE_AFTER_DAYS = 28
 HOLD_BAND = 0.05
-
-
-def correct(rating, excess):
-    if rating in ("Buy", "Overweight"):
-        return excess > 0
-    if rating in ("Sell", "Underweight"):
-        return excess < 0
-    if rating == "Hold":
-        return abs(excess) <= HOLD_BAND
-    return None
 
 
 STRATEGIES = {
@@ -110,7 +101,11 @@ def repair_ledger():
 def main():
     repair_ledger()
     path = DATA / "picks.csv"
-    rows = list(csv.DictReader(open(path))) if path.exists() else []
+    if path.exists():
+        with open(path) as f:
+            rows = list(csv.DictReader(f))
+    else:
+        rows = []
     if not rows:
         write_json(DATA / "tracking.json", {"date": today(), "picks": [], "scorecard": {}})
         print("no picks yet")

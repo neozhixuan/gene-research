@@ -20,7 +20,9 @@ from markdown_it import MarkdownIt
 
 import watchlist
 from digest import RELEVANT
-from common import ACTIONS, DATA, MACRO_NAMES, SITE, clean_report, read_json, segment_of, write_json
+from constants.market import ACTIONS, MACRO_NAMES
+from utils.common import DATA, SITE, read_json, segment_of, universe, write_json
+from utils.text import clean_report
 
 md = MarkdownIt("commonmark", {"html": False}).enable("table")
 e = html.escape
@@ -159,7 +161,10 @@ def news_json(items):
 
 def usage_rows():
     path = DATA / "usage.csv"
-    return list(csv.DictReader(open(path))) if path.exists() else []
+    if not path.exists():
+        return []
+    with open(path) as f:
+        return list(csv.DictReader(f))
 
 
 # ---------- day page pieces ----------
@@ -601,7 +606,6 @@ def main():
     loaded = [load_day(d) for d in days]
     watch = watchlist.load()
     track = read_json(DATA / "tracking.json")
-    from common import universe
     segments = list(universe()["segments"])
     (SITE / "days").mkdir(parents=True, exist_ok=True)
     (SITE / "assets").mkdir(parents=True, exist_ok=True)

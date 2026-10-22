@@ -9,7 +9,7 @@ and rerun instead of publishing a malformed page.
 
 import sys
 
-from common import DATA, day_dir, today, universe, read_json
+from utils.common import DATA, day_dir, today, universe, read_json
 
 STANCES = {"bullish", "bearish", "neutral"}
 SEG_STANCES = {"overweight", "neutral", "underweight"}

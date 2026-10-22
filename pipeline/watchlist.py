@@ -13,7 +13,7 @@ Dropped names stay out of the screen for COOLDOWN_DAYS.
 
 from datetime import date, timedelta
 
-from common import DATA, read_json, write_json
+from utils.common import DATA, read_json, write_json
 
 PATH = DATA / "watchlist.json"
 RECHECK_AFTER_DAYS = 3

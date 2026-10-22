@@ -8,7 +8,8 @@ import json
 import re
 from collections import defaultdict
 
-from common import day_dir, today, universe, read_json, MACRO_NAMES
+from constants.market import MACRO_NAMES
+from utils.common import day_dir, today, universe, read_json
 
 MAX_ITEMS = 110
 SUMMARY_CHARS = 140
@@ -26,7 +27,8 @@ def main():
     d = day_dir()
     market = read_json(d / "market.json", {})
     sources = read_json(d / "sources.json", {})
-    news = [json.loads(line) for line in open(d / "news.jsonl")]
+    with open(d / "news.jsonl") as f:
+        news = [json.loads(line) for line in f]
     news = [it for it in news if it["tickers"] or RELEVANT.search(f"{it['title']} {it['summary']}")][:MAX_ITEMS]
     segs = universe()["segments"]
     seg_of = {t: s for s, ts in segs.items() for t in ts}
