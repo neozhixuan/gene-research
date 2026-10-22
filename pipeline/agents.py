@@ -1,17 +1,21 @@
 """Stage 5: verify the day's picks with TradingAgents (runs on Gemini, not Claude).
 
-Reads data/<date>/picks.json, runs each ticker in order up to --max, and writes
-data/<date>/agents/<TICKER>.json with every agent's output. A Gemini quota error
-stops the run cleanly: later tickers are recorded as skipped. Every pick is
-appended to data/picks.csv, the ledger that tracking and scoring read.
+Runs, in order and up to --max: Claude's first new pick, the watchlist name due
+for a re-check, then Claude's second new pick. Each run writes
+data/<date>/agents/<TICKER>.json with every agent's output and the models used;
+data/<date>/runs.json lists what ran today. A Gemini quota error stops the run
+cleanly: later tickers are recorded as skipped. Every run is added to
+data/picks.csv (the ledger tracking reads) and to the watchlist.
 """
 
 import argparse
 import csv
+import importlib.metadata
 import os
 import re
 import time
 
+import watchlist
 from common import DATA, ROOT, day_dir, today, read_json, write_json
 
 os.environ.setdefault("TRADINGAGENTS_LLM_PROVIDER", "google")
@@ -23,7 +27,7 @@ os.environ.setdefault("TRADINGAGENTS_RESULTS_DIR", str(ROOT / ".ta_results"))
 os.environ.setdefault("TRADINGAGENTS_CACHE_DIR", str(ROOT / ".ta_cache"))
 
 LEDGER = DATA / "picks.csv"
-LEDGER_FIELDS = ["date", "ticker", "segment", "price", "qqq", "smh", "rating", "trader", "research_manager"]
+LEDGER_FIELDS = ["date", "ticker", "kind", "segment", "price", "qqq", "smh", "rating", "trader", "research_manager"]
 PAPER_CASH = 10_000
 QUOTA = re.compile(r"RESOURCE_EXHAUSTED|quota|429", re.I)
 OVERLOADED = re.compile(r"503|UNAVAILABLE|high demand|overloaded", re.I)
@@ -52,6 +56,8 @@ def run_one(ticker, quick_model=None):
     inv, risk = state.get("investment_debate_state", {}), state.get("risk_debate_state", {})
     return {
         "rating": rating,
+        "models": {"provider": config["llm_provider"], "deep": config["deep_think_llm"], "quick": config["quick_think_llm"],
+                   "quick_is_fallback": bool(quick_model), "tradingagents": importlib.metadata.version("tradingagents")},
         "research_manager": verdict(state.get("investment_plan"), "Recommendation"),
         "trader": verdict(state.get("trader_investment_plan"), "Action"),
         "outputs": {
@@ -84,7 +90,34 @@ def upsert_ledger(rows):
     with open(LEDGER, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=LEDGER_FIELDS)
         w.writeheader()
-        w.writerows(old)
+        w.writerows({k: r.get(k) or ("new" if k == "kind" else "") for k in LEDGER_FIELDS} for r in old)
+
+
+def run_list(picks, watch):
+    """New pick 1, then today's due re-check, then new pick 2."""
+    new = [{"ticker": p["ticker"].upper(), "segment": p.get("segment", ""), "kind": "new"} for p in picks]
+    recheck = watchlist.due_recheck(watch, today())
+    if recheck and recheck not in {r["ticker"] for r in new}:
+        new.insert(1, {"ticker": recheck, "segment": watch[recheck]["segment"], "kind": "recheck"})
+    return new
+
+
+def analyse(t):
+    """One TradingAgents run with overload retries. Returns (result, quota_hit)."""
+    start = time.time()
+    for wait, quick in ATTEMPTS:
+        time.sleep(wait)
+        try:
+            result = run_one(t, quick)
+            break
+        except Exception as e:
+            msg = f"{type(e).__name__}: {str(e)[:300]}"
+            result = {"rating": None, "error": msg}
+            if QUOTA.search(msg) or not OVERLOADED.search(msg):
+                break
+            print(f"{t}: Gemini overloaded, retrying", flush=True)
+    result["seconds"] = round(time.time() - start)
+    return result, bool(QUOTA.search(result.get("error") or ""))
 
 
 def main():
@@ -96,41 +129,35 @@ def main():
     market = read_json(d / "market.json", {})
     if not picks:
         raise SystemExit("no picks.json for today; Claude writes it before this stage")
+    watch = watchlist.load()
+    runs = read_json(d / "runs.json") or run_list(picks, watch)  # a rerun keeps today's original plan
+    write_json(d / "runs.json", runs)
 
     rows, stop = [], None
-    for n, p in enumerate(picks):
-        t = p["ticker"].upper()
+    for n, r in enumerate(runs):
+        t = r["ticker"]
         out = d / "agents" / f"{t}.json"
-        if n >= args.max or stop:
-            result = {"rating": None, "skipped": stop or f"over --max {args.max}"}
-        elif (prev := read_json(out)) and prev.get("rating"):
+        if (prev := read_json(out)) and prev.get("rating"):
             result = prev  # already ran today; a rerun of this stage costs no Gemini quota
+        elif n >= args.max or stop:
+            result = {"rating": None, "skipped": stop or f"over --max {args.max}"}
         else:
-            start = time.time()
-            for wait, quick in ATTEMPTS:
-                time.sleep(wait)
-                try:
-                    result = run_one(t, quick)
-                    result["quick_model"] = quick or os.environ["TRADINGAGENTS_QUICK_THINK_LLM"]
-                    break
-                except Exception as e:
-                    msg = f"{type(e).__name__}: {str(e)[:300]}"
-                    result = {"rating": None, "error": msg}
-                    if QUOTA.search(msg):
-                        stop = "Gemini quota exhausted earlier in this run"
-                    if not OVERLOADED.search(msg) or QUOTA.search(msg):
-                        break
-                    print(f"{t}: Gemini overloaded, retrying", flush=True)
-            result["seconds"] = round(time.time() - start)
-        result.update(ticker=t, date=today())
+            result, quota_hit = analyse(t)
+            if quota_hit:
+                stop = "Gemini quota exhausted earlier in this run"
+        result.update(ticker=t, date=today(), kind=r["kind"])
         write_json(out, result)
-        print(f"{t}: {result.get('rating') or result.get('error') or result.get('skipped')}", flush=True)
-        rows.append({"date": today(), "ticker": t, "segment": p.get("segment", ""),
+        print(f"{t} ({r['kind']}): {result.get('rating') or result.get('error') or result.get('skipped')}", flush=True)
+        if result.get("rating") or r["kind"] == "new":
+            watchlist.record(watch, t, r["segment"], today(), result.get("rating"), r["kind"])
+        rows.append({"date": today(), "ticker": t, "kind": r["kind"], "segment": r["segment"],
                      "price": (market.get(t) or {}).get("close", ""), "qqq": (market.get("QQQ") or {}).get("close", ""),
                      "smh": (market.get("SMH") or {}).get("close", ""), "rating": result.get("rating") or "",
                      "trader": result.get("trader") or "", "research_manager": result.get("research_manager") or ""})
 
-    upsert_ledger(rows)
+    watchlist.trim(watch, today())
+    watchlist.save(watch)
+    upsert_ledger([row for row in rows if row["kind"] == "new" or row["rating"]])
 
 
 if __name__ == "__main__":

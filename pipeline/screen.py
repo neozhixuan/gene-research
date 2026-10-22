@@ -3,20 +3,19 @@
 House style: Situational Awareness says where to look (the universe), Buffett
 says what to pick. A quality gate drops cash-burners, then names are ranked on
 value, quality, discount to their high and how thinly they are covered.
-Tickers picked in the last COOLDOWN_DAYS are skipped so the watchlist rotates.
+Names already on the watchlist (or dropped from it recently) are skipped: they are
+re-checked through the watchlist instead, so the shortlist is always new names.
 """
 
-import csv
 from concurrent.futures import ThreadPoolExecutor
-from datetime import date, timedelta
 
 import yfinance as yf
 
-from common import DATA, day_dir, today, segment_of, write_json
+import watchlist
+from common import day_dir, today, segment_of, write_json
 
 SHORTLIST = 8
 PER_SEGMENT = 3
-COOLDOWN_DAYS = 14
 FIELDS = ["shortName", "industry", "currentPrice", "marketCap", "forwardPE", "trailingPE", "revenueGrowth",
           "earningsGrowth", "freeCashflow", "operatingMargins", "debtToEquity", "fiftyTwoWeekHigh",
           "twoHundredDayAverage", "numberOfAnalystOpinions", "targetMeanPrice", "recommendationKey",
@@ -81,15 +80,6 @@ def rank(rows):
     return sorted(rows, key=lambda r: r["score"], reverse=True)
 
 
-def recent_picks():
-    path = DATA / "picks.csv"
-    if not path.exists():
-        return set()
-    cutoff = (date.fromisoformat(today()) - timedelta(days=COOLDOWN_DAYS)).isoformat()
-    with open(path) as f:
-        return {r["ticker"] for r in csv.DictReader(f) if r["date"] >= cutoff}
-
-
 def pct(x):
     return f"{x * 100:+.0f}%" if x is not None else "–"
 
@@ -101,7 +91,9 @@ def main():
         raw = dict(pool.map(info, seg))
     write_json(d / "fundamentals.json", raw)
     rows = [m for t, i in raw.items() if (m := metrics(t, i, seg[t]))]
-    cooled = recent_picks()
+    watch = watchlist.load()
+    cooled = watchlist.excluded(watch, today())
+    on_watch = ", ".join(f"{t} ({w['segment']})" for t, w in watchlist.active(watch).items())
     eligible = rank([r for r in rows if r["passes_gate"] and r["ticker"] not in cooled])
     shortlist, per_seg = [], {}
     for r in eligible:
@@ -116,7 +108,8 @@ def main():
 
     lines = [f"# Shortlist {today()}", "",
              f"Screened {len(rows)} names. Quality gate dropped {len(story)} cash-burners: {', '.join(story) or 'none'}.",
-             f"Cooling down (picked in last {COOLDOWN_DAYS} days): {', '.join(sorted(cooled)) or 'none'}.", "",
+             f"On the watchlist or recently dropped, so not shown: {', '.join(sorted(cooled)) or 'none'}.",
+             f"Active watchlist by segment: {on_watch or 'empty'}.", "",
              "| # | Ticker | Segment | Price | Mkt cap $bn | Fwd P/E | Rev growth | FCF yield | Op margin | Off 52w high | vs 200d | Analysts | Score |",
              "|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
     for n, r in enumerate(shortlist, 1):

@@ -52,7 +52,7 @@ Rules:
 
 ## 3. Pick 1-2 stocks to watch
 
-Read `data/<date>/shortlist.md`. Choose from it only. Prefer names in segments the worldview rates overweight and segments with few past picks; avoid two picks from one segment. Write `data/<date>/picks.json`:
+Read `data/<date>/shortlist.md`. It lists only new names: stocks already on the watchlist are re-checked automatically in step 4 (one per day), and the shortlist header shows which segments the watchlist already covers. Choose from the shortlist only. Prefer segments the worldview rates overweight and that the watchlist covers thinly; avoid two picks from one segment. Write `data/<date>/picks.json`:
 
 ```json
 {
@@ -65,7 +65,7 @@ Read `data/<date>/shortlist.md`. Choose from it only. Prefer names in segments t
 }
 ```
 
-Order matters: TradingAgents runs the first pick first, and the second only if Gemini quota remains.
+Order matters: TradingAgents runs your first pick, then the watchlist re-check that is due, then your second pick if Gemini quota remains.
 
 ## 4. Verify, track, publish
 
@@ -73,7 +73,7 @@ Order matters: TradingAgents runs the first pick first, and the second only if G
 .venv/bin/python pipeline/run.py post --max 2
 ```
 
-Run it in the background: TradingAgents takes 5-8 minutes per stock on the Gemini free tier. Wait for the completion notice instead of polling. `validate.py` runs first; if it prints errors, fix the two files and rerun.
+Run it in the background: TradingAgents takes 5-15 minutes per stock on the Gemini free tier. Wait for the completion notice instead of polling. `validate.py` runs first; if it prints errors, fix the two files and rerun.
 
 Then commit and push:
 

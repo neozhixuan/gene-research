@@ -1,0 +1,12 @@
+[
+  {
+    "ticker": "TLN",
+    "segment": "power_nuclear",
+    "kind": "new"
+  },
+  {
+    "ticker": "SNDK",
+    "segment": "memory_storage",
+    "kind": "new"
+  }
+]

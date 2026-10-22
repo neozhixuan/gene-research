@@ -1,0 +1,26 @@
+{
+  "SNDK": {
+    "segment": "memory_storage",
+    "added": "2026-10-21",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-10-21",
+        "rating": "Hold",
+        "kind": "new"
+      }
+    ]
+  },
+  "TLN": {
+    "segment": "power_nuclear",
+    "added": "2026-10-21",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-10-21",
+        "rating": "Hold",
+        "kind": "new"
+      }
+    ]
+  }
+}

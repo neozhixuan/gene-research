@@ -6,8 +6,8 @@ A daily, mostly automated research diary on the AI build-out. Every weekday at 2
 2. **Digests** them into one short file grouped by segment (code).
 3. **Updates a worldview**: a list of theses with confidence levels, carried forward and revised daily (Claude).
 4. **Screens** the universe for financial quality and value, skipping recent picks (code).
-5. **Picks** 1-2 stocks to watch from the shortlist (Claude).
-6. **Verifies** them with [TradingAgents](https://github.com/TauricResearch/TradingAgents), a multi-agent analyst team running on Gemini.
+5. **Picks** 1-2 new stocks from the shortlist (Claude). Every pick joins the watchlist.
+6. **Verifies** them with [TradingAgents](https://github.com/TauricResearch/TradingAgents), a multi-agent analyst team running on Gemini, and re-checks one watchlist name a day. A name is dropped after two negative ratings or three Holds in a row.
 7. **Tracks** every past pick against QQQ and SMH, and grades ratings after 28 days (code).
 8. **Publishes** a static site from `site/` (code, deployed by Vercel).
 
@@ -22,7 +22,8 @@ House style: Situational Awareness for direction (AI's bottlenecks: compute, pow
 | `CLAUDE.md` | The runbook the daily Claude session follows. |
 | `data/<date>/` | Each day's raw news, digest, shortlist, picks and TradingAgents output. |
 | `data/worldview/<date>.json` | The worldview as of that day. |
-| `data/picks.csv` | Ledger of every pick, with prices at the time. |
+| `data/picks.csv` | Ledger of every pick and re-check, with prices at the time. |
+| `data/watchlist.json` | Every stock under watch, its rating history and why any were dropped. |
 | `data/tracking.json` | Every pick marked to market, plus the rating scorecard. |
 | `data/ta_memory/` | TradingAgents' memory of past decisions, kept between runs. |
 | `site/` | The generated website. |

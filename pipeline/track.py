@@ -62,7 +62,7 @@ def main():
 
     scorecard = {k: {"graded": v["graded"], "hit_rate": round(v["right"] / v["graded"], 2),
                      "avg_vs_qqq": round(sum(v["excess"]) / len(v["excess"]), 4)} for k, v in by_rating.items()}
-    all_ex = [i["vs_qqq"] for i in out]
+    all_ex = [i["vs_qqq"] for i in out if i.get("kind", "new") == "new"]
     summary = {"picks": len(out), "avg_vs_qqq": round(sum(all_ex) / len(all_ex), 4) if all_ex else None,
                "beating_qqq": sum(x > 0 for x in all_ex)}
     write_json(DATA / "tracking.json", {"date": today(), "summary": summary, "scorecard": scorecard,
