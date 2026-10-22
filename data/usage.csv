@@ -1,2 +1,2 @@
 date,claude_input,claude_output,claude_cache_read,claude_cache_write,claude_cost_usd,gemini_calls,gemini_input,gemini_output,ta_runs
-2026-10-22,,,,,,35,140174,14923,2
+2026-10-22,1300,12794,2440474,50925,0.5758,35,140174,14923,2

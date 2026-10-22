@@ -4,19 +4,23 @@ site/index.html          landing page: hero + overview across every day
 site/days/<date>.html    one in-depth page per day
 site/assets/site.css     shared stylesheet (written here)
 site/assets/logo.png     the helix logo (checked in)
+site/news/<date>.json    that day's articles, loaded on demand by the landing page's news archive
 
 Pure code: Vercel serves the folder as-is, nothing is built there.
 """
 
 import csv
 import html
+import json
 import re
+import urllib.parse
 from datetime import date as Date
 
 from markdown_it import MarkdownIt
 
 import watchlist
-from common import ACTIONS, DATA, MACRO_NAMES, SITE, clean_report, read_json
+from digest import RELEVANT
+from common import ACTIONS, DATA, MACRO_NAMES, SITE, clean_report, read_json, segment_of, write_json
 
 md = MarkdownIt("commonmark", {"html": False}).enable("table")
 e = html.escape
@@ -87,7 +91,70 @@ def load_day(d):
         "agents": {r["ticker"]: read_json(folder / "agents" / f"{r['ticker']}.json") or {} for r in runs},
         "shortlist": read_json(folder / "shortlist.json", {}).get("shortlist", []),
         "market": read_json(folder / "market.json", {}),
+        "news": load_news(d, w),
     }
+
+
+NEWS_ORDER = ["market_macro"]  # then the universe segments, then "other"
+
+
+def load_news(d, w):
+    """The day's articles, tagged with segment, whether the digest kept them, and whether the worldview cites them."""
+    path = DATA / d / "news.jsonl"
+    if not path.exists():
+        return []
+    seg_of = segment_of()
+    cited = set(re.findall(r"\(([0-9a-f]{12})\)", json.dumps((w or {}).get("theses", []))))
+    out = []
+    for line in open(path):
+        it = json.loads(line)
+        out.append({**it, "segment": seg_of.get(it["tickers"][0], "other") if it.get("tickers") else "market_macro",
+                    "kept": bool(it.get("tickers") or RELEVANT.search(f"{it['title']} {it.get('summary', '')}")),
+                    "cited": it.get("id") in cited})
+    return out
+
+
+def publisher(it):
+    """The feed is Yahoo's, so name the outlet from the article's own link."""
+    host = re.sub(r"^www\.", "", urllib.parse.urlparse(it.get("link") or "").netloc)
+    return "Yahoo Finance" if host.endswith("yahoo.com") or not host else host
+
+
+def news_item_html(it):
+    when = (it.get("published") or "")[11:16]
+    tick = "".join(f'<span class="tk">{e(t)}</span>' for t in it.get("tickers", []))
+    summ = it.get("summary") or ""
+    summ = summ[:220].rsplit(" ", 1)[0] + "…" if len(summ) > 220 else summ
+    return (f'<li class="news{" cited" if it["cited"] else ""}"><div class="nh"><span class="nt">{e(when)}</span>'
+            f'<a href="{e(it["link"])}" rel="noopener" target="_blank">{e(it["title"])}</a></div>'
+            f'<div class="nm">{tick}<span class="muted">{e(publisher(it))}</span>{"<span class=cite>cited in worldview</span>" if it["cited"] else ""}</div>'
+            + (f'<p>{e(summ)}</p>' if summ and summ != it["title"] else "") + '</li>')
+
+
+def news_html(items, segments):
+    if not items:
+        return "<p class='muted'>No news stored for this day.</p>"
+    kept = [it for it in items if it["kept"]]
+    groups = []
+    for g in NEWS_ORDER + segments + ["other"]:
+        its = sorted((it for it in kept if it["segment"] == g), key=lambda it: not it["cited"])
+        if its:
+            n_cited = sum(it["cited"] for it in its)
+            groups.append(f'<details class="ngroup"{" open" if n_cited else ""}><summary>{e(seg_label(g) if g in segments else g.replace("_", " ").capitalize())}'
+                          f' <span class="muted">{len(its)}{f" · {n_cited} cited" if n_cited else ""}</span></summary><ul class="nlist">{"".join(map(news_item_html, its))}</ul></details>')
+    dropped = [it for it in items if not it["kept"]]
+    if dropped:
+        groups.append(f'<details class="ngroup"><summary>Off-topic <span class="muted">{len(dropped)} · left out of the digest</span></summary>'
+                      f'<ul class="nlist">{"".join(map(news_item_html, dropped))}</ul></details>')
+    return (f'<p class="muted">Every article the pipeline pulled for this day, grouped by segment. Claude read the {len(kept)} on-topic ones as one-line '
+            f'summaries; the ones marked <span class="cite">cited in worldview</span> are the evidence behind a thesis.</p>{"".join(groups)}')
+
+
+def news_json(items):
+    """Compact per-day file the landing page's news archive loads on demand."""
+    return [{"i": it.get("id"), "t": it["title"], "l": it["link"], "s": publisher(it), "p": it.get("published"),
+             "k": it.get("tickers", []), "g": it["segment"], "c": int(it["cited"]), "r": int(it["kept"]),
+             "m": (it.get("summary") or "")[:220]} for it in items]
 
 
 def usage_rows():
@@ -188,7 +255,7 @@ the <strong>trader</strong> proposes a trade, three risk analysts argue over it,
 <p>The agents assume a $10,000 cash account with no positions. Nothing is traded automatically; you decide.</p></div></details>"""
 
 
-def day_page(day, prev_d, next_d, watch):
+def day_page(day, prev_d, next_d, watch, segments):
     d, w = day["date"], day["w"]
     runs_html = "".join(run_html(r, day["agents"].get(r["ticker"]), day["picks"].get(r["ticker"], {}), day["shortlist"], watch)
                         for r in day["runs"]) or "<p class='muted'>No stocks ran this day.</p>"
@@ -202,6 +269,7 @@ def day_page(day, prev_d, next_d, watch):
 <h1>{e(w["headline"] if w else "Daily AI-bottleneck research")}</h1>{market_html(day["market"])}</header>
 <section><h2>Worldview</h2>{worldview_html(w)}</section>
 <section><h2>Analysis</h2>{HOW_TO_READ}<div class="picks">{runs_html}</div></section>
+<section id="news"><h2>News ({sum(it["kept"] for it in day["news"])})</h2>{news_html(day["news"], segments)}</section>
 {pager}
 <footer>{e(FOOTER)}</footer>
 </main>'''
@@ -382,6 +450,25 @@ def day_cards_html(loaded):
     return f'<div class="dcards">{"".join(cards)}</div>'
 
 
+def news_archive_html(loaded):
+    counts = {}
+    for day in loaded:
+        for it in day["news"]:
+            if it["kept"]:
+                for t in it.get("tickers", []):
+                    counts[t] = counts.get(t, 0) + 1
+    top = sorted(counts.items(), key=lambda kv: -kv[1])[:16]
+    chips = "".join(f'<button type="button" class="tchip" data-q="{e(t)}">{e(t)} <span>{n}</span></button>' for t, n in top)
+    total = sum(it["kept"] for day in loaded for it in day["news"])
+    return f'''<p class="muted">{total:,} on-topic articles across {len(loaded)} days. The newest week loads first; search covers what is loaded.</p>
+<div class="nfilters"><input id="nq" type="search" placeholder="Search headlines or a ticker" aria-label="Search news">
+<label><input id="ncited" type="checkbox"> Only cited in a worldview</label></div>
+<div class="tchips" aria-label="Most-mentioned tickers">{chips}</div>
+<ul id="nresults" class="nlist"><li class="muted">Loading…</li></ul>
+<button id="nmore" type="button" class="pill-sm" hidden>Load 7 more days</button>
+<script>{NEWS_JS}</script>'''
+
+
 def usage_html():
     rows = usage_rows()
     if not rows:
@@ -396,15 +483,16 @@ def usage_html():
     cards = ""
     for label, n in (("Last 5 runs", 5), ("Last 20 runs", 20)):
         t, got = total(n)
-        cards += (f'<div><span class="lbl">{label} ({got})</span><strong>${t["claude_cost_usd"]:,.2f}</strong>'
-                  f'<span class="muted">Claude {t["claude_output"] / 1000:,.0f}k out · {t["claude_cache_read"] / 1e6:,.1f}M cache read · Gemini {t["gemini_calls"]:,.0f} calls</span></div>')
+        cards += (f'<div><span class="lbl">{label} ({got})</span><strong>{t["claude_cache_read"] / 1e6:,.1f}M</strong>'
+                  f'<span class="muted">Claude cache read · {t["claude_output"] / 1000:,.0f}k out · Gemini {t["gemini_calls"]:,.0f} calls</span></div>')
     body = "".join(f'<tr><td>{e(r["date"])}</td><td class="n">{k(r["claude_input"])}</td><td class="n">{k(r["claude_output"])}</td>'
                    f'<td class="n">{k(r["claude_cache_read"])}</td><td class="n">{k(r["claude_cache_write"])}</td>'
                    f'<td class="n">{"$" + format(num(r["claude_cost_usd"]), ",.2f") if r["claude_cost_usd"] else "–"}</td>'
                    f'<td class="n">{r["gemini_calls"]}</td><td class="n">{k(r["gemini_input"])}</td><td class="n">{k(r["gemini_output"])}</td></tr>'
                    for r in reversed(rows[-20:]))
-    return f'''<p class="muted">Tokens each daily run used. Claude figures come from the run's own session; the dollar figure is the API list-price equivalent,
-which is not what a Claude plan charges, but it moves with your plan's usage limits. Most of the volume is cache reads: every step re-reads the conversation so far.</p>
+    return f'''<p class="muted">Tokens each daily run used, read from the run's own session transcript. Most of the volume is cache reads: every step re-reads the
+conversation so far, so fewer steps per run is the main lever. "Cost equiv." is the API list-price equivalent where the session reported one; a Claude plan
+does not charge it, but it moves with your plan's usage limits.</p>
 <div class="score">{cards}</div>
 <div class="tw"><table class="track"><thead><tr><th>Date</th><th>Claude in</th><th>Claude out</th><th>Cache read</th><th>Cache write</th><th>Cost equiv.</th>
 <th>Gemini calls</th><th>Gemini in</th><th>Gemini out</th></tr></thead><tbody>{body}</tbody></table></div>'''
@@ -420,6 +508,7 @@ def landing_page(days, loaded, watch, track, segments):
 <section id="segments"><h2>Segment stance over time</h2>{segment_grid_html(days, loaded, segments)}</section>
 <section id="track"><h2>Track record</h2>{tracking_html(track)}{review_html()}</section>
 <section id="archive"><h2>Every day</h2>{day_cards_html(loaded)}</section>
+<section id="news"><h2>News archive</h2>{news_archive_html(loaded)}</section>
 <section id="usage"><h2>Usage</h2>{usage_html()}</section>
 <footer><p>Sources: Yahoo Finance for news and prices; Claude for the worldview and picks; <a href="https://github.com/TauricResearch/TradingAgents" rel="noopener">TradingAgents</a> on Gemini for verification.
 Code on <a href="{GITHUB}" rel="noopener">GitHub</a>.</p><p>{e(FOOTER)}</p></footer>
@@ -458,9 +547,34 @@ def main():
     for i, day in enumerate(loaded):
         prev_d = days[i - 1] if i else None
         next_d = days[i + 1] if i + 1 < len(days) else None
-        (SITE / "days" / f"{day['date']}.html").write_text(day_page(day, prev_d, next_d, watch))
+        (SITE / "days" / f"{day['date']}.html").write_text(day_page(day, prev_d, next_d, watch, segments))
+        write_json(SITE / "news" / f"{day['date']}.json", news_json(day["news"]))
+    write_json(SITE / "news" / "index.json", [{"date": d["date"], "n": sum(it["kept"] for it in d["news"])} for d in reversed(loaded)])
     (SITE / "index.html").write_text(landing_page(days, loaded, watch, track, segments))
     print(f"site: landing + {len(days)} day pages, latest = {days[-1]}")
+
+
+# News archive: loads per-day JSON newest first, a week at a time; filters what is loaded.
+NEWS_JS = r"""
+(function(){
+var list=document.getElementById("nresults"),q=document.getElementById("nq"),only=document.getElementById("ncited"),more=document.getElementById("nmore");
+if(!list)return;var days=[],next=0,items=[];
+function esc(s){return String(s||"").replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function render(){var t=(q.value||"").trim().toLowerCase(),out=[];
+for(var i=0;i<items.length&&out.length<300;i++){var it=items[i];if(!it.r)continue;if(only.checked&&!it.c)continue;
+if(t&&(it.t+" "+it.k.join(" ")+" "+it.m).toLowerCase().indexOf(t)<0)continue;
+out.push('<li class="news'+(it.c?' cited':'')+'"><div class="nh"><span class="nt">'+esc(it.day.slice(5))+'</span><a href="'+esc(it.l)+'" rel="noopener" target="_blank">'+esc(it.t)+'</a></div><div class="nm">'+
+it.k.map(function(k){return'<span class="tk">'+esc(k)+'</span>'}).join("")+'<span class="muted">'+esc(it.s)+'</span>'+(it.c?'<span class="cite">cited in worldview</span>':'')+
+' <a class="muted" href="days/'+it.day+'.html#news">day page</a></div></li>')}
+list.innerHTML=out.join("")||'<li class="muted">No matching articles in the loaded days.</li>';more.hidden=next>=days.length}
+function load(n){var batch=days.slice(next,next+n);next+=batch.length;
+Promise.all(batch.map(function(d){return fetch("news/"+d.date+".json").then(function(r){return r.ok?r.json():[]}).then(function(a){a.forEach(function(it){it.day=d.date});return a}).catch(function(){return[]})}))
+.then(function(all){all.forEach(function(a){items=items.concat(a)});render()})}
+fetch("news/index.json").then(function(r){return r.json()}).then(function(d){days=d;load(7)}).catch(function(){list.innerHTML='<li class="muted">News could not be loaded.</li>'});
+q.addEventListener("input",render);only.addEventListener("change",render);more.addEventListener("click",function(){load(7)});
+document.querySelectorAll(".tchip").forEach(function(b){b.addEventListener("click",function(){q.value=b.dataset.q;render()})});
+})();
+"""
 
 
 # Lava lamp: metaballs drawn into a tiny canvas that CSS scales up (the upscale
@@ -635,6 +749,20 @@ background:color-mix(in srgb,var(--accent) var(--c,0%),var(--surface));color:var
 footer{font:.88rem/1.5 var(--body);color:var(--muted);max-width:70ch;border-top:1px solid var(--line);padding-top:16px}footer p{margin:0 0 8px}
 a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.hero a:focus-visible{outline-color:#fff}
 @media(max-width:400px){main{gap:36px}.runs,.board,.dcards{grid-template-columns:1fr}h1{font-size:1.6rem}.headline{font-size:1.25rem}}
+
+.ngroup{border:1px solid var(--line);background:var(--surface);margin-top:8px}.ngroup>summary{cursor:pointer;padding:9px 14px;font-weight:600}
+.nlist{list-style:none;margin:0;padding:0}.ngroup .nlist{border-top:1px solid var(--line)}
+.news{padding:10px 14px;border-bottom:1px solid var(--line);min-width:0}.news:last-child{border-bottom:0}.news.cited{box-shadow:inset 3px 0 0 var(--accent)}
+.nh{display:flex;gap:10px;align-items:baseline}.nh a{color:var(--ink);font-weight:600;text-decoration:none;overflow-wrap:anywhere}.nh a:hover{text-decoration:underline}
+.nt{font:.72rem var(--mono);color:var(--muted);flex:none;min-width:3.2em}
+.nm{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin-top:4px;font-size:.8rem}.nm .tk{font:500 .72rem var(--mono);color:var(--accent)}
+.news p{margin:4px 0 0;font:.9rem/1.5 var(--body);color:var(--muted);max-width:75ch}
+.cite{font:500 .66rem var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--accent);border:1px solid var(--accent);padding:1px 5px}
+.nfilters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin:10px 0}
+.nfilters input[type=search]{flex:1 1 260px;font:inherit;padding:8px 12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px}
+.tchips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}.tchip{font:500 .75rem var(--mono);border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:3px 9px;border-radius:999px;cursor:pointer}
+.tchip span{color:var(--muted)}.tchip:hover{border-color:var(--accent)}#nresults{border:1px solid var(--line);background:var(--surface);max-height:640px;overflow:auto}
+.pill-sm{margin-top:10px;font:600 .85rem var(--display);padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
 """
 
 if __name__ == "__main__":

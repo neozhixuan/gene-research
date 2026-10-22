@@ -83,11 +83,38 @@ A name is dropped after two negative ratings in a row or three Holds in a row; a
   <div class="tkrs"><span class="tkr"><span class="tk">TLN</span><span class="chip r-hold">Hold</span></span><span class="tkr"><span class="tk">SNDK</span><span class="chip r-hold">Hold</span></span></div>
   <div class="mk"><span>S&amp;P 500 <b class="pos">+0.7%</b></span><span>SMH <b class="pos">+2.2%</b></span></div>
 </a></div></section>
-<section id="usage"><h2>Usage</h2><p class="muted">Tokens each daily run used. Claude figures come from the run's own session; the dollar figure is the API list-price equivalent,
-which is not what a Claude plan charges, but it moves with your plan's usage limits. Most of the volume is cache reads: every step re-reads the conversation so far.</p>
-<div class="score"><div><span class="lbl">Last 5 runs (1)</span><strong>$0.00</strong><span class="muted">Claude 0k out · 0.0M cache read · Gemini 35 calls</span></div><div><span class="lbl">Last 20 runs (1)</span><strong>$0.00</strong><span class="muted">Claude 0k out · 0.0M cache read · Gemini 35 calls</span></div></div>
+<section id="news"><h2>News archive</h2><p class="muted">215 on-topic articles across 2 days. The newest week loads first; search covers what is loaded.</p>
+<div class="nfilters"><input id="nq" type="search" placeholder="Search headlines or a ticker" aria-label="Search news">
+<label><input id="ncited" type="checkbox"> Only cited in a worldview</label></div>
+<div class="tchips" aria-label="Most-mentioned tickers"><button type="button" class="tchip" data-q="VRT">VRT <span>8</span></button><button type="button" class="tchip" data-q="SMCI">SMCI <span>6</span></button><button type="button" class="tchip" data-q="NVDA">NVDA <span>6</span></button><button type="button" class="tchip" data-q="STX">STX <span>5</span></button><button type="button" class="tchip" data-q="GEV">GEV <span>5</span></button><button type="button" class="tchip" data-q="CRWV">CRWV <span>5</span></button><button type="button" class="tchip" data-q="HPE">HPE <span>5</span></button><button type="button" class="tchip" data-q="IREN">IREN <span>4</span></button><button type="button" class="tchip" data-q="MOD">MOD <span>4</span></button><button type="button" class="tchip" data-q="AMD">AMD <span>3</span></button><button type="button" class="tchip" data-q="VST">VST <span>3</span></button><button type="button" class="tchip" data-q="NRG">NRG <span>3</span></button><button type="button" class="tchip" data-q="SMR">SMR <span>3</span></button><button type="button" class="tchip" data-q="GOOGL">GOOGL <span>2</span></button><button type="button" class="tchip" data-q="MU">MU <span>2</span></button><button type="button" class="tchip" data-q="PRIM">PRIM <span>2</span></button></div>
+<ul id="nresults" class="nlist"><li class="muted">Loading…</li></ul>
+<button id="nmore" type="button" class="pill-sm" hidden>Load 7 more days</button>
+<script>
+(function(){
+var list=document.getElementById("nresults"),q=document.getElementById("nq"),only=document.getElementById("ncited"),more=document.getElementById("nmore");
+if(!list)return;var days=[],next=0,items=[];
+function esc(s){return String(s||"").replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function render(){var t=(q.value||"").trim().toLowerCase(),out=[];
+for(var i=0;i<items.length&&out.length<300;i++){var it=items[i];if(!it.r)continue;if(only.checked&&!it.c)continue;
+if(t&&(it.t+" "+it.k.join(" ")+" "+it.m).toLowerCase().indexOf(t)<0)continue;
+out.push('<li class="news'+(it.c?' cited':'')+'"><div class="nh"><span class="nt">'+esc(it.day.slice(5))+'</span><a href="'+esc(it.l)+'" rel="noopener" target="_blank">'+esc(it.t)+'</a></div><div class="nm">'+
+it.k.map(function(k){return'<span class="tk">'+esc(k)+'</span>'}).join("")+'<span class="muted">'+esc(it.s)+'</span>'+(it.c?'<span class="cite">cited in worldview</span>':'')+
+' <a class="muted" href="days/'+it.day+'.html#news">day page</a></div></li>')}
+list.innerHTML=out.join("")||'<li class="muted">No matching articles in the loaded days.</li>';more.hidden=next>=days.length}
+function load(n){var batch=days.slice(next,next+n);next+=batch.length;
+Promise.all(batch.map(function(d){return fetch("news/"+d.date+".json").then(function(r){return r.ok?r.json():[]}).then(function(a){a.forEach(function(it){it.day=d.date});return a}).catch(function(){return[]})}))
+.then(function(all){all.forEach(function(a){items=items.concat(a)});render()})}
+fetch("news/index.json").then(function(r){return r.json()}).then(function(d){days=d;load(7)}).catch(function(){list.innerHTML='<li class="muted">News could not be loaded.</li>'});
+q.addEventListener("input",render);only.addEventListener("change",render);more.addEventListener("click",function(){load(7)});
+document.querySelectorAll(".tchip").forEach(function(b){b.addEventListener("click",function(){q.value=b.dataset.q;render()})});
+})();
+</script></section>
+<section id="usage"><h2>Usage</h2><p class="muted">Tokens each daily run used, read from the run's own session transcript. Most of the volume is cache reads: every step re-reads the
+conversation so far, so fewer steps per run is the main lever. "Cost equiv." is the API list-price equivalent where the session reported one; a Claude plan
+does not charge it, but it moves with your plan's usage limits.</p>
+<div class="score"><div><span class="lbl">Last 5 runs (1)</span><strong>2.4M</strong><span class="muted">Claude cache read · 13k out · Gemini 35 calls</span></div><div><span class="lbl">Last 20 runs (1)</span><strong>2.4M</strong><span class="muted">Claude cache read · 13k out · Gemini 35 calls</span></div></div>
 <div class="tw"><table class="track"><thead><tr><th>Date</th><th>Claude in</th><th>Claude out</th><th>Cache read</th><th>Cache write</th><th>Cost equiv.</th>
-<th>Gemini calls</th><th>Gemini in</th><th>Gemini out</th></tr></thead><tbody><tr><td>2026-10-22</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">–</td><td class="n">35</td><td class="n">140k</td><td class="n">15k</td></tr></tbody></table></div></section>
+<th>Gemini calls</th><th>Gemini in</th><th>Gemini out</th></tr></thead><tbody><tr><td>2026-10-22</td><td class="n">1k</td><td class="n">13k</td><td class="n">2,440k</td><td class="n">51k</td><td class="n">$0.58</td><td class="n">35</td><td class="n">140k</td><td class="n">15k</td></tr></tbody></table></div></section>
 <footer><p>Sources: Yahoo Finance for news and prices; Claude for the worldview and picks; <a href="https://github.com/TauricResearch/TradingAgents" rel="noopener">TradingAgents</a> on Gemini for verification.
 Code on <a href="https://github.com/neozhixuan/gene-research" rel="noopener">GitHub</a>.</p><p>An automated research experiment: news and prices from Yahoo Finance, worldview and picks by Claude, verification by TradingAgents on Gemini. Model output can be wrong. This is an experiment, not financial advice.</p></footer>
 </main>
