@@ -2,5 +2,12 @@
   "_how_to_fill": "Anthropic doesn't publish Claude plan limits as token counts, so calibrate once: note the weekly usage % on claude.ai > Settings > Usage just before a daily run (19:54 SGT) and just after it finishes, and put the difference below. The site then shows your weekly and monthly share.",
   "plan": "Pro",
   "weekly_limit_pct_per_run": null,
-  "runs_per_week": 5
+  "runs_per_week": 5,
+  "api_rates_usd_per_mtok": {
+    "_note": "Published API list prices for the model the scheduled run uses. Cache writes are at the 1-hour rate Claude Code uses on subscriptions. Only for estimating; a plan doesn't bill per token.",
+    "input": 2.0,
+    "output": 10.0,
+    "cache_read": 0.2,
+    "cache_write": 4.0
+  }
 }

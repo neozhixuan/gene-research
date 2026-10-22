@@ -506,6 +506,18 @@ def usage_html():
         return f"{x / 1e6:,.1f} million{unit}" if x >= 1e6 else f"{x / 1e3:,.0f} thousand{unit}" if x >= 1e3 else f"{x:,.0f}{unit}"
 
     calls, read, wrote, cached = avg("claude_calls"), avg("claude_cache_read"), avg("claude_output"), avg("claude_cache_write")
+    rates = plan.get("api_rates_usd_per_mtok") or {}
+
+    def cost(r):
+        """API-equivalent cost of one run from its token counts and the list prices in plan.json."""
+        parts = [(r.get("claude_input"), "input"), (r.get("claude_output"), "output"),
+                 (r.get("claude_cache_read"), "cache_read"), (r.get("claude_cache_write"), "cache_write")]
+        if not rates or num(r.get("claude_cache_read")) is None:
+            return None
+        return sum((num(v) or 0) * rates.get(k, 0) for v, k in parts) / 1e6
+
+    costs = [c for c in map(cost, rows) if c is not None]
+    run_cost = sum(costs) / len(costs) if costs else None
     g_calls, g_in, g_out = avg("gemini_calls"), avg("gemini_input"), avg("gemini_output")
     runs_week = plan.get("runs_per_week", 5)
     per_run = plan.get("weekly_limit_pct_per_run")
@@ -519,11 +531,19 @@ def usage_html():
                  'daily run (19:54 Singapore time) and again after it finishes, and put the difference in <code>plan.json</code> as '
                  '<code>weekly_limit_pct_per_run</code>. This section then shows your weekly and monthly share.</p>')
     month = lambda x: None if x is None else x * runs_week * 52 / 12
-    body = "".join(f'<tr><td>{e(r["date"])}</td><td class="n">{r.get("claude_calls") or "–"}</td><td class="n">{fmt(num(r["claude_cache_read"]))}</td>'
+    money = ""
+    if run_cost is not None:
+        money = (f'<p class="big-share"><strong>${run_cost:,.2f}</strong> per run at API list prices, so about '
+                 f'<strong>${month(run_cost):,.0f}</strong> a month and ${month(run_cost) * 12:,.0f} a year for weekday runs. '
+                 f'A Claude plan doesn\'t bill per token; this is what the same usage would cost on the API, and the best single number '
+                 f'for comparing runs and spotting when a change makes them more expensive. Most of it is cache reads '
+                 f'(${(read or 0) * rates.get("cache_read", 0) / 1e6:,.2f} a run) and cache writes '
+                 f'(${(cached or 0) * rates.get("cache_write", 0) / 1e6:,.2f}).</p>')
+    body = "".join(f'<tr><td>{e(r["date"])}</td><td class="n">{"$" + format(cost(r), ".2f") if cost(r) is not None else "–"}</td><td class="n">{r.get("claude_calls") or "–"}</td><td class="n">{fmt(num(r["claude_cache_read"]))}</td>'
                    f'<td class="n">{fmt(num(r["claude_output"]))}</td><td class="n">{fmt(num(r["claude_cache_write"]))}</td>'
                    f'<td class="n">{r["gemini_calls"] or "–"}</td><td class="n">{fmt(num(r["gemini_input"]))} / {fmt(num(r["gemini_output"]))}</td></tr>'
                    for r in reversed(rows[-20:]))
-    return f'''{share}
+    return f'''{money}{share}
 <h3>What one daily run uses, on average ({len(rows)} run{"s" if len(rows) != 1 else ""} recorded)</h3>
 <ul class="plain usage-list">
 <li><strong>Claude{f": about {calls:,.0f} calls" if calls else ""}.</strong> Each call re-sends the whole conversation so far. Claude reads most of that back
@@ -536,7 +556,7 @@ That is on the free Google API key and does not count against your Claude plan.<
 </ul>
 <p class="muted">A month of weekday runs (about {runs_week * 52 / 12:,.0f}) comes to roughly {fmt(month(read), " tokens")} of Claude cache reads and
 {fmt(month(wrote), " tokens")} written.</p>
-<div class="tw"><table class="track"><thead><tr><th>Date</th><th>Claude calls</th><th>Read from cache</th><th>Written</th><th>Newly cached</th>
+<div class="tw"><table class="track"><thead><tr><th>Date</th><th>API-equiv. cost</th><th>Claude calls</th><th>Read from cache</th><th>Written</th><th>Newly cached</th>
 <th>Gemini calls</th><th>Gemini in / out</th></tr></thead><tbody>{body}</tbody></table></div>'''
 
 
