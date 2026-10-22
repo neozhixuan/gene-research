@@ -13,7 +13,10 @@ import csv
 import importlib.metadata
 import os
 import re
+import threading
 import time
+
+from langchain_core.callbacks import BaseCallbackHandler
 
 import watchlist
 from common import DATA, ROOT, day_dir, today, read_json, write_json
@@ -37,12 +40,31 @@ FALLBACK_QUICK = os.environ.get("GENE_FALLBACK_QUICK_LLM", "gemini-3.5-flash-lit
 ATTEMPTS = [(0, None), (30, FALLBACK_QUICK), (180, None), (300, FALLBACK_QUICK)]
 
 
+class GeminiUsage(BaseCallbackHandler):
+    """Counts Gemini calls and tokens per model across the parallel analysts."""
+
+    def __init__(self):
+        self.by_model, self._lock = {}, threading.Lock()
+
+    def on_llm_end(self, response, **kwargs):
+        for gens in response.generations:
+            for g in gens:
+                msg = getattr(g, "message", None)
+                meta = getattr(msg, "usage_metadata", None) or {}
+                model = (getattr(msg, "response_metadata", None) or {}).get("model_name", "unknown")
+                with self._lock:
+                    m = self.by_model.setdefault(model, {"calls": 0, "input_tokens": 0, "output_tokens": 0})
+                    m["calls"] += 1
+                    m["input_tokens"] += meta.get("input_tokens", 0)
+                    m["output_tokens"] += meta.get("output_tokens", 0)
+
+
 def verdict(text, label):
     m = re.search(rf"\*\*{label}\*\*:\s*\**\s*(\w+)", text or "")
     return m.group(1).capitalize() if m else None
 
 
-def run_one(ticker, quick_model=None):
+def run_one(ticker, quick_model, usage):
     from tradingagents.default_config import DEFAULT_CONFIG
     from tradingagents.graph.trading_graph import TradingAgentsGraph
     from tradingagents.portfolio import PortfolioContext
@@ -50,7 +72,7 @@ def run_one(ticker, quick_model=None):
     config = DEFAULT_CONFIG.copy()
     if quick_model:
         config["quick_think_llm"] = quick_model
-    ta = TradingAgentsGraph(debug=False, config=config)
+    ta = TradingAgentsGraph(debug=False, config=config, callbacks=[usage])
     book = PortfolioContext(cash=PAPER_CASH, currency="USD", positions=[])
     state, rating = ta.propagate(ticker, today(), portfolio=book)
     inv, risk = state.get("investment_debate_state", {}), state.get("risk_debate_state", {})
@@ -104,11 +126,12 @@ def run_list(picks, watch):
 
 def analyse(t):
     """One TradingAgents run with overload retries. Returns (result, quota_hit)."""
-    start = time.time()
+    start, usage, attempts = time.time(), GeminiUsage(), 0
     for wait, quick in ATTEMPTS:
         time.sleep(wait)
+        attempts += 1
         try:
-            result = run_one(t, quick)
+            result = run_one(t, quick, usage)
             break
         except Exception as e:
             msg = f"{type(e).__name__}: {str(e)[:300]}"
@@ -116,7 +139,7 @@ def analyse(t):
             if QUOTA.search(msg) or not OVERLOADED.search(msg):
                 break
             print(f"{t}: Gemini overloaded, retrying", flush=True)
-    result["seconds"] = round(time.time() - start)
+    result.update(seconds=round(time.time() - start), attempts=attempts, gemini_usage=usage.by_model)
     return result, bool(QUOTA.search(result.get("error") or ""))
 
 

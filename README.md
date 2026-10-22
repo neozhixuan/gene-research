@@ -25,8 +25,10 @@ House style: Situational Awareness for direction (AI's bottlenecks: compute, pow
 | `data/picks.csv` | Ledger of every pick and re-check, with prices at the time. |
 | `data/watchlist.json` | Every stock under watch, its rating history and why any were dropped. |
 | `data/tracking.json` | Every pick marked to market, plus the rating scorecard. |
+| `data/usage.csv` | Claude and Gemini tokens used by each daily run (also shown on the site). |
 | `data/ta_memory/` | TradingAgents' memory of past decisions, kept between runs. |
 | `site/` | The generated website. |
+| `.claude/settings.json` | A hook that reminds you, on every prompt, which data sources the cloud network still blocks. |
 
 ## Run it by hand
 

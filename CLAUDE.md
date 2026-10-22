@@ -75,6 +75,12 @@ Order matters: TradingAgents runs your first pick, then the watchlist re-check t
 
 Run it in the background: TradingAgents takes 5-15 minutes per stock on the Gemini free tier. Wait for the completion notice instead of polling. `validate.py` runs first; if it prints errors, fix the two files and rerun.
 
+Then record what this run used. Call `get_session` with no `session_id` and pipe the `usage` object from its `external_metadata` into the recorder, then rebuild the site:
+
+```bash
+echo '<the usage JSON object>' | .venv/bin/python pipeline/usage.py && .venv/bin/python pipeline/site.py
+```
+
 Then commit and push:
 
 ```bash

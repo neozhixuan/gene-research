@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/scripts/check_network.sh\" 2>/dev/null || true",
+            "timeout": 30,
+            "statusMessage": "Checking blocked data sources"
+          }
+        ]
+      }
+    ]
+  }
+}

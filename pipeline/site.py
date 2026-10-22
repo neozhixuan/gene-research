@@ -4,6 +4,7 @@ site/index.html is the latest day; site/days/<date>.html keeps every day.
 Pure code: Vercel serves the folder as-is, nothing is built there.
 """
 
+import csv
 import html
 import re
 
@@ -141,6 +142,35 @@ def tracking_html(t):
 <div class="tw"><table class="track"><thead><tr><th>Date</th><th>Ticker</th><th>Run</th><th>Rating</th><th>Then</th><th>Now</th><th>Return</th><th>vs QQQ</th><th>vs SMH</th><th>Rating right?</th></tr></thead><tbody>{rows}</tbody></table></div>'''
 
 
+def usage_html():
+    path = DATA / "usage.csv"
+    rows = list(csv.DictReader(open(path))) if path.exists() else []
+    if not rows:
+        return "<p class='muted'>No runs recorded yet.</p>"
+    num = lambda v: float(v) if v not in ("", None) else 0.0
+    k = lambda v: f"{num(v) / 1000:,.0f}k" if v not in ("", None) else "–"
+
+    def total(days):
+        rs = rows[-days:]
+        return {f: sum(num(r[f]) for r in rs) for f in ("claude_output", "claude_cache_read", "claude_cost_usd", "gemini_calls")}, len(rs)
+
+    cards = ""
+    for label, days in (("Last 5 runs", 5), ("Last 20 runs", 20)):
+        t, n = total(days)
+        cards += (f'<div><span class="lbl">{label} ({n})</span><strong>${t["claude_cost_usd"]:,.2f}</strong>'
+                  f'<span class="muted">Claude {t["claude_output"] / 1000:,.0f}k out · {t["claude_cache_read"] / 1e6:,.1f}M cache read · Gemini {t["gemini_calls"]:,.0f} calls</span></div>')
+    body = "".join(f'<tr><td>{e(r["date"])}</td><td class="n">{k(r["claude_input"])}</td><td class="n">{k(r["claude_output"])}</td>'
+                   f'<td class="n">{k(r["claude_cache_read"])}</td><td class="n">{k(r["claude_cache_write"])}</td>'
+                   f'<td class="n">{"$" + format(num(r["claude_cost_usd"]), ",.2f") if r["claude_cost_usd"] else "–"}</td>'
+                   f'<td class="n">{r["gemini_calls"]}</td><td class="n">{k(r["gemini_input"])}</td><td class="n">{k(r["gemini_output"])}</td></tr>'
+                   for r in reversed(rows[-20:]))
+    return f'''<p class="muted">Tokens each daily run used. Claude figures come from the run's own session; the dollar figure is the API list-price equivalent,
+which is not what a Claude plan charges, but it moves with your plan's usage limits. Most of the volume is cache reads: every step re-reads the conversation so far.</p>
+<div class="score">{cards}</div>
+<div class="tw"><table class="track"><thead><tr><th>Date</th><th>Claude in</th><th>Claude out</th><th>Cache read</th><th>Cache write</th><th>Cost equiv.</th>
+<th>Gemini calls</th><th>Gemini in</th><th>Gemini out</th></tr></thead><tbody>{body}</tbody></table></div>'''
+
+
 def review_html(date):
     """The latest monthly review written on or before this day, if any."""
     reviews = sorted(p for p in (DATA / "reviews").glob("*.md") if p.stem <= date[:7])
@@ -177,6 +207,7 @@ def page(date, days, depth):
 <section><h2>Today&#39;s analysis</h2>{HOW_TO_READ}<div class="picks">{picks_html}</div></section>
 <section><h2>Watchlist</h2>{watchlist_html(watch, track)}</section>
 <section><h2>Track record</h2>{tracking_html(track)}{review_html(date)}</section>
+<section><h2>Usage</h2>{usage_html()}</section>
 <section><h2>Archive</h2><nav class="archive">{archive}</nav></section>
 <footer>An automated research experiment: news and prices from Yahoo Finance, worldview and picks by Claude, verification by TradingAgents on Gemini. Model output can be wrong. Not financial advice.</footer>'''
     return TEMPLATE.replace("{{TITLE}}", f"Gene Research {date}").replace("{{BODY}}", body)
