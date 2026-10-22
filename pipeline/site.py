@@ -4,20 +4,24 @@ site/index.html          landing page: hero + overview across every day
 site/days/<date>.html    one in-depth page per day
 site/assets/site.css     shared stylesheet (written here)
 site/assets/logo.png     the helix logo (checked in)
+site/news/<date>.json    that day's articles, loaded on demand by the landing page's news archive
 
 Pure code: Vercel serves the folder as-is, nothing is built there.
 """
 
 import csv
 import html
+import json
 import re
+import urllib.parse
 from datetime import date as Date
 
 from markdown_it import MarkdownIt
 
 import watchlist
+from digest import RELEVANT
 from constants.market import ACTIONS, MACRO_NAMES
-from utils.common import DATA, SITE, read_json, universe
+from utils.common import DATA, SITE, read_json, segment_of, universe, write_json
 from utils.text import clean_report
 
 md = MarkdownIt("commonmark", {"html": False}).enable("table")
@@ -89,7 +93,70 @@ def load_day(d):
         "agents": {r["ticker"]: read_json(folder / "agents" / f"{r['ticker']}.json") or {} for r in runs},
         "shortlist": read_json(folder / "shortlist.json", {}).get("shortlist", []),
         "market": read_json(folder / "market.json", {}),
+        "news": load_news(d, w),
     }
+
+
+NEWS_ORDER = ["market_macro"]  # then the universe segments, then "other"
+
+
+def load_news(d, w):
+    """The day's articles, tagged with segment, whether the digest kept them, and whether the worldview cites them."""
+    path = DATA / d / "news.jsonl"
+    if not path.exists():
+        return []
+    seg_of = segment_of()
+    cited = set(re.findall(r"\(([0-9a-f]{12})\)", json.dumps((w or {}).get("theses", []))))
+    out = []
+    for line in open(path):
+        it = json.loads(line)
+        out.append({**it, "segment": seg_of.get(it["tickers"][0], "other") if it.get("tickers") else "market_macro",
+                    "kept": bool(it.get("tickers") or RELEVANT.search(f"{it['title']} {it.get('summary', '')}")),
+                    "cited": it.get("id") in cited})
+    return out
+
+
+def publisher(it):
+    """The feed is Yahoo's, so name the outlet from the article's own link."""
+    host = re.sub(r"^www\.", "", urllib.parse.urlparse(it.get("link") or "").netloc)
+    return "Yahoo Finance" if host.endswith("yahoo.com") or not host else host
+
+
+def news_item_html(it):
+    when = (it.get("published") or "")[11:16]
+    tick = "".join(f'<span class="tk">{e(t)}</span>' for t in it.get("tickers", []))
+    summ = it.get("summary") or ""
+    summ = summ[:220].rsplit(" ", 1)[0] + "…" if len(summ) > 220 else summ
+    return (f'<li class="news{" cited" if it["cited"] else ""}"><div class="nh"><span class="nt">{e(when)}</span>'
+            f'<a href="{e(it["link"])}" rel="noopener" target="_blank">{e(it["title"])}</a></div>'
+            f'<div class="nm">{tick}<span class="muted">{e(publisher(it))}</span>{"<span class=cite>cited in worldview</span>" if it["cited"] else ""}</div>'
+            + (f'<p>{e(summ)}</p>' if summ and summ != it["title"] else "") + '</li>')
+
+
+def news_html(items, segments):
+    if not items:
+        return "<p class='muted'>No news stored for this day.</p>"
+    kept = [it for it in items if it["kept"]]
+    groups = []
+    for g in NEWS_ORDER + segments + ["other"]:
+        its = sorted((it for it in kept if it["segment"] == g), key=lambda it: not it["cited"])
+        if its:
+            n_cited = sum(it["cited"] for it in its)
+            groups.append(f'<details class="ngroup"{" open" if n_cited else ""}><summary>{e(seg_label(g) if g in segments else g.replace("_", " ").capitalize())}'
+                          f' <span class="muted">{len(its)}{f" · {n_cited} cited" if n_cited else ""}</span></summary><ul class="nlist">{"".join(map(news_item_html, its))}</ul></details>')
+    dropped = [it for it in items if not it["kept"]]
+    if dropped:
+        groups.append(f'<details class="ngroup"><summary>Off-topic <span class="muted">{len(dropped)} · left out of the digest</span></summary>'
+                      f'<ul class="nlist">{"".join(map(news_item_html, dropped))}</ul></details>')
+    return (f'<p class="muted">Every article the pipeline pulled for this day, grouped by segment. Claude read the {len(kept)} on-topic ones as one-line '
+            f'summaries; the ones marked <span class="cite">cited in worldview</span> are the evidence behind a thesis.</p>{"".join(groups)}')
+
+
+def news_json(items):
+    """Compact per-day file the landing page's news archive loads on demand."""
+    return [{"i": it.get("id"), "t": it["title"], "l": it["link"], "s": publisher(it), "p": it.get("published"),
+             "k": it.get("tickers", []), "g": it["segment"], "c": int(it["cited"]), "r": int(it["kept"]),
+             "m": (it.get("summary") or "")[:220]} for it in items]
 
 
 def usage_rows():
@@ -193,7 +260,7 @@ the <strong>trader</strong> proposes a trade, three risk analysts argue over it,
 <p>The agents assume a $10,000 cash account with no positions. Nothing is traded automatically; you decide.</p></div></details>"""
 
 
-def day_page(day, prev_d, next_d, watch):
+def day_page(day, prev_d, next_d, watch, segments):
     d, w = day["date"], day["w"]
     runs_html = "".join(run_html(r, day["agents"].get(r["ticker"]), day["picks"].get(r["ticker"], {}), day["shortlist"], watch)
                         for r in day["runs"]) or "<p class='muted'>No stocks ran this day.</p>"
@@ -207,6 +274,7 @@ def day_page(day, prev_d, next_d, watch):
 <h1>{e(w["headline"] if w else "Daily AI-bottleneck research")}</h1>{market_html(day["market"])}</header>
 <section><h2>Worldview</h2>{worldview_html(w)}</section>
 <section><h2>Analysis</h2>{HOW_TO_READ}<div class="picks">{runs_html}</div></section>
+<section id="news"><h2>News ({sum(it["kept"] for it in day["news"])})</h2>{news_html(day["news"], segments)}</section>
 {pager}
 <footer>{e(FOOTER)}</footer>
 </main>'''
@@ -343,6 +411,24 @@ def segment_grid_html(days, loaded, segments):
 <div class="grid-wrap" data-end><table class="grid seg-grid"><thead><tr><th scope="col">Segment</th>{head}</tr></thead><tbody>{body}</tbody></table></div>'''
 
 
+def baselines_html(t):
+    b = (t or {}).get("baselines")
+    if not b or not b.get("pick_days"):
+        return ""
+    st = b["strategies"]
+    ranked = sorted((v for v in st.values() if v["avg_return"] is not None), key=lambda v: -v["avg_return"])
+    rows = "".join(f'<tr class="{"me" if v["label"] in (st["picks"]["label"], st["ta_positive"]["label"]) else ""}"><td>{e(v["label"])}</td>'
+                   f'<td class="n {tone(v["avg_return"])}">{pct(v["avg_return"])}</td><td class="n {tone(v.get("avg_vs_qqq"))}">{pct(v.get("avg_vs_qqq"))}</td>'
+                   f'<td class="n">{v["days"]}</td></tr>' for v in ranked)
+    verdict = ("Too early to tell: give it about three months of picks before reading anything into this."
+               if b["pick_days"] < 60 else "")
+    return f'''<h3>Is the AI adding anything?</h3>
+<p class="muted">Each strategy "buys" on the days a pick was made, at that day's close, and holds to today. If Claude's picks don't beat the screen's #1
+(no AI) and the random shortlist pick over time, the AI steps aren't adding value; if the Buy / Overweight picks don't beat the rest, treat
+TradingAgents' ratings as commentary rather than signals. {verdict}</p>
+<div class="tw"><table class="track"><thead><tr><th>Strategy</th><th>Avg return</th><th>vs QQQ</th><th>Pick days</th></tr></thead><tbody>{rows}</tbody></table></div>'''
+
+
 def tracking_html(t):
     picks = (t or {}).get("picks", [])
     if not picks:
@@ -355,6 +441,8 @@ def tracking_html(t):
                     for k, v in sc.items()) or f'<p class="muted">Ratings are graded after {t["rules"]["grade_after_days"]} days. None are old enough yet.</p>'
     return f'''<p>{s["picks"]} new picks, {s["beating_qqq"]} beating QQQ since they were picked, average {pct(s["avg_vs_qqq"])} vs QQQ.</p>
 <div class="score">{cards}</div>
+{baselines_html(t)}
+<h3>Every pick and re-check</h3>
 <div class="tw"><table class="track"><thead><tr><th>Date</th><th>Ticker</th><th>Run</th><th>Rating</th><th>Then</th><th>Now</th><th>Return</th><th>vs QQQ</th><th>vs SMH</th><th>Rating right?</th></tr></thead><tbody>{rows}</tbody></table></div>'''
 
 
@@ -387,32 +475,94 @@ def day_cards_html(loaded):
     return f'<div class="dcards">{"".join(cards)}</div>'
 
 
+def news_archive_html(loaded):
+    counts = {}
+    for day in loaded:
+        for it in day["news"]:
+            if it["kept"]:
+                for t in it.get("tickers", []):
+                    counts[t] = counts.get(t, 0) + 1
+    top = sorted(counts.items(), key=lambda kv: -kv[1])[:16]
+    chips = "".join(f'<button type="button" class="tchip" data-q="{e(t)}">{e(t)} <span>{n}</span></button>' for t, n in top)
+    total = sum(it["kept"] for day in loaded for it in day["news"])
+    return f'''<p class="muted">{total:,} on-topic articles across {len(loaded)} days. The newest week loads first; search covers what is loaded.</p>
+<div class="nfilters"><input id="nq" type="search" placeholder="Search headlines or a ticker" aria-label="Search news">
+<label><input id="ncited" type="checkbox"> Only cited in a worldview</label></div>
+<div class="tchips" aria-label="Most-mentioned tickers">{chips}</div>
+<ul id="nresults" class="nlist"><li class="muted">Loading…</li></ul>
+<button id="nmore" type="button" class="pill-sm" hidden>Load 7 more days</button>
+<script>{NEWS_JS}</script>'''
+
+
 def usage_html():
     rows = usage_rows()
     if not rows:
         return "<p class='muted'>No runs recorded yet. Each daily run adds a row once it finishes.</p>"
-    num = lambda v: float(v) if v not in ("", None) else 0.0
-    k = lambda v: f"{num(v) / 1000:,.0f}k" if v not in ("", None) else "–"
+    num = lambda v: float(v) if v not in ("", None) else None
+    plan = read_json(DATA.parent / "plan.json", {})
 
-    def total(n):
-        rs = rows[-n:]
-        return {f: sum(num(r[f]) for r in rs) for f in ("claude_output", "claude_cache_read", "claude_cost_usd", "gemini_calls")}, len(rs)
+    def avg(field):
+        vals = [x for x in (num(r.get(field)) for r in rows) if x is not None]
+        return sum(vals) / len(vals) if vals else None
 
-    cards = ""
-    for label, n in (("Last 5 runs", 5), ("Last 20 runs", 20)):
-        t, got = total(n)
-        cards += (f'<div><span class="lbl">{label} ({got})</span><strong>${t["claude_cost_usd"]:,.2f}</strong>'
-                  f'<span class="muted">Claude {t["claude_output"] / 1000:,.0f}k out · {t["claude_cache_read"] / 1e6:,.1f}M cache read · Gemini {t["gemini_calls"]:,.0f} calls</span></div>')
-    body = "".join(f'<tr><td>{e(r["date"])}</td><td class="n">{k(r["claude_input"])}</td><td class="n">{k(r["claude_output"])}</td>'
-                   f'<td class="n">{k(r["claude_cache_read"])}</td><td class="n">{k(r["claude_cache_write"])}</td>'
-                   f'<td class="n">{"$" + format(num(r["claude_cost_usd"]), ",.2f") if r["claude_cost_usd"] else "–"}</td>'
-                   f'<td class="n">{r["gemini_calls"]}</td><td class="n">{k(r["gemini_input"])}</td><td class="n">{k(r["gemini_output"])}</td></tr>'
+    def fmt(x, unit=""):
+        if x is None:
+            return "–"
+        return f"{x / 1e6:,.1f} million{unit}" if x >= 1e6 else f"{x / 1e3:,.0f} thousand{unit}" if x >= 1e3 else f"{x:,.0f}{unit}"
+
+    calls, read, wrote, cached = avg("claude_calls"), avg("claude_cache_read"), avg("claude_output"), avg("claude_cache_write")
+    rates = plan.get("api_rates_usd_per_mtok") or {}
+
+    def cost(r):
+        """API-equivalent cost of one run from its token counts and the list prices in plan.json."""
+        parts = [(r.get("claude_input"), "input"), (r.get("claude_output"), "output"),
+                 (r.get("claude_cache_read"), "cache_read"), (r.get("claude_cache_write"), "cache_write")]
+        if not rates or num(r.get("claude_cache_read")) is None:
+            return None
+        return sum((num(v) or 0) * rates.get(k, 0) for v, k in parts) / 1e6
+
+    costs = [c for c in map(cost, rows) if c is not None]
+    run_cost = sum(costs) / len(costs) if costs else None
+    g_calls, g_in, g_out = avg("gemini_calls"), avg("gemini_input"), avg("gemini_output")
+    runs_week = plan.get("runs_per_week", 5)
+    per_run = plan.get("weekly_limit_pct_per_run")
+    if per_run:
+        share = (f'<p class="big-share"><strong>{per_run * runs_week:,.0f}%</strong> of your weekly {e(plan.get("plan", ""))} limit goes to the '
+                 f'{runs_week} weekday runs ({per_run:g}% each, measured once on claude.ai). That leaves about {max(0, 100 - per_run * runs_week):,.0f}% '
+                 f'of each week for everything else; a month of runs is about {per_run * runs_week * 52 / 12:,.0f} weekly-limit percentage points.</p>')
+    else:
+        share = ('<p class="callout"><strong>Share of your plan: not measured yet.</strong> Anthropic doesn\'t publish Claude plan limits as token counts, '
+                 'so this page can\'t work out the percentage from tokens alone. To measure it once: on claude.ai open Settings → Usage just before a '
+                 'daily run (19:54 Singapore time) and again after it finishes, and put the difference in <code>plan.json</code> as '
+                 '<code>weekly_limit_pct_per_run</code>. This section then shows your weekly and monthly share.</p>')
+    month = lambda x: None if x is None else x * runs_week * 52 / 12
+    money = ""
+    if run_cost is not None:
+        money = (f'<p class="big-share"><strong>${run_cost:,.2f}</strong> per run at API list prices, so about '
+                 f'<strong>${month(run_cost):,.0f}</strong> a month and ${month(run_cost) * 12:,.0f} a year for weekday runs. '
+                 f'A Claude plan doesn\'t bill per token; this is what the same usage would cost on the API, and the best single number '
+                 f'for comparing runs and spotting when a change makes them more expensive. Most of it is cache reads '
+                 f'(${(read or 0) * rates.get("cache_read", 0) / 1e6:,.2f} a run) and cache writes '
+                 f'(${(cached or 0) * rates.get("cache_write", 0) / 1e6:,.2f}).</p>')
+    body = "".join(f'<tr><td>{e(r["date"])}</td><td class="n">{"$" + format(cost(r), ".2f") if cost(r) is not None else "–"}</td><td class="n">{r.get("claude_calls") or "–"}</td><td class="n">{fmt(num(r["claude_cache_read"]))}</td>'
+                   f'<td class="n">{fmt(num(r["claude_output"]))}</td><td class="n">{fmt(num(r["claude_cache_write"]))}</td>'
+                   f'<td class="n">{r["gemini_calls"] or "–"}</td><td class="n">{fmt(num(r["gemini_input"]))} / {fmt(num(r["gemini_output"]))}</td></tr>'
                    for r in reversed(rows[-20:]))
-    return f'''<p class="muted">Tokens each daily run used. Claude figures come from the run's own session; the dollar figure is the API list-price equivalent,
-which is not what a Claude plan charges, but it moves with your plan's usage limits. Most of the volume is cache reads: every step re-reads the conversation so far.</p>
-<div class="score">{cards}</div>
-<div class="tw"><table class="track"><thead><tr><th>Date</th><th>Claude in</th><th>Claude out</th><th>Cache read</th><th>Cache write</th><th>Cost equiv.</th>
-<th>Gemini calls</th><th>Gemini in</th><th>Gemini out</th></tr></thead><tbody>{body}</tbody></table></div>'''
+    return f'''{money}{share}
+<h3>What one daily run uses, on average ({len(rows)} run{"s" if len(rows) != 1 else ""} recorded)</h3>
+<ul class="plain usage-list">
+<li><strong>Claude{f": about {calls:,.0f} calls" if calls else ""}.</strong> Each call re-sends the whole conversation so far. Claude reads most of that back
+from its cache: about <strong>{fmt(read, " tokens")}</strong> per run. Cached reads are much cheaper than fresh input, but they still count towards
+plan limits, and they are where nearly all the volume is. Fewer steps per run is the main way to cut them.</li>
+<li><strong>Claude's own writing</strong> (the worldview, the picks and its commands): about <strong>{fmt(wrote, " tokens")}</strong> per run,
+plus about {fmt(cached, " tokens")} newly stored in the cache.</li>
+<li><strong>Gemini</strong> runs TradingAgents: about {g_calls or 0:,.0f} calls, {fmt(g_in, " tokens")} in and {fmt(g_out, " tokens")} out per run.
+That is on the free Google API key and does not count against your Claude plan.</li>
+</ul>
+<p class="muted">A month of weekday runs (about {runs_week * 52 / 12:,.0f}) comes to roughly {fmt(month(read), " tokens")} of Claude cache reads and
+{fmt(month(wrote), " tokens")} written.</p>
+<div class="tw"><table class="track"><thead><tr><th>Date</th><th>API-equiv. cost</th><th>Claude calls</th><th>Read from cache</th><th>Written</th><th>Newly cached</th>
+<th>Gemini calls</th><th>Gemini in / out</th></tr></thead><tbody>{body}</tbody></table></div>'''
 
 
 def landing_page(days, loaded, watch, track, segments):
@@ -425,6 +575,7 @@ def landing_page(days, loaded, watch, track, segments):
 <section id="segments"><h2>Segment stance over time</h2>{segment_grid_html(days, loaded, segments)}</section>
 <section id="track"><h2>Track record</h2>{tracking_html(track)}{review_html()}</section>
 <section id="archive"><h2>Every day</h2>{day_cards_html(loaded)}</section>
+<section id="news"><h2>News archive</h2>{news_archive_html(loaded)}</section>
 <section id="usage"><h2>Usage</h2>{usage_html()}</section>
 <footer><p>Sources: Yahoo Finance for news and prices; Claude for the worldview and picks; <a href="https://github.com/TauricResearch/TradingAgents" rel="noopener">TradingAgents</a> on Gemini for verification.
 Code on <a href="{GITHUB}" rel="noopener">GitHub</a>.</p><p>{e(FOOTER)}</p></footer>
@@ -462,9 +613,34 @@ def main():
     for i, day in enumerate(loaded):
         prev_d = days[i - 1] if i else None
         next_d = days[i + 1] if i + 1 < len(days) else None
-        (SITE / "days" / f"{day['date']}.html").write_text(day_page(day, prev_d, next_d, watch))
+        (SITE / "days" / f"{day['date']}.html").write_text(day_page(day, prev_d, next_d, watch, segments))
+        write_json(SITE / "news" / f"{day['date']}.json", news_json(day["news"]))
+    write_json(SITE / "news" / "index.json", [{"date": d["date"], "n": sum(it["kept"] for it in d["news"])} for d in reversed(loaded)])
     (SITE / "index.html").write_text(landing_page(days, loaded, watch, track, segments))
     print(f"site: landing + {len(days)} day pages, latest = {days[-1]}")
+
+
+# News archive: loads per-day JSON newest first, a week at a time; filters what is loaded.
+NEWS_JS = r"""
+(function(){
+var list=document.getElementById("nresults"),q=document.getElementById("nq"),only=document.getElementById("ncited"),more=document.getElementById("nmore");
+if(!list)return;var days=[],next=0,items=[];
+function esc(s){return String(s||"").replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function render(){var t=(q.value||"").trim().toLowerCase(),out=[];
+for(var i=0;i<items.length&&out.length<300;i++){var it=items[i];if(!it.r)continue;if(only.checked&&!it.c)continue;
+if(t&&(it.t+" "+it.k.join(" ")+" "+it.m).toLowerCase().indexOf(t)<0)continue;
+out.push('<li class="news'+(it.c?' cited':'')+'"><div class="nh"><span class="nt">'+esc(it.day.slice(5))+'</span><a href="'+esc(it.l)+'" rel="noopener" target="_blank">'+esc(it.t)+'</a></div><div class="nm">'+
+it.k.map(function(k){return'<span class="tk">'+esc(k)+'</span>'}).join("")+'<span class="muted">'+esc(it.s)+'</span>'+(it.c?'<span class="cite">cited in worldview</span>':'')+
+' <a class="muted" href="days/'+it.day+'.html#news">day page</a></div></li>')}
+list.innerHTML=out.join("")||'<li class="muted">No matching articles in the loaded days.</li>';more.hidden=next>=days.length}
+function load(n){var batch=days.slice(next,next+n);next+=batch.length;
+Promise.all(batch.map(function(d){return fetch("news/"+d.date+".json").then(function(r){return r.ok?r.json():[]}).then(function(a){a.forEach(function(it){it.day=d.date});return a}).catch(function(){return[]})}))
+.then(function(all){all.forEach(function(a){items=items.concat(a)});render()})}
+fetch("news/index.json").then(function(r){return r.json()}).then(function(d){days=d;load(7)}).catch(function(){list.innerHTML='<li class="muted">News could not be loaded.</li>'});
+q.addEventListener("input",render);only.addEventListener("change",render);more.addEventListener("click",function(){load(7)});
+document.querySelectorAll(".tchip").forEach(function(b){b.addEventListener("click",function(){q.value=b.dataset.q;render()})});
+})();
+"""
 
 
 # Lava lamp: metaballs drawn into a tiny canvas that CSS scales up (the upscale
@@ -639,6 +815,24 @@ background:color-mix(in srgb,var(--accent) var(--c,0%),var(--surface));color:var
 footer{font:.88rem/1.5 var(--body);color:var(--muted);max-width:70ch;border-top:1px solid var(--line);padding-top:16px}footer p{margin:0 0 8px}
 a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.hero a:focus-visible{outline-color:#fff}
 @media(max-width:400px){main{gap:36px}.runs,.board,.dcards{grid-template-columns:1fr}h1{font-size:1.6rem}.headline{font-size:1.25rem}}
+
+.ngroup{border:1px solid var(--line);background:var(--surface);margin-top:8px}.ngroup>summary{cursor:pointer;padding:9px 14px;font-weight:600}
+.nlist{list-style:none;margin:0;padding:0}.ngroup .nlist{border-top:1px solid var(--line)}
+.news{padding:10px 14px;border-bottom:1px solid var(--line);min-width:0}.news:last-child{border-bottom:0}.news.cited{box-shadow:inset 3px 0 0 var(--accent)}
+.nh{display:flex;gap:10px;align-items:baseline}.nh a{color:var(--ink);font-weight:600;text-decoration:none;overflow-wrap:anywhere}.nh a:hover{text-decoration:underline}
+.nt{font:.72rem var(--mono);color:var(--muted);flex:none;min-width:3.2em}
+.nm{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin-top:4px;font-size:.8rem}.nm .tk{font:500 .72rem var(--mono);color:var(--accent)}
+.news p{margin:4px 0 0;font:.9rem/1.5 var(--body);color:var(--muted);max-width:75ch}
+.cite{font:500 .66rem var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--accent);border:1px solid var(--accent);padding:1px 5px}
+.nfilters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin:10px 0}
+.nfilters input[type=search]{flex:1 1 260px;font:inherit;padding:8px 12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px}
+.tchips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}.tchip{font:500 .75rem var(--mono);border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:3px 9px;border-radius:999px;cursor:pointer}
+.tchip span{color:var(--muted)}.tchip:hover{border-color:var(--accent)}#nresults{border:1px solid var(--line);background:var(--surface);max-height:640px;overflow:auto}
+.pill-sm{margin-top:10px;font:600 .85rem var(--display);padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+tr.me td{font-weight:600}tr.me td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
+.callout{border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--surface);padding:12px 16px;font:.95rem/1.55 var(--body);max-width:75ch}
+.callout code{font:.85em var(--mono)}.big-share{font:1.05rem/1.5 var(--body);max-width:75ch}.big-share strong{font:600 1.8rem var(--display);color:var(--accent)}
+.usage-list{display:flex;flex-direction:column;gap:8px;max-width:75ch}
 """
 
 if __name__ == "__main__":

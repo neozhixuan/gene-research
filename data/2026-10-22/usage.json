@@ -1,6 +1,12 @@
 {
   "date": "2026-10-22",
-  "claude": {},
+  "claude": {
+    "cache_read_tokens": 2440474,
+    "cache_write_tokens": 50925,
+    "cost_usd": 0.5758003,
+    "input_tokens": 1300,
+    "output_tokens": 12794
+  },
   "gemini": {
     "calls": 35,
     "input_tokens": 140174,

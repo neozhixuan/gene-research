@@ -1,3 +1,5 @@
 date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-10-21,TLN,new,power_nuclear,364.46,727.57,558.34,Hold,Hold,Hold
 2026-10-21,SNDK,new,memory_storage,1393.54,727.57,558.34,Hold,Hold,Hold
+2026-10-22,NRG,new,power_nuclear,99.8,725.2,556.7,Overweight,Buy,Overweight
+2026-10-22,MU,new,memory_storage,913.67,725.2,556.7,Overweight,Buy,Overweight
