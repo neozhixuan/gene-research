@@ -84,14 +84,16 @@ Then record what this run used (the recorder reads this session's own transcript
 Then commit and push:
 
 ```bash
-git add -A data site && git commit -m "Daily run <date>: <tickers> (<final ratings>)" && git push origin main
+git add -A data site && git commit -m "Daily run <date>: <tickers> (<final ratings>)" && git pull --rebase origin main && git push origin main
 ```
+
+Always commit before pulling, so nothing this run wrote can be lost if someone else pushed in the meantime.
 
 Vercel deploys the `site/` folder on push.
 
 ## 5. Monthly review (first run of each month only)
 
-Read `data/tracking.json` (the `summary` and `scorecard` keys only) and write `data/reviews/<YYYY-MM>.md`, at most 200 words: what the ratings got right and wrong, any pattern by segment, and one change to try (to `universe.json`, the screen weights in `pipeline/screen.py`, or these instructions). Do not make the change yourself; the owner decides.
+Read `data/tracking.json` (the `summary`, `scorecard` and `baselines` keys only) and write `data/reviews/<YYYY-MM>.md`, at most 200 words: what the ratings got right and wrong, whether the picks beat the no-AI alternatives in `baselines`, any pattern by segment, and one change to try (to `universe.json`, the screen weights in `pipeline/screen.py`, or these instructions). Do not make the change yourself; the owner decides.
 
 ## Finish
 

@@ -8,7 +8,7 @@ A daily, mostly automated research diary on the AI build-out. Every weekday at 2
 4. **Screens** the universe for financial quality and value, skipping recent picks (code).
 5. **Picks** 1-2 new stocks from the shortlist (Claude). Every pick joins the watchlist.
 6. **Verifies** them with [TradingAgents](https://github.com/TauricResearch/TradingAgents), a multi-agent analyst team running on Gemini, and re-checks one watchlist name a day. A name is dropped after two negative ratings or three Holds in a row.
-7. **Tracks** every past pick against QQQ and SMH, and grades ratings after 28 days (code).
+7. **Tracks** every past pick against QQQ and SMH, grades ratings after 28 days, and compares the picks with no-AI alternatives (the screen's #1, a random shortlist name, the whole universe) to show whether the AI steps add anything (code).
 8. **Publishes** a static site from `site/` (code, deployed by Vercel).
 
 House style: Situational Awareness for direction (AI's bottlenecks: compute, power, grid, cooling, data centres and their suppliers), Buffett for selection (real cash flow, low debt, a price that limits the downside).
@@ -70,6 +70,7 @@ flowchart LR
 | `data/watchlist.json` | Every stock under watch, its rating history and why any were dropped. |
 | `data/tracking.json` | Every pick marked to market, plus the rating scorecard. |
 | `data/usage.csv` | Claude and Gemini tokens used by each daily run (also shown on the site). |
+| `plan.json` | Your Claude plan and the measured share of its weekly limit one run uses (fill in once; see the file). |
 | `data/ta_memory/` | TradingAgents' memory of past decisions, kept between runs. |
 | `site/` | The generated website: `index.html` (overview), `days/<date>.html` (in-depth) and `news/<date>.json` (articles for the news archive). |
 | `.claude/settings.json` | A hook that reminds you, on every prompt, which data sources the cloud network still blocks. |

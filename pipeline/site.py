@@ -406,6 +406,24 @@ def segment_grid_html(days, loaded, segments):
 <div class="grid-wrap" data-end><table class="grid seg-grid"><thead><tr><th scope="col">Segment</th>{head}</tr></thead><tbody>{body}</tbody></table></div>'''
 
 
+def baselines_html(t):
+    b = (t or {}).get("baselines")
+    if not b or not b.get("pick_days"):
+        return ""
+    st = b["strategies"]
+    ranked = sorted((v for v in st.values() if v["avg_return"] is not None), key=lambda v: -v["avg_return"])
+    rows = "".join(f'<tr class="{"me" if v["label"] in (st["picks"]["label"], st["ta_positive"]["label"]) else ""}"><td>{e(v["label"])}</td>'
+                   f'<td class="n {tone(v["avg_return"])}">{pct(v["avg_return"])}</td><td class="n {tone(v.get("avg_vs_qqq"))}">{pct(v.get("avg_vs_qqq"))}</td>'
+                   f'<td class="n">{v["days"]}</td></tr>' for v in ranked)
+    verdict = ("Too early to tell: give it about three months of picks before reading anything into this."
+               if b["pick_days"] < 60 else "")
+    return f'''<h3>Is the AI adding anything?</h3>
+<p class="muted">Each strategy "buys" on the days a pick was made, at that day's close, and holds to today. If Claude's picks don't beat the screen's #1
+(no AI) and the random shortlist pick over time, the AI steps aren't adding value; if the Buy / Overweight picks don't beat the rest, treat
+TradingAgents' ratings as commentary rather than signals. {verdict}</p>
+<div class="tw"><table class="track"><thead><tr><th>Strategy</th><th>Avg return</th><th>vs QQQ</th><th>Pick days</th></tr></thead><tbody>{rows}</tbody></table></div>'''
+
+
 def tracking_html(t):
     picks = (t or {}).get("picks", [])
     if not picks:
@@ -418,6 +436,8 @@ def tracking_html(t):
                     for k, v in sc.items()) or f'<p class="muted">Ratings are graded after {t["rules"]["grade_after_days"]} days. None are old enough yet.</p>'
     return f'''<p>{s["picks"]} new picks, {s["beating_qqq"]} beating QQQ since they were picked, average {pct(s["avg_vs_qqq"])} vs QQQ.</p>
 <div class="score">{cards}</div>
+{baselines_html(t)}
+<h3>Every pick and re-check</h3>
 <div class="tw"><table class="track"><thead><tr><th>Date</th><th>Ticker</th><th>Run</th><th>Rating</th><th>Then</th><th>Now</th><th>Return</th><th>vs QQQ</th><th>vs SMH</th><th>Rating right?</th></tr></thead><tbody>{rows}</tbody></table></div>'''
 
 
@@ -473,29 +493,51 @@ def usage_html():
     rows = usage_rows()
     if not rows:
         return "<p class='muted'>No runs recorded yet. Each daily run adds a row once it finishes.</p>"
-    num = lambda v: float(v) if v not in ("", None) else 0.0
-    k = lambda v: f"{num(v) / 1000:,.0f}k" if v not in ("", None) else "–"
+    num = lambda v: float(v) if v not in ("", None) else None
+    plan = read_json(DATA.parent / "plan.json", {})
 
-    def total(n):
-        rs = rows[-n:]
-        return {f: sum(num(r[f]) for r in rs) for f in ("claude_output", "claude_cache_read", "claude_cost_usd", "gemini_calls")}, len(rs)
+    def avg(field):
+        vals = [x for x in (num(r.get(field)) for r in rows) if x is not None]
+        return sum(vals) / len(vals) if vals else None
 
-    cards = ""
-    for label, n in (("Last 5 runs", 5), ("Last 20 runs", 20)):
-        t, got = total(n)
-        cards += (f'<div><span class="lbl">{label} ({got})</span><strong>{t["claude_cache_read"] / 1e6:,.1f}M</strong>'
-                  f'<span class="muted">Claude cache read · {t["claude_output"] / 1000:,.0f}k out · Gemini {t["gemini_calls"]:,.0f} calls</span></div>')
-    body = "".join(f'<tr><td>{e(r["date"])}</td><td class="n">{k(r["claude_input"])}</td><td class="n">{k(r["claude_output"])}</td>'
-                   f'<td class="n">{k(r["claude_cache_read"])}</td><td class="n">{k(r["claude_cache_write"])}</td>'
-                   f'<td class="n">{"$" + format(num(r["claude_cost_usd"]), ",.2f") if r["claude_cost_usd"] else "–"}</td>'
-                   f'<td class="n">{r["gemini_calls"]}</td><td class="n">{k(r["gemini_input"])}</td><td class="n">{k(r["gemini_output"])}</td></tr>'
+    def fmt(x, unit=""):
+        if x is None:
+            return "–"
+        return f"{x / 1e6:,.1f} million{unit}" if x >= 1e6 else f"{x / 1e3:,.0f} thousand{unit}" if x >= 1e3 else f"{x:,.0f}{unit}"
+
+    calls, read, wrote, cached = avg("claude_calls"), avg("claude_cache_read"), avg("claude_output"), avg("claude_cache_write")
+    g_calls, g_in, g_out = avg("gemini_calls"), avg("gemini_input"), avg("gemini_output")
+    runs_week = plan.get("runs_per_week", 5)
+    per_run = plan.get("weekly_limit_pct_per_run")
+    if per_run:
+        share = (f'<p class="big-share"><strong>{per_run * runs_week:,.0f}%</strong> of your weekly {e(plan.get("plan", ""))} limit goes to the '
+                 f'{runs_week} weekday runs ({per_run:g}% each, measured once on claude.ai). That leaves about {max(0, 100 - per_run * runs_week):,.0f}% '
+                 f'of each week for everything else; a month of runs is about {per_run * runs_week * 52 / 12:,.0f} weekly-limit percentage points.</p>')
+    else:
+        share = ('<p class="callout"><strong>Share of your plan: not measured yet.</strong> Anthropic doesn\'t publish Claude plan limits as token counts, '
+                 'so this page can\'t work out the percentage from tokens alone. To measure it once: on claude.ai open Settings → Usage just before a '
+                 'daily run (19:54 Singapore time) and again after it finishes, and put the difference in <code>plan.json</code> as '
+                 '<code>weekly_limit_pct_per_run</code>. This section then shows your weekly and monthly share.</p>')
+    month = lambda x: None if x is None else x * runs_week * 52 / 12
+    body = "".join(f'<tr><td>{e(r["date"])}</td><td class="n">{r.get("claude_calls") or "–"}</td><td class="n">{fmt(num(r["claude_cache_read"]))}</td>'
+                   f'<td class="n">{fmt(num(r["claude_output"]))}</td><td class="n">{fmt(num(r["claude_cache_write"]))}</td>'
+                   f'<td class="n">{r["gemini_calls"] or "–"}</td><td class="n">{fmt(num(r["gemini_input"]))} / {fmt(num(r["gemini_output"]))}</td></tr>'
                    for r in reversed(rows[-20:]))
-    return f'''<p class="muted">Tokens each daily run used, read from the run's own session transcript. Most of the volume is cache reads: every step re-reads the
-conversation so far, so fewer steps per run is the main lever. "Cost equiv." is the API list-price equivalent where the session reported one; a Claude plan
-does not charge it, but it moves with your plan's usage limits.</p>
-<div class="score">{cards}</div>
-<div class="tw"><table class="track"><thead><tr><th>Date</th><th>Claude in</th><th>Claude out</th><th>Cache read</th><th>Cache write</th><th>Cost equiv.</th>
-<th>Gemini calls</th><th>Gemini in</th><th>Gemini out</th></tr></thead><tbody>{body}</tbody></table></div>'''
+    return f'''{share}
+<h3>What one daily run uses, on average ({len(rows)} run{"s" if len(rows) != 1 else ""} recorded)</h3>
+<ul class="plain usage-list">
+<li><strong>Claude{f": about {calls:,.0f} calls" if calls else ""}.</strong> Each call re-sends the whole conversation so far. Claude reads most of that back
+from its cache: about <strong>{fmt(read, " tokens")}</strong> per run. Cached reads are much cheaper than fresh input, but they still count towards
+plan limits, and they are where nearly all the volume is. Fewer steps per run is the main way to cut them.</li>
+<li><strong>Claude's own writing</strong> (the worldview, the picks and its commands): about <strong>{fmt(wrote, " tokens")}</strong> per run,
+plus about {fmt(cached, " tokens")} newly stored in the cache.</li>
+<li><strong>Gemini</strong> runs TradingAgents: about {g_calls or 0:,.0f} calls, {fmt(g_in, " tokens")} in and {fmt(g_out, " tokens")} out per run.
+That is on the free Google API key and does not count against your Claude plan.</li>
+</ul>
+<p class="muted">A month of weekday runs (about {runs_week * 52 / 12:,.0f}) comes to roughly {fmt(month(read), " tokens")} of Claude cache reads and
+{fmt(month(wrote), " tokens")} written.</p>
+<div class="tw"><table class="track"><thead><tr><th>Date</th><th>Claude calls</th><th>Read from cache</th><th>Written</th><th>Newly cached</th>
+<th>Gemini calls</th><th>Gemini in / out</th></tr></thead><tbody>{body}</tbody></table></div>'''
 
 
 def landing_page(days, loaded, watch, track, segments):
@@ -763,6 +805,10 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-of
 .tchips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}.tchip{font:500 .75rem var(--mono);border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:3px 9px;border-radius:999px;cursor:pointer}
 .tchip span{color:var(--muted)}.tchip:hover{border-color:var(--accent)}#nresults{border:1px solid var(--line);background:var(--surface);max-height:640px;overflow:auto}
 .pill-sm{margin-top:10px;font:600 .85rem var(--display);padding:8px 16px;border-radius:999px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+tr.me td{font-weight:600}tr.me td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
+.callout{border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--surface);padding:12px 16px;font:.95rem/1.55 var(--body);max-width:75ch}
+.callout code{font:.85em var(--mono)}.big-share{font:1.05rem/1.5 var(--body);max-width:75ch}.big-share strong{font:600 1.8rem var(--display);color:var(--accent)}
+.usage-list{display:flex;flex-direction:column;gap:8px;max-width:75ch}
 """
 
 if __name__ == "__main__":

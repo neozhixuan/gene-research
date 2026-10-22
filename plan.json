@@ -1,0 +1,6 @@
+{
+  "_how_to_fill": "Anthropic doesn't publish Claude plan limits as token counts, so calibrate once: note the weekly usage % on claude.ai > Settings > Usage just before a daily run (19:54 SGT) and just after it finishes, and put the difference below. The site then shows your weekly and monthly share.",
+  "plan": "Pro",
+  "weekly_limit_pct_per_run": null,
+  "runs_per_week": 5
+}
