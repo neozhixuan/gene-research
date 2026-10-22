@@ -2,12 +2,24 @@
 
 One page. For the daily operator, read `CLAUDE.md` instead.
 
+## Structure
+
+```
+pipeline/
+  constants/market.py   # MACRO_NAMES, ACTIONS — shared across fetch/digest/site
+  utils/common.py       # paths (ROOT, DATA, SITE), read_json/write_json, today(), day_dir(), universe()
+  utils/text.py         # clean_report() — repairs Gemini output for display
+  utils/scoring.py      # correct(), rank() — pure functions used by track and screen
+  tests/                # pytest suite for all pure-logic modules
+  common.py             # re-export shim; stages import from utils.* and constants.* directly
+  watchlist.py          # watchlist state machine (no direct I/O; imported by screen and agents)
+  run.py                # orchestrator: chains pre/post stages via subprocess
+  fetch.py … site.py    # stages 1–7 (see below)
+```
+
 ## Pipeline files
 
 Each stage is a standalone script. `run.py pre` chains stages 1–3; `run.py post` chains 4–7.
-
-### `common.py` — shared helpers (no I/O of its own)
-Exports `ROOT`, `DATA`, `SITE`, `SGT`, `today()`, `day_dir()`, `universe()`, `segment_of()`, `read_json()`, `write_json()`, `clean_report()`, `previous_worldview()`, and the `MACRO_NAMES` / `ACTIONS` constants every stage uses. No stage imports from another stage; they all import from `common`.
 
 ### Stage 1: `fetch.py`
 Reads: `universe.json`.

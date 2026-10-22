@@ -8,7 +8,8 @@ import json
 import re
 from collections import defaultdict
 
-from common import day_dir, today, universe, read_json, MACRO_NAMES
+from constants.market import MACRO_NAMES
+from utils.common import day_dir, today, universe, read_json
 
 MAX_ITEMS = 110
 SUMMARY_CHARS = 140

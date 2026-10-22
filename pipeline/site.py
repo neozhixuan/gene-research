@@ -16,7 +16,9 @@ from datetime import date as Date
 from markdown_it import MarkdownIt
 
 import watchlist
-from common import ACTIONS, DATA, MACRO_NAMES, SITE, clean_report, read_json, universe
+from constants.market import ACTIONS, MACRO_NAMES
+from utils.common import DATA, SITE, read_json, universe
+from utils.text import clean_report
 
 md = MarkdownIt("commonmark", {"html": False}).enable("table")
 e = html.escape

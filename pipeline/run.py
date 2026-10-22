@@ -7,7 +7,7 @@
 import subprocess
 import sys
 
-from common import DATA, day_dir, previous_worldview, today
+from utils.common import DATA, day_dir, previous_worldview, today
 
 STAGES = {"pre": ["fetch.py", "digest.py", "screen.py"], "post": ["validate.py", "agents.py", "track.py", "site.py"]}
 

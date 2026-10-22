@@ -12,7 +12,8 @@ from concurrent.futures import ThreadPoolExecutor
 import yfinance as yf
 
 import watchlist
-from common import day_dir, today, segment_of, write_json
+from utils.common import day_dir, today, segment_of, write_json
+from utils.scoring import rank
 
 SHORTLIST = 8
 PER_SEGMENT = 3
@@ -66,20 +67,6 @@ def metrics(t, i, seg):
     return m
 
 
-def rank(rows):
-    for key, (w, higher) in FACTORS.items():
-        vals = sorted(r[key] for r in rows if r[key] is not None)
-        for r in rows:
-            if r[key] is None:
-                r[f"rank_{key}"] = 0.5
-            else:
-                pos = vals.index(r[key]) / max(len(vals) - 1, 1)
-                r[f"rank_{key}"] = pos if higher else 1 - pos
-    for r in rows:
-        r["score"] = round(sum(r[f"rank_{k}"] * w for k, (w, _) in FACTORS.items()), 3)
-    return sorted(rows, key=lambda r: r["score"], reverse=True)
-
-
 def pct(x):
     return f"{x * 100:+.0f}%" if x is not None else "–"
 
@@ -94,7 +81,7 @@ def main():
     watch = watchlist.load()
     cooled = watchlist.excluded(watch, today())
     on_watch = ", ".join(f"{t} ({w['segment']})" for t, w in watchlist.active(watch).items())
-    eligible = rank([r for r in rows if r["passes_gate"] and r["ticker"] not in cooled])
+    eligible = rank([r for r in rows if r["passes_gate"] and r["ticker"] not in cooled], FACTORS)
     shortlist, per_seg = [], {}
     for r in eligible:
         if per_seg.get(r["segment"], 0) < PER_SEGMENT:

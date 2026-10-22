@@ -16,7 +16,8 @@ from email.utils import parsedate_to_datetime
 
 import yfinance as yf
 
-from common import MACRO_NAMES as MACRO, day_dir, today, universe, segment_of, write_json
+from constants.market import MACRO_NAMES as MACRO
+from utils.common import day_dir, today, universe, segment_of, write_json
 
 UA = {"User-Agent": "Mozilla/5.0 (gene-research)"}
 LOOKBACK = timedelta(hours=36)
