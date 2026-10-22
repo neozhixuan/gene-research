@@ -26,7 +26,8 @@ def main():
     d = day_dir()
     market = read_json(d / "market.json", {})
     sources = read_json(d / "sources.json", {})
-    news = [json.loads(line) for line in open(d / "news.jsonl")]
+    with open(d / "news.jsonl") as f:
+        news = [json.loads(line) for line in f]
     news = [it for it in news if it["tickers"] or RELEVANT.search(f"{it['title']} {it['summary']}")][:MAX_ITEMS]
     segs = universe()["segments"]
     seg_of = {t: s for s, ts in segs.items() for t in ts}

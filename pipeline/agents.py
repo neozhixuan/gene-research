@@ -101,7 +101,11 @@ def run_one(ticker, quick_model, usage):
 
 def upsert_ledger(rows):
     """Add today's picks, or fill in ratings for picks whose earlier run failed. Prices at pick never change."""
-    old = list(csv.DictReader(open(LEDGER))) if LEDGER.exists() else []
+    if LEDGER.exists():
+        with open(LEDGER) as f:
+            old = list(csv.DictReader(f))
+    else:
+        old = []
     index = {(r["date"], r["ticker"]): r for r in old}
     for r in rows:
         if (prev := index.get((r["date"], r["ticker"]))):

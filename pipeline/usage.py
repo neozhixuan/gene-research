@@ -45,7 +45,11 @@ def main():
            "claude_cost_usd": round(claude["cost_usd"], 4) if "cost_usd" in claude else "",
            "gemini_calls": gemini["calls"], "gemini_input": gemini["input_tokens"], "gemini_output": gemini["output_tokens"],
            "ta_runs": runs}
-    rows = [r for r in (csv.DictReader(open(LEDGER)) if LEDGER.exists() else []) if r["date"] != today()] + [row]
+    existing = []
+    if LEDGER.exists():
+        with open(LEDGER) as f:
+            existing = list(csv.DictReader(f))
+    rows = [r for r in existing if r["date"] != today()] + [row]
     with open(LEDGER, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS)
         w.writeheader()

@@ -32,7 +32,11 @@ def correct(rating, excess):
 
 def main():
     path = DATA / "picks.csv"
-    rows = list(csv.DictReader(open(path))) if path.exists() else []
+    if path.exists():
+        with open(path) as f:
+            rows = list(csv.DictReader(f))
+    else:
+        rows = []
     if not rows:
         write_json(DATA / "tracking.json", {"date": today(), "picks": [], "scorecard": {}})
         print("no picks yet")
