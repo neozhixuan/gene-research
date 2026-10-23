@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-23",
+  "previous": "2026-10-22",
+  "headline": "Meta's spending outlook turned the bounce into a rout: semis -6.0%, optics -10.8%, and the market is now asking who pays for the build-out, not whether demand exists.",
+  "regime": "Every AI segment fell hard (semis ETF -6.0% on the day, -13.0% on the month; networking/optical -10.8%; foundry equipment -9.0%) while the Nasdaq lost 2.6% and the VIX rose to 19.7. The 10-year yield dipped to 4.95% as money fled to Treasuries, which is risk-off rather than relief, and crude at $100 (Brent near $115 in headlines) keeps inflation and rates a threat. The shock is financing: BofA flags investor reluctance to fund AI infrastructure and OpenAI cut its valuation target, while orders still look fine (Western Digital beat, hardware demand intact). Only ai_software (-1.8%) held up.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 72,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Vertiv and Nvidia target a 10-week cut in AI power and cooling set-up time, so deployment speed is the constraint being attacked (7e8e1943fe55)",
+        "Musk says AI is short on power (d6da5e143d40)",
+        "Eaton is getting upward earnings revisions even after a 6% drop (f3eaf91f024f, 963998a389ad)"
+      ],
+      "change": "weaker",
+      "change_note": "-3: the constraint is intact, but grid equipment fell 8.2% on the day (GEV -11%, PWR -8%, POWL -11%) because financing, not physical scarcity, is now the binding risk."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 66,
+      "segments": ["compute", "servers", "hyperscalers"],
+      "evidence": [
+        "Western Digital beat revenue expectations on AI storage demand (2d3d9963978a)",
+        "Nebius says GPU rental prices keep running ahead of plan (9e1871791046)",
+        "AMD has booked gigawatts of accelerator commitments with 50% revenue growth (447a42693de8)"
+      ],
+      "change": "weaker",
+      "change_note": "-6: orders are fine, but OpenAI cutting its valuation target by $150B (d6cbed05b021) shows the end-customer funding can shrink, and stocks sold off on good numbers."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 78,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "CoreWeave, NuScale and others hit 52-week lows on debt fears (82492ea6fadf)",
+        "Nebius borrowed $3.5B and the terms suggest it is buying time (9e1871791046)",
+        "The segment is down 29.8% on the month and 11.2% over five days (digest tape)"
+      ],
+      "change": "stronger",
+      "change_note": "+6: new 52-week lows and another large borrowing; Goldman's upgrade of CoreWeave (d835ba8e2de5) is one voice against a falling tape."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 52,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Western Digital beat estimates handily and the stock still did not respond (976b6e96d1df)",
+        "SK Hynix scrapped its US IPO of the memory unit, read as a warning signal for the AI trade (1e74e44c3cbf)",
+        "The segment is down 26.6% on the month, SOXX and DRAM down 24-42% from highs (f5412226b26f)"
+      ],
+      "change": "weaker",
+      "change_note": "-3: good results met no buying again and the SK Hynix IPO pull suggests funding appetite is thinning; cheap multiples still limit the downside."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 66,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Meta led the AI rout (down about 7%, -11.9% over five days) as its spending outlook left financing unanswered (8e61083f95a7, 8439969405c6)",
+        "BofA sees growing investor reluctance to fund AI infrastructure (b62e92569b9b)",
+        "Bond market is warning on the AI infrastructure build-out (62ac909d0520)"
+      ],
+      "change": "stronger",
+      "change_note": "+11: the market reacted to capex for the first time as a funding problem, which is the thesis."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 62,
+      "segments": ["compute", "memory_storage"],
+      "evidence": [
+        "Nasdaq fell below its 50-day line, semis -6.0% in a day (0a1526ef7f42)",
+        "Retail sentiment on SPY and DIA was extremely bearish premarket (2a09212edcdc)",
+        "Yields at 4.95% with oil at five-month highs keep the discount rate high (514df5a01d41, 1485421369dd)"
+      ],
+      "change": "stronger",
+      "change_note": "+7: a 6% single-day semis drop is what crowded positioning unwinding looks like; the yield fall is a flight to safety, not a relief."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "Down 16.7% on the month; demand is real but no price floor until financing worries ease." },
+    "foundry_equipment": { "stance": "neutral", "note": "Worst 5d move after optics at -10.8%; cyclical and crowded." },
+    "memory_storage": { "stance": "overweight", "note": "Down 26.6% on the month on single-digit forward P/Es (WDC 9.6x); downside is cushioned if the cycle holds." },
+    "networking_optical": { "stance": "underweight", "note": "-10.8% on the day, -21.7% on the month with Coherent -12%; no valuation cushion." },
+    "servers": { "stance": "neutral", "note": "Dell -6.8%; HPE at 11.8x forward earnings is the only cheap entry but margins are thin." },
+    "power_nuclear": { "stance": "overweight", "note": "Keep to cash-generating producers; pre-revenue nuclear is falling hardest (LEU -18% over five days)." },
+    "grid_electrical": { "stance": "overweight", "note": "Physical bottleneck intact, selling is financing fear; prefer profitable names with estimate upgrades such as Eaton." },
+    "cooling_thermal": { "stance": "overweight", "note": "Vertiv/Nvidia deployment speed-up and nVent's AMD cooling deal; Vertiv and Modine report soon." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "52-week lows and rising debt; avoid until financing clears." },
+    "hyperscalers": { "stance": "underweight", "note": "Capex is now being punished (Meta -11.9% in five days); wait for funding clarity." },
+    "ai_software": { "stance": "neutral", "note": "Held up (-1.8%, flat on the month) but is momentum, not a bottleneck play." }
+  },
+  "risks": [
+    "Further AI funding doubts (OpenAI valuation cut, BofA warning) could cut capex plans and hit the whole supplier chain.",
+    "Oil near $100-115 on Middle East conflict could keep inflation and yields elevated.",
+    "A VIX rising toward 20 and Nasdaq below its 50-day line point to forced selling in crowded names.",
+    "Neocloud debt stress (CoreWeave, Nebius) could spread to GPU, power and cooling suppliers through cancelled orders.",
+    "Memory earnings may be at peak cycle; SK Hynix pulling its IPO is a warning."
+  ],
+  "watch": [
+    "Whether the Micron-led chip rebound holds on Monday after the Friday bounce.",
+    "Amazon earnings on Oct. 29 for a read on capex and financing.",
+    "Vertiv, GE Vernova and Modine earnings for power and cooling demand.",
+    "CoreWeave and Nebius funding costs and their 52-week lows.",
+    "The 10-year yield against 5% and the Fed meeting."
+  ]
+}

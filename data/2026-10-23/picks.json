@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-23",
+  "picks": [
+    {
+      "ticker": "NVT",
+      "segment": "grid_electrical",
+      "why": "nVent sells rack-level cooling and electrical enclosures, with revenue up 53%, a 19% operating margin and an AMD cooling deal, at 18.8x forward earnings and 31% below its high. It sits where power and cooling limit the build-out, and the watchlist has no grid or cooling name.",
+      "risk": "A funding-driven cut to data-centre capex would hit orders before the physical constraint helps.",
+      "thesis_ids": ["power-is-the-binding-constraint"]
+    },
+    {
+      "ticker": "HPE",
+      "segment": "servers",
+      "why": "HPE trades at 11.8x forward earnings with a 6% free cash flow yield and 34% revenue growth, the best cash-flow price on the shortlist and well above the 2% typical of its peers. It gives AI demand exposure without neocloud credit risk.",
+      "risk": "A 13% operating margin could compress if AI server mix grows and customers lose financing.",
+      "thesis_ids": ["ai-demand-exceeds-supply"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "WDC", "reason": "Memory/storage already has MU and SNDK on the watchlist, and the stock did not rally on a beat." },
+    { "ticker": "STX", "reason": "Same segment as WDC with a 1% FCF yield; memory is covered." },
+    { "ticker": "ONTO", "reason": "Foundry equipment is neutral and 2% FCF yield with a 49% drawdown offers no cushion." },
+    { "ticker": "JBL", "reason": "Same segment as HPE with a 6% operating margin." },
+    { "ticker": "AVGO", "reason": "Compute is neutral and a $1.5T market cap leaves little downside protection." },
+    { "ticker": "CORZ", "reason": "Neocloud segment is underweight on credit stress and 81x forward P/E." }
+  ]
+}

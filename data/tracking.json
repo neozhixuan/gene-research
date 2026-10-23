@@ -1,55 +1,55 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "summary": {
-    "picks": 4,
-    "avg_vs_qqq": -0.0045,
+    "picks": 6,
+    "avg_vs_qqq": -0.0303,
     "beating_qqq": 0
   },
   "scorecard": {},
   "baselines": {
-    "pick_days": 2,
+    "pick_days": 3,
     "strategies": {
       "picks": {
         "label": "Claude's picks",
-        "days": 2,
-        "avg_return": -0.0062,
-        "avg_vs_qqq": -0.0046
+        "days": 3,
+        "avg_return": -0.0505,
+        "avg_vs_qqq": -0.0304
       },
       "ta_positive": {
         "label": "Picks rated Buy / Overweight",
-        "days": 1,
-        "avg_return": 0.0,
-        "avg_vs_qqq": 0.0016
+        "days": 2,
+        "avg_return": -0.0292,
+        "avg_vs_qqq": -0.0091
       },
       "screen_top": {
         "label": "Screen's #1 (no AI)",
-        "days": 2,
-        "avg_return": -0.0055,
-        "avg_vs_qqq": -0.0039
+        "days": 3,
+        "avg_return": -0.0526,
+        "avg_vs_qqq": -0.0325
       },
       "shortlist_avg": {
         "label": "Random shortlist pick (average)",
-        "days": 2,
-        "avg_return": -0.0026,
-        "avg_vs_qqq": -0.001
+        "days": 3,
+        "avg_return": -0.0473,
+        "avg_vs_qqq": -0.0272
       },
       "universe": {
         "label": "Whole universe, equal weight",
-        "days": 2,
-        "avg_return": -0.0016,
-        "avg_vs_qqq": 0.0
+        "days": 3,
+        "avg_return": -0.0482,
+        "avg_vs_qqq": -0.0281
       },
       "QQQ": {
         "label": "QQQ (Nasdaq-100)",
-        "days": 2,
-        "avg_return": -0.0016,
+        "days": 3,
+        "avg_return": -0.0201,
         "avg_vs_qqq": 0.0
       },
       "SMH": {
         "label": "SMH (chip stocks)",
-        "days": 2,
-        "avg_return": -0.0015,
-        "avg_vs_qqq": 0.0001
+        "days": 3,
+        "avg_return": -0.0409,
+        "avg_vs_qqq": -0.0208
       }
     }
   },
@@ -58,6 +58,42 @@
     "hold_band": 0.05
   },
   "picks": [
+    {
+      "date": "2026-10-23",
+      "ticker": "NVT",
+      "kind": "new",
+      "segment": "grid_electrical",
+      "price": "127.67",
+      "qqq": "704.47",
+      "smh": "523.35",
+      "rating": "Overweight",
+      "trader": "Buy",
+      "research_manager": "Overweight",
+      "now": 127.67,
+      "return": -0.0,
+      "vs_qqq": 0.0,
+      "vs_smh": 0.0,
+      "age_days": 0,
+      "correct": null
+    },
+    {
+      "date": "2026-10-23",
+      "ticker": "HPE",
+      "kind": "new",
+      "segment": "servers",
+      "price": "55.47",
+      "qqq": "704.47",
+      "smh": "523.35",
+      "rating": "Hold",
+      "trader": "Hold",
+      "research_manager": "Hold",
+      "now": 55.47,
+      "return": 0.0,
+      "vs_qqq": 0.0,
+      "vs_smh": 0.0,
+      "age_days": 0,
+      "correct": null
+    },
     {
       "date": "2026-10-22",
       "ticker": "NRG",
@@ -69,11 +105,11 @@
       "rating": "Overweight",
       "trader": "Buy",
       "research_manager": "Overweight",
-      "now": 99.8,
-      "return": 0.0,
-      "vs_qqq": 0.0,
-      "vs_smh": 0.0,
-      "age_days": 0,
+      "now": 94.38,
+      "return": -0.0543,
+      "vs_qqq": -0.0257,
+      "vs_smh": 0.0056,
+      "age_days": 1,
       "correct": null
     },
     {
@@ -87,11 +123,11 @@
       "rating": "Overweight",
       "trader": "Buy",
       "research_manager": "Overweight",
-      "now": 913.67,
-      "return": -0.0,
-      "vs_qqq": -0.0,
-      "vs_smh": -0.0,
-      "age_days": 0,
+      "now": 856.49,
+      "return": -0.0626,
+      "vs_qqq": -0.034,
+      "vs_smh": -0.0027,
+      "age_days": 1,
       "correct": null
     },
     {
@@ -105,11 +141,11 @@
       "rating": "Hold",
       "trader": "Hold",
       "research_manager": "Hold",
-      "now": 359.49,
-      "return": -0.0136,
-      "vs_qqq": -0.0104,
-      "vs_smh": -0.0107,
-      "age_days": 1,
+      "now": 331.42,
+      "return": -0.0907,
+      "vs_qqq": -0.0589,
+      "vs_smh": -0.028,
+      "age_days": 2,
       "correct": null
     },
     {
@@ -123,11 +159,11 @@
       "rating": "Hold",
       "trader": "Hold",
       "research_manager": "Hold",
-      "now": 1378.22,
-      "return": -0.011,
-      "vs_qqq": -0.0077,
-      "vs_smh": -0.0081,
-      "age_days": 1,
+      "now": 1260.93,
+      "return": -0.0952,
+      "vs_qqq": -0.0634,
+      "vs_smh": -0.0325,
+      "age_days": 2,
       "correct": null
     }
   ]

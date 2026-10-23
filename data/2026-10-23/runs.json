@@ -1,0 +1,12 @@
+[
+  {
+    "ticker": "NVT",
+    "segment": "grid_electrical",
+    "kind": "new"
+  },
+  {
+    "ticker": "HPE",
+    "segment": "servers",
+    "kind": "new"
+  }
+]

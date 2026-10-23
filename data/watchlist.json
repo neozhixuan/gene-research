@@ -1,4 +1,16 @@
 {
+  "HPE": {
+    "segment": "servers",
+    "added": "2026-10-23",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-10-23",
+        "rating": "Hold",
+        "kind": "new"
+      }
+    ]
+  },
   "MU": {
     "segment": "memory_storage",
     "added": "2026-10-22",
@@ -18,6 +30,18 @@
     "checks": [
       {
         "date": "2026-10-22",
+        "rating": "Overweight",
+        "kind": "new"
+      }
+    ]
+  },
+  "NVT": {
+    "segment": "grid_electrical",
+    "added": "2026-10-23",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-10-23",
         "rating": "Overweight",
         "kind": "new"
       }
