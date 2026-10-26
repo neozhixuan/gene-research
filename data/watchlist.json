@@ -11,6 +11,18 @@
       }
     ]
   },
+  "JBL": {
+    "segment": "servers",
+    "added": "2026-10-26",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-10-26",
+        "rating": null,
+        "kind": "new"
+      }
+    ]
+  },
   "MU": {
     "segment": "memory_storage",
     "added": "2026-10-22",
@@ -20,6 +32,11 @@
         "date": "2026-10-22",
         "rating": "Overweight",
         "kind": "new"
+      },
+      {
+        "date": "2026-10-26",
+        "rating": "Hold",
+        "kind": "recheck"
       }
     ]
   },
@@ -67,6 +84,18 @@
       {
         "date": "2026-10-21",
         "rating": "Hold",
+        "kind": "new"
+      }
+    ]
+  },
+  "WDC": {
+    "segment": "memory_storage",
+    "added": "2026-10-26",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-10-26",
+        "rating": "Underweight",
         "kind": "new"
       }
     ]

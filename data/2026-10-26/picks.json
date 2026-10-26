@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-26",
+  "picks": [
+    {
+      "ticker": "WDC",
+      "segment": "memory_storage",
+      "why": "WDC trades at 8.7x forward earnings with +56% revenue growth and a 48% operating margin, 57% below its 52-week high, so much of the cycle risk is already priced in. It ties to the memory thesis and to storage demand from the AI build-out, with Seagate's results tomorrow as a read-across.",
+      "risk": "A 2% FCF yield means the cheap multiple depends on peak-cycle earnings holding; a storage downturn would make it a value trap.",
+      "thesis_ids": ["memory-supercycle-priced-as-peak", "ai-demand-exceeds-supply"]
+    },
+    {
+      "ticker": "JBL",
+      "segment": "servers",
+      "why": "Jabil has a 5% FCF yield, 12.4x forward earnings and +29% revenue growth, the best cash-flow cover on the shortlist, and the servers segment is covered only by HPE. It is a contract manufacturer of AI hardware, so it benefits from demand without carrying the neocloud debt.",
+      "risk": "A 6% operating margin leaves little room if hyperscaler capex is cut after this week's earnings.",
+      "thesis_ids": ["ai-demand-exceeds-supply", "hyperscaler-capex-squeezes-cash-flow"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "STX", "reason": "Same segment as WDC and reports tomorrow, so the rating would be set by a binary print; 1% FCF yield." },
+    { "ticker": "CRDO", "reason": "Networking/optical is underweight and the stock is 19% below its 200-day line with a 1% FCF yield." },
+    { "ticker": "CORZ", "reason": "Neocloud segment under credit stress and 80x forward earnings." },
+    { "ticker": "AVGO", "reason": "Compute is neutral; $1.5T market cap and 2% FCF yield offer little downside protection." },
+    { "ticker": "CLS", "reason": "Fell 14.4% in five days, 2% FCF yield; JBL is the better cash-flow server name." },
+    { "ticker": "ONTO", "reason": "Foundry equipment is neutral and crowded, 2% FCF yield." }
+  ]
+}

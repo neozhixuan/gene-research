@@ -88,3 +88,33 @@ DECISION:
 
 <!-- ENTRY_END -->
 
+[2026-10-26 | WDC | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Initiate an underweight defensive posture on WDC by reducing or avoiding aggressive entry until technical stabilization occurs. Position sizing should be kept minimal or avoided entirely, respecting the ongoing institutional distribution phase. The time horizon for monitoring a potential structural shift spans the next 3-6 months.
+
+**Investment Thesis**: The investment thesis is driven by the severe technical weakness and structural headwinds highlighted by the conservative and neutral risk analysts. WDC is trading well below its key 50-day SMA of 432.95 and 200-day SMA of 414.47, trapped in a firm bearish trend with negative momentum indicated by an RSI of 35.75. While the aggressive analyst points to an attractive forward P/E of 8.69 and projected 72% revenue growth as a deep discount, the conservative and neutral perspectives correctly identify that low valuation metrics do not act as support levels during an active institutional distribution phase and broad sector rotation out of hardware. Persistent insider selling throughout 2026 further invalidates the retail buy-the-dip narrative. The Bollinger lower band at 313.10 remains the primary level to watch for potential selling exhaustion, and entering at current levels of 343.67 without confirmation risks catching a falling knife in a high-volatility environment with an ATR of 24.79. A shift to a more constructive rating would require a sustained move and hold above short-term moving averages like the 10-day EMA at 366.10, proving genuine market intent rather than speculative rebounding.
+
+**Price Target**: 313.1
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-10-26 | MU | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Maintain a Hold stance on MU, keeping the full $10,000 in cash reserves. Do not establish new exposure until the stock finds a firm support floor and demonstrates a technical momentum reversal. Monitor for a potential test of the 200-day SMA at $731.89 for future entry evaluation.
+
+**Investment Thesis**: The debate highlights a stark conflict between fundamental upside and short-term technical deterioration. The aggressive camp points to massive cash reserves, an 80.68% operating margin, a forward P/E of 4.24, and strong AI memory demand. However, the conservative and neutral analysts present compelling evidence that outweighs immediate buying urgency, including heavy institutional selling by ETFs like SOXX, negative momentum indicators with a MACD of -35.37, an RSI of 38.18, and high volatility reflected by an ATR of 47.84. Furthermore, persistent insider selling and declining PC demand present near-term headwinds that validate a cautious, defensive approach. While a pilot position was proposed by the neutral analyst, the prevailing technical breakdown and risk of catching a falling knife justify maintaining a disciplined Hold until trend confirmation is established. A change in stance would require a verified base above support and a positive MACD histogram shift.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+

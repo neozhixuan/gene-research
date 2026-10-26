@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-26",
+  "previous": "2026-10-23",
+  "headline": "Musk's 'guppy-level death' warning and a record CoreWeave debt cost turned the AI worry from demand to who can still borrow: neoclouds -31% on the month while ai_software rose 9.2% in five days.",
+  "regime": "The AI-bottleneck complex is still in a financing-driven drawdown: the semis ETF is -12.2% on the month and -2.3% over five days, with grid (-9.5% 5d), networking/optical (-9.0%) and power (-7.6%) hit hardest, even though semis ticked up 0.7% today. The 10-year yield sits at 4.99% with crude at $101 and a Fed meeting this week, so the discount rate stays high, and the VIX is up 20.7% on the month. Only ai_software (+9.2% 5d) is rising, which is rotation away from capital-heavy infrastructure, not confirmation of the build-out. Microsoft, Alphabet and Amazon report this week and will decide whether capex is funded.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 72,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Constellation signed a 3,590 MW package with Google including 890 MW of new nuclear uprates (57003b30755d)",
+        "GE Vernova's gigawatts of gas power matter more than its backlog going into Oct. 28 earnings (79fa3a2ff8d4)",
+        "Grid fell 9.5% over five days (PWR -13.5%) and Vistra is -17% in three months despite a $4.2B nuclear loan offer, so the market is pricing financing, not scarcity (5526686953fd)"
+      ],
+      "change": "unchanged",
+      "change_note": "Physical demand evidence (Google deals) offsets price weakness; neither side moved enough to change confidence."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 62,
+      "segments": ["compute", "servers", "hyperscalers"],
+      "evidence": [
+        "Wedbush calls Super Micro's preliminary Q1 results a clear positive (2457ac26ffe1)",
+        "AMD's Helios rack blueprint is signing Dell, Lenovo, Cisco, HPE and Supermicro (5845e440b484)",
+        "Against: Nvidia has effectively lost China and Musk expects half-built data centres as debt markets shut (6defdfbb9bec, fb65ef6c8104)"
+      ],
+      "change": "weaker",
+      "change_note": "-4: order signals are thin today and the counter-evidence is about who can pay, which is the same funding risk."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 82,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "CoreWeave is down 38% in October and its debt costs hit a record while SpaceX borrows $40B (52aa20b40d88, 10dcc7fcaa17)",
+        "Nebius's CEO admits asset-backed and debt financing has tightened (19dc6de4b8ea)",
+        "Cipher Digital fell 30% after a zero-coupon note sale despite a $9B backlog (321b691362f3)"
+      ],
+      "change": "stronger",
+      "change_note": "+4: the segment is -31.1% on the month and the stress is now visible in bond pricing and a second issuer, not just equity."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 52,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Micron is still up 208% in 2026 with quarterly revenue more than doubled (9b50bcf74f21)",
+        "The segment is down 25.6% on the month, so the multiple has already compressed (digest tape)",
+        "Seagate reports tomorrow and is the next test of storage demand (22fd203f597c)"
+      ],
+      "change": "unchanged",
+      "change_note": "No new fundamental data; Seagate's print tomorrow is the next test."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 68,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Meta is raising $35B for AI and creating a new share class so Zuckerberg can raise capital without giving up votes (e271c0e808cb, 194c5b114e32)",
+        "Oracle's record AI backlog sits against a stretched balance sheet (a86f68b79f86)",
+        "Meta is -9.4% over five days (digest tape)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: funding is now external and dilutive of control, but Microsoft, Alphabet and Amazon earnings this week could change the picture."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 64,
+      "segments": ["compute", "memory_storage"],
+      "evidence": [
+        "The bond market is warning tech investors of more poundings (79fe7960d360)",
+        "The 10-year is 4.99% with oil at $101 and a Fed hiking cycle in the background (76043034d9e0, 98e6da7732fb)",
+        "Semis ETF -12.2% and VIX +20.7% on the month (digest tape)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: yields touched 5% and a Fed decision is due this week."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "-15.0% on the month; AMD's rack blueprint helps but Nvidia's China loss and funding risk cap it." },
+    "foundry_equipment": { "stance": "neutral", "note": "-7.1% over five days (LRCX -12.8%); cyclical and crowded." },
+    "memory_storage": { "stance": "overweight", "note": "-25.6% on the month on single-digit forward P/Es; Seagate reports tomorrow." },
+    "networking_optical": { "stance": "underweight", "note": "-9.0% over five days (FN -13.4%), -22.6% on the month; no valuation cushion." },
+    "servers": { "stance": "neutral", "note": "Supermicro and Jabil show steady demand; Celestica -14.4% over five days shows the risk." },
+    "power_nuclear": { "stance": "overweight", "note": "Google deals back demand; stick to cash-generating producers, not pre-revenue nuclear." },
+    "grid_electrical": { "stance": "overweight", "note": "-9.5% over five days is financing fear on an intact bottleneck; Hubbell reports tomorrow, GE Vernova Oct. 28." },
+    "cooling_thermal": { "stance": "overweight", "note": "Vertiv closed a services acquisition; -6.5% over five days with TT the best at -3.0%." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "-31.1% on the month with record debt costs; avoid until financing clears." },
+    "hyperscalers": { "stance": "underweight", "note": "Capex now needs outside funding; wait for Microsoft, Alphabet and Amazon." },
+    "ai_software": { "stance": "neutral", "note": "+9.2% over five days is rotation and momentum, not a bottleneck play." }
+  },
+  "risks": [
+    "Neocloud credit stress (CoreWeave, Nebius, Cipher) could spread to GPU, power and cooling suppliers through cancelled or delayed orders.",
+    "A hawkish Fed this week with the 10-year at 4.99% would extend the multiple compression in crowded AI names.",
+    "Hyperscaler earnings (Microsoft, Alphabet Wed; Amazon Thu) could cut capex guidance and hit the whole supplier chain.",
+    "Oil at $101 on Middle East tension keeps inflation and rate risk elevated.",
+    "Memory earnings may be at peak cycle after Micron's 208% year-to-date gain."
+  ],
+  "watch": [
+    "Seagate and Teradyne results tomorrow, and Hubbell's report, for storage, test and grid demand.",
+    "Fed decision this week and whether the 10-year holds under 5%.",
+    "Microsoft, Alphabet and Amazon capex commentary Wednesday and Thursday.",
+    "GE Vernova on Oct. 28 for gigawatts of gas power orders.",
+    "CoreWeave bond yields and whether other neoclouds can raise debt."
+  ],
+  "monday_note": "Digest-only sketch gave five of the six theses on today's evidence (neocloud credit, capex funding, high rates, power backed by Google deals, memory compression). ai-demand-exceeds-supply is the one that mostly survives by carry-forward: today's digest has only Supermicro and AMD order signals against clear funding counter-evidence."
+}

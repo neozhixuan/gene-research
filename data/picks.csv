@@ -5,3 +5,6 @@ date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-10-22,MU,new,memory_storage,913.67,725.2,556.7,Overweight,Buy,Overweight
 2026-10-23,NVT,new,grid_electrical,127.67,704.47,523.35,Overweight,Buy,Overweight
 2026-10-23,HPE,new,servers,55.47,704.47,523.35,Hold,Hold,Hold
+2026-10-26,WDC,new,memory_storage,343.67,704.4,527.2,Underweight,Sell,Underweight
+2026-10-26,MU,recheck,memory_storage,877.55,704.4,527.2,Hold,Hold,Hold
+2026-10-26,JBL,new,servers,273.97,704.4,527.2,,,
