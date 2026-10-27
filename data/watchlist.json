@@ -1,4 +1,16 @@
 {
+  "CLS": {
+    "segment": "servers",
+    "added": "2026-10-27",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-10-27",
+        "rating": null,
+        "kind": "new"
+      }
+    ]
+  },
   "HPE": {
     "segment": "servers",
     "added": "2026-10-23",
@@ -49,6 +61,11 @@
         "date": "2026-10-22",
         "rating": "Overweight",
         "kind": "new"
+      },
+      {
+        "date": "2026-10-27",
+        "rating": "Hold",
+        "kind": "recheck"
       }
     ]
   },
@@ -64,29 +81,45 @@
       }
     ]
   },
-  "SNDK": {
-    "segment": "memory_storage",
-    "added": "2026-10-21",
+  "POWL": {
+    "segment": "grid_electrical",
+    "added": "2026-10-27",
     "status": "active",
     "checks": [
       {
-        "date": "2026-10-21",
+        "date": "2026-10-27",
         "rating": "Hold",
         "kind": "new"
       }
     ]
   },
-  "TLN": {
-    "segment": "power_nuclear",
+  "SNDK": {
+    "segment": "memory_storage",
     "added": "2026-10-21",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-10-21",
         "rating": "Hold",
         "kind": "new"
       }
-    ]
+    ],
+    "dropped": "2026-10-27",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
+  },
+  "TLN": {
+    "segment": "power_nuclear",
+    "added": "2026-10-21",
+    "status": "dropped",
+    "checks": [
+      {
+        "date": "2026-10-21",
+        "rating": "Hold",
+        "kind": "new"
+      }
+    ],
+    "dropped": "2026-10-27",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "WDC": {
     "segment": "memory_storage",

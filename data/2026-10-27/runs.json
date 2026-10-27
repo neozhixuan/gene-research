@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "POWL",
+    "segment": "grid_electrical",
+    "kind": "new"
+  },
+  {
+    "ticker": "NRG",
+    "segment": "power_nuclear",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "CLS",
+    "segment": "servers",
+    "kind": "new"
+  }
+]

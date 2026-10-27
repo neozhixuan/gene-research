@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-27",
+  "picks": [
+    {
+      "ticker": "POWL",
+      "segment": "grid_electrical",
+      "why": "Powell makes switchgear and power-control gear for utilities and data centres, a direct play on the grid bottleneck, with a 21% operating margin and a 3% FCF yield. It is 52% off its high at 22.5x forward earnings, which limits downside compared with the sector.",
+      "risk": "Revenue growth is only 9% and just 4 analysts cover it, so the grid thesis may not show up in its orders.",
+      "thesis_ids": ["power-is-the-binding-constraint"]
+    },
+    {
+      "ticker": "CLS",
+      "segment": "servers",
+      "why": "Celestica beat revenue and EPS, grew revenue 62% and pointed to 2028 demand, yet trades at 11.1x forward earnings, 48% off its high. A 10% operating margin and positive FCF suit the selection filter better than the neocloud names.",
+      "risk": "Thin margins and customer concentration in hyperscalers mean a capex cut would hit it hard, as the 17.9% five-day drop shows.",
+      "thesis_ids": ["ai-demand-exceeds-supply", "hyperscaler-capex-squeezes-cash-flow"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "CORZ", "segment": "datacenter_neocloud", "reason": "Neocloud credit stress and 83x forward P/E." },
+    { "ticker": "CRDO", "reason": "Networking fell 12.5% in five days and the price has no cushion at this stage." },
+    { "ticker": "STX", "reason": "Memory is already covered by three watchlist names and Seagate prints today." },
+    { "ticker": "LRCX", "reason": "Crowded cyclical equipment, -12.8% over five days." },
+    { "ticker": "TER", "reason": "27x forward P/E leaves little margin of safety." },
+    { "ticker": "ONTO", "reason": "Foundry equipment is neutral and weak; second-tier choice." }
+  ]
+}
