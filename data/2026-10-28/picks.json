@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-28",
+  "picks": [
+    {
+      "ticker": "VRT",
+      "segment": "cooling_thermal",
+      "why": "Vertiv has 24% revenue growth, a 20% operating margin and a 22.7x forward P/E, and the shortlist shows it 45% below its 52-week high even after today's report of 61% sales growth and organic orders over 100%. It is the one overweight segment with no name on the watchlist and ties directly to the power-is-the-binding-constraint thesis.",
+      "risk": "The 15% jump and FCF yield of only 3% leave little cushion if the Fed or hyperscaler capex disappoints.",
+      "thesis_ids": ["power-is-the-binding-constraint", "ai-demand-exceeds-supply"]
+    },
+    {
+      "ticker": "HUBB",
+      "segment": "grid_electrical",
+      "why": "Hubbell has 25% revenue growth, a 22% operating margin and an 18.9x forward P/E, and it is 23% below its high after falling on a guidance-lifting Q3. A beat-and-raise sold off is the sort of entry the grid-bottleneck thesis wants.",
+      "risk": "The market may be right that grid orders are peaking, and the stock is still 11% below its 200-day average.",
+      "thesis_ids": ["power-is-the-binding-constraint"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "STX", "reason": "Memory is already covered by MU and WDC and the stock fell 25% after a record print, so the market is still arguing about the peak." },
+    { "ticker": "ONTO", "reason": "Foundry equipment is a neutral segment and FCF yield is only 2%." },
+    { "ticker": "CRDO", "reason": "Networking is neutral and CRDO fell 12.5% last week despite sold-out optics elsewhere." },
+    { "ticker": "CORZ", "reason": "Neocloud with 87.6x forward P/E in an underweight segment." },
+    { "ticker": "LRCX", "reason": "Foundry equipment is neutral and down 8.6% in five days, with no sign of a turn." },
+    { "ticker": "TER", "reason": "Foundry equipment is neutral and 28.3x forward P/E is the highest of the equipment names." }
+  ]
+}

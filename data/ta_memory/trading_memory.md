@@ -148,3 +148,33 @@ DECISION:
 
 <!-- ENTRY_END -->
 
+[2026-10-28 | VRT | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Initiate an accumulation strategy for VRT with an initial tranche sized at 0.75x of a standard full allocation to capitalize on strong fundamental growth despite near-term technical weakness. Set a stop-loss at the $193.14 support level to manage downside risk, and monitor for stabilization or a test of lower support near the $180 range. The recommended holding period is medium-term.
+
+**Investment Thesis**: The investment thesis is driven by VRT's strong fundamental performance and positioning in the AI infrastructure build-out, highlighted by 61% YoY revenue growth, organic orders surging over 100%, and an appealing PEG ratio of 0.69. While the conservative analyst correctly points out bearish technical indicators such as trading below the 50-day and 200-day moving averages, a high Beta of 2.05, and insider selling, these risks are mitigated by a disciplined 0.75x position sizing and a defined stop loss at $193.14. The structural demand for power and cooling tech by hyperscalers outweighs short-term technical distribution and cyclical fears. What would change this thesis is a breakdown below the $193.14 support level confirming sustained structural bearish momentum or a decline in actual operational guidance.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-10-28 | NVT | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Initiate a phased entry in NVT utilizing a 0.5x position size at the current price of 134.53 to capture compelling valuation metrics, while reserving capital to scale down near the 120.82 support level. Maintain a stop loss at 120.82 with a medium-term horizon to ride the transition into AI infrastructure.
+
+**Investment Thesis**: The fundamental bull case for NVT decisively outweighs the short-term technical downtrend and insider selling concerns raised by the conservative analyst. With a compelling forward P/E of 19.86 and a PEG ratio of 0.8, the recent 20% pullback creates an asymmetric entry point driven by record backlogs and critical AI data center cooling tailwinds. While technical indicators such as the 50-day and 200-day SMAs reflect a confirmed downtrend, a staged 0.5x entry mitigates downside momentum risk while securing exposure ahead of a potential re-rating. The thesis would change if industrial softness erodes the fundamental growth trajectory or if the 120.82 support level fails.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+

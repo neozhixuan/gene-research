@@ -14,11 +14,25 @@
   "HPE": {
     "segment": "servers",
     "added": "2026-10-23",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-10-23",
         "rating": "Hold",
+        "kind": "new"
+      }
+    ],
+    "dropped": "2026-10-28",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
+  },
+  "HUBB": {
+    "segment": "grid_electrical",
+    "added": "2026-10-28",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-10-28",
+        "rating": null,
         "kind": "new"
       }
     ]
@@ -26,14 +40,16 @@
   "JBL": {
     "segment": "servers",
     "added": "2026-10-26",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-10-26",
         "rating": null,
         "kind": "new"
       }
-    ]
+    ],
+    "dropped": "2026-10-28",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "MU": {
     "segment": "memory_storage",
@@ -78,6 +94,11 @@
         "date": "2026-10-23",
         "rating": "Overweight",
         "kind": "new"
+      },
+      {
+        "date": "2026-10-28",
+        "rating": "Overweight",
+        "kind": "recheck"
       }
     ]
   },
@@ -120,6 +141,18 @@
     ],
     "dropped": "2026-10-27",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
+  },
+  "VRT": {
+    "segment": "cooling_thermal",
+    "added": "2026-10-28",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-10-28",
+        "rating": "Overweight",
+        "kind": "new"
+      }
+    ]
   },
   "WDC": {
     "segment": "memory_storage",

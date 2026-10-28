@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "VRT",
+    "segment": "cooling_thermal",
+    "kind": "new"
+  },
+  {
+    "ticker": "NVT",
+    "segment": "grid_electrical",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "HUBB",
+    "segment": "grid_electrical",
+    "kind": "new"
+  }
+]

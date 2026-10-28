@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-28",
+  "previous": "2026-10-27",
+  "headline": "Vertiv (+15%) and GE Vernova beat and raised on orders up over 100%, and SK Hynix sees memory shortage to 2030, so the bottleneck trade got hard earnings proof on the day before the Fed.",
+  "regime": "Another bounce inside a drawdown, but this one has earnings behind it: the semis ETF rose 3.0% and neoclouds 7.1% on the day, yet the semis are still -7.0% on the month and neoclouds -21.2%. The 10-year is 4.99% and crude $101.76 (+9.9% on the month), so the discount rate is still punishing long-duration names ahead of the Fed decision. Five-day returns are mixed (grid -2.9%, hyperscalers -4.1%, ai_software +7.9%), so money is still rotating rather than piling back into the build-out. The suppliers with real orders (Vertiv, GE Vernova, SK Hynix) are being paid; the spenders (Meta -10.7% on five days) are not.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 77,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Vertiv Q3 sales +61%, organic orders over 100%, guidance raised on all metrics, stock +15% (cc8431617a49, d516dda2b5b5)",
+        "GE Vernova beat EBITDA ($1.9B vs $1.7B), orders soared, guidance raised and it is buying Trench Group (a2a65c739347, 7e7e3af5b2d5)",
+        "Baker Hughes won a 1.1 GW integrated power and cooling order from a US tech client; Constellation got a $5B DOE loan for nuclear uprates (83cc3d6476e8, 161d786e5438)",
+        "Against: Hubbell fell on a guidance-lifting beat and the segment is -2.9% on five days (c3d2c6c1edf3)"
+      ],
+      "change": "stronger",
+      "change_note": "+5: the two reports we were waiting on both showed orders running well ahead of sales; the Hubbell reaction shows that good news is not automatically paid for."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 70,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "SK Hynix profit +632% and it expects demand to exceed supply through 2030 (38284399fdfa, ff9825d0b553)",
+        "Celestica revenue +83% on networking and compute demand (0c3973789b59)",
+        "Lumentum is up 383% in a year with fiscal 2026 revenue +83% (8baa4641742e)",
+        "Against: Amazon told coders to rein in AI use as costs mount; OpenAI is reportedly buying Google chips, a hit to Nvidia's leverage (beb0b02d481d, d7893caf2c65)"
+      ],
+      "change": "stronger",
+      "change_note": "+4: a memory maker's own multi-year shortage call and another server beat add supply-tightness evidence; Amazon's cost curbs are the first sign of end-user budget limits."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 76,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "Segment +7.1% on the day but still -21.2% on the month and +0.8% on five days, with CIFR -4.5% over five days (digest segments)",
+        "Meta's $25B stock sale drew five times the demand, so capital is available to the strongest borrowers, not the weakest (f2398ad178f4)",
+        "Yahoo feeds for CORZ, IREN, NBIS, CRWV and others failed today, so there is no fresh company news on them"
+      ],
+      "change": "weaker",
+      "change_note": "-4: the one-day bounce and strong demand for Meta's raise show funding is open for quality, but nothing here repairs neocloud balance sheets; the quality gate still drops most of them as cash-burners."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 62,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "SK Hynix says shortage lasts until 2030 and pledged $45B to shareholders; Micron, SanDisk and Western Digital rose in sympathy (38284399fdfa, a1df8b21dea8)",
+        "Segment is -19.8% on the month and Seagate fell 25% in a month despite record earnings and a raised outlook (71ae28d25374)",
+        "Against: the market is selling records, which is what a peak looks like (31f0ee31a52a)"
+      ],
+      "change": "stronger",
+      "change_note": "+6: management of the largest producer now says the shortage runs to 2030, while prices stay down about a fifth; the 'peak' pricing is the debate, not the demand."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 70,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Meta is -10.7% on five days and just raised $25B of equity (f2398ad178f4)",
+        "Amazon is cutting back coder AI use over budget overruns (beb0b02d481d)",
+        "Segment is -4.1% on five days while ai_software is +7.9%; Microsoft, Alphabet and the Fed report today (5656dc8596fe)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: Amazon's cost curbs and Meta's equity raise reinforce the cash squeeze; Microsoft and Alphabet tonight are the real test."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 60,
+      "segments": ["compute", "memory_storage"],
+      "evidence": [
+        "10-year at 4.99%, crude $101.76 (+9.9% on the month) and the dollar firm ahead of the Fed (digest tape, c6d940de3e8c)",
+        "Semis ETF is -7.0% on the month despite +3.0% today; VIX 17.44, up 8.5% on the month",
+        "Data center equipment stocks fell a median 23% since Oct. 6 despite record backlogs (b929e7241255)"
+      ],
+      "change": "unchanged",
+      "change_note": "Rates and oil have not moved enough either way, and the Fed decision is the next catalyst."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "+3.2% today but -7.6% on the month; OpenAI buying Google chips is a lever shift away from Nvidia." },
+    "foundry_equipment": { "stance": "neutral", "note": "-15.8% on the month and LRCX -8.6% over five days; demand is intact but the group is still being sold." },
+    "memory_storage": { "stance": "overweight", "note": "SK Hynix calls shortage through 2030 while the group is -19.8% on the month." },
+    "networking_optical": { "stance": "neutral", "note": "+7.0% today on the sold-out story but -12.2% on the month; chase nothing." },
+    "servers": { "stance": "neutral", "note": "Dell +8.8% and Celestica +83% sales, but CLS -7.7% on five days shows beats are not enough." },
+    "power_nuclear": { "stance": "overweight", "note": "Own producers with cash flow; Constellation's $5B DOE loan supports uprates." },
+    "grid_electrical": { "stance": "overweight", "note": "GE Vernova orders soar; Hubbell sold off on a beat, which helps entry prices." },
+    "cooling_thermal": { "stance": "overweight", "note": "Vertiv orders over 100% organic; the 15% jump costs some of the margin of safety." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "-21.2% on the month; a one-day bounce does not fix the debt." },
+    "hyperscalers": { "stance": "underweight", "note": "Meta -10.7% on five days and Amazon capping AI spend; wait for Microsoft and Alphabet." },
+    "ai_software": { "stance": "neutral", "note": "+7.9% over five days is rotation (CRWD +17.9%), not a bottleneck play." }
+  },
+  "risks": [
+    "A hawkish Fed with the 10-year at 4.99% and crude above $100 would extend multiple compression in crowded AI names.",
+    "Microsoft or Alphabet capex cuts tonight would hit the whole supplier chain despite strong supplier orders.",
+    "Amazon's AI cost curbs could spread to other end users and slow demand growth.",
+    "Neocloud credit stress could still reach GPU, power and cooling suppliers through cancelled orders.",
+    "Sell-the-news reactions (Hubbell, Seagate) show strong prints can still lose money."
+  ],
+  "watch": [
+    "Fed decision today and the 10-year against 5%.",
+    "Microsoft and Alphabet capex and cloud growth after the close.",
+    "Quanta (Oct. 29) and MasTec results for grid build-out demand.",
+    "Whether Vertiv and GE Vernova hold their gains over the next two sessions.",
+    "Anthropic's Nasdaq IPO terms and any neocloud debt raises."
+  ]
+}
