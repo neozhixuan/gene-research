@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "ONTO",
+    "segment": "foundry_equipment",
+    "kind": "new"
+  },
+  {
+    "ticker": "MU",
+    "segment": "memory_storage",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "AVGO",
+    "segment": "compute",
+    "kind": "new"
+  }
+]

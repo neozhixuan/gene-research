@@ -1,15 +1,29 @@
 {
+  "AVGO": {
+    "segment": "compute",
+    "added": "2026-10-29",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-10-29",
+        "rating": null,
+        "kind": "new"
+      }
+    ]
+  },
   "CLS": {
     "segment": "servers",
     "added": "2026-10-27",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-10-27",
         "rating": null,
         "kind": "new"
       }
-    ]
+    ],
+    "dropped": "2026-10-29",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "HPE": {
     "segment": "servers",
@@ -65,6 +79,11 @@
         "date": "2026-10-26",
         "rating": "Hold",
         "kind": "recheck"
+      },
+      {
+        "date": "2026-10-29",
+        "rating": "Overweight",
+        "kind": "recheck"
       }
     ]
   },
@@ -99,6 +118,18 @@
         "date": "2026-10-28",
         "rating": "Overweight",
         "kind": "recheck"
+      }
+    ]
+  },
+  "ONTO": {
+    "segment": "foundry_equipment",
+    "added": "2026-10-29",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-10-29",
+        "rating": "Overweight",
+        "kind": "new"
       }
     ]
   },
@@ -157,13 +188,15 @@
   "WDC": {
     "segment": "memory_storage",
     "added": "2026-10-26",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-10-26",
         "rating": "Underweight",
         "kind": "new"
       }
-    ]
+    ],
+    "dropped": "2026-10-29",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   }
 }

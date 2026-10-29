@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-29",
+  "previous": "2026-10-28",
+  "headline": "Microsoft's lighter capex and Alphabet's $9B cash burn (worst day in six years) put the spenders on trial, while suppliers with orders (Quanta, Trane, Vertiv) keep beating.",
+  "regime": "A risk-on bounce in the AI suppliers (semis ETF +1.7%, cooling +4.7%, memory +5.5%) sits on top of a month-long drawdown (semis -6.5%, neoclouds -18.1%, foundry equipment -17.2%). The 10-year yield is now 5.05% and crude $101.82 (+13.9% on the month), so the discount rate keeps capping multiples. The new signal is the buyers: Microsoft's capex fell short on delayed third-party capacity, Alphabet posted negative free cash flow for a second quarter, and software sold off again after ServiceNow and Fortinet beat. Suppliers with backlog are paid; anything exposed to hyperscaler or neocloud spending decisions is not.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 79,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Quanta beat Q3 revenue expectations and the stock soared (e7171357cf02)",
+        "Trane Q3 revenue +17.7%, full-year revenue guidance raised (b3020387a9a1, 0765dff5592e)",
+        "GE Vernova posted record backlog and raised cash guidance, and is buying Trench for $9bn (4bc5c4c91ce6, f8381a9a0963)",
+        "Against: GE Vernova keeps falling on good news and the grid segment is -1.7% on five days, VST -8.6% (4bc5c4c91ce6)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: another contractor and an HVAC maker confirm demand, but the market is still not paying for beats in grid and power, so the gain is small."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 66,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "Marvell is reportedly in late-stage talks to buy Lumentum, a bet that optics are scarce (901fadf664d1, 28f6af9539f4)",
+        "Microsoft commercial backlog at $677bn and Azure accelerating (fee8c573bdbf)",
+        "Against: Microsoft and Alphabet capex came in lighter and Samsung missed on profit, hitting INTC, AMD, AVGO, MU (aee72467f967)",
+        "Against: Microsoft cited delayed third-party capacity, which is a supply problem but also a spending delay (1b605a7cb225)"
+      ],
+      "change": "weaker",
+      "change_note": "-4: demand evidence is intact, but two hyperscalers spending less than expected is the first direct dent from the buyers."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 79,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "CRWV, NBIS, IREN, APLD fell after Microsoft's capex missed on delayed third-party capacity (1b605a7cb225)",
+        "IREN raised $363M of equipment financing against its GPUs, so it is borrowing against hardware (a884a611a78f)",
+        "Segment is -18.1% on the month; Galaxy passed on a tenant for its 830 MW Helios site (c960ca216f64)"
+      ],
+      "change": "stronger",
+      "change_note": "+3: Microsoft pushing out third-party capacity hits neocloud revenue timing directly while they keep borrowing against GPUs."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 62,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Segment +5.5% on the day, MU +7.6% on five days, yet -15.7% on the month (digest segments)",
+        "MU is on the Zacks Rank #1 growth list (b0dbf40272d4)",
+        "SK Hynix's shortage warning is lifting memory-linked equipment names like Onto (54ac05250198)",
+        "Against: Samsung's profit miss and lighter hyperscaler capex weigh on memory (aee72467f967)"
+      ],
+      "change": "unchanged",
+      "change_note": "The Samsung miss and the rebound offset each other; the segment is still down 16% on the month with the shortage call unchallenged."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 76,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Alphabet posted negative free cash flow of $9.07B, a second straight quarter of burn, and had its worst day in over six years (1f900bb0149d, 045d15df7e26)",
+        "Institutions sold Alphabet on a capex report that looked like a cash bonfire (90d80f5207a0)",
+        "META is -12.2% on five days; Google admits AI search earns less than regular search (eebeee3351e5)",
+        "Against: Microsoft rose on strong results and ORCL is +11.9% on five days (7c88ab25bbb8)"
+      ],
+      "change": "stronger",
+      "change_note": "+6: Alphabet's cash burn and the market's reaction are the test we flagged yesterday, and it failed; Microsoft's clean quarter keeps this from being uniform."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 63,
+      "segments": ["compute", "memory_storage"],
+      "evidence": [
+        "10-year at 5.05% and crude $101.82 (+13.9% on the month) (digest tape)",
+        "Semis ETF -6.5% on the month, Nasdaq -0.9%, while the S&P is +0.9% (digest tape)",
+        "Software 'crushed again' after beats from ServiceNow and Fortinet, a sign the market punishes anything priced for perfection (e060f51d5cf1)"
+      ],
+      "change": "stronger",
+      "change_note": "+3: the 10-year moved above 5% and good prints are being sold in software and grid."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "+2.5% today but -7.0% on the month; lighter hyperscaler capex caps it." },
+    "foundry_equipment": { "stance": "neutral", "note": "-17.2% on the month, TER -9.3% on five days; memory-linked metrology is the better corner." },
+    "memory_storage": { "stance": "overweight", "note": "Shortage call intact and the group is -15.7% on the month." },
+    "networking_optical": { "stance": "neutral", "note": "Lumentum deal talk is a takeover bid, not a fundamental signal; -11.0% on the month." },
+    "servers": { "stance": "neutral", "note": "Beats are not enough, and Super Micro still trades near $36." },
+    "power_nuclear": { "stance": "overweight", "note": "VST -8.6% on five days but contracts keep coming (NuScale-Doosan); own cash-flow producers." },
+    "grid_electrical": { "stance": "overweight", "note": "Quanta beat and GE Vernova buys Trench; the market is not paying yet, which helps entry prices." },
+    "cooling_thermal": { "stance": "overweight", "note": "Trane raised guidance and VRT is +14.5% on five days; less margin of safety after the run." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "Microsoft's delayed third-party capacity and GPU-backed borrowing; -18.1% on the month." },
+    "hyperscalers": { "stance": "underweight", "note": "Alphabet cash burn and META -12.2% on five days; Microsoft is the exception." },
+    "ai_software": { "stance": "neutral", "note": "Up 5.8% on the month, but ServiceNow and Fortinet sold off on beats." }
+  },
+  "risks": [
+    "More hyperscaler capex trims after Microsoft and Alphabet would hit the whole supplier chain despite strong supplier orders.",
+    "A 10-year yield above 5% with crude above $100 extends multiple compression in crowded AI names.",
+    "Neocloud financing stress could cancel or delay GPU, power and cooling orders.",
+    "Sell-the-news reactions (GE Vernova, ServiceNow) show strong prints can still lose money.",
+    "Amazon and Intel report after the close and could move the whole group."
+  ],
+  "watch": [
+    "Amazon and Intel results after the close for capex direction.",
+    "Whether the Marvell-Lumentum deal is announced next week and how optics names react.",
+    "The 10-year against 5.05% and crude against $100.",
+    "Eaton (Nov. 3) and Arista earnings for grid and networking demand.",
+    "Whether neocloud stocks hold their rebound after Microsoft's capacity delay."
+  ]
+}

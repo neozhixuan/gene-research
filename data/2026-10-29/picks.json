@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-29",
+  "picks": [
+    {
+      "ticker": "ONTO",
+      "segment": "foundry_equipment",
+      "why": "Onto trades at 19x forward earnings with +35% revenue growth and a 23% operating margin, 42% below its high, and SK Hynix's shortage warning puts its memory-linked inspection business back in focus. It ties to the memory shortage thesis without paying the neocloud or hyperscaler spending risk.",
+      "risk": "Lighter hyperscaler capex or a Samsung-style profit miss could push out memory tool orders, and the stock is still 14% below its 200-day average.",
+      "thesis_ids": ["memory-supercycle-priced-as-peak", "ai-demand-exceeds-supply"]
+    },
+    {
+      "ticker": "AVGO",
+      "segment": "compute",
+      "why": "Broadcom has +86% revenue growth and a 54% operating margin at 18x forward earnings, 29% off its high, which is real cash flow at a price that limits downside. Custom AI silicon is the beneficiary if buyers shift away from Nvidia while spending stays high.",
+      "risk": "Broadcom fell with INTC, AMD and MU on lighter Microsoft and Alphabet capex, so it is directly exposed to hyperscaler spending cuts.",
+      "thesis_ids": ["ai-demand-exceeds-supply", "ai-trade-crowded-at-high-rates"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "PRIM", "reason": "Revenue -11% and a negative operating margin do not fit the quality bar despite the grid theme." },
+    { "ticker": "DELL", "reason": "Already 51% above its 200-day average, so there is little margin of safety." },
+    { "ticker": "CORZ", "reason": "92x forward earnings and a neocloud we rate underweight." },
+    { "ticker": "CRDO", "reason": "Optical sentiment is driven by takeover talk; the 1% FCF yield gives no cushion." },
+    { "ticker": "TSM", "reason": "Same segment as ONTO and only 10% off its high." },
+    { "ticker": "ASML", "reason": "Same segment as ONTO; 26x forward earnings is dearer than ONTO." }
+  ]
+}

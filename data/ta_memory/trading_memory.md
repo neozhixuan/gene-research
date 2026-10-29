@@ -178,3 +178,33 @@ DECISION:
 
 <!-- ENTRY_END -->
 
+[2026-10-29 | ONTO | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Initiate scaling into ONTO with an initial allocation of 0.75x to 1x of a standard position size at the current price of 223.68. Set a strict stop-loss at 164.02 near the lower Bollinger Band boundary to protect against downside volatility, with a medium-term horizon to capture fundamental recovery.
+
+**Investment Thesis**: The bull case put forward by the aggressive and neutral analysts successfully overrides the technical hesitations raised by the conservative analyst. Specifically, ONTO's operating income dramatically expanded from 34 million to 64 million between Q1 and Q2 2026, and its critical role in advanced packaging and GAA architectures for the AI memory ecosystem provides robust operational leverage. Although the stock is trading below its 50 and 200 SMAs with a negative MACD cycle, these technicals are lagging indicators that fail to offset the massive cash cushion of over 1.25 billion dollars and the institutional upside targets of 23% to 41%. The recent four consecutive higher closes near the 198-200 support zone demonstrate an oversold bounce and institutional accumulation. A failure of the 164.02 support level or worse-than-expected upcoming earnings growth would invalidate this thesis and warrant a prompt exit.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-10-29 | MU | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Initiate an Overweight position in MU to capitalize on elite fundamental profitability and a depressed forward P/E of 4.73. Size the initial entry carefully around 1.5% of the portfolio while layering purchases near moving averages, using a strict stop loss at 888.91 to manage high volatility.
+
+**Investment Thesis**: The investment thesis is anchored in MU's exceptional financial execution—highlighted by an 80.7% operating margin, an 88.26% ROE, and a robust debt-to-equity ratio of 0.04x—which outweighs the cyclical bear warnings. While conservative concerns regarding insider selling, high ATR volatility, and potential sector-wide capex normalization are valid, they are heavily priced into the depressed forward valuation of 4.73x. Technical recovery above the 50-day SMA and institutional ETF inflows further support establishing an accumulating stance. This thesis would change if cloud hyperscalers meaningfully cut AI infrastructure budgets or if key support levels below the 200-day SMA fail, signaling an aggressive industry-wide supply glut.
+
+**Price Target**: 1125.0
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
