@@ -39,8 +39,9 @@ def render_md(text):
 
 
 def chip(rating, cls="chip"):
-    r = rating or "n/a"
-    return f'<span class="{cls} r-{e(r.lower())}">{e(r)}</span>'
+    if not rating:  # skipped by the daily TradingAgents cap, or failed
+        return f'<span class="{cls} r-n/a" title="No TradingAgents rating: the run was skipped or failed">not run</span>'
+    return f'<span class="{cls} r-{e(rating.lower())}">{e(rating)}</span>'
 
 
 def dot(rating, title=""):
@@ -94,6 +95,9 @@ def load_day(d):
         "shortlist": read_json(folder / "shortlist.json", {}).get("shortlist", []),
         "market": read_json(folder / "market.json", {}),
         "news": load_news(d, w),
+        "brief": read_json(folder / "brief.json"),
+        "brief_usage": ((read_json(folder / "usage.json", {}) or {}).get("claude") or {}).get("brief")
+                       or (read_json(folder / "brief_meta.json", {}) or {}).get("usage"),
     }
 
 
@@ -274,11 +278,67 @@ def day_page(day, prev_d, next_d, watch, segments):
 <h1>{e(w["headline"] if w else "Daily AI-bottleneck research")}</h1>{market_html(day["market"])}</header>
 <section><h2>Worldview</h2>{worldview_html(w)}</section>
 <section><h2>Analysis</h2>{HOW_TO_READ}<div class="picks">{runs_html}</div></section>
+{f'<section id="brief"><h2>Before the open</h2>{brief_html(day, "../")}</section>' if day.get("brief") else ""}
 <section id="news"><h2>News ({sum(it["kept"] for it in day["news"])})</h2>{news_html(day["news"], segments)}</section>
 {pager}
 <footer>{e(FOOTER)}</footer>
 </main>'''
     return page(f"Gene Research · {d}", body, "../", d and (w or {}).get("headline", ""))
+
+
+def skip_reason(a):
+    r = a.get("error") or a.get("skipped") or "no result"
+    if r.startswith("over --max"):
+        return f"the daily cap of {r.split()[-1]} TradingAgents runs (Gemini free tier) was used by the earlier names"
+    return r
+
+
+LEANS = {"wait": "Wait a session", "small": "Small positions only", "stands": "Ratings still stand"}
+
+
+def lean_chip(b):
+    lean = b.get("lean", "")
+    return f'<span class="lean l-{e(lean)}">{e(LEANS.get(lean, lean))}</span>'
+
+
+def brief_usage_line(u, rates):
+    if not u:
+        return ""
+    cost = sum((u.get(k) or 0) * rates.get(r, 0) for k, r in (("input_tokens", "input"), ("output_tokens", "output"),
+               ("cache_read_tokens", "cache_read"), ("cache_write_tokens", "cache_write"))) / 1e6 if rates else None
+    return (f'{u.get("model_calls", 0)} Claude calls, {(u.get("cache_read_tokens") or 0) / 1e6:,.1f}M tokens read from cache, '
+            f'{(u.get("output_tokens") or 0) / 1e3:,.0f}k written' + (f' (≈${cost:,.2f} at API prices)' if cost is not None else ""))
+
+
+def brief_html(day, up=""):
+    b = day["brief"]
+    names = ""
+    for x in b.get("names", []):
+        since = x.get("since_rated")
+        price = (f'rated {e(x.get("rated_on", ""))} at {x["rated_price"]:,.2f}' if isinstance(x.get("rated_price"), (int, float)) else f'rated {e(x.get("rated_on", ""))}')
+        last = (f' · last close {x["last_price"]:,.2f} <b class="{tone(since)}">({pct(since)})</b>' if isinstance(x.get("last_price"), (int, float)) else "")
+        cat = f'<p class="cat">{e(x["catalyst"])}</p>' if x.get("catalyst") else ""
+        names += f'''<div class="bname">
+  <div class="run-top"><span class="tk big">{e(x.get("ticker", ""))}</span><span class="grow"></span>{chip(x.get("rating"))}</div>
+  <p class="muted small">{price}{last}</p>{cat}
+  <p class="take">{e(x.get("take", ""))}</p>
+</div>'''
+    lis = lambda xs: "".join(f"<li>{e(t)}</li>" for t in xs)
+    srcs = "".join(f'<li><a href="{e(s["url"])}" rel="noopener">{e(s["title"])}</a></li>' for s in b.get("sources", []))
+    written = b.get("written_at", "")[:16].replace("T", " ")
+    rates = (read_json(DATA.parent / "plan.json", {}) or {}).get("api_rates_usd_per_mtok") or {}
+    usage = brief_usage_line(day.get("brief_usage"), rates)
+    meta = " · ".join(x for x in (f"Written {e(written)} SGT" if written else "", e(b.get("note", "")), f"This brief used {usage}" if usage else "") if x)
+    return f'''<div class="brief">
+<div class="brief-head"><span class="eyebrow">{e(b.get("session", ""))}</span>{lean_chip(b)}</div>
+<p class="bl">{e(b.get("bottom_line", ""))}</p>
+<div class="two"><div><h3>What changed since the ratings</h3><ul class="plain">{lis(b.get("what_changed", []))}</ul></div>
+<div><h3>If you still buy</h3><ul class="plain">{lis(b.get("if_buying", []))}</ul></div></div>
+{f'<div class="bnames">{names}</div>' if names else '<p class="muted">Nothing on the watchlist is rated Buy or Overweight.</p>'}
+<p class="trust"><strong>How far to trust the ratings.</strong> {e(b.get("trust", ""))}</p>
+{f'<details class="srcs"><summary>Sources ({len(b.get("sources", []))})</summary><ul class="plain">{srcs}</ul></details>' if srcs else ""}
+<p class="muted small">{meta}. A read on the site&#39;s own ratings by Claude, not financial advice.</p>
+</div>'''
 
 
 # ---------- landing page pieces ----------
@@ -317,7 +377,7 @@ def glance_html(day):
     for r in day["runs"]:
         a = day["agents"].get(r["ticker"], {})
         rating = a.get("rating")
-        act = action_html(rating) if rating else f'<p class="muted">Did not run: {e(a.get("error") or a.get("skipped") or "no result")}</p>'
+        act = action_html(rating) if rating else f'<p class="muted">Not run: {e(skip_reason(a))}</p>'
         kind = '<span class="kind">re-check</span>' if r["kind"] == "recheck" else '<span class="kind new">new pick</span>'
         cards.append(f'''<a class="run" href="days/{day["date"]}.html#{e(r["ticker"])}">
   <div class="run-top"><span class="tk big">{e(r["ticker"])}</span>{kind}<span class="grow"></span>{chip(rating, "chip big")}</div>
@@ -470,6 +530,7 @@ def day_cards_html(loaded):
   <p class="clamp">{e(w.get("regime", ""))}</p>
   <p class="lbl">{e(moves)}</p>
   <div class="tkrs">{tickers}</div>
+  {lean_chip(x["brief"]) if x.get("brief") else ""}
   <div class="mk">{mk}</div>
 </a>''')
     return f'<div class="dcards">{"".join(cards)}</div>'
@@ -521,6 +582,14 @@ def usage_html():
             return None
         return sum((num(v) or 0) * rates.get(k, 0) for v, k in parts) / 1e6
 
+    def brief_cost(r):
+        """API-equivalent cost of the brief inside a run (already part of cost(r))."""
+        if not rates or num(r.get("brief_cache_read")) is None:
+            return None
+        return sum((num(r.get(f"brief_{k}")) or 0) * rates.get(k, 0) for k in ("input", "output", "cache_read", "cache_write")) / 1e6
+
+    briefs = [c for c in map(brief_cost, rows) if c is not None]
+    brief_avg = sum(briefs) / len(briefs) if briefs else None
     costs = [c for c in map(cost, rows) if c is not None]
     run_cost = sum(costs) / len(costs) if costs else None
     g_calls, g_in, g_out = avg("gemini_calls"), avg("gemini_input"), avg("gemini_output")
@@ -546,6 +615,7 @@ def usage_html():
                  f'(${(cached or 0) * rates.get("cache_write", 0) / 1e6:,.2f}).</p>')
     body = "".join(f'<tr><td>{e(r["date"])}</td><td class="n">{"$" + format(cost(r), ".2f") if cost(r) is not None else "–"}</td><td class="n">{r.get("claude_calls") or "–"}</td><td class="n">{fmt(num(r["claude_cache_read"]))}</td>'
                    f'<td class="n">{fmt(num(r["claude_output"]))}</td><td class="n">{fmt(num(r["claude_cache_write"]))}</td>'
+                   f'<td class="n">{"$" + format(brief_cost(r), ".2f") if brief_cost(r) is not None else "–"}</td>'
                    f'<td class="n">{r["gemini_calls"] or "–"}</td><td class="n">{fmt(num(r["gemini_input"]))} / {fmt(num(r["gemini_output"]))}</td></tr>'
                    for r in reversed(rows[-20:]))
     return f'''{money}{share}
@@ -556,13 +626,15 @@ from its cache: about <strong>{fmt(read, " tokens")}</strong> per run. Cached re
 plan limits, and they are where nearly all the volume is. Fewer steps per run is the main way to cut them.</li>
 <li><strong>Claude's own writing</strong> (the worldview, the picks and its commands): about <strong>{fmt(wrote, " tokens")}</strong> per run,
 plus about {fmt(cached, " tokens")} newly stored in the cache.</li>
+<li><strong>Tonight&#39;s brief</strong> (the pre-open check, with a few web searches) is part of the Claude figures above:
+{f"about <strong>${brief_avg:,.2f}</strong> of each run at API prices, over {len(briefs)} run{'s' if len(briefs) != 1 else ''}" if brief_avg is not None else "not measured yet; runs from 30 Oct on record it separately"}.</li>
 <li><strong>Gemini</strong> runs TradingAgents: about {g_calls or 0:,.0f} calls, {fmt(g_in, " tokens")} in and {fmt(g_out, " tokens")} out per run.
 That is on the free Google API key and does not count against your Claude plan.</li>
 </ul>
 <p class="muted">A month of weekday runs (about {runs_week * 52 / 12:,.0f}) comes to roughly {fmt(month(read), " tokens")} of Claude cache reads and
 {fmt(month(wrote), " tokens")} written.</p>
 <div class="tw"><table class="track"><thead><tr><th>Date</th><th>API-equiv. cost</th><th>Claude calls</th><th>Read from cache</th><th>Written</th><th>Newly cached</th>
-<th>Gemini calls</th><th>Gemini in / out</th></tr></thead><tbody>{body}</tbody></table></div>'''
+<th>of which brief</th><th>Gemini calls</th><th>Gemini in / out</th></tr></thead><tbody>{body}</tbody></table></div>'''
 
 
 def landing_page(days, loaded, watch, track, segments):
@@ -571,6 +643,7 @@ def landing_page(days, loaded, watch, track, segments):
 <main>
 <section id="today"><h2>Today at a glance</h2>{glance_html(latest)}</section>
 <section id="watchlist"><h2>Watchlist</h2>{board_html(watch, track)}</section>
+{f'<section id="tonight"><h2>Before tonight&#39;s open</h2>{brief_html(latest)}</section>' if latest.get("brief") else ""}
 <section id="worldview"><h2>Worldview over time</h2>{thesis_grid_html(days, loaded)}</section>
 <section id="segments"><h2>Segment stance over time</h2>{segment_grid_html(days, loaded, segments)}</section>
 <section id="track"><h2>Track record</h2>{tracking_html(track)}{review_html()}</section>
@@ -833,6 +906,16 @@ tr.me td{font-weight:600}tr.me td:first-child{box-shadow:inset 3px 0 0 var(--acc
 .callout{border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--surface);padding:12px 16px;font:.95rem/1.55 var(--body);max-width:75ch}
 .callout code{font:.85em var(--mono)}.big-share{font:1.05rem/1.5 var(--body);max-width:75ch}.big-share strong{font:600 1.8rem var(--display);color:var(--accent)}
 .usage-list{display:flex;flex-direction:column;gap:8px;max-width:75ch}
+.brief{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--accent);padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.brief h3{margin:4px 0 6px}.brief-head{display:flex;align-items:center;justify-content:space-between;gap:8px 12px;flex-wrap:wrap}
+.bl{font:600 1.15rem/1.4 var(--display);margin:0;max-width:62ch;text-wrap:pretty}
+.lean{font:600 .72rem var(--mono);text-transform:uppercase;letter-spacing:.05em;padding:4px 10px;border-radius:999px;white-space:nowrap;width:max-content}
+.l-wait{color:var(--uw);background:var(--uw-bg)}.l-small{color:var(--hold);background:var(--hold-bg)}.l-stands{color:var(--buy);background:var(--buy-bg)}
+.bnames{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
+.bname{border:1px solid var(--line);background:var(--bg);padding:12px 14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.bname b{font-weight:500}.bname .cat{margin:0;font:500 .72rem var(--mono);text-transform:uppercase;letter-spacing:.03em;color:var(--accent)}
+.take{margin:0;font:.95rem/1.5 var(--body)}.trust{margin:0;font:.95rem/1.55 var(--body);max-width:75ch}
+.srcs ul{padding:8px 12px 10px 30px;font-size:.9rem}.srcs li{overflow-wrap:anywhere}
 """
 
 if __name__ == "__main__":

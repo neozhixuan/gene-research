@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-29",
+  "session": "US open Fri 30 Oct, 21:30 SGT",
+  "written_at": "2026-10-30T17:19:00+08:00",
+  "lean": "wait",
+  "bottom_line": "All four buy-side ratings were made before Amazon's and Intel's results and before Friday's futures selloff, so tonight you'd be buying on stale ratings. One name reports earnings just before the open and another has already risen 16% since it was rated; the facts argue for waiting at least a session.",
+  "what_changed": [
+    "Amazon missed estimates and AI spending pushed its free cash flow further negative; shares fell about 7% after hours.",
+    "Intel gave weak guidance for next quarter and fell about 23% after hours.",
+    "Early Friday, Nasdaq-100 futures were down about 2% and S&P 500 futures about 0.9%, after Thursday's 1.4% Nasdaq drop (Alphabet -12.6%).",
+    "This is the worldview's own top risk (hyperscaler spending hitting the supplier chain) and matches two of its bearish theses: capex squeezing big tech's cash flow, and a crowded AI trade at high rates."
+  ],
+  "names": [
+    {"ticker": "MU", "rating": "Overweight", "rated_on": "2026-10-29", "rated_price": 983.23, "last_price": 983.23, "since_rated": 0.0,
+     "catalyst": "", "take": "Fell about 5% on Thursday after Samsung's weak results hit memory stocks, so now below the price the agents saw."},
+    {"ticker": "NVT", "rating": "Overweight", "rated_on": "2026-10-28", "rated_price": 134.53, "last_price": 140.12, "since_rated": 0.0416,
+     "catalyst": "Earnings today; call at 21:00 SGT, results just before the open", "take": "Wait until you've seen the results and how the stock reacts; the rating predates them."},
+    {"ticker": "ONTO", "rating": "Overweight", "rated_on": "2026-10-29", "rated_price": 223.68, "last_price": 223.68, "since_rated": 0.0,
+     "catalyst": "Earnings 9 Nov, after the close", "take": "Near its rated price, but buying now means holding through earnings in 10 days."},
+    {"ticker": "VRT", "rating": "Overweight", "rated_on": "2026-10-28", "rated_price": 208.56, "last_price": 242.94, "since_rated": 0.1648,
+     "catalyst": "", "take": "Up 16.5% since rated after its earnings beat; you'd pay well above the price the agents saw."}
+  ],
+  "trust": "The site is seven days old and no rating has been graded yet (grading starts after 28 days). Picks average +5.0% vs QQQ, the same as a random shortlist pick, and the no-AI screen's top pick did better at +7.6%, so there's no evidence yet that the ratings add anything over the screen.",
+  "if_buying": [
+    "Keep each position small, as Overweight implies.",
+    "Wait on NVT until its results are out and the stock has reacted.",
+    "Use limit orders, not market orders: with futures down 2%, the first 30 minutes are likely to be choppy.",
+    "MU and ONTO are the two the news has brought back towards or below their rated prices; ONTO's earnings in 10 days are a risk."
+  ],
+  "sources": [
+    {"title": "U.S. stock futures sink, Nasdaq down 2% as Amazon, Intel earnings underwhelm (Investing.com)", "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-sink-nasdaq-down-2-as-amazon-intel-earnings-underwhelm-4985675"},
+    {"title": "Stock Market Today October 29, 2026 (StockTitan)", "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-29-2026"},
+    {"title": "Sandisk and Micron slide 5% as Samsung miss cools memory rally (24/7 Wall St.)", "url": "https://247wallst.com/investing/2026/10/29/sandisk-and-micron-slide-5-as-samsung-miss-cools-memory-rally-ahead-of-sandisk-earnings-sk-hynix-falls-3-western-digital-dips/"},
+    {"title": "nVent to report Q3 2026 results on October 30 (Quiver Quant)", "url": "https://www.quiverquant.com/news/nVent+to+Report+Third+Quarter+2026+Financial+Results+on+October+30,+2026"},
+    {"title": "Onto Innovation next earnings date", "url": "https://www.nextearningsdate.com/onto.html"}
+  ],
+  "note": "Written by hand in a chat on 30 Oct, before the brief became part of the daily run."
+}

@@ -1,0 +1,7 @@
+{
+  "source": "chat",
+  "started_at": "2026-10-30T09:19:00+00:00",
+  "finished_at": "2026-10-30T09:28:30+00:00",
+  "usage": {"input_tokens": 14, "output_tokens": 9799, "cache_read_tokens": 1303419, "cache_write_tokens": 121745, "model_calls": 7},
+  "usage_note": "Measured from the chat session's transcript; a long chat re-reads more context per call than the daily run will."
+}

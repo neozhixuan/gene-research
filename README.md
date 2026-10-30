@@ -37,7 +37,8 @@ flowchart TD
     end
 
     S --> PRE --> THINK --> POST
-    POST --> U["usage.py<br/>Claude + Gemini tokens"] --> G["git push"] --> VC(["Vercel deploys site/"])
+    POST --> BR["Tonight's brief · Claude<br/>brief.py facts + 2-3 web searches<br/>do the Buy/Overweight ratings still hold?"]
+    BR --> U["usage.py<br/>Claude + Gemini tokens<br/>(brief share split out)"] --> G["git push"] --> VC(["Vercel deploys site/"])
 ```
 
 Inside `agents.py`, each stock goes through TradingAgents' own team:
@@ -56,6 +57,7 @@ flowchart LR
 | Fetch, digest, screen, validate, track, build site | Python | none |
 | Worldview, picks, monthly review | Claude (scheduled session) | ~2-3M cache read, ~13k out per run |
 | Stock verification and watchlist re-checks | TradingAgents on Gemini | ~35 calls, ~150k tokens per run |
+| Tonight's brief (`.claude/skills/tonight-brief`) | Claude (same session) + web search | measured per run in the usage table |
 
 ## Layout
 

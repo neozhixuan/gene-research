@@ -75,7 +75,9 @@ Order matters: TradingAgents runs your first pick, then the watchlist re-check t
 
 Run it in the background: TradingAgents takes 5-15 minutes per stock on the Gemini free tier. Wait for the completion notice instead of polling. `validate.py` runs first; if it prints errors, fix the two files and rerun.
 
-Then record what this run used (the recorder reads this session's own transcript) and rebuild the site:
+Then write tonight's brief (does each Buy/Overweight rating still hold at the next US open?): follow `.claude/skills/tonight-brief/SKILL.md`. It is the only step that may use web search, and it has its own small budget.
+
+Then record what this run used (the recorder reads this session's own transcript, including the brief's share) and rebuild the site:
 
 ```bash
 .venv/bin/python pipeline/usage.py && .venv/bin/python pipeline/site.py
@@ -97,4 +99,4 @@ Read `data/tracking.json` (the `summary`, `scorecard` and `baselines` keys only)
 
 ## Finish
 
-Reply with 3 lines: the headline, the picks with their final ratings, and anything that failed.
+Reply with 4 lines: the headline, the picks with their final ratings, the brief's lean and bottom line, and anything that failed.
