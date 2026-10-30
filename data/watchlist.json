@@ -42,14 +42,16 @@
   "HUBB": {
     "segment": "grid_electrical",
     "added": "2026-10-28",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-10-28",
         "rating": null,
         "kind": "new"
       }
-    ]
+    ],
+    "dropped": "2026-10-30",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "JBL": {
     "segment": "servers",
@@ -101,6 +103,11 @@
         "date": "2026-10-27",
         "rating": "Hold",
         "kind": "recheck"
+      },
+      {
+        "date": "2026-10-30",
+        "rating": "Overweight",
+        "kind": "recheck"
       }
     ]
   },
@@ -136,14 +143,16 @@
   "POWL": {
     "segment": "grid_electrical",
     "added": "2026-10-27",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-10-27",
         "rating": "Hold",
         "kind": "new"
       }
-    ]
+    ],
+    "dropped": "2026-10-30",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "SNDK": {
     "segment": "memory_storage",
@@ -159,6 +168,18 @@
     "dropped": "2026-10-27",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
+  "STX": {
+    "segment": "memory_storage",
+    "added": "2026-10-30",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-10-30",
+        "rating": "Overweight",
+        "kind": "new"
+      }
+    ]
+  },
   "TLN": {
     "segment": "power_nuclear",
     "added": "2026-10-21",
@@ -172,6 +193,18 @@
     ],
     "dropped": "2026-10-27",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
+  },
+  "TSM": {
+    "segment": "foundry_equipment",
+    "added": "2026-10-30",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-10-30",
+        "rating": null,
+        "kind": "new"
+      }
+    ]
   },
   "VRT": {
     "segment": "cooling_thermal",

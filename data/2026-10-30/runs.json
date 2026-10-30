@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "STX",
+    "segment": "memory_storage",
+    "kind": "new"
+  },
+  {
+    "ticker": "NRG",
+    "segment": "power_nuclear",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "TSM",
+    "segment": "foundry_equipment",
+    "kind": "new"
+  }
+]

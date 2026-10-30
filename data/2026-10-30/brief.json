@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-30",
+  "session": "US open Fri 30 Oct, 21:30 SGT",
+  "written_at": "2026-10-30T20:10:00+08:00",
+  "lean": "wait",
+  "bottom_line": "The ratings still rest on real supplier demand, but today's news hits the worldview's own top risk: Alphabet and Amazon disappointed and the Nasdaq fell 1.4%. Futures and overnight news could not be verified by search, so treat the open as unchecked and let it settle before buying.",
+  "what_changed": [
+    "Nasdaq -1.4% and Semis ETF -1.1% on the last close; the Nasdaq-100 is heading for its first monthly loss since July, which touches the 'AI trade is crowded at high rates' thesis (65).",
+    "Alphabet burned $9B in a quarter and Amazon and Intel disappointed, which touches the worldview risk of more hyperscaler capex cuts hitting suppliers.",
+    "Crude is $104.37 (+15.4% on the month) and the 10-year is 4.99%; both keep multiples capped.",
+    "Supplier demand stayed strong: Vertiv orders more than doubled, Sandisk says it is sold out through the decade, and GE Vernova's backlog is $197B.",
+    "Web searches returned no 2026 futures or after-hours data, so nothing after the last close is confirmed."
+  ],
+  "names": [
+    { "ticker": "MU", "rating": "Overweight", "rated_on": "2026-10-29", "rated_price": 983.23, "last_price": 934.27, "since_rated": -0.05, "catalyst": "", "take": "Cheaper than when rated, but memory sold off on good news and is -18% on the month; start small at most." },
+    { "ticker": "NRG", "rating": "Overweight", "rated_on": "2026-10-30", "rated_price": 97.54, "last_price": 97.54, "since_rated": 0.0, "catalyst": "", "take": "Rated at the last close, so the rating is current; power is the thesis least hurt by the spender selloff." },
+    { "ticker": "NVT", "rating": "Overweight", "rated_on": "2026-10-28", "rated_price": 134.53, "last_price": 138.15, "since_rated": 0.027, "catalyst": "Earnings Fri 30 Oct (per digest), at or before the open", "take": "nVent reports around the open; wait for the reaction, since grid names have fallen on good prints." },
+    { "ticker": "ONTO", "rating": "Overweight", "rated_on": "2026-10-29", "rated_price": 223.68, "last_price": 221.89, "since_rated": -0.008, "catalyst": "", "take": "Little changed since rating, but foundry equipment is a neutral segment and -17% on the month; the weakest fit." },
+    { "ticker": "STX", "rating": "Overweight", "rated_on": "2026-10-30", "rated_price": 700.47, "last_price": 700.47, "since_rated": 0.0, "catalyst": "", "take": "Rated at the last close; 10.8x forward earnings gives a cushion, but only 1% above its 200-day." },
+    { "ticker": "VRT", "rating": "Overweight", "rated_on": "2026-10-28", "rated_price": 208.56, "last_price": 245.92, "since_rated": 0.179, "catalyst": "", "take": "Up 17.9% since the agents saw it, so the margin of safety is much thinner; wait for a pullback rather than chase." }
+  ],
+  "trust": "21 picks are tracked, averaging +4.2% vs QQQ, but no ratings are graded yet (grading starts after 28 days). Claude's picks are ahead of QQQ and the equal-weight universe (+1.7%) but behind the screen's own #1 pick (+5.5%), so the AI layer has not yet proved it adds value.",
+  "if_buying": [
+    "Overweight means start small and add if the thesis holds; do not size these as full positions.",
+    "Wait for the first hour on a down day; the open can be volatile with Nasdaq futures having been weak.",
+    "Use limit orders rather than market orders, and do not chase VRT after its run.",
+    "NRG and STX are the freshest ratings; MU is cheaper than when rated."
+  ],
+  "sources": []
+}

@@ -17,3 +17,6 @@ date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-10-29,ONTO,new,foundry_equipment,223.68,725.61,567.67,Overweight,Buy,Overweight
 2026-10-29,MU,recheck,memory_storage,983.23,725.61,567.67,Overweight,Buy,Overweight
 2026-10-29,AVGO,new,compute,351.81,725.61,567.67,,,
+2026-10-30,STX,new,memory_storage,700.47,715.34,561.67,Overweight,Hold,Hold
+2026-10-30,NRG,recheck,power_nuclear,97.54,715.34,561.67,Overweight,Hold,Hold
+2026-10-30,TSM,new,foundry_equipment,431.81,715.34,561.67,,,

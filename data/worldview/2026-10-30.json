@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-30",
+  "previous": "2026-10-29",
+  "headline": "Alphabet's record one-day loss, Amazon/Intel earnings and Marvell's $80bn Lumentum bid hit AI spenders and acquirers (Nasdaq -1.4%), while suppliers with orders (Vertiv, Quanta, GE Vernova, Sandisk) keep reporting demand.",
+  "regime": "Nasdaq fell 1.4% and is heading for its first monthly loss since July, with the semis ETF -1.1% on the day but +7.3% on five days and -7.8% on the month. The 10-year is 4.99% and crude $104.37 (+15.4% on the month), so the discount rate and an oil shock still cap multiples. Weak Big Tech prints, rising AI financing costs and Intel's PC warning punished the buyers (hyperscalers -3.7%, software -7.3%, neoclouds -4.1%), while order-book names (power and grid +0.7% on the day, cooling +25.7% for Vertiv on five days) held up. Money is moving from AI spenders to AI suppliers with backlog, not out of the theme.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 81,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Vertiv Q3 sales +61% and organic orders more than doubled (304bae0ddaa9)",
+        "GE Vernova: gas turbine prices up 50%, buyers reserving slots years out, $197B backlog, $9B Trench deal (d06bf75b752f, 8d7ea789c245)",
+        "Quanta record $63.7B backlog (c7926fa7cd44); Trane raised revenue guidance (0765dff5592e)",
+        "Against: grid and power stocks still fall on beats (Hubbell, GEV -24% from high) (85d443ed03a0, cb6e1a152f53)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: Vertiv's doubled orders and turbine slot reservations are the strongest bottleneck evidence yet; the market still pays unevenly, so the gain stays small."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 66,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "Sandisk says it is sold out for the rest of the decade, raised outlook, 8-for-1 split (80b65c311518, d0e7f4dcbc9e)",
+        "Broadcom's $63B Anthropic financing gives it a funded customer (8bcade90d848)",
+        "Against: Intel flags prolonged PC weakness, HP and Dell -7% (9d7b5fffbf53)",
+        "Against: Google Cloud revenue more than doubled but the stock still fell on cash burn (4c6f3efd640e)"
+      ],
+      "change": "unchanged",
+      "change_note": "Sandisk and Broadcom confirm supply tightness; Intel's PC warning is consumer, not data centre, so the two offset."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 82,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "Cipher Digital -38% since $850M zero-coupon convertible sale, report Nov 2 must show the capex math (c46a585c93c9)",
+        "Nadella described a business model 'that is no business at all'; Oracle and CoreWeave dropped (bd96fc806ae5)",
+        "Segment -4.1% on the day and -19.9% on the month; 15 names failed the cash-flow gate today (digest segments, shortlist)"
+      ],
+      "change": "stronger",
+      "change_note": "+3: Cipher's convertible-funded slide and Nadella's remark add to financing stress; the quality gate again drops every neocloud."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 64,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Sandisk sold out through the decade yet the stock sold off hard (80b65c311518)",
+        "Segment +8.8% on five days but -18.2% on the month (digest segments)",
+        "Intel and Sandisk give opposite views of memory demand (225ef04bb559)",
+        "Against: Apple warned memory costs may squeeze margins (aee38c123837)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: the shortage call got its strongest confirmation yet and the group trades 18% below a month ago, but selling on good news shows the market doubts durability."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 78,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Alphabet burned $9B in a quarter and set a record single-day loss (3aba6a8be1e2, 9455ea5fd8c8)",
+        "Amazon fell on earnings with Intel; Nasdaq futures -2% (4da78539866c)",
+        "Hyperscalers -3.7% on the day, -5.6% on the month; GOOGL -12.5% on five days (digest segments)",
+        "Against: Oracle +11.2% on five days despite the Nadella dig (digest segments)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: Amazon joins Alphabet in disappointing, so the spenders' penalty is now broad rather than one name."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 65,
+      "segments": ["compute", "memory_storage"],
+      "evidence": [
+        "10-year 4.99%, crude $104.37 (+15.4% on the month), VIX +7.4% (digest tape)",
+        "Nasdaq-100 on track for first monthly loss since July on 'rising AI financing costs' (bff533a63390)",
+        "Software -7.3% on the day, ServiceNow -30% on five days (digest segments)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: first monthly Nasdaq loss since July with oil above $100; the 10-year dipped under 5% so the rate leg did not worsen."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "-4.2% on the day, -10.8% on the month; Marvell -13% on its Lumentum bid shows the market punishing big spending." },
+    "foundry_equipment": { "stance": "neutral", "note": "-17.4% on the month but +7.7% on five days; quality names (TSM, ASML) are the only way in." },
+    "memory_storage": { "stance": "overweight", "note": "Sandisk sold out through the decade; group -18.2% on the month leaves a price cushion." },
+    "networking_optical": { "stance": "neutral", "note": "Lumentum +22% on five days is a takeover bid; fundamentals unchanged." },
+    "servers": { "stance": "neutral", "note": "Dell and HP -7% on Intel's PC warning; SMCI reports Nov 3." },
+    "power_nuclear": { "stance": "overweight", "note": "+0.7% on the day with NuScale-Doosan and Constellation 20-year deals; own cash-flow producers only." },
+    "grid_electrical": { "stance": "overweight", "note": "Quanta $63.7B backlog and GEV $197B backlog; sold-on-beats keeps entry prices fair." },
+    "cooling_thermal": { "stance": "overweight", "note": "Vertiv orders doubled and +25.7% on five days; less margin of safety after the run." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "Convertible-funded capex (Cipher -38%) and -19.9% on the month; fails the cash-flow gate." },
+    "hyperscalers": { "stance": "underweight", "note": "Alphabet burn and Amazon miss; Nasdaq's loss is concentrated here." },
+    "ai_software": { "stance": "underweight", "note": "-7.3% on the day on ServiceNow's -30% five-day slide; AI is a cost to them, not a tailwind." }
+  },
+  "risks": [
+    "More hyperscaler capex cuts after Alphabet and Amazon would hit every supplier despite strong backlogs.",
+    "Oil above $100 and a 10-year near 5% extend multiple compression in crowded AI names.",
+    "Neocloud convertible financing stress could cancel or delay GPU, power and cooling orders.",
+    "Sell-the-news on good prints (Sandisk, Hubbell, GEV) means being right on fundamentals can still lose money.",
+    "Marvell paying up for Lumentum signals late-cycle deal-making and dilution risk."
+  ],
+  "watch": [
+    "Apple (Nov 2) on memory costs, and Cipher Digital's Nov 2 capex math.",
+    "SMCI earnings Nov 3 and Eaton Nov 3 for servers and grid demand.",
+    "Whether Marvell-Lumentum is formally announced and how optics names react.",
+    "The 10-year against 5% and crude against $104.",
+    "Whether Alphabet and Amazon dip-buyers appear or the selling spreads to suppliers."
+  ]
+}

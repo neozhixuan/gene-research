@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-30",
+  "picks": [
+    {
+      "ticker": "STX",
+      "segment": "memory_storage",
+      "why": "Seagate grows revenue 61% at a 49% operating margin on 10.8x forward earnings and sits 39% below its 52-week high, a price cushion in a segment we rate overweight with only MU on the watchlist. Sandisk's sold-out-through-the-decade call supports the storage shortage thesis.",
+      "risk": "FCF yield is only 1% and the stock is just 1% above its 200-day, so a memory-cycle peak call or lighter hyperscaler capex would hit it.",
+      "thesis_ids": ["ai-demand-exceeds-supply", "memory-supercycle-priced-as-peak"]
+    },
+    {
+      "ticker": "TSM",
+      "segment": "foundry_equipment",
+      "why": "TSMC earns a 59% operating margin with 51% revenue growth at 18.5x forward earnings, the cheapest quality name in a segment that is -17.4% on the month. It supplies every compute design regardless of which hyperscaler wins, which is the Buffett-style toll-road way to own compute demand.",
+      "risk": "FCF yield is just 2% from heavy capex and a 5% 10-year plus Taiwan risk could compress the multiple further.",
+      "thesis_ids": ["ai-demand-exceeds-supply", "ai-trade-crowded-at-high-rates"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "TER", "reason": "15% below its 200-day and test-equipment demand is cyclical; wait for a trend turn." },
+    { "ticker": "ASML", "reason": "Quality is similar to TSM but 26.7x forward earnings leaves less cushion." },
+    { "ticker": "CRDO", "reason": "Networking is neutral and Marvell's Lumentum bid makes the optics read noisy." },
+    { "ticker": "DELL", "reason": "Servers neutral and Intel's PC warning hit it 7%; 12% operating margin is thin." },
+    { "ticker": "CORZ", "reason": "88.7x forward earnings and neocloud credit stress; the segment is underweight." },
+    { "ticker": "PRIM", "reason": "Revenue is shrinking 11% with a negative operating margin." }
+  ]
+}
