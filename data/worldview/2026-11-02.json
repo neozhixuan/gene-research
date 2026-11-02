@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-02",
+  "previous": "2026-10-30",
+  "headline": "The semis ETF fell 7.0% in a day and is down 14.2% on the month, but the order-book names (Vertiv, grid) held their five-day gains: the market is selling AI spenders and crowded chips, not the power and cooling bottleneck.",
+  "regime": "Nasdaq -2.9% and the semis ETF -7.0% on the day, with the semis ETF -14.2% and the Nasdaq -5.3% on the month; the VIX is 19.0. The 10-year is 4.93% and crude $99.41 (+9.1% on the month), so rates and oil still cap multiples. Software is the weakest group (-12.4% on five days, ServiceNow -33.9%) and investors are rotating out of AI into health care, financials and industrials (254f2e0524a1). Cooling (+1.8%) and grid (+4.9%) are positive on five days while compute (-4.0%) is not, so the split between suppliers with backlog and everyone else continues.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 81,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Vertiv organic orders more than doubled, shares +19.7% on five days, Zacks Rank #1 (d8517aa55ef8, 23e7a19ac0c2)",
+        "Grid +4.9% and power +1.4% on five days while compute is -4.0% (digest segments)",
+        "Vistra bought 5.5GW of gas capacity to add supply (b81c30cab309); MasTec revenue +29.9% with a power-delivery backlog (e86e39401049)",
+        "Against: cooling and grid are still -15.5% and -10.7% on the month, and Hubbell and Trane fell on the week (digest segments)"
+      ],
+      "change": "unchanged",
+      "change_note": "Five-day strength in grid and cooling against a weak tape supports the thesis, but one session adds no new fundamental evidence."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 63,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "Amazon upgraded on 'strong demand visibility' to support aggressive capex (40a44185e8eb)",
+        "South Korea's October exports nearly doubled on semiconductor shipments (53c595df04a6)",
+        "Against: compute is -17.9% and foundry equipment -23.2% on the month; ETFs sold NVIDIA, AMD, Broadcom and AMAT (24598603ab41, d6f21fcff3fa)",
+        "Against: Kioxia fell on a cautious memory outlook (0d29bdfe4cf0)"
+      ],
+      "change": "weaker",
+      "change_note": "-3: demand data is still strong, but the price action and ETF selling say the market no longer pays for it, and this thesis had no fresh company-level confirmation today."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 83,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "Nebius is down 36% on 'concerns about funding the AI build-out' (84ba0ab6ec1d)",
+        "IREN hit a 52-week low last week (b8f651c5ac8c)",
+        "Segment -25.4% on the month; the quality gate again dropped IREN, NBIS, CIFR, WULF, APLD and CRWV (shortlist)",
+        "Against: CoreWeave rose 7.9% on one day after locking in compute 'way under market' (ce035543cb2c)"
+      ],
+      "change": "stronger",
+      "change_note": "+1: funding-stress headlines continue and the gate drops the same names; CoreWeave's one-day bounce is the only counter."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 60,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Segment -25.1% on the month though Western Digital is +6.5% on five days (digest segments)",
+        "Western Digital profits are surging, yet one analyst doubts shares beat the June high by 2030 (61953bb8cb98)",
+        "Micron bounced on the market rebound with no catalyst while 'AI fears linger' (9b81d95b0940)",
+        "Against: Kioxia plunged on a cautious memory outlook (0d29bdfe4cf0)"
+      ],
+      "change": "weaker",
+      "change_note": "-4: Kioxia's cautious outlook is the first supplier-side crack in the shortage story, and the group lost another 8.5% in a day."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 76,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Alphabet's record $500B market-cap loss (6929405a7882); GOOGL -12.6% on five days (digest segments)",
+        "Dan Niles: Big Tech earnings were 'more trick than treat' and show AI risks (8a49b886f9e0)",
+        "Against: Phillip Securities upgraded Amazon on demand visibility and raised its target to $330 (40a44185e8eb)",
+        "Against: segment -2.5% on the day is the mildest of all groups (digest segments)"
+      ],
+      "change": "weaker",
+      "change_note": "-2: hyperscalers fell least today and Amazon got an upgrade; the cash-burn case is intact but the move is largely priced."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 70,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "10-year 4.93%, crude $99.41, VIX +24.1% on the month (digest tape)",
+        "Tech had its worst month since March 2025; a firm modelled a 30% S&P drop (a11425d84ec4)",
+        "Investors are hedging against an AI downturn (4e0f5256680d); Morgan Stanley warns of a 9% S&P fall (4003e36f21a0)",
+        "Against: the 10-year is down 6.9% on the month and oil -4.5% on the day, so the rate leg is easing (digest tape)"
+      ],
+      "change": "stronger",
+      "change_note": "+5: semis -7.0% in a day, record hedging and rotation out of AI; the easing 10-year stops this going higher."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "-8.1% on the day and -17.9% on the month; Marvell -14.1% on five days, only Broadcom is up." },
+    "foundry_equipment": { "stance": "neutral", "note": "-23.2% on the month; KLA +8.5% on five days but Teradyne -11.2%; buy only quality (ASML, TSM)." },
+    "memory_storage": { "stance": "neutral", "note": "Kioxia's cautious outlook and -25.1% on the month; cut from overweight until the supplier data steadies." },
+    "networking_optical": { "stance": "neutral", "note": "-21.2% on the month; Lumentum +11.2% on five days, fundamentals unchanged." },
+    "servers": { "stance": "neutral", "note": "-6.6% on the day; Dell -7.0% on five days; SMCI reports this week." },
+    "power_nuclear": { "stance": "overweight", "note": "Talen +4.6% on five days and Vistra adds 5.5GW; own cash-flow producers only, nuclear developers burn cash." },
+    "grid_electrical": { "stance": "overweight", "note": "+4.9% on five days led by Quanta (+13.6%); MasTec shows backlog with margin pressure." },
+    "cooling_thermal": { "stance": "overweight", "note": "Vertiv +19.7% on five days on doubled orders; Trane -7.8%; less margin of safety after the run." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "Nebius -36% and IREN at lows on funding fears; fails the cash-flow gate." },
+    "hyperscalers": { "stance": "underweight", "note": "Capex outruns cash flow, though the group fell least today." },
+    "ai_software": { "stance": "underweight", "note": "-12.4% on five days with ServiceNow -33.9%; AI is a cost to them, not a tailwind." }
+  },
+  "risks": [
+    "A second -7% semis day would show forced selling and could pull down the order-book names that held up.",
+    "Hyperscaler capex cuts after Big Tech earnings would hit every supplier despite strong backlogs.",
+    "Oil near $100 and a 10-year near 4.9% keep multiples compressed into the midterm elections.",
+    "Neocloud funding stress could cancel or delay GPU, power and cooling orders.",
+    "Sell-the-news on good prints means being right on fundamentals can still lose money."
+  ],
+  "watch": [
+    "Apple earnings today on memory costs and the 'safe haven' test.",
+    "SMCI, AMD and Palantir earnings this week for server and AI demand.",
+    "BWXT (Nov 2) and Primoris (Nov 3) reports for nuclear and grid backlog.",
+    "Whether the semis ETF holds -14% on the month or breaks lower.",
+    "The 10-year against 5% and crude against $100, and the midterm elections."
+  ]
+}

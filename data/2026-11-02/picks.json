@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-02",
+  "picks": [
+    {
+      "ticker": "ASML",
+      "segment": "foundry_equipment",
+      "why": "ASML has +55% revenue growth, a +44% operating margin and a 24.8x forward P/E, and trades 22% below its high after the segment fell 23% in a month. It is the quality way into the compute build-out (ai-demand-exceeds-supply) rather than a cash-burning developer.",
+      "risk": "A hyperscaler capex cut or another -7% semis day would hit the multiple regardless of its margins.",
+      "thesis_ids": ["ai-demand-exceeds-supply", "ai-trade-crowded-at-high-rates"]
+    },
+    {
+      "ticker": "CRDO",
+      "segment": "networking_optical",
+      "why": "Credo has +115% revenue growth, a +25% operating margin and a 15.5x forward P/E, with the stock 51% off its high. The price already assumes the AI network build slows, which limits the downside if compute demand outruns supply.",
+      "risk": "FCF yield is only 1% and the stock is 17% under its 200-day average, so the downtrend could continue if the semis selloff spreads.",
+      "thesis_ids": ["ai-demand-exceeds-supply"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "PRIM", "reason": "Grid is overweight, but revenue is -11% with a negative operating margin; it fails the real-cash-flow test." },
+    { "ticker": "CORZ", "reason": "Neocloud segment is underweight and the forward P/E is 81x." },
+    { "ticker": "TER", "reason": "Foundry equipment already gets ASML, and Teradyne is -11.2% on five days with no catalyst." },
+    { "ticker": "DELL", "reason": "Servers are neutral, only 2% FCF yield, and the stock is +28% above its 200-day average." },
+    { "ticker": "LRCX", "reason": "Same segment as ASML; avoid two picks from one segment." },
+    { "ticker": "CIEN", "reason": "Same segment as CRDO and 27x forward P/E with a thinner growth rate." }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-02",
+  "session": "US open Mon 2 Nov, 22:30 SGT",
+  "written_at": "2026-11-02T20:30:00+08:00",
+  "lean": "wait",
+  "bottom_line": "Overnight news was not checked: two searches returned only 2025 and earlier results, so this brief uses the pipeline's last-close data alone. On that data the ratings are shaky tonight: the semis ETF fell 7.0% at the last close, four of six names are 8-10% below their rating price, and Apple reports today. Wait for the open before adding.",
+  "what_changed": [
+    "Semis ETF -7.0% and Nasdaq -2.9% at the last close, the 'second -7% semis day' risk the worldview names is live.",
+    "MU, ONTO and STX are down 8-10% since they were rated; the worldview cut memory to neutral and Memory-peak confidence to 60.",
+    "Apple reports today and the worldview watches it for memory costs; SMCI, AMD and Palantir report this week.",
+    "VRT is +11.5% since rating: cooling and grid held their five-day gains, but entry price is now higher than the agents saw."
+  ],
+  "names": [
+    { "ticker": "ASML", "rating": "Overweight", "rated_on": "2026-11-02", "rated_price": 1565.9, "last_price": 1565.9, "since_rated": 0.0, "catalyst": "", "take": "Rated today at this price; foundry equipment is neutral and -23% on the month, so a gap down at the open is possible." },
+    { "ticker": "MU", "rating": "Overweight", "rated_on": "2026-10-29", "rated_price": 983.23, "last_price": 884.74, "since_rated": -0.1, "catalyst": "", "take": "Cheaper than rated, but Kioxia's cautious outlook and a neutral memory stance argue for waiting." },
+    { "ticker": "NRG", "rating": "Overweight", "rated_on": "2026-10-30", "rated_price": 97.54, "last_price": 96.06, "since_rated": -0.015, "catalyst": "Earnings 9 Nov", "take": "Power is overweight and the price is near the rating; earnings are a week away." },
+    { "ticker": "ONTO", "rating": "Overweight", "rated_on": "2026-10-29", "rated_price": 223.68, "last_price": 201.57, "since_rated": -0.099, "catalyst": "Earnings 9 Nov", "take": "Down 10% in a falling segment with earnings next week; wait." },
+    { "ticker": "STX", "rating": "Overweight", "rated_on": "2026-10-30", "rated_price": 700.47, "last_price": 644.58, "since_rated": -0.08, "catalyst": "", "take": "Down 8% in two sessions with memory sentiment weak; wait for the open." },
+    { "ticker": "VRT", "rating": "Overweight", "rated_on": "2026-10-28", "rated_price": 208.56, "last_price": 232.5, "since_rated": 0.115, "catalyst": "", "take": "Strongest thesis (orders doubled) but already up 11.5% since rating; do not chase." }
+  ],
+  "trust": "24 new picks are tracked and none are graded yet (grading starts after 28 days); on early numbers they average +1.0% vs QQQ, against -1.0% for the SMH chip ETF. Too early to rely on.",
+  "if_buying": [
+    "Overweight means a small starting position, not a full one.",
+    "Wait for the 22:30 SGT open: with the semis ETF -7.0% at the last close, a volatile open is likely.",
+    "Use limit orders rather than market orders on the open.",
+    "Avoid chasing VRT after its run; MU, ONTO and STX are cheaper but in weak segments."
+  ],
+  "sources": []
+}

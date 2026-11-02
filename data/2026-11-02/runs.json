@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "ASML",
+    "segment": "foundry_equipment",
+    "kind": "new"
+  },
+  {
+    "ticker": "NVT",
+    "segment": "grid_electrical",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "CRDO",
+    "segment": "networking_optical",
+    "kind": "new"
+  }
+]

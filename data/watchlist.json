@@ -1,15 +1,29 @@
 {
+  "ASML": {
+    "segment": "foundry_equipment",
+    "added": "2026-11-02",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-11-02",
+        "rating": "Overweight",
+        "kind": "new"
+      }
+    ]
+  },
   "AVGO": {
     "segment": "compute",
     "added": "2026-10-29",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-10-29",
         "rating": null,
         "kind": "new"
       }
-    ]
+    ],
+    "dropped": "2026-11-02",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "CLS": {
     "segment": "servers",
@@ -24,6 +38,18 @@
     ],
     "dropped": "2026-10-29",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
+  },
+  "CRDO": {
+    "segment": "networking_optical",
+    "added": "2026-11-02",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-11-02",
+        "rating": null,
+        "kind": "new"
+      }
+    ]
   },
   "HPE": {
     "segment": "servers",
@@ -125,6 +151,11 @@
         "date": "2026-10-28",
         "rating": "Overweight",
         "kind": "recheck"
+      },
+      {
+        "date": "2026-11-02",
+        "rating": "Hold",
+        "kind": "recheck"
       }
     ]
   },
@@ -197,14 +228,16 @@
   "TSM": {
     "segment": "foundry_equipment",
     "added": "2026-10-30",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-10-30",
         "rating": null,
         "kind": "new"
       }
-    ]
+    ],
+    "dropped": "2026-11-02",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "VRT": {
     "segment": "cooling_thermal",
