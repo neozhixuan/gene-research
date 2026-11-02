@@ -70,6 +70,13 @@ def seg_label(k):
     return (s[:1].upper() + s[1:]).replace("Ai ", "AI ")
 
 
+def seg_tag(segment, stances):
+    """Segment name with the worldview's current stance on it, coloured like the segment grid."""
+    st = ((stances or {}).get(segment) or {}).get("stance", "")
+    label = seg_label(segment) + (f" · {st}" if st else "")
+    return f'<span class="segtag sg-{e(st or "none")}" title="Worldview stance on this segment">{e(label)}</span>'
+
+
 def weekday(d):
     return Date.fromisoformat(d).strftime("%a")
 
@@ -215,7 +222,7 @@ def history_html(w):
     return " ".join(f'<span title="{e(c["date"])}">{chip(c.get("rating"))}</span>' for c in w["checks"])
 
 
-def run_html(r, a, pick, shortlist, watch):
+def run_html(r, a, pick, shortlist, watch, stances=None):
     t = r["ticker"]
     row = next((x for x in shortlist if x["ticker"] == t), {})
     a = a or {}
@@ -240,7 +247,7 @@ def run_html(r, a, pick, shortlist, watch):
         about = (f'<p><strong>Why watch:</strong> {e(pick.get("why", ""))}</p><p><strong>Main risk:</strong> {e(pick.get("risk", ""))}</p>')
     badge = '<span class="kind">re-check</span>' if r["kind"] == "recheck" else '<span class="kind new">new pick</span>'
     return f'''<article class="pick" id="{e(t)}">
-  <header><h3>{e(t)}</h3>{badge}<span class="muted">{e(row.get("name") or "")} · {e(seg_name(r["segment"]))}</span></header>
+  <header><h3>{e(t)}</h3>{badge}<span class="muted">{e(row.get("name") or "")}</span>{seg_tag(r["segment"], stances)}</header>
   {facts}
   {about}
   {chain}
@@ -266,7 +273,7 @@ the <strong>trader</strong> proposes a trade, three risk analysts argue over it,
 
 def day_page(day, prev_d, next_d, watch, segments):
     d, w = day["date"], day["w"]
-    runs_html = "".join(run_html(r, day["agents"].get(r["ticker"]), day["picks"].get(r["ticker"], {}), day["shortlist"], watch)
+    runs_html = "".join(run_html(r, day["agents"].get(r["ticker"]), day["picks"].get(r["ticker"], {}), day["shortlist"], watch, (w or {}).get("segments"))
                         for r in day["runs"]) or "<p class='muted'>No stocks ran this day.</p>"
     link = lambda x, label, rel: (f'<a href="{x}.html" rel="{rel}">{label}</a>' if x else f'<span class="off">{label}</span>')
     pager = (f'<nav class="pager" aria-label="Days">{link(prev_d, "← " + (prev_d or "Older"), "prev")}'
@@ -293,7 +300,13 @@ def skip_reason(a):
     return r
 
 
-LEANS = {"wait": "Wait a session", "small": "Small positions only", "stands": "Ratings still stand"}
+LEANS = {"wait": "Hold off tonight", "small": "Small positions only", "stands": "Ratings still stand"}
+LEAN_MEANS = {
+    "wait": "Don't buy at this open. Something since the ratings (news, earnings, a big move) makes them stale; "
+            "wait one trading day, see how the market takes it, and check the next run's brief.",
+    "small": "The ratings mostly still hold, but there's enough uncertainty to start only a small position.",
+    "stands": "Nothing material has changed since the ratings; act on them as the site describes.",
+}
 
 
 def lean_chip(b):
@@ -312,6 +325,8 @@ def brief_usage_line(u, rates):
 
 def brief_html(day, up=""):
     b = day["brief"]
+    stances = (day.get("w") or {}).get("segments", {})
+    seg_of = {**segment_of(), **{t: w["segment"] for t, w in watchlist.load().items()}}
     names = ""
     for x in b.get("names", []):
         since = x.get("since_rated")
@@ -320,6 +335,7 @@ def brief_html(day, up=""):
         cat = f'<p class="cat">{e(x["catalyst"])}</p>' if x.get("catalyst") else ""
         names += f'''<div class="bname">
   <div class="run-top"><span class="tk big">{e(x.get("ticker", ""))}</span><span class="grow"></span>{chip(x.get("rating"))}</div>
+  {seg_tag(x.get("segment") or seg_of.get(x.get("ticker", ""), ""), stances) if (x.get("segment") or seg_of.get(x.get("ticker", ""))) else ""}
   <p class="muted small">{price}{last}</p>{cat}
   <p class="take">{e(x.get("take", ""))}</p>
 </div>'''
@@ -331,6 +347,7 @@ def brief_html(day, up=""):
     meta = " · ".join(x for x in (f"Written {e(written)} SGT" if written else "", e(b.get("note", "")), f"This brief used {usage}" if usage else "") if x)
     return f'''<div class="brief">
 <div class="brief-head"><span class="eyebrow">{e(b.get("session", ""))}</span>{lean_chip(b)}</div>
+<p class="lean-means muted small">{e(LEAN_MEANS.get(b.get("lean"), ""))}</p>
 <p class="bl">{e(b.get("bottom_line", ""))}</p>
 <div class="two"><div><h3>What changed since the ratings</h3><ul class="plain">{lis(b.get("what_changed", []))}</ul></div>
 <div><h3>If you still buy</h3><ul class="plain">{lis(b.get("if_buying", []))}</ul></div></div>
@@ -381,7 +398,7 @@ def glance_html(day):
         kind = '<span class="kind">re-check</span>' if r["kind"] == "recheck" else '<span class="kind new">new pick</span>'
         cards.append(f'''<a class="run" href="days/{day["date"]}.html#{e(r["ticker"])}">
   <div class="run-top"><span class="tk big">{e(r["ticker"])}</span>{kind}<span class="grow"></span>{chip(rating, "chip big")}</div>
-  <p class="muted small">{e(seg_name(r["segment"]))}</p>{act}</a>''')
+  {seg_tag(r["segment"], w.get("segments"))}{act}</a>''')
     runs = "".join(cards) or "<p class='muted'>No stocks ran today.</p>"
     return f'''<p class="eyebrow">{e(nice_date(day["date"]))}</p>
 <p class="headline">{e(w.get("headline", ""))}</p>
@@ -389,7 +406,7 @@ def glance_html(day):
 <p><a class="more" href="days/{day["date"]}.html">Full worldview and every agent&#39;s output →</a></p>'''
 
 
-def board_html(watch, track):
+def board_html(watch, track, stances=None):
     if not watch:
         return "<p class='muted'>Empty. Every new pick joins the watchlist.</p>"
     picks = (track or {}).get("picks", [])
@@ -405,7 +422,7 @@ def board_html(watch, track):
         dots = "".join(dot(c.get("rating"), f'{c["date"]}: {c.get("rating") or "no rating"}') for c in w["checks"])
         active.append(f'''<div class="wcard">
   <div class="run-top"><span class="tk big">{e(t)}</span><span class="grow"></span>{chip(last)}</div>
-  <p class="muted small">{e(seg_name(w["segment"]))} · since {e(w["added"])}</p>
+  {seg_tag(w["segment"], stances)}<p class="muted small">on the watchlist since {e(w["added"])}</p>
   <div class="dots" aria-label="Rating history, oldest first">{dots}</div>
   <dl class="nums"><div><dt>Since added</dt><dd class="{tone(f.get("return"))}">{pct(f.get("return"))}</dd></div>
   <div><dt>vs QQQ</dt><dd class="{tone(f.get("vs_qqq"))}">{pct(f.get("vs_qqq"))}</dd></div></dl>
@@ -642,7 +659,7 @@ def landing_page(days, loaded, watch, track, segments):
     body = f'''{hero_html(latest["date"], days, loaded, watch, track)}
 <main>
 <section id="today"><h2>Today at a glance</h2>{glance_html(latest)}</section>
-<section id="watchlist"><h2>Watchlist</h2>{board_html(watch, track)}</section>
+<section id="watchlist"><h2>Watchlist</h2>{board_html(watch, track, (latest["w"] or {}).get("segments"))}</section>
 {f'<section id="tonight"><h2>Before tonight&#39;s open</h2>{brief_html(latest)}</section>' if latest.get("brief") else ""}
 <section id="worldview"><h2>Worldview over time</h2>{thesis_grid_html(days, loaded)}</section>
 <section id="segments"><h2>Segment stance over time</h2>{segment_grid_html(days, loaded, segments)}</section>
@@ -916,6 +933,9 @@ tr.me td{font-weight:600}tr.me td:first-child{box-shadow:inset 3px 0 0 var(--acc
 .bname b{font-weight:500}.bname .cat{margin:0;font:500 .72rem var(--mono);text-transform:uppercase;letter-spacing:.03em;color:var(--accent)}
 .take{margin:0;font:.95rem/1.5 var(--body)}.trust{margin:0;font:.95rem/1.55 var(--body);max-width:75ch}
 .srcs ul{padding:8px 12px 10px 30px;font-size:.9rem}.srcs li{overflow-wrap:anywhere}
+.segtag{font:500 .7rem var(--mono);text-transform:uppercase;letter-spacing:.03em;padding:2px 7px;border-radius:2px;width:max-content;max-width:100%;
+border:1px solid currentColor;white-space:normal}.segtag.sg-neutral{background:transparent;color:var(--muted)}.segtag.sg-none{color:var(--muted)}
+.lean-means{margin:-4px 0 0;max-width:75ch}
 """
 
 if __name__ == "__main__":

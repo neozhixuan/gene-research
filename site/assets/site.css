@@ -161,3 +161,6 @@ tr.me td{font-weight:600}tr.me td:first-child{box-shadow:inset 3px 0 0 var(--acc
 .bname b{font-weight:500}.bname .cat{margin:0;font:500 .72rem var(--mono);text-transform:uppercase;letter-spacing:.03em;color:var(--accent)}
 .take{margin:0;font:.95rem/1.5 var(--body)}.trust{margin:0;font:.95rem/1.55 var(--body);max-width:75ch}
 .srcs ul{padding:8px 12px 10px 30px;font-size:.9rem}.srcs li{overflow-wrap:anywhere}
+.segtag{font:500 .7rem var(--mono);text-transform:uppercase;letter-spacing:.03em;padding:2px 7px;border-radius:2px;width:max-content;max-width:100%;
+border:1px solid currentColor;white-space:normal}.segtag.sg-neutral{background:transparent;color:var(--muted)}.segtag.sg-none{color:var(--muted)}
+.lean-means{margin:-4px 0 0;max-width:75ch}
