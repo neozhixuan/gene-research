@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-03",
+  "session": "US open Tue 3 Nov, 22:30 SGT",
+  "written_at": "2026-11-03T20:10:00+08:00",
+  "lean": "wait",
+  "bottom_line": "The ratings mostly still stand on fundamentals, but tonight is midterm election day, oil is back near $98 and AMD reports after the close, all risks the worldview names. Four of six names sit in segments the worldview rates neutral, so only NRG and VRT are backed by an overweight call.",
+  "what_changed": [
+    "Futures are flat to slightly lower: S&P -0.1%, Dow -0.8% (Apple's weak margin outlook), Nasdaq-100 +0.3% to +0.4% after entering a correction. Not a big move, but nobody is adding risk before the vote.",
+    "WTI is up 2.2% to about $98.5 on Middle East tensions, which touches the oil-and-rates risk in the worldview.",
+    "AMD reports Q3 after the US close tonight (about $13.1bn revenue expected); I found no reaction yet, so the read-through to chips is unknown.",
+    "ON Semiconductor's AI data-centre revenue rose 175% but its shares fell about 5% after hours: good prints are still being sold, as the worldview warns."
+  ],
+  "names": [
+    { "ticker": "ASML", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-02", "rated_price": 1565.9, "last_price": 1565.9, "since_rated": 0.0,
+      "catalyst": "", "take": "Rated yesterday at the same price, but the segment is neutral and -30% on the month; if buying, start small and wait for the open." },
+    { "ticker": "MU", "segment": "memory_storage", "rating": "Overweight", "rated_on": "2026-10-29", "rated_price": 983.23, "last_price": 884.74, "since_rated": -0.100,
+      "catalyst": "", "take": "Down 10% since rated, in a neutral segment where Apple's memory-cost complaint cuts both ways; I'd trust the worldview's caution over the rating tonight." },
+    { "ticker": "NRG", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-10-30", "rated_price": 97.54, "last_price": 96.06, "since_rated": -0.015,
+      "catalyst": "", "take": "Rating and overweight segment agree and the price is near the rated level; the cleanest fit tonight." },
+    { "ticker": "ONTO", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-10-29", "rated_price": 223.68, "last_price": 201.57, "since_rated": -0.099,
+      "catalyst": "", "take": "Down 10% in a neutral segment and fell another 5% on the last session; wait for the semis to stabilise." },
+    { "ticker": "STX", "segment": "memory_storage", "rating": "Overweight", "rated_on": "2026-10-30", "rated_price": 700.47, "last_price": 644.58, "since_rated": -0.080,
+      "catalyst": "", "take": "Seagate has dropped about 30% in a month and the segment is neutral; cheaper than rated, but no sign the selling has stopped." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-10-28", "rated_price": 208.56, "last_price": 232.5, "since_rated": 0.115,
+      "catalyst": "", "take": "Rating and overweight segment agree, but it is up 11.5% since rated and a momentum fund sold it; buying now means paying more than the agents saw." }
+  ],
+  "trust": "24 picks so far, 0 ratings graded (grading starts after 28 days), so there is no hit rate yet. Picks average +1.0% vs QQQ against -1.0% for SMH, which is too early to call skill.",
+  "if_buying": [
+    "Overweight means a small starter position, not full size.",
+    "Prefer NRG and VRT, where rating and worldview agree; wait on MU, STX, ONTO and ASML.",
+    "Consider waiting for the AMD reaction and election result, and use limit orders at a volatile open.",
+    "Don't chase VRT after its 11.5% run."
+  ],
+  "sources": [
+    { "title": "Stock Market Today: Futures Rise After Friday's Sell-Off as Oil Prices Tumble (Yahoo Finance)", "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-futures-rise-132700950.html" },
+    { "title": "Stock market today: Live updates (CNBC)", "url": "https://www.cnbc.com/2026/11/02/stock-market-today-live-updates.html" },
+    { "title": "Stock Market Today, November 3, 2026 (Bloomberg)", "url": "https://bloomberg.com/news/articles/2026-11-02/stock-market-today-dow-s-p-live-updates" },
+    { "title": "AMD Earnings Date: Q3 2026 Time and Estimates (CME Group)", "url": "https://www.cmelitegroup.com/knowledge-hub/amd-earnings-date-estimates-ai-chip-read-through/" },
+    { "title": "ON Semiconductor Posts Strong Q3 (BigGo Finance)", "url": "https://finance.biggo.com/news/04ae8412-8bd3-4f4a-b160-c68fb3f39a0d" }
+  ]
+}

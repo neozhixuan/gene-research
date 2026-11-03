@@ -42,11 +42,25 @@
   "CRDO": {
     "segment": "networking_optical",
     "added": "2026-11-02",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-11-02",
         "rating": null,
+        "kind": "new"
+      }
+    ],
+    "dropped": "2026-11-03",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
+  },
+  "DELL": {
+    "segment": "servers",
+    "added": "2026-11-03",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-11-03",
+        "rating": "Overweight",
         "kind": "new"
       }
     ]
@@ -92,6 +106,18 @@
     ],
     "dropped": "2026-10-28",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
+  },
+  "LITE": {
+    "segment": "networking_optical",
+    "added": "2026-11-03",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-11-03",
+        "rating": null,
+        "kind": "new"
+      }
+    ]
   },
   "MU": {
     "segment": "memory_storage",
@@ -140,7 +166,7 @@
   "NVT": {
     "segment": "grid_electrical",
     "added": "2026-10-23",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-10-23",
@@ -157,7 +183,9 @@
         "rating": "Hold",
         "kind": "recheck"
       }
-    ]
+    ],
+    "dropped": "2026-11-03",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "ONTO": {
     "segment": "foundry_equipment",
@@ -248,6 +276,11 @@
         "date": "2026-10-28",
         "rating": "Overweight",
         "kind": "new"
+      },
+      {
+        "date": "2026-11-03",
+        "rating": "Overweight",
+        "kind": "recheck"
       }
     ]
   },

@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "DELL",
+    "segment": "servers",
+    "kind": "new"
+  },
+  {
+    "ticker": "VRT",
+    "segment": "cooling_thermal",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "LITE",
+    "segment": "networking_optical",
+    "kind": "new"
+  }
+]

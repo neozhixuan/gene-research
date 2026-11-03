@@ -23,3 +23,6 @@ date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-11-02,ASML,new,foundry_equipment,1565.9,690.49,522.49,Overweight,Hold,Hold
 2026-11-02,NVT,recheck,grid_electrical,125.98,690.49,522.49,Hold,Hold,Hold
 2026-11-02,CRDO,new,networking_optical,150.99,690.49,522.49,,,
+2026-11-03,DELL,new,servers,392.78,681.09,508.31,Overweight,Buy,Overweight
+2026-11-03,VRT,recheck,cooling_thermal,224.24,681.09,508.31,Overweight,Buy,Overweight
+2026-11-03,LITE,new,networking_optical,684.4,681.09,508.31,,,

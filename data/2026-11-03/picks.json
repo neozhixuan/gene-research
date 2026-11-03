@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-03",
+  "picks": [
+    {
+      "ticker": "DELL",
+      "segment": "servers",
+      "why": "Dell trades at 13x forward earnings with revenue +58% and a 12% operating margin, 34% off its high, which limits the downside if AI server demand holds. The thesis that demand outruns supply is tested by its tripled inventory, so this is a check on whether the price already reflects that.",
+      "risk": "Memory costs and easing chip supply could squeeze margins and orders, and FCF yield is only 2%.",
+      "thesis_ids": ["ai-demand-exceeds-supply"]
+    },
+    {
+      "ticker": "LITE",
+      "segment": "networking_optical",
+      "why": "Lumentum has revenue +136%, a 28% operating margin and an 18x forward P/E after a 19% drop on the Marvell all-stock deal, which is a price that reflects deal fear rather than fundamentals. Fabrinet's data-centre revenue +78% shows optical demand is intact.",
+      "risk": "The pending $115bn all-stock merger leaves the share price tied to Marvell, which TD Cowen just downgraded.",
+      "thesis_ids": ["ai-demand-exceeds-supply"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "TER", "reason": "Foundry equipment is -30% on the month and Teradyne is -15.5% on five days; the watchlist already covers the segment with ASML and ONTO." },
+    { "ticker": "CORZ", "reason": "Neocloud segment is underweight and the stock is at 77x forward earnings with an operating margin of 7%." },
+    { "ticker": "LRCX", "reason": "Second foundry equipment name; the watchlist already covers that segment thinly-priced but twice." },
+    { "ticker": "CIEN", "reason": "Same segment as LITE; weaker growth." },
+    { "ticker": "ALAB", "reason": "35x forward earnings and no free cash flow." },
+    { "ticker": "KLAC", "reason": "Foundry equipment already covered; no cash-flow edge." }
+  ]
+}

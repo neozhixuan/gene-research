@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-03",
+  "previous": "2026-11-02",
+  "headline": "The semis ETF fell another 2.7% (-19.8% on the month) as Marvell's $115bn all-stock Lumentum deal and Apple's memory-cost warning hit AI hardware, while grid (+2.6% on five days) and Vertiv (+12.2%) held up again.",
+  "regime": "Nasdaq -1.1% and the semis ETF -2.7% on the day, with the semis ETF -19.8% and the Nasdaq -8.4% on the month; VIX is 21.4 (+22% on five days). The 10-year eased to 4.89% but crude is $98.46 (+10.1% on the month), and the midterm elections are today. Software (-17.4% on five days, ServiceNow -33%) and optical (-34.4% on the month) are weakest, while grid is the only segment up on the day and five days. The split between backlog-rich power suppliers and financed or crowded AI hardware continues.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 83,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Eaton reported record Q3 with accelerating record orders and backlog and raised organic growth guidance (1031895278ba)",
+        "Grid +2.6% and Vertiv-led cooling's best name +12.2% on five days while compute is -11.9% (digest segments)",
+        "Bernstein says data-centre political risk is overstated and names Quanta, Eaton, Vertiv, Equinix (cc44df149c90)",
+        "Against: grid -14.4% and cooling -18.9% on the month; a momentum fund sold Vertiv (28c224185106)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: Eaton's record orders and raised guidance are fresh company-level confirmation, and grid was the only segment green today."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 62,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "Fabrinet revenue +51% with data-centre revenue +78% and guidance to $1.6bn (278497a09035)",
+        "Western Digital revenue +55% and a 17% dividend rise (c9e5434c538a)",
+        "Against: Dell says chip supply is 'a lot closer' to demand and its inventory tripled (1823bdf7bfcb)",
+        "Against: compute -24.9% and foundry equipment -30.3% on the month (digest segments)"
+      ],
+      "change": "weaker",
+      "change_note": "-1: Fabrinet confirms demand, but Dell's inventory and the 30% monthly drops say the market sees supply catching up."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 85,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "Applied Digital's CEO says 800 MW still lacks financing; Nebius and CoreWeave fell 6% (4db672b519c5)",
+        "CoreWeave, ASTS and RGTI hit 52-week lows (dbdea76d4895); the bond market signals distress on CoreWeave (511771078b39)",
+        "Oracle is raising $20bn of stock and bonds to fund AI spending (5b45ee908598)",
+        "Against: Cipher swung to GAAP profit with $16.6bn of contracted revenue (af74089e3bac)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: another financing admission, new lows and a quality gate that again drops all the leveraged names."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 55,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Apple says memory prices keep rising into next year, hurting its margins (11590112e625)",
+        "Western Digital revenue +55% (c9e5434c538a)",
+        "Against: Seagate -30% in a month and Micron -34% off its high (002a16def5d2, dfea31095e8d)",
+        "Against: Dell's tripled inventory suggests buyers are stocking ahead of supply easing (1823bdf7bfcb)"
+      ],
+      "change": "weaker",
+      "change_note": "-5: rising prices prove the shortage but also create demand destruction at Apple and Dell; the group fell 6.9% in a day anyway."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 76,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Oracle's $20bn equity and bond raise to fund AI expansion (0281d1fb948b)",
+        "CPP Investments sees 'bubble-like exuberance' in AI debt (e3efb52151d6)",
+        "Against: Mizuho raised its Amazon target on AWS growth (ff6334c990d9)",
+        "Against: the group fell 2.2% on the day, least of the AI groups (digest segments)"
+      ],
+      "change": "unchanged",
+      "change_note": "Oracle's raise supports the thesis and Amazon's upgrade offsets it."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 72,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "Semis ETF -19.8% and VIX +38% on the month, with 10-year 4.89% and crude $98 (digest tape)",
+        "Marvell-Lumentum deal triggered a plunge in both and a TD Cowen downgrade with the target halved to $175 (d37e4489b821)",
+        "Index funds sold NVIDIA and Microsoft on Oct. 30 (bc7b5c398be9)",
+        "Against: the 10-year is down 7.3% on the month and Nvidia ticked up after a four-day rout (f1d774e7fa2d)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: another -2.7% semis day and a $115bn all-stock deal punished by both sides; the easing yield limits the move."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "-5.4% on the day, -24.9% on the month; Marvell -26.7% on five days, only Broadcom holds." },
+    "foundry_equipment": { "stance": "neutral", "note": "-30.3% on the month; KLA +2.6% but Teradyne -15.5% on five days; buy only quality." },
+    "memory_storage": { "stance": "neutral", "note": "-6.9% on the day; Apple and Dell margin pressure from memory costs." },
+    "networking_optical": { "stance": "neutral", "note": "-34.4% on the month; Lumentum -19% on the Marvell deal, though Fabrinet's results were strong." },
+    "servers": { "stance": "neutral", "note": "Dell -15.9% on five days with tripled inventory; HPE ranked Zacks #1." },
+    "power_nuclear": { "stance": "overweight", "note": "Constellation and NRG slipped; own cash-flow producers only, developers burn cash." },
+    "grid_electrical": { "stance": "overweight", "note": "Only green segment; Eaton record orders and raised guidance, MasTec +12.3% on five days." },
+    "cooling_thermal": { "stance": "overweight", "note": "Vertiv +12.2% on five days but less margin of safety; Trane -9.2%." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "Financing gaps at Applied Digital and 52-week lows at CoreWeave; fails the cash-flow gate." },
+    "hyperscalers": { "stance": "underweight", "note": "Oracle raising $20bn to fund capex; Alphabet -11.9% on five days." },
+    "ai_software": { "stance": "underweight", "note": "-17.4% on five days with ServiceNow -33%; Palantir fell despite a beat." }
+  },
+  "risks": [
+    "A further semis leg down after the midterms could force selling in the order-book names that have held up.",
+    "Memory costs squeezing Apple and Dell margins could cut hardware orders across the chain.",
+    "Oil near $98 amid reported US-Iran strikes and a 10-year near 4.9% keep multiples compressed.",
+    "Neocloud and Oracle financing stress could delay GPU, power and cooling orders.",
+    "Sell-the-news on good prints (Palantir, Apple) means being right on fundamentals can still lose money."
+  ],
+  "watch": [
+    "Market reaction to the midterm election results.",
+    "AMD earnings and whether Marvell and Lumentum stabilise after the deal.",
+    "Primoris (today) and Rigetti (Nov 10) reports for grid backlog and speculative tech sentiment.",
+    "Whether the semis ETF breaks below -20% on the month.",
+    "Applied Digital and CoreWeave financing news and CoreWeave earnings."
+  ]
+}
