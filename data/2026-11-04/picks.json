@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-04",
+  "picks": [
+    {
+      "ticker": "ANET",
+      "segment": "networking_optical",
+      "why": "Arista has a 45% operating margin, 38% revenue growth and a 31.5 forward P/E, and sits only 22% off its high, so it is the quality name in a segment down 31% on the month. It rallied after the Democratic sweep, which fits the thesis that AI demand outruns supply (ai-demand-exceeds-supply).",
+      "risk": "Hyperscaler or neocloud capex cuts after a funding squeeze would hit its orders.",
+      "thesis_ids": ["ai-demand-exceeds-supply"]
+    },
+    {
+      "ticker": "PRIM",
+      "segment": "grid_electrical",
+      "why": "Primoris is a 15.3 forward P/E grid contractor 61% off its high that beat earnings and gave strong guidance, in the only segment rising on five days. It is a cheap way to own the power-constraint thesis (power-is-the-binding-constraint).",
+      "risk": "Revenue is down 11% with a negative operating margin, so the beat may be a one-off.",
+      "thesis_ids": ["power-is-the-binding-constraint"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "TER", "reason": "Foundry equipment already has ASML and ONTO; 1% FCF yield after a 16.8% five-day drop." },
+    { "ticker": "CORZ", "reason": "Neocloud segment is underweight and the forward P/E is 87.5." },
+    { "ticker": "LRCX", "reason": "Foundry equipment is thick on the watchlist and the FCF yield is 2%." },
+    { "ticker": "CIEN", "reason": "Wait for the next report to show margins hold; ANET is the cleaner networking name." },
+    { "ticker": "ALAB", "reason": "Inventory tripled and the FCF yield is about 0%." },
+    { "ticker": "KLAC", "reason": "Foundry equipment already covered and the segment is neutral." }
+  ]
+}

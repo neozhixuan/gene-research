@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-04",
+  "session": "US open Wed 4 Nov, 22:30 SGT",
+  "written_at": "2026-11-04T20:30:00+08:00",
+  "lean": "small",
+  "bottom_line": "The ratings mostly hold: futures recovered from an early midterm sell-off and AMD and Super Micro beat, which supports the AI-demand thesis. Only the two power and cooling names sit in segments the worldview rates overweight, so keep sizes small and let the open settle.",
+  "what_changed": [
+    "Futures fell overnight on the Democratic sweep (Nasdaq 100 futures were down as much as 2.4%) then reversed to roughly +0.2% to +1%; this touches the new policy-risk thesis for data centres.",
+    "AMD beat: revenue about $13.4bn, data-centre revenue +97% to $8.5bn, shares up 5-8% after hours; supports 'AI demand exceeds supply'.",
+    "Super Micro also rose after hours on a record $19.9bn quarter.",
+    "Brent is about $102.8 and WTI about $95.8, so the oil and 10-year (4.95%) risks the worldview names are unchanged."
+  ],
+  "names": [
+    { "ticker": "ANET", "segment": "networking_optical", "rating": "Overweight", "rated_on": "2026-11-04",
+      "rated_price": 169.91, "last_price": 169.91, "since_rated": 0.0,
+      "catalyst": "",
+      "take": "Rated today at the last close; the segment is neutral and optical is -31% on the month, but AMD's results help; start small." },
+    { "ticker": "ASML", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-02",
+      "rated_price": 1565.9, "last_price": 1552.14, "since_rated": -0.009,
+      "catalyst": "",
+      "take": "Flat since rating; segment is neutral and -28.5% on the month, so the rating and the worldview disagree; trust the rating only for a small size." },
+    { "ticker": "DELL", "segment": "servers", "rating": "Overweight", "rated_on": "2026-11-03",
+      "rated_price": 392.78, "last_price": 408.4, "since_rated": 0.04,
+      "catalyst": "Earnings 24 Nov",
+      "take": "Up 4% since rated and Super Micro's beat helps, but the worldview flags tripled inventory at Dell; do not chase." },
+    { "ticker": "NRG", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-10-30",
+      "rated_price": 97.54, "last_price": 96.26, "since_rated": -0.013,
+      "catalyst": "Earnings 9 Nov",
+      "take": "Segment is overweight and the price is below the rating level; the Democratic Congress is a policy risk, and earnings are in five days." },
+    { "ticker": "ONTO", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-10-29",
+      "rated_price": 223.68, "last_price": 202.39, "since_rated": -0.095,
+      "catalyst": "Earnings 9 Nov",
+      "take": "Down 9.5% since rated in a neutral segment, with earnings on 9 Nov; wait for the print." },
+    { "ticker": "STX", "segment": "memory_storage", "rating": "Overweight", "rated_on": "2026-10-30",
+      "rated_price": 700.47, "last_price": 606.38, "since_rated": -0.134,
+      "catalyst": "",
+      "take": "Down 13.4% since rated, the worst here; the worldview rates memory neutral, so the rating is stale and not a reason to buy tonight." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-03",
+      "rated_price": 224.24, "last_price": 235.97, "since_rated": 0.052,
+      "catalyst": "",
+      "take": "Segment is overweight and the thesis is strengthened by Eaton, but it is up 5% since rated; use a limit order, not a market order." }
+  ],
+  "trust": "No ratings are graded yet (grading starts after 28 days). Claude's 30 picks average +1.4% against QQQ, and Buy/Overweight picks +1.9%, ahead of SMH at -0.7% and the equal-weight universe at -0.6%, but it is too early to count on it.",
+  "if_buying": [
+    "Size at a small starter position per the Overweight rating, and add only if the thesis holds.",
+    "Prefer NRG and VRT, where the worldview and the rating agree; for the rest, the segment view is neutral.",
+    "Wait on ONTO and NRG for their 9 Nov earnings, and on DELL and VRT which have already risen.",
+    "Use limit orders: the open follows an overnight swing of more than 2% in Nasdaq futures."
+  ],
+  "sources": [
+    { "title": "Stock Market Today, Nov. 4: Futures Rise After Democrats Sweep Midterm Elections - TipRanks", "url": "https://www.tipranks.com/news/stock-market-today-nov-4-futures-rise-after-democrats-sweep-midterm-elections" },
+    { "title": "US Stock Futures Rebound After Midterm Election Sell-Off - KuCoin", "url": "https://www.kucoin.com/news/flash/us-stock-futures-rebound-after-midterm-election-sell-off" },
+    { "title": "AMD stock jumps 8% on earnings as data center revenue nearly doubles - CNBC", "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html" }
+  ]
+}

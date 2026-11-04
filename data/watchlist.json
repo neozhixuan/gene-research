@@ -1,4 +1,16 @@
 {
+  "ANET": {
+    "segment": "networking_optical",
+    "added": "2026-11-04",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-11-04",
+        "rating": "Overweight",
+        "kind": "new"
+      }
+    ]
+  },
   "ASML": {
     "segment": "foundry_equipment",
     "added": "2026-11-02",
@@ -110,19 +122,21 @@
   "LITE": {
     "segment": "networking_optical",
     "added": "2026-11-03",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-11-03",
         "rating": null,
         "kind": "new"
       }
-    ]
+    ],
+    "dropped": "2026-11-04",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "MU": {
     "segment": "memory_storage",
     "added": "2026-10-22",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-10-22",
@@ -138,8 +152,15 @@
         "date": "2026-10-29",
         "rating": "Overweight",
         "kind": "recheck"
+      },
+      {
+        "date": "2026-11-04",
+        "rating": "Hold",
+        "kind": "recheck"
       }
-    ]
+    ],
+    "dropped": "2026-11-04",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "NRG": {
     "segment": "power_nuclear",
@@ -212,6 +233,18 @@
     ],
     "dropped": "2026-10-30",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
+  },
+  "PRIM": {
+    "segment": "grid_electrical",
+    "added": "2026-11-04",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-11-04",
+        "rating": null,
+        "kind": "new"
+      }
+    ]
   },
   "SNDK": {
     "segment": "memory_storage",

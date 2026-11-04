@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-04",
+  "previous": "2026-11-03",
+  "headline": "Democrats swept the midterms and AI data-centre stocks wobbled, but the semis ETF bounced 2.0% and grid (+5.4%, Primoris +15.1% on five days) kept leading while the ETF stays -18.2% on the month.",
+  "regime": "Nasdaq +0.8% and the semis ETF +2.0% on the day, but -4.2% and -7.1% on five days and -7.7% and -18.2% on the month; VIX eased 12.3% to 18.26. The 10-year is 4.95% and crude $95.15 (+6.4% on the month). Grid is the only segment up on five days (+5.8%); software (-16.8%), compute (-12.4%) and optical (-12.1%) are weakest. Policy risk to data-centre build-outs is the new variable, yet company prints (Eaton, Primoris, Super Micro, Astera) are strong: fundamentals and prices still disagree.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 84,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Eaton: record $20bn backlog, beat the high end of guidance on every metric, data-centre demand up 65% (caeb9a06e4c3)",
+        "Primoris surged on an earnings beat and strong guidance; grid +5.8% on five days (647e624dd52c)",
+        "Talen: adjusted EBITDA nearly doubled, 2027 targets above 25% growth, $3bn buyback (9164a217b18a)",
+        "Against: Eaton fell 16% in a month and Vertiv and GE Vernova fell with it (07170387f5de); Modine missed EPS by 12.9% (8d8a52205d05)"
+      ],
+      "change": "stronger",
+      "change_note": "+1: more record backlog and a grid rally into a sweep that threatens data-centre policy; Modine's miss and the monthly drops cap the gain."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 66,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "Super Micro revenue $19.9bn, up 298% year on year; one AI order can exceed a year-ago quarter (206a15f03f0e, 5a7860879472)",
+        "Astera Labs revenue $584.9m, up 154% (5ab9466a1684)",
+        "AMD's Lisa Su eyes 80% growth in 2027 (584a6fd9677e)",
+        "Against: compute -23% and foundry equipment -28.5% on the month (digest segments); Astera's inventory tripled (e87b2be56b85)"
+      ],
+      "change": "stronger",
+      "change_note": "+4: three huge prints and guidance in one day; the price action still says the market doubts duration, so no more than that."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 84,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "DigitalOcean -36% and TeraWulf -20% in a month on build-out funding fears (b995b2f7ee6a, 1c65fd13e1c8)",
+        "CoreWeave fair value trimmed as analysts split on financing risk (ab7f6e4b413c)",
+        "Against: the group rose 9.6% on the day, Oracle's $20bn raise showed lenders still lend (04faf04aa5bf), TeraWulf upsized its credit line (995568815f73)"
+      ],
+      "change": "weaker",
+      "change_note": "-1: a violent relief bounce and open credit markets; the group is still -24.3% on the month and fails the cash-flow gate."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 53,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "A NAND maker with 84.6% margins is down 51% from its high (106f7866dc9d)",
+        "ETFs bought $262.9m of Micron on Nov. 2 (4bdd8ca96c9e)",
+        "Against: memory -9.9% on five days and -26.6% on the month, Micron the best at -7.9% (digest segments)",
+        "Against: Astera's tripled inventory repeats the stocking-ahead signal (e87b2be56b85)"
+      ],
+      "change": "weaker",
+      "change_note": "-2: no new fundamental news and the group is still falling on five days; margin-versus-price gap is the only support."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 74,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Oracle priced a $20bn stock and bond sale to fund AI (04faf04aa5bf)",
+        "Google is expanding voluntary exit packages to five more countries, a cost-cutting sign (5ed7437d8f5b)",
+        "Against: Jassy's message points to AI-driven AWS revenue growth (a4a1b9053861)"
+      ],
+      "change": "weaker",
+      "change_note": "-2: Oracle's raise was well received and AWS growth offsets; no new cash-flow data."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 70,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "Semis ETF -18.2% and Nasdaq -7.7% on the month, 10-year 4.95% (digest tape)",
+        "AI infrastructure meets the 5% Treasury yield test (7146e5110179)",
+        "Against: VIX fell 12.3% on the day, and post-midterm seasonality is cited as supportive (97c15473628e)"
+      ],
+      "change": "weaker",
+      "change_note": "-2: a calmer VIX and a bounce, but the 10-year is at 4.95% and every group is still deeply negative on the month."
+    },
+    {
+      "id": "political-risk-to-data-centres",
+      "title": "A Democratic Congress raises policy risk for data-centre build-outs",
+      "stance": "bearish",
+      "confidence": 40,
+      "segments": ["hyperscalers", "datacenter_neocloud"],
+      "evidence": [
+        "AI data-centre stocks dropped as Democrats swept the midterms (3c75d0cd7417)",
+        "Texas paused its data-centre boom (99ff96f5fbd2)",
+        "Against: futures reversed higher and AMD and Arista rallied after the sweep (5e4f41f72dd8)"
+      ],
+      "change": "new",
+      "change_note": "New and low-confidence: the sell-off reversed within hours, so the market is treating it as headline risk until legislation appears."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "-12.4% on five days, Marvell -29.4%; AMD and Astera prints are strong but price trend is down." },
+    "foundry_equipment": { "stance": "neutral", "note": "-28.5% on the month; KLA +1.7% on five days, Teradyne -16.8%; buy only quality." },
+    "memory_storage": { "stance": "neutral", "note": "-26.6% on the month; margins are high but buyers may be stocking." },
+    "networking_optical": { "stance": "neutral", "note": "-31% on the month; Fabrinet and Astera beat, Lumentum -21.5% on five days." },
+    "servers": { "stance": "neutral", "note": "Super Micro record $19.9bn quarter, but Dell -18.6% on five days." },
+    "power_nuclear": { "stance": "overweight", "note": "Talen EBITDA nearly doubled with a $3bn buyback; developers like Oklo still burn cash." },
+    "grid_electrical": { "stance": "overweight", "note": "Only segment up on five days (+5.8%); Eaton record backlog, Primoris +15.1%." },
+    "cooling_thermal": { "stance": "overweight", "note": "Vertiv +13.1% on five days; Modine missed EPS and Trane -9.5%." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "+9.6% bounce is not a thesis change; funding stress and the cash-flow gate remain." },
+    "hyperscalers": { "stance": "underweight", "note": "Oracle's $20bn raise; Alphabet -12.7% on five days; policy risk adds." },
+    "ai_software": { "stance": "underweight", "note": "-16.8% on five days with ServiceNow -29.5%." }
+  },
+  "risks": [
+    "Democratic control of Congress could bring data-centre scrutiny that delays orders for power and cooling suppliers.",
+    "The 10-year at 4.95% is on the edge of 5%, which would compress multiples further.",
+    "Oil near $95-104 on Middle East tensions and the Iran war keeps inflation and rates sticky.",
+    "Inventory tripling at Astera and Dell could mean stocking ahead of an order slowdown.",
+    "Neocloud funding stress could hit GPU, power and cooling orders if lenders close."
+  ],
+  "watch": [
+    "Whether grid and cooling hold up if the post-midterm bounce fades.",
+    "Any concrete data-centre legislation or state moratoria after Texas.",
+    "The 10-year against 5% and the semis ETF against -20% on the month.",
+    "Camtek earnings today and Powell Industries' fiscal Q4 date.",
+    "Ciena's next report for whether margins keep up with 37% growth."
+  ]
+}

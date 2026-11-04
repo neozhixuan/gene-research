@@ -26,3 +26,6 @@ date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-11-03,DELL,new,servers,392.78,681.09,508.31,Overweight,Buy,Overweight
 2026-11-03,VRT,recheck,cooling_thermal,224.24,681.09,508.31,Overweight,Buy,Overweight
 2026-11-03,LITE,new,networking_optical,684.4,681.09,508.31,,,
+2026-11-04,ANET,new,networking_optical,169.91,685.28,518.52,Overweight,Buy,Overweight
+2026-11-04,MU,recheck,memory_storage,855.1,685.28,518.52,Hold,Hold,Hold
+2026-11-04,PRIM,new,grid_electrical,79.57,685.28,518.52,,,
