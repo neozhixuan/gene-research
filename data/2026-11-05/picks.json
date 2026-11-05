@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-05",
+  "picks": [
+    {
+      "ticker": "PWR",
+      "segment": "grid_electrical",
+      "why": "Quanta posted a record AI-driven backlog (7845c599668e) and trades at 26.8x forward earnings with 57% revenue growth and a 4% free cash flow yield, 26% off its high in the one segment still rated overweight. It builds the grid and interconnection capacity that the power-constraint thesis says is scarce.",
+      "risk": "A Texas-style permit freeze or data-centre moratoria could slow the projects behind its backlog.",
+      "thesis_ids": ["power-is-the-binding-constraint", "political-risk-to-data-centres"]
+    },
+    {
+      "ticker": "LRCX",
+      "segment": "foundry_equipment",
+      "why": "Lam earns a 40% operating margin on 54% revenue growth and trades at 18.1x forward earnings, 50% off its high, a price that limits the downside for a toolmaker every chip expansion needs. This is the quality end of a segment that fell 32% on the month.",
+      "risk": "If hyperscaler capex restraint spreads, chip fab spending and equipment orders would be cut.",
+      "thesis_ids": ["ai-demand-exceeds-supply", "ai-trade-crowded-at-high-rates"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "TER", "reason": "Same segment as LRCX, and its free cash flow yield is only 2% at 20.9x." },
+    { "ticker": "CORZ", "reason": "Neocloud segment is underweight and the forward P/E is 78x." },
+    { "ticker": "CIEN", "reason": "Networking is neutral and the watchlist already holds ANET." },
+    { "ticker": "ALAB", "reason": "Rich valuation at 34x with near-zero free cash flow yield, and inventory is tripling." },
+    { "ticker": "CAMT", "reason": "Small cap in the same segment as LRCX, with no free cash flow data." },
+    { "ticker": "MRVL", "reason": "Compute is neutral and the Lumentum deal adds integration and debt risk." }
+  ]
+}

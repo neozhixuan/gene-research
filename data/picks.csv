@@ -29,3 +29,6 @@ date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-11-04,ANET,new,networking_optical,169.91,685.28,518.52,Overweight,Buy,Overweight
 2026-11-04,MU,recheck,memory_storage,855.1,685.28,518.52,Hold,Hold,Hold
 2026-11-04,PRIM,new,grid_electrical,79.57,685.28,518.52,,,
+2026-11-05,PWR,new,grid_electrical,580.44,691.95,504.27,Overweight,Buy,Overweight
+2026-11-05,ONTO,recheck,foundry_equipment,184.82,691.95,504.27,Overweight,Buy,Overweight
+2026-11-05,LRCX,new,foundry_equipment,221.43,691.95,504.27,,,

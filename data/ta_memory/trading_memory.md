@@ -142,7 +142,7 @@ The -5.9% alpha demonstrates that the decision to avoid catching the falling kni
 
 <!-- ENTRY_END -->
 
-[2026-10-27 | POWL | Hold | pending]
+[2026-10-27 | POWL | Hold | -14.8% | -14.1% | 5d | resolved:2026-11-04]
 
 DECISION:
 **Rating**: Hold
@@ -155,9 +155,12 @@ DECISION:
 
 **Time Horizon**: 3-6 months
 
+REFLECTION:
+The -14.1% alpha indicates that my caution was well-founded, though a five-day window is insufficient to confirm the long-term thesis given the 3-6 month horizon. The severe price drop undercuts the assumption that $146 would serve as a meaningful technical floor, suggesting that selling pressure was deeper than anticipated. Moving forward, I must incorporate higher volatility premiums into my entry models to avoid catching falling knives during periods of momentum exhaustion.
+
 <!-- ENTRY_END -->
 
-[2026-10-27 | NRG | Hold | pending]
+[2026-10-27 | NRG | Hold | -13.7% | -13.0% | 5d | resolved:2026-11-04]
 
 DECISION:
 **Rating**: Hold
@@ -169,6 +172,9 @@ DECISION:
 **Price Target**: not provided
 
 **Time Horizon**: 3-6 months
+
+REFLECTION:
+The -13.0% alpha demonstrates that the decision to remain on the sidelines was correct in avoiding immediate, sharp downside, though the five-day window is too short to fully validate the long-term thematic thesis. This outcome underscores the danger of the company’s severe leverage profile, as market participants reacted aggressively to solvency concerns. Future analyses of highly indebted firms must prioritize the sensitivity of the debt-to-equity ratio over GARP valuation metrics during periods of broader market volatility.
 
 <!-- ENTRY_END -->
 
@@ -345,6 +351,36 @@ DECISION:
 **Executive Summary**: Maintain a Hold stance on MU while keeping the remaining $10,000 in cash reserves. Refrain from adding fresh capital until price action either demonstrates a confirmed technical reversal above moving averages or successfully tests and holds the 200-day simple moving average at $751.57. Monitor for stabilization before executing new capital deployment.
 
 **Investment Thesis**: The investment thesis is built on resolving the intense debate between the aggressive camp's focus on deep fundamental value and the conservative and neutral warnings regarding technical deterioration and structural value-trap risks. The aggressive analyst highlights Micron's phenomenal metrics—including a Forward P/E of 4.12x, an 80.7% operating margin, a pristine Debt-to-Equity ratio of 0.04x, and $262.9 million in institutional ETF inflows—arguing that waiting for technical confirmation means missing out on the primary recovery phase. However, the conservative and neutral analysts present compelling evidence that overrides immediate buying pressure. Specifically, MU trades well below its 10-day EMA and 50-day SMA with a widening bearish MACD histogram, reflecting active institutional distribution and real-world uncertainties such as post-midterm regulations and competitive threats from CXMT. Although the neutral analyst proposes a scaled 25% entry to balance these factors, previous lessons across similar tickers (such as HPE and WDC) demonstrate that overriding bearish technical momentum and ignoring active distribution metrics often leads to avoidable short-term capital drawdowns. Consequently, the evidence remains balanced between structural deep value and confirmed technical downtrends, warranting a disciplined Hold until price stability is proven. This stance would change upon a verified bullish MACD crossover and reclamation of key moving averages.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-05 | PWR | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Initiate a scaled long position in PWR with an initial 1% portfolio allocation to capitalize on the sentiment-driven pullback below moving averages. Use a disciplined stop-loss at 520 and deploy the remaining 1% cash allocation only if the 520-530 support zone holds or upon a recovery breakout above the 600 psychological level.
+
+**Investment Thesis**: The investment thesis is driven by Quanta Services' massive $41.75 billion backlog and robust $3.08 billion TTM Free Cash Flow, which confirm that the fundamental growth engine remains fully intact. While the conservative analyst highlights valid short-term headwinds including a high TTM P/E of 52.5, a high ATR of 33.33, and a technical breakdown below both the 50-day and 200-day moving averages, these concerns represent an emotional, political-noise-driven overreaction rather than fundamental decay. The aggressive and neutral analyses provide a stronger synthesis: the Forward P/E of 26.8 and Q3 revenue growth of 57.4% show that current prices offer an attractive entry dislocation. By adopting a moderate, split-entry strategy rather than an immediate full 2% position, the portfolio can capture the structural upside of energy infrastructure and AI-power demands while effectively mitigating duration risk and ongoing volatility. This thesis would change if regulatory hurdles structurally impair backlog conversion or if the 520 support level fails decisively, invalidating the structural support floor.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-05 | ONTO | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Initiate a scaled entry in ONTO using a conservative half-size position split into smaller tranches to capture the significant valuation discount. Set the initial position around current levels to exploit oversold RSI conditions, while retaining cash to average down or add on confirmation if volatility tests the 162.47 support level.
+
+**Investment Thesis**: The investment thesis is anchored in ONTO's strong fundamental GARP profile, highlighted by an attractive forward P/E of 15.80, a PEG ratio of 0.57, and structural tailwinds in AI memory and advanced packaging. While the conservative and neutral analysts raise valid concerns regarding negative technical momentum, trading below key moving averages, and a narrow ATR-based stop-loss buffer, these short-term cyclical fears and institutional selling pressures do not outweigh the underlying fundamental value. Drawing on lessons from prior decisions like MU and POWL, which emphasize avoiding blind momentum chasing during volatility, the refined strategy adopts the neutral analyst's phased entry approach. This mitigates the falling-knife risk highlighted by the conservative analyst while allowing the portfolio to capitalize on the 41% undervaluation discount before structural recovery begins. The thesis would be invalidated if macroeconomic headwinds lead to severe downward revisions in semiconductor capex or if the price decisively breaches the 162.47 support level.
 
 **Price Target**: not provided
 

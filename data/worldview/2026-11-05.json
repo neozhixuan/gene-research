@@ -1,0 +1,135 @@
+{
+  "date": "2026-11-05",
+  "previous": "2026-11-04",
+  "headline": "Money rotated out of AI infrastructure into hyperscalers: the semis ETF fell 2.8% (-20.4% on the month) while the S&P rose 1.6%, and grid (-11.0%) and cooling (-12.9%) were hit hardest on Texas data-centre policy fears.",
+  "regime": "S&P +1.6% and Nasdaq +1.4% on the day, but the semis ETF fell 2.8% and is -11.2% on five days and -20.4% on the month; hyperscalers (+3.1%) were the only segment up. The 10-year eased to 4.89% and crude fell 12.7% on five days, yet the AI-infrastructure complex fell anyway, so rates are no longer the main driver: policy risk after the Democratic sweep and doubts about spending duration are. Every infrastructure segment is down 12-21% on five days; fundamentals (Coherent, Seagate, Modine) are still strong but prices are ignoring them.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 78,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Comfort Systems, Quanta and Sterling report record backlogs from AI infrastructure demand (7845c599668e)",
+        "Modine data-centre revenue +95% and fiscal 2027 outlook raised to $3.1-3.2bn (66086808ae5c)",
+        "Against: grid -11.0% and cooling -12.9% on the day; Eaton fell almost 10% on Q3 despite the results (05c8857708d6)",
+        "Against: Vistra hit a 52-week low after Texas elected a governor promising to halt new data centres (af942f1fbb36)"
+      ],
+      "change": "weaker",
+      "change_note": "-6: demand evidence is intact, but the best-priced suppliers are being sold hard on a state-level policy threat, which is a real constraint on demand, not just a price move."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 60,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "Coherent raised full-year targets, forecasting fiscal 2027 sales up over 60% (e69adcd74ee6)",
+        "Seagate: $4.2bn sales and $1.76bn net income in the quarter (d2d5afa4807c)",
+        "Against: Microsoft spent less than expected on capex and declined to expand the Nscale Texas lease (ddeb620c05d2, 28189de92c23)",
+        "Against: Super Micro stock sank as results exposed cash strain (26a45cb8690f); compute -17.1% on five days"
+      ],
+      "change": "weaker",
+      "change_note": "-6: the largest buyer deferring capacity is the first direct demand-side crack, even though suppliers still print strong numbers."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 88,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "Microsoft declined to expand Nscale and a report ties IREN to Microsoft's AI spending delay (28189de92c23, ddeb620c05d2)",
+        "CoreWeave under pressure from heavy borrowing and data-centre fears (4ae392809484); CIFR -26.7% on five days",
+        "Against: Equinix +4.6% on five days and NextDC +43% on a Digital Realty/Goodman stake show well-funded operators are valued (b0715f993c64)"
+      ],
+      "change": "stronger",
+      "change_note": "+4: the bounce reversed and a hyperscaler pulled back from a leveraged tenant; strong buyers target owners with real cash flow, not borrowers."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 50,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Seagate earned $1.76bn on $4.2bn of sales, a very high margin (d2d5afa4807c)",
+        "Micron rallied 220% and is called cheap, with the crunch lasting through 2029 (d3b63a85083f)",
+        "Against: memory -20.9% on five days and -32.1% on the month, with a Trefis note on a 40% Micron crash risk (e589e83d8e8f)"
+      ],
+      "change": "weaker",
+      "change_note": "-3: earnings are strong but the group keeps falling, so the market is voting for a peak; the margin gap is the only support."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 70,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Oracle fell 14% in a week after a $20bn stock and bond sale to fund AI (d9193e973bd3)",
+        "Against: Microsoft spent less on capex than expected and gained 4.7% (ddeb620c05d2); hyperscalers +3.1% as money rotated in (29ab672bcb93)"
+      ],
+      "change": "weaker",
+      "change_note": "-4: the market now rewards hyperscalers for spending less, which confirms the cash-flow worry but also means the squeeze is easing at the largest names."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 72,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "Semis ETF -20.4% on the month, ai_software -19.3% on five days, with the 10-year at 4.89% (digest tape)",
+        "A research firm declares the 'end of the AI trade as we know it' (fac64e2ada09)",
+        "Against: the 10-year is falling (-3.0% on five days) and Tom Lee sees a 15-20% tech rally (2f45aee4bc56)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: AI-linked groups fell hard on a day when yields and oil eased, so the weakness is positioning and policy, not just rates."
+    },
+    {
+      "id": "political-risk-to-data-centres",
+      "title": "A Democratic Congress and Texas politics raise policy risk for data-centre build-outs",
+      "stance": "bearish",
+      "confidence": 58,
+      "segments": ["hyperscalers", "datacenter_neocloud", "power_nuclear", "grid_electrical"],
+      "evidence": [
+        "Texas elected a governor who promised to halt new data centres; Vistra and Vertiv fell to lows (af942f1fbb36)",
+        "Steve Weiss says the midterms put a lid on AI spending, with a Texas permit freeze hitting data-centre names (bfc7f3173081)",
+        "Marvell fell 7% as the sweep hit data-centre stocks (be8f6bb85a07)",
+        "Against: chipmakers barely flinched at first, and Tom Lee expects a tech rally (2f45aee4bc56)"
+      ],
+      "change": "stronger",
+      "change_note": "+18: last session's headline risk is now showing in prices, a Texas permit freeze and a hyperscaler declining Texas capacity."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "-17.1% on five days, Marvell -36.5%; quality names are cheap but the trend is down." },
+    "foundry_equipment": { "stance": "neutral", "note": "-32.2% on the month; fundamentals strong, so buy only quality at a low multiple." },
+    "memory_storage": { "stance": "neutral", "note": "-32.1% on the month; Seagate earns heavily but the market prices a peak." },
+    "networking_optical": { "stance": "neutral", "note": "Coherent raised targets, yet the group is -34.8% on the month." },
+    "servers": { "stance": "underweight", "note": "Super Micro cash strain and Dell -24.6% on five days." },
+    "power_nuclear": { "stance": "neutral", "note": "Vistra at a 52-week low on Texas policy; developers still burn cash." },
+    "grid_electrical": { "stance": "overweight", "note": "Record contractor backlogs, but -11.0% on the day; Hubbell flat on five days." },
+    "cooling_thermal": { "stance": "neutral", "note": "-12.9% on the day despite Modine's +95% data-centre revenue; policy fear dominates." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "Microsoft declined Nscale expansion; funding stress and the cash-flow gate remain." },
+    "hyperscalers": { "stance": "underweight", "note": "Relief bounce (+3.1%) on lower capex, but Oracle's funding strain persists." },
+    "ai_software": { "stance": "underweight", "note": "-19.3% on five days with Datadog -32.2%." }
+  },
+  "risks": [
+    "State or federal data-centre limits (Texas permit freeze) could delay orders across power, grid and cooling.",
+    "Microsoft's capex restraint may spread to other hyperscalers and cut supplier growth.",
+    "Leveraged neoclouds could lose financing and strand GPU and power orders.",
+    "Semis are -20% on the month; further forced selling could drag even the strong balance sheets.",
+    "Oil and the Iran war remain a black swan for inflation and rates."
+  ],
+  "watch": [
+    "Whether grid and cooling stabilise after a -11% to -13% day or the selling continues.",
+    "Any Texas legislation, permit rules or copycat state moratoria.",
+    "Capex commentary from other hyperscalers after Microsoft's under-spend.",
+    "Nebius earnings on Nov. 12 and neocloud financing news.",
+    "The semis ETF against -20% on the month and the 10-year at 4.89%."
+  ]
+}

@@ -133,6 +133,20 @@
     "dropped": "2026-11-04",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
+  "LRCX": {
+    "segment": "foundry_equipment",
+    "added": "2026-11-05",
+    "status": "dropped",
+    "checks": [
+      {
+        "date": "2026-11-05",
+        "rating": null,
+        "kind": "new"
+      }
+    ],
+    "dropped": "2026-11-05",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
+  },
   "MU": {
     "segment": "memory_storage",
     "added": "2026-10-22",
@@ -217,6 +231,11 @@
         "date": "2026-10-29",
         "rating": "Overweight",
         "kind": "new"
+      },
+      {
+        "date": "2026-11-05",
+        "rating": "Overweight",
+        "kind": "recheck"
       }
     ]
   },
@@ -237,11 +256,25 @@
   "PRIM": {
     "segment": "grid_electrical",
     "added": "2026-11-04",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-11-04",
         "rating": null,
+        "kind": "new"
+      }
+    ],
+    "dropped": "2026-11-05",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
+  },
+  "PWR": {
+    "segment": "grid_electrical",
+    "added": "2026-11-05",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-11-05",
+        "rating": "Overweight",
         "kind": "new"
       }
     ]

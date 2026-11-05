@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-05",
+  "session": "US open Thu 5 Nov, 22:30 SGT",
+  "written_at": "2026-11-05T20:30:00+08:00",
+  "lean": "wait",
+  "bottom_line": "Wait. Premarket the chip ETF is down more than 2% and Nasdaq-100 futures about 0.7%, extending the sell-off on data-centre policy fears, which is the worldview's top bearish thesis. Most names are already below their rated price, and two (ONTO, NRG) report on 9 Nov.",
+  "what_changed": [
+    "Nasdaq-100 futures were about -0.7% and S&P futures about -0.1% early Thursday; a chip ETF fell more than 2% premarket on fears of tighter data-centre rules (touches the political-risk thesis, 58).",
+    "Oil fell more than 8% on Wednesday to the lowest since 31 Aug, which helped broad stocks but not AI suppliers.",
+    "AMD (reported 3 Nov) beat and guided Q4 to about $17bn versus $16.2bn expected, but the stock failed to hold gains as Nvidia and Intel fell: good prints are not lifting prices (demand thesis, 60).",
+    "No new after-hours results dated 5 Nov were found."
+  ],
+  "names": [
+    { "ticker": "ANET", "segment": "networking_optical", "rating": "Overweight", "rated_on": "2026-11-04", "rated_price": 169.91, "last_price": 178.48, "since_rated": 0.05, "catalyst": "", "take": "Up 5% since rating and segment is neutral; chasing a premarket chip sell-off is unattractive, wait for a pullback." },
+    { "ticker": "ASML", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-02", "rated_price": 1565.9, "last_price": 1496.3, "since_rated": -0.044, "catalyst": "", "take": "Cheaper than rated, but the chip ETF is falling again premarket; wait for the open to settle." },
+    { "ticker": "DELL", "segment": "servers", "rating": "Overweight", "rated_on": "2026-11-03", "rated_price": 392.78, "last_price": 372.36, "since_rated": -0.052, "catalyst": "Earnings 24 Nov", "take": "Worldview rates servers underweight (Super Micro cash strain) while the agents said Overweight; trust the worldview tonight." },
+    { "ticker": "NRG", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-10-30", "rated_price": 97.54, "last_price": 83.25, "since_rated": -0.146, "catalyst": "Earnings 9 Nov", "take": "Down 14.6% since rated with Texas power names at lows and earnings in days; the rating is stale, wait." },
+    { "ticker": "ONTO", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-05", "rated_price": 184.82, "last_price": 184.82, "since_rated": 0.0, "catalyst": "Earnings 9 Nov", "take": "Freshly rated at today's price but reports on 9 Nov; a small starter at most, with a limit order." },
+    { "ticker": "PWR", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-05", "rated_price": 580.44, "last_price": 580.44, "since_rated": 0.0, "catalyst": "", "take": "Segment and rating agree, but grid fell 11% yesterday on Texas policy; the freshest rating is the most useful, still wait for the open." },
+    { "ticker": "STX", "segment": "memory_storage", "rating": "Overweight", "rated_on": "2026-10-30", "rated_price": 700.47, "last_price": 557.06, "since_rated": -0.205, "catalyst": "", "take": "Down 20.5% since rated; the thesis that memory is priced as peak is only 50 confidence, so the rating is too stale to act on." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-03", "rated_price": 224.24, "last_price": 205.55, "since_rated": -0.083, "catalyst": "", "take": "Cooling fell 12.9% yesterday and the worldview now rates it neutral; wait for stabilisation." }
+  ],
+  "trust": "No ratings are graded yet (grading starts after 28 days). The 33 picks average -6.3% versus QQQ, and Buy/Overweight picks at -5.7% do not beat any baseline except the random pick; only QQQ and SMH are ahead.",
+  "if_buying": [
+    "Overweight means a small starter position, not a full one; add only if the thesis holds.",
+    "Wait on NRG, STX, DELL and VRT: their ratings are 2-6 days old and prices have moved against them.",
+    "ONTO and NRG report on 9 Nov; avoid holding a new position into that without sizing for a gap.",
+    "Use limit orders; the open is likely to be volatile after a 2%+ premarket chip drop."
+  ],
+  "sources": [
+    { "title": "Stock market today: Dow, S&P 500, Nasdaq trade mixed as post-election relief rally cools, oil falls", "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-oil-falls-090519607.html" },
+    { "title": "Intel Drops 5%, NVIDIA Retreats 2% After AMD Earnings Beat", "url": "https://247wallst.com/investing/2026/11/04/intel-drops-5-nvidia-retreats-2-after-amd-earnings-beat-and-strong-2027-outlook-as-intel-falls-3-amd-stock-goes-nowhere/" },
+    { "title": "AMD's data center revenue nearly doubles in Q3", "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html" }
+  ]
+}
