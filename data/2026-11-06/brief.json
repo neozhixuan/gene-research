@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-06",
+  "session": "US open Fri 6 Nov, 22:30 SGT",
+  "written_at": "2026-11-06T20:30:00+08:00",
+  "lean": "wait",
+  "bottom_line": "The ratings were made before or during a rout that hit the worldview's own named risks (data-centre policy, crowded trade), and every name except PWR is 6-33% below its rated price. Futures bounce, but the October jobs report lands around the open and traders price a December rate hike, so I would let the open settle before acting.",
+  "what_changed": [
+    "Nasdaq fell 5.5% on Thursday, its worst day since April 2025, and the semis ETF fell 11.2%: this is the political-risk-to-data-centres thesis playing out.",
+    "Friday pre-market: Nasdaq-100 futures +1% to +1.7%, S&P 500 +0.3-0.4%, Dow futures -0.9%; AMD, Intel, Broadcom and Micron up 5-8% early.",
+    "October payrolls are due about the open (consensus roughly 59,000-65,000 jobs, 4.2% unemployment); CME FedWatch shows a more than 65% chance of a December hike, which touches the high-rates thesis.",
+    "Brent and WTI slipped below $100 a barrel, easing one of the worldview's inflation risks."
+  ],
+  "names": [
+    { "ticker": "ANET", "segment": "networking_optical", "rating": "Overweight", "rated_on": "2026-11-04", "rated_price": 169.91, "last_price": 159.16, "since_rated": -0.063, "catalyst": "", "take": "Segment is neutral in the worldview; cheaper than when rated, but wait for the jobs-day open." },
+    { "ticker": "ASML", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-02", "rated_price": 1565.9, "last_price": 1356.65, "since_rated": -0.134, "catalyst": "", "take": "Down 13% since rating with a neutral segment; the rating predates the rout, so treat it as stale." },
+    { "ticker": "DELL", "segment": "servers", "rating": "Overweight", "rated_on": "2026-11-03", "rated_price": 392.78, "last_price": 316.91, "since_rated": -0.193, "catalyst": "Earnings 24 Nov", "take": "Down 19% and the worldview is neutral on servers; the rating no longer reflects the price, so don't buy on it." },
+    { "ticker": "NRG", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-10-30", "rated_price": 97.54, "last_price": 80.55, "since_rated": -0.174, "catalyst": "Earnings 9 Nov", "take": "Segment still overweight, but earnings come on Monday; wait for the print." },
+    { "ticker": "PWR", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-06", "rated_price": 509.06, "last_price": 509.06, "since_rated": 0.0, "catalyst": "", "take": "Freshest rating and an overweight segment, but the agents saw the post-rout price; a limit order is safer at a volatile open." },
+    { "ticker": "STX", "segment": "memory_storage", "rating": "Overweight", "rated_on": "2026-10-30", "rated_price": 700.47, "last_price": 466.53, "since_rated": -0.334, "catalyst": "", "take": "Worldview now rates memory underweight and the stock is down a third since rating: the two disagree, and I'd trust the worldview tonight." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-03", "rated_price": 224.24, "last_price": 176.73, "since_rated": -0.212, "catalyst": "", "take": "Segment overweight, but Vertiv fell 14% in a day and the permitting risk is live; small size only, after the open settles." }
+  ],
+  "trust": "33 picks have been made and none are graded yet (grading starts after 28 days). So far the picks average -10.9% against QQQ, and only the Screen's #1, the random pick and the whole universe are worse or similar, so the ratings have not earned trust yet.",
+  "if_buying": [
+    "Overweight means a small starter position only, not a full one.",
+    "Wait on ASML, DELL, STX and NRG: the first three are stale and well below their rated prices, and NRG reports on Monday.",
+    "If you act, prefer PWR or VRT, where the segment still matches the worldview, with limit orders because the open is likely to swing on payrolls.",
+    "Overnight news was checked through Friday morning only; no payroll figure was available."
+  ],
+  "sources": [
+    { "title": "Stock market today: Dow, S&P 500, Nasdaq futures wobble after brutal sell-off, with key jobs report on deck", "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-091927729.html" },
+    { "title": "Nasdaq futures rebound after worst rout in 19 months as AI stocks bounce: Live updates", "url": "https://www.cnbc.com/2026/11/05/stock-market-today-live-updates.html" },
+    { "title": "AI wipeout in focus; U.S. employment data ahead - what's moving markets", "url": "https://www.investing.com/news/economy-news/ai-wipeout-in-focus-us-employment-data-ahead--whats-moving-markets-5006806" }
+  ]
+}

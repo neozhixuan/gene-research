@@ -1,55 +1,55 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-06",
   "summary": {
-    "picks": 30,
-    "avg_vs_qqq": 0.0139,
-    "beating_qqq": 11
+    "picks": 33,
+    "avg_vs_qqq": -0.1094,
+    "beating_qqq": 1
   },
   "scorecard": {},
   "baselines": {
-    "pick_days": 11,
+    "pick_days": 12,
     "strategies": {
       "picks": {
         "label": "Claude's picks",
-        "days": 11,
-        "avg_return": -0.0183,
-        "avg_vs_qqq": 0.0139
+        "days": 12,
+        "avg_return": -0.1884,
+        "avg_vs_qqq": -0.1094
       },
       "ta_positive": {
         "label": "Picks rated Buy / Overweight",
-        "days": 8,
-        "avg_return": -0.0131,
-        "avg_vs_qqq": 0.0191
+        "days": 9,
+        "avg_return": -0.1829,
+        "avg_vs_qqq": -0.1039
       },
       "screen_top": {
         "label": "Screen's #1 (no AI)",
-        "days": 11,
-        "avg_return": -0.0438,
-        "avg_vs_qqq": -0.0116
+        "days": 12,
+        "avg_return": -0.2386,
+        "avg_vs_qqq": -0.1596
       },
       "shortlist_avg": {
         "label": "Random shortlist pick (average)",
-        "days": 11,
-        "avg_return": -0.0241,
-        "avg_vs_qqq": 0.0081
+        "days": 12,
+        "avg_return": -0.2035,
+        "avg_vs_qqq": -0.1245
       },
       "universe": {
         "label": "Whole universe, equal weight",
-        "days": 11,
-        "avg_return": -0.038,
-        "avg_vs_qqq": -0.0058
+        "days": 12,
+        "avg_return": -0.1793,
+        "avg_vs_qqq": -0.1003
       },
       "QQQ": {
         "label": "QQQ (Nasdaq-100)",
-        "days": 11,
-        "avg_return": -0.0322,
+        "days": 12,
+        "avg_return": -0.079,
         "avg_vs_qqq": 0.0
       },
       "SMH": {
         "label": "SMH (chip stocks)",
-        "days": 11,
-        "avg_return": -0.0391,
-        "avg_vs_qqq": -0.0069
+        "days": 12,
+        "avg_return": -0.1561,
+        "avg_vs_qqq": -0.0771
       }
     }
   },
@@ -58,6 +58,60 @@
     "hold_band": 0.05
   },
   "picks": [
+    {
+      "date": "2026-11-06",
+      "ticker": "PWR",
+      "kind": "new",
+      "segment": "grid_electrical",
+      "price": "509.06",
+      "qqq": "647.05",
+      "smh": "447.73",
+      "rating": "Overweight",
+      "trader": "Buy",
+      "research_manager": "Overweight",
+      "now": 509.06,
+      "return": -0.0,
+      "vs_qqq": 0.0,
+      "vs_smh": -0.0,
+      "age_days": 0,
+      "correct": null
+    },
+    {
+      "date": "2026-11-06",
+      "ticker": "ONTO",
+      "kind": "recheck",
+      "segment": "foundry_equipment",
+      "price": "155.99",
+      "qqq": "647.05",
+      "smh": "447.73",
+      "rating": "Hold",
+      "trader": "Sell",
+      "research_manager": "Underweight",
+      "now": 155.99,
+      "return": 0.0,
+      "vs_qqq": 0.0,
+      "vs_smh": 0.0,
+      "age_days": 0,
+      "correct": null
+    },
+    {
+      "date": "2026-11-06",
+      "ticker": "CIEN",
+      "kind": "new",
+      "segment": "networking_optical",
+      "price": "230.81",
+      "qqq": "647.05",
+      "smh": "447.73",
+      "rating": "",
+      "trader": "",
+      "research_manager": "",
+      "now": 230.81,
+      "return": -0.0,
+      "vs_qqq": 0.0,
+      "vs_smh": -0.0,
+      "age_days": 0,
+      "correct": null
+    },
     {
       "date": "2026-11-04",
       "ticker": "ANET",
@@ -69,11 +123,11 @@
       "rating": "Overweight",
       "trader": "Buy",
       "research_manager": "Overweight",
-      "now": 169.91,
-      "return": 0.0,
-      "vs_qqq": -0.0,
-      "vs_smh": -0.0,
-      "age_days": 0,
+      "now": 159.16,
+      "return": -0.0633,
+      "vs_qqq": -0.0075,
+      "vs_smh": 0.0733,
+      "age_days": 2,
       "correct": null
     },
     {
@@ -87,11 +141,11 @@
       "rating": "Hold",
       "trader": "Hold",
       "research_manager": "Hold",
-      "now": 855.1,
-      "return": -0.0,
-      "vs_qqq": -0.0,
-      "vs_smh": -0.0,
-      "age_days": 0,
+      "now": 656.39,
+      "return": -0.2324,
+      "vs_qqq": -0.1766,
+      "vs_smh": -0.0959,
+      "age_days": 2,
       "correct": null
     },
     {
@@ -105,11 +159,11 @@
       "rating": "",
       "trader": "",
       "research_manager": "",
-      "now": 79.57,
-      "return": -0.0,
-      "vs_qqq": -0.0,
-      "vs_smh": -0.0,
-      "age_days": 0,
+      "now": 59.56,
+      "return": -0.2515,
+      "vs_qqq": -0.1957,
+      "vs_smh": -0.115,
+      "age_days": 2,
       "correct": null
     },
     {
@@ -123,11 +177,11 @@
       "rating": "Overweight",
       "trader": "Buy",
       "research_manager": "Overweight",
-      "now": 408.4,
-      "return": 0.0398,
-      "vs_qqq": 0.0336,
-      "vs_smh": 0.0197,
-      "age_days": 1,
+      "now": 316.91,
+      "return": -0.1932,
+      "vs_qqq": -0.1432,
+      "vs_smh": -0.074,
+      "age_days": 3,
       "correct": null
     },
     {
@@ -141,11 +195,11 @@
       "rating": "Overweight",
       "trader": "Buy",
       "research_manager": "Overweight",
-      "now": 235.97,
-      "return": 0.0523,
-      "vs_qqq": 0.0462,
-      "vs_smh": 0.0322,
-      "age_days": 1,
+      "now": 176.73,
+      "return": -0.2119,
+      "vs_qqq": -0.1619,
+      "vs_smh": -0.0927,
+      "age_days": 3,
       "correct": null
     },
     {
@@ -159,11 +213,11 @@
       "rating": "",
       "trader": "",
       "research_manager": "",
-      "now": 680.16,
-      "return": -0.0062,
-      "vs_qqq": -0.0123,
-      "vs_smh": -0.0263,
-      "age_days": 1,
+      "now": 509.7,
+      "return": -0.2553,
+      "vs_qqq": -0.2053,
+      "vs_smh": -0.1361,
+      "age_days": 3,
       "correct": null
     },
     {
@@ -177,11 +231,11 @@
       "rating": "Overweight",
       "trader": "Hold",
       "research_manager": "Hold",
-      "now": 1552.14,
-      "return": -0.0088,
-      "vs_qqq": -0.0012,
-      "vs_smh": -0.0012,
-      "age_days": 2,
+      "now": 1356.65,
+      "return": -0.1336,
+      "vs_qqq": -0.0707,
+      "vs_smh": 0.0095,
+      "age_days": 4,
       "correct": null
     },
     {
@@ -195,11 +249,11 @@
       "rating": "Hold",
       "trader": "Hold",
       "research_manager": "Hold",
-      "now": 129.26,
-      "return": 0.026,
-      "vs_qqq": 0.0336,
-      "vs_smh": 0.0336,
-      "age_days": 2,
+      "now": 98.38,
+      "return": -0.2191,
+      "vs_qqq": -0.1562,
+      "vs_smh": -0.076,
+      "age_days": 4,
       "correct": null
     },
     {
@@ -213,11 +267,11 @@
       "rating": "",
       "trader": "",
       "research_manager": "",
-      "now": 150.91,
-      "return": -0.0005,
-      "vs_qqq": 0.007,
-      "vs_smh": 0.0071,
-      "age_days": 2,
+      "now": 112.33,
+      "return": -0.256,
+      "vs_qqq": -0.1931,
+      "vs_smh": -0.113,
+      "age_days": 4,
       "correct": null
     },
     {
@@ -231,11 +285,11 @@
       "rating": "Overweight",
       "trader": "Hold",
       "research_manager": "Hold",
-      "now": 606.38,
-      "return": -0.1343,
-      "vs_qqq": -0.0923,
-      "vs_smh": -0.0575,
-      "age_days": 5,
+      "now": 466.53,
+      "return": -0.334,
+      "vs_qqq": -0.2385,
+      "vs_smh": -0.1311,
+      "age_days": 7,
       "correct": null
     },
     {
@@ -249,11 +303,11 @@
       "rating": "Overweight",
       "trader": "Hold",
       "research_manager": "Hold",
-      "now": 96.26,
-      "return": -0.0131,
-      "vs_qqq": 0.0289,
-      "vs_smh": 0.0637,
-      "age_days": 5,
+      "now": 80.55,
+      "return": -0.1742,
+      "vs_qqq": -0.0787,
+      "vs_smh": 0.0287,
+      "age_days": 7,
       "correct": null
     },
     {
@@ -267,11 +321,11 @@
       "rating": "",
       "trader": "",
       "research_manager": "",
-      "now": 404.8,
-      "return": -0.0626,
-      "vs_qqq": -0.0205,
-      "vs_smh": 0.0143,
-      "age_days": 5,
+      "now": 353.1,
+      "return": -0.1823,
+      "vs_qqq": -0.0868,
+      "vs_smh": 0.0206,
+      "age_days": 7,
       "correct": null
     },
     {
@@ -285,11 +339,11 @@
       "rating": "Overweight",
       "trader": "Buy",
       "research_manager": "Overweight",
-      "now": 202.39,
-      "return": -0.0952,
-      "vs_qqq": -0.0396,
-      "vs_smh": -0.0086,
-      "age_days": 6,
+      "now": 155.99,
+      "return": -0.3026,
+      "vs_qqq": -0.1944,
+      "vs_smh": -0.0913,
+      "age_days": 8,
       "correct": null
     },
     {
@@ -303,11 +357,11 @@
       "rating": "Overweight",
       "trader": "Buy",
       "research_manager": "Overweight",
-      "now": 855.1,
-      "return": -0.1303,
-      "vs_qqq": -0.0747,
-      "vs_smh": -0.0437,
-      "age_days": 6,
+      "now": 656.39,
+      "return": -0.3324,
+      "vs_qqq": -0.2241,
+      "vs_smh": -0.1211,
+      "age_days": 8,
       "correct": null
     },
     {
@@ -321,11 +375,11 @@
       "rating": "",
       "trader": "",
       "research_manager": "",
-      "now": 332.13,
-      "return": -0.0559,
-      "vs_qqq": -0.0004,
-      "vs_smh": 0.0306,
-      "age_days": 6,
+      "now": 291.53,
+      "return": -0.1713,
+      "vs_qqq": -0.0631,
+      "vs_smh": 0.0399,
+      "age_days": 8,
       "correct": null
     },
     {
@@ -339,11 +393,11 @@
       "rating": "Overweight",
       "trader": "Buy",
       "research_manager": "Overweight",
-      "now": 235.97,
-      "return": 0.1314,
-      "vs_qqq": 0.1813,
-      "vs_smh": 0.2021,
-      "age_days": 7,
+      "now": 176.73,
+      "return": -0.1526,
+      "vs_qqq": -0.0497,
+      "vs_smh": 0.045,
+      "age_days": 9,
       "correct": null
     },
     {
@@ -357,11 +411,11 @@
       "rating": "Overweight",
       "trader": "Buy",
       "research_manager": "Overweight",
-      "now": 129.26,
-      "return": -0.0392,
-      "vs_qqq": 0.0107,
-      "vs_smh": 0.0315,
-      "age_days": 7,
+      "now": 98.38,
+      "return": -0.2687,
+      "vs_qqq": -0.1658,
+      "vs_smh": -0.0711,
+      "age_days": 9,
       "correct": null
     },
     {
@@ -375,11 +429,11 @@
       "rating": "",
       "trader": "",
       "research_manager": "",
-      "now": 449.27,
-      "return": 0.0345,
-      "vs_qqq": 0.0844,
-      "vs_smh": 0.1052,
-      "age_days": 7,
+      "now": 418.79,
+      "return": -0.0357,
+      "vs_qqq": 0.0672,
+      "vs_smh": 0.1619,
+      "age_days": 9,
       "correct": null
     },
     {
@@ -393,11 +447,11 @@
       "rating": "Hold",
       "trader": "Hold",
       "research_manager": "Hold",
-      "now": 163.34,
-      "return": 0.0399,
-      "vs_qqq": 0.0777,
-      "vs_smh": 0.0826,
-      "age_days": 8,
+      "now": 125.06,
+      "return": -0.2038,
+      "vs_qqq": -0.1123,
+      "vs_smh": -0.0304,
+      "age_days": 10,
       "correct": null
     },
     {
@@ -411,11 +465,11 @@
       "rating": "Hold",
       "trader": "Hold",
       "research_manager": "Hold",
-      "now": 96.26,
-      "return": 0.0283,
-      "vs_qqq": 0.0661,
-      "vs_smh": 0.071,
-      "age_days": 8,
+      "now": 80.55,
+      "return": -0.1395,
+      "vs_qqq": -0.048,
+      "vs_smh": 0.0338,
+      "age_days": 10,
       "correct": null
     },
     {
@@ -429,11 +483,11 @@
       "rating": "",
       "trader": "",
       "research_manager": "",
-      "now": 259.94,
-      "return": 0.0539,
-      "vs_qqq": 0.0917,
-      "vs_smh": 0.0965,
-      "age_days": 8,
+      "now": 205.64,
+      "return": -0.1663,
+      "vs_qqq": -0.0748,
+      "vs_smh": 0.0071,
+      "age_days": 10,
       "correct": null
     },
     {
@@ -447,11 +501,11 @@
       "rating": "Underweight",
       "trader": "Sell",
       "research_manager": "Underweight",
-      "now": 347.35,
-      "return": 0.0107,
-      "vs_qqq": 0.0379,
-      "vs_smh": 0.0272,
-      "age_days": 9,
+      "now": 267.63,
+      "return": -0.2213,
+      "vs_qqq": -0.1398,
+      "vs_smh": -0.0705,
+      "age_days": 11,
       "correct": null
     },
     {
@@ -465,11 +519,11 @@
       "rating": "Hold",
       "trader": "Hold",
       "research_manager": "Hold",
-      "now": 855.1,
-      "return": -0.0256,
-      "vs_qqq": 0.0016,
-      "vs_smh": -0.0091,
-      "age_days": 9,
+      "now": 656.39,
+      "return": -0.252,
+      "vs_qqq": -0.1706,
+      "vs_smh": -0.1013,
+      "age_days": 11,
       "correct": null
     },
     {
@@ -483,11 +537,11 @@
       "rating": "",
       "trader": "",
       "research_manager": "",
-      "now": 271.7,
-      "return": -0.0083,
-      "vs_qqq": 0.0189,
-      "vs_smh": 0.0082,
-      "age_days": 9,
+      "now": 236.36,
+      "return": -0.1373,
+      "vs_qqq": -0.0559,
+      "vs_smh": 0.0135,
+      "age_days": 11,
       "correct": null
     },
     {
@@ -501,11 +555,11 @@
       "rating": "Overweight",
       "trader": "Buy",
       "research_manager": "Overweight",
-      "now": 129.26,
-      "return": 0.0125,
-      "vs_qqq": 0.0397,
-      "vs_smh": 0.0217,
-      "age_days": 12,
+      "now": 98.38,
+      "return": -0.2294,
+      "vs_qqq": -0.1479,
+      "vs_smh": -0.0849,
+      "age_days": 14,
       "correct": null
     },
     {
@@ -519,11 +573,11 @@
       "rating": "Hold",
       "trader": "Hold",
       "research_manager": "Hold",
-      "now": 53.1,
-      "return": -0.0427,
-      "vs_qqq": -0.0155,
-      "vs_smh": -0.0335,
-      "age_days": 12,
+      "now": 44.16,
+      "return": -0.2039,
+      "vs_qqq": -0.1224,
+      "vs_smh": -0.0594,
+      "age_days": 14,
       "correct": null
     },
     {
@@ -537,11 +591,11 @@
       "rating": "Overweight",
       "trader": "Buy",
       "research_manager": "Overweight",
-      "now": 96.26,
-      "return": -0.0355,
-      "vs_qqq": 0.0196,
-      "vs_smh": 0.0331,
-      "age_days": 13,
+      "now": 80.55,
+      "return": -0.1929,
+      "vs_qqq": -0.0851,
+      "vs_smh": 0.0029,
+      "age_days": 15,
       "correct": null
     },
     {
@@ -555,11 +609,11 @@
       "rating": "Overweight",
       "trader": "Buy",
       "research_manager": "Overweight",
-      "now": 855.1,
-      "return": -0.0641,
-      "vs_qqq": -0.0091,
-      "vs_smh": 0.0045,
-      "age_days": 13,
+      "now": 656.39,
+      "return": -0.2816,
+      "vs_qqq": -0.1738,
+      "vs_smh": -0.0858,
+      "age_days": 15,
       "correct": null
     },
     {
@@ -573,11 +627,11 @@
       "rating": "Hold",
       "trader": "Hold",
       "research_manager": "Hold",
-      "now": 357.28,
-      "return": -0.0197,
-      "vs_qqq": 0.0384,
-      "vs_smh": 0.0516,
-      "age_days": 14,
+      "now": 316.23,
+      "return": -0.1323,
+      "vs_qqq": -0.0217,
+      "vs_smh": 0.0658,
+      "age_days": 16,
       "correct": null
     },
     {
@@ -591,11 +645,11 @@
       "rating": "Hold",
       "trader": "Hold",
       "research_manager": "Hold",
-      "now": 1126.52,
-      "return": -0.1916,
-      "vs_qqq": -0.1335,
-      "vs_smh": -0.1203,
-      "age_days": 14,
+      "now": 806.43,
+      "return": -0.4213,
+      "vs_qqq": -0.3106,
+      "vs_smh": -0.2232,
+      "age_days": 16,
       "correct": null
     }
   ]

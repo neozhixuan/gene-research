@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "PWR",
+    "segment": "grid_electrical",
+    "kind": "new"
+  },
+  {
+    "ticker": "ONTO",
+    "segment": "foundry_equipment",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "CIEN",
+    "segment": "networking_optical",
+    "kind": "new"
+  }
+]

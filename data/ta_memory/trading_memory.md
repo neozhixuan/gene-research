@@ -142,7 +142,7 @@ The -5.9% alpha demonstrates that the decision to avoid catching the falling kni
 
 <!-- ENTRY_END -->
 
-[2026-10-27 | POWL | Hold | pending]
+[2026-10-27 | POWL | Hold | -14.8% | -14.1% | 5d | resolved:2026-11-04]
 
 DECISION:
 **Rating**: Hold
@@ -155,9 +155,12 @@ DECISION:
 
 **Time Horizon**: 3-6 months
 
+REFLECTION:
+The -14.1% alpha over five days confirms the immediate danger of catching a falling knife, though the period is too short to invalidate the long-term fundamental thesis. This rapid decline undercuts the idea of a stable support level at $146, suggesting the technical breakdown was deeper than anticipated. Moving forward, I must weigh technical momentum more heavily against cash-rich fundamentals to avoid premature bottom-fishing in high-beta setups.
+
 <!-- ENTRY_END -->
 
-[2026-10-27 | NRG | Hold | pending]
+[2026-10-27 | NRG | Hold | -13.7% | -13.0% | 5d | resolved:2026-11-04]
 
 DECISION:
 **Rating**: Hold
@@ -170,9 +173,12 @@ DECISION:
 
 **Time Horizon**: 3-6 months
 
+REFLECTION:
+The -13.0% alpha relative to the SPY over the 5-day window confirms the significant downside volatility associated with the stock's high debt load, though this short timeframe is insufficient to judge the long-term thesis. The immediate sell-off validates the caution regarding the precarious debt-to-equity ratio and poor technical structure identified in the bear case. Future analysis should prioritize placing greater weight on technical momentum indicators when the fundamental picture is clouded by high leverage and binary event risk.
+
 <!-- ENTRY_END -->
 
-[2026-10-28 | VRT | Overweight | pending]
+[2026-10-28 | VRT | Overweight | -28.1% | -23.4% | 5d | resolved:2026-11-05]
 
 DECISION:
 **Rating**: Overweight
@@ -185,9 +191,12 @@ DECISION:
 
 **Time Horizon**: 3-6 months
 
+REFLECTION:
+The 5-day alpha of -23.4% represents a severe directional failure, though the move is too rapid and noise-heavy to definitively invalidate the long-term structural thesis. This drawdown underscores the danger of underestimating technical distribution, as the price aggressively breached the $193.14 support level immediately upon initiation. Future analyses must prioritize confirming structural momentum alongside fundamental strength to avoid catching a falling knife during periods of technical weakness.
+
 <!-- ENTRY_END -->
 
-[2026-10-28 | NVT | Overweight | pending]
+[2026-10-28 | NVT | Overweight | -28.8% | -24.1% | 5d | resolved:2026-11-05]
 
 DECISION:
 **Rating**: Overweight
@@ -199,6 +208,9 @@ DECISION:
 **Price Target**: not provided
 
 **Time Horizon**: 3-6 months
+
+REFLECTION:
+The 5-day alpha of -24.1% represents a sharp immediate loss that invalidates the short-term entry, though this window remains too narrow to fully judge the medium-term fundamental thesis. The price action undercuts the assumption that the 20% pullback provided an asymmetric entry point, suggesting the technical downtrend held more weight than the valuation metrics implied. For future entries, I will mandate a reversal signal or a consolidation pattern rather than relying solely on valuation multiples during a confirmed bearish trend.
 
 <!-- ENTRY_END -->
 
@@ -345,6 +357,36 @@ DECISION:
 **Executive Summary**: Maintain a Hold stance on MU while keeping the remaining $10,000 in cash reserves. Refrain from adding fresh capital until price action either demonstrates a confirmed technical reversal above moving averages or successfully tests and holds the 200-day simple moving average at $751.57. Monitor for stabilization before executing new capital deployment.
 
 **Investment Thesis**: The investment thesis is built on resolving the intense debate between the aggressive camp's focus on deep fundamental value and the conservative and neutral warnings regarding technical deterioration and structural value-trap risks. The aggressive analyst highlights Micron's phenomenal metrics—including a Forward P/E of 4.12x, an 80.7% operating margin, a pristine Debt-to-Equity ratio of 0.04x, and $262.9 million in institutional ETF inflows—arguing that waiting for technical confirmation means missing out on the primary recovery phase. However, the conservative and neutral analysts present compelling evidence that overrides immediate buying pressure. Specifically, MU trades well below its 10-day EMA and 50-day SMA with a widening bearish MACD histogram, reflecting active institutional distribution and real-world uncertainties such as post-midterm regulations and competitive threats from CXMT. Although the neutral analyst proposes a scaled 25% entry to balance these factors, previous lessons across similar tickers (such as HPE and WDC) demonstrate that overriding bearish technical momentum and ignoring active distribution metrics often leads to avoidable short-term capital drawdowns. Consequently, the evidence remains balanced between structural deep value and confirmed technical downtrends, warranting a disciplined Hold until price stability is proven. This stance would change upon a verified bullish MACD crossover and reclamation of key moving averages.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-06 | PWR | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Initiate scaling into PWR with an initial tranche of 50% of the standard target allocation to manage high volatility and the technical downtrend. Utilize current oversold conditions below the Bollinger Lower Band for entry while maintaining a strict stop loss at 472.51. Look to add the remaining 50% incrementally once price stabilization or a confirmed base is established.
+
+**Investment Thesis**: The investment thesis is anchored in Quanta Services' structural strengths, specifically its non-negotiable grid modernization needs, raised 2026 guidance, and a compelling valuation with a forward P/E of 23.5 and PEG of 1.05. While the conservative and neutral analysts highlight valid technical concerns including trading below the 50-day and 200-day moving averages and high ATR-driven volatility, the fundamental demand environment and record backlog outweigh near-term momentum fears. Past cross-ticker lessons caution against ignoring technical distribution entirely, which justifies scaling the entry rather than committing the full allocation at once. The thesis would change if regulatory policy shifts impair the core backlog or if the price action breaches the stop-loss level, invalidating the current valuation support.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-06 | ONTO | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Maintain a zero position and keep all 10,000.00 USD in cash to preserve capital during a steep technical breakdown. Avoid new entries until ONTO demonstrates a durable technical base and confirmation of earnings support above key moving averages. Time horizon is 3-6 months.
+
+**Investment Thesis**: While the fundamental profile shows a compelling forward P/E of 13.34, a PEG ratio of 0.52, and a fortress current ratio of 9.73, the technical collapse and severe bearish momentum carry greater immediate weight. As highlighted in recent lessons (such as NVT and VRT), entering during a confirmed bearish trend without a reversal signal or consolidation pattern leads to severe directional failure and alpha loss. The stock is trading deep below its 200-day moving average with an RSI of 26.26, signaling intense institutional distribution and ongoing downside risks. The conservative analyst's emphasis on capital preservation and avoiding falling knives outweighs the aggressive analyst's valuation argument. However, because the fundamental balance sheet and long-term advanced packaging tailwinds provide significant underlying value, a direct Sell or short position is unwarranted, making a Hold stance appropriate until technical stabilization occurs.
 
 **Price Target**: not provided
 

@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-06",
+  "picks": [
+    {
+      "ticker": "PWR",
+      "segment": "grid_electrical",
+      "why": "Quanta raised 2026 guidance on 57% revenue growth and sits 36% off its high with a 4% free-cash-flow yield, the best cash yield among the grid names. The sell-off is policy fear, while the grid build-out is the binding constraint in the power thesis.",
+      "risk": "Data-centre permitting curbs from a Democratic Congress could slow the orders behind the backlog, and a 9% operating margin leaves little cushion.",
+      "thesis_ids": ["power-is-the-binding-constraint", "political-risk-to-data-centres"]
+    },
+    {
+      "ticker": "CIEN",
+      "segment": "networking_optical",
+      "why": "Ciena grew revenue 37% with a rising backlog at a 19.5x forward P/E, 64% off its high and 43% below its 200-day. It sells to the build-out without Lumentum's valuation or AOI's 28% gross margin.",
+      "risk": "A hyperscaler capex cut or order pause would hit optical first, and the 2% free-cash-flow yield offers limited downside protection.",
+      "thesis_ids": ["ai-demand-exceeds-supply", "ai-trade-crowded-at-high-rates"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "TER", "reason": "Highest score but foundry equipment is already covered by ASML and ONTO and only a 2% FCF yield." },
+    { "ticker": "LRCX", "reason": "Same segment as the watchlist and 2% FCF yield; wait for the sell-off to stabilise." },
+    { "ticker": "ALAB", "reason": "Inventory tripled and the 0% FCF yield offers no downside protection." },
+    { "ticker": "KLAC", "reason": "Foundry equipment already covered; avoid two picks from one theme." },
+    { "ticker": "MRVL", "reason": "Down 49% in a month on an all-stock acquisition; wait for stabilisation." },
+    { "ticker": "NOW", "reason": "Software is underweight and the best 5% yield does not offset the thesis." }
+  ]
+}

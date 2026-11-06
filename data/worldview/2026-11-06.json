@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-06",
+  "previous": "2026-11-04",
+  "headline": "The Democratic sweep turned into the worst AI-chip sell-off since 2020: semis ETF -11.2% on the day, -29.2% on the month, and the damage has spread to grid and industrials.",
+  "regime": "Nasdaq -5.5% and the semis ETF -11.2% on the day, -11.9% and -29.2% on the month; VIX 26.58 (+36.9% on five days). Every AI segment is down 17-34% on five days; only hyperscalers (-2.6%) held, and the 10-year eased to 4.84% while crude is near $91. Last session's grid and cooling leadership is gone (grid -17.6%, cooling -24.7% on five days), so this is a policy-and-positioning de-risking, not a read on orders: company prints (Quanta, Supermicro, Cloudflare) are still strong.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 76,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Quanta raised 2026 revenue guidance on a strong third quarter (0457b4c1b63e)",
+        "Bloom signed a 900 MW onsite power deal with NTT DATA, yet fell 16% (de4bd90b0048)",
+        "Against: Vertiv -14%, Quanta -12%, Powell -12.6% in a day as the sell-off hit industrials (ba0d098f03e6, 6d78534ca7de)",
+        "Against: GE Vernova faces a data-centre permitting pause (c974bb29aad5)"
+      ],
+      "change": "weaker",
+      "change_note": "-8: demand evidence is intact but the segments lost the five-day leadership and policy now targets build-out speed, which is the constraint itself."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 58,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "Super Micro: Q1 sales $19.95bn, net income $1.59bn, higher 2027 outlook (2153f548cdfa)",
+        "Applied Optoelectronics: sixth record quarter, but shares fell 10% on weak Q4 guidance and 28% gross margin (7f22c236cbab, ee55114ce494)",
+        "Against: Microsoft delayed AI infrastructure deliveries at Iren; Micron's Taiwan fab delayed (39dba8e44b37, f59ab62cd957)",
+        "Against: compute -25% and foundry equipment -24.6% on five days (digest segments)"
+      ],
+      "change": "weaker",
+      "change_note": "-8: demand prints hold, but delivery delays and guidance misses suggest supply, not demand, is the limit, and the price action shows doubt on duration."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 86,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "Iren moved its $4bn AI cloud goal into 2027 with $6bn of capex unfunded and a $263m net loss (d4d482d7a172, 5dc9dde80b45)",
+        "CleanSpark -17% and Iren -17% as bitcoin fell below $76,000 (c60889cbf7ab)",
+        "Microsoft tightened oversight of Iren after delivery issues (8ca0605e544e)",
+        "Against: Iren rose 18% premarket on AI cloud revenue nearly tripling and investment-grade counterparties (da6cf588a387, a248aa118cde)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: delays, unfunded capex and a customer tightening oversight, with the group -38% on the month; the Iren pop is a bounce, not a fix."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 45,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Micron is down over 40% from its June record after a 17% day (68065dc6d74c, f59ab62cd957)",
+        "Against: memory -33.7% on five days, SK Hynix -11.7% and Kospi sinking (e7212ca5ce8a, 9711899d0c5a)",
+        "Against: Micron's Taiwan construction delay and a union demand are a real operating risk (865fb763a45f)"
+      ],
+      "change": "weaker",
+      "change_note": "-8: the worst segment on five days with a company-specific supply hit; valuation support alone is not enough to hold the old level."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 66,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Argument that slower AI spending lets hyperscalers repair balance sheets (346f3733071d)",
+        "Oracle -17.5% on five days, the worst hyperscaler (digest segments)",
+        "Against: hyperscalers only -2.6% on five days and Amazon +6.7%, the market sees them as the safer side (80442cc1474a)"
+      ],
+      "change": "weaker",
+      "change_note": "-8: capex curbs would ease the cash squeeze and the market is rewarding the group; the thesis now cuts the other way for the strongest balance sheets."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 78,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "Semis ETF -29.2% and Nasdaq -11.9% on the month; VIX up 77% on the month (digest tape)",
+        "Nvidia in bear territory; Nasdaq in correction (e771d9230122, 1ea0d18dcf08)",
+        "Against: the 10-year eased to 4.84% and futures bounced Friday pre-bell (df7bdcb58685, f02b110b358a)"
+      ],
+      "change": "stronger",
+      "change_note": "+8: the crowded-positioning unwind is now a rout; the easing 10-year is the only relief."
+    },
+    {
+      "id": "political-risk-to-data-centres",
+      "title": "A Democratic Congress raises policy risk for data-centre build-outs",
+      "stance": "bearish",
+      "confidence": 72,
+      "segments": ["hyperscalers", "datacenter_neocloud", "grid_electrical", "power_nuclear"],
+      "evidence": [
+        "The market reads a Democratic Congress as less AI spending; the sell-off spread to industrials (5c28c0a448c1, bdc319c89c9b)",
+        "Texas governor-elect says community approval must come before data centres (4ddca713a3a3)",
+        "GE Vernova faces a permitting-pause risk (c974bb29aad5)",
+        "Against: she is not ideologically opposed to data centres; no legislation exists yet (4ddca713a3a3)"
+      ],
+      "change": "stronger",
+      "change_note": "+32: the Nov 4 shrug became a two-day, market-wide repricing; still no concrete law, so confidence stays below the evidence of price damage."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "-25% on five days, Marvell -38.8%; demand is intact but this is a falling knife." },
+    "foundry_equipment": { "stance": "neutral", "note": "-24.6% on five days; cheap on forward earnings, buy only quality with cash flow." },
+    "memory_storage": { "stance": "underweight", "note": "-33.7% on five days with a Micron fab delay; wait for the cycle evidence." },
+    "networking_optical": { "stance": "neutral", "note": "-30.9% on five days; Arista holds best, Lumentum -44.6%, thin margins at AOI." },
+    "servers": { "stance": "neutral", "note": "Super Micro beat, but Dell -33.4% on five days." },
+    "power_nuclear": { "stance": "overweight", "note": "Talen -9.3% is the best in a falling group; developers still burn cash." },
+    "grid_electrical": { "stance": "overweight", "note": "Hubbell -4.4% held up; Quanta raised guidance, so the price drop is policy fear." },
+    "cooling_thermal": { "stance": "overweight", "note": "Trane -9.0% held; Modine -34.2% shows weaker names break." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "Iren delays and unfunded capex; Equinix -3.8% is the only sturdy one." },
+    "hyperscalers": { "stance": "neutral", "note": "Only segment that held (-2.6%); Amazon +6.7%, Oracle -17.5%." },
+    "ai_software": { "stance": "underweight", "note": "-19.5% on five days; ServiceNow -6.7% is the best, Datadog -34.3%." }
+  },
+  "risks": [
+    "Concrete state or federal data-centre legislation would hit orders for grid, cooling and neocloud names.",
+    "Forced selling and leverage in a -29% month could push the semis ETF past -35% before it stabilises.",
+    "Oil near $91-100 with Iran war risk keeps inflation and the 10-year sticky.",
+    "Neocloud funding stress, with Iren's $6bn unfunded capex, could cut GPU and power orders.",
+    "Today's October jobs report could move the 10-year in either direction."
+  ],
+  "watch": [
+    "Whether Friday's pre-bell bounce holds into the close, or the sell-off resumes.",
+    "The October jobs report and the 10-year against 5%.",
+    "Any named data-centre bills or moratoria in Texas and other states.",
+    "Whether grid and cooling prints (PPL today, Vertiv follow-through) keep beating despite the price drop.",
+    "Micron's Taiwan fab timeline and Korean memory stocks after the 'Black Friday' drop."
+  ]
+}
