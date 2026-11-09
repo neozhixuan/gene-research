@@ -40,14 +40,16 @@
   "CIEN": {
     "segment": "networking_optical",
     "added": "2026-11-06",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-11-06",
         "rating": null,
         "kind": "new"
       }
-    ]
+    ],
+    "dropped": "2026-11-09",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "CLS": {
     "segment": "servers",
@@ -84,6 +86,18 @@
     "checks": [
       {
         "date": "2026-11-03",
+        "rating": "Overweight",
+        "kind": "new"
+      }
+    ]
+  },
+  "ETN": {
+    "segment": "grid_electrical",
+    "added": "2026-11-09",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-11-09",
         "rating": "Overweight",
         "kind": "new"
       }
@@ -131,6 +145,18 @@
     "dropped": "2026-10-28",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
+  "KLAC": {
+    "segment": "foundry_equipment",
+    "added": "2026-11-09",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-11-09",
+        "rating": null,
+        "kind": "new"
+      }
+    ]
+  },
   "LITE": {
     "segment": "networking_optical",
     "added": "2026-11-03",
@@ -177,7 +203,7 @@
   "NRG": {
     "segment": "power_nuclear",
     "added": "2026-10-22",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-10-22",
@@ -193,8 +219,15 @@
         "date": "2026-10-30",
         "rating": "Overweight",
         "kind": "recheck"
+      },
+      {
+        "date": "2026-11-09",
+        "rating": "Hold",
+        "kind": "recheck"
       }
-    ]
+    ],
+    "dropped": "2026-11-09",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "NVT": {
     "segment": "grid_electrical",

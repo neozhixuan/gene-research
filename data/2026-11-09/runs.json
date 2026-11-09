@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "ETN",
+    "segment": "grid_electrical",
+    "kind": "new"
+  },
+  {
+    "ticker": "NRG",
+    "segment": "power_nuclear",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "KLAC",
+    "segment": "foundry_equipment",
+    "kind": "new"
+  }
+]

@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-09",
+  "previous": "2026-11-06",
+  "headline": "Semis bounced 3.6% on a quiet Monday, but the month is still -25.8% and the next tests (CPI Tuesday, a December Fed hike priced near 80%, CoreWeave earnings) arrive before the damage can be called over.",
+  "regime": "Semis ETF +3.6% and Nasdaq +1.1% on the day, but -11.2% and -3.4% on five days and -25.8% and -10.8% on the month; VIX eased 9.2% to 23.29 yet is still up 57% on the month. The 10-year is 4.86% with a December Fed hike about 80% priced, so rates are the cap on any rebound. Every AI segment is still down 6-27% on five days; only hyperscalers (-0.1%) held. Power (+10.7%) and neoclouds (+8.8%) led the bounce, which looks like short covering, not new evidence.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 76,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "An AI power equipment maker posted a 96% jump in orders, and Powell has record orders (e4bf390297a7, 9109a3369677)",
+        "Vistra reported record Q3 earnings and raised 2026 guidance (43f78db3107b)",
+        "Power -6.0% and grid -9.5% on five days held up better than chips (digest segments)",
+        "Against: voters approved restrictions on new data centres, and Sacks warns the pipeline could dry up on permits (79a1d0264e6e, e82096e52bfa)",
+        "Against: AAON fell despite higher profit; Hubbell asks whether pricing holds as capacity catches up (e77c87f3c24d, 3cbded06490d)"
+      ],
+      "change": "unchanged",
+      "change_note": "Order and earnings evidence is firm and these segments held best, but the permit threat offsets it, so no change."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 58,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "US AI hardware shipments crossed $1 trillion; CoreWeave has a $104bn backlog (550006e5e503, 9175ed6fbe94)",
+        "Oppenheimer sees AMD data-centre revenue up 135% in 2027 (56fcaed92bf7)",
+        "Astera Labs fell 26% in a week despite record quarterly revenue (e23676c9f24a)",
+        "Against: Microsoft is getting pickier about AI data-centre deals (5d8061fc0a52)"
+      ],
+      "change": "unchanged",
+      "change_note": "Demand prints keep coming and the price keeps ignoring them; Microsoft's pickiness offsets the backlog, so confidence holds."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 86,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "Former bitcoin miners lost nearly half their value in a month as money tightens (4d472f45e68c)",
+        "CoreWeave options imply a 20.7% earnings swing on Texas politics and debt costs (3eec9d8cadd8)",
+        "Cipher cut fair value on Texas risks; Nebius faces permit scrutiny (98bf8ec7cc26, 8bca8b808579)",
+        "Against: SpaceX's CFO says new compute pays back in under a year; CoreWeave has $104bn of backlog (751393c90ab1, 9175ed6fbe94)"
+      ],
+      "change": "unchanged",
+      "change_note": "The +8.8% bounce changes nothing about funding; CoreWeave's print on Tuesday is the test."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 42,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Zacks highlights MU and SNDK as beaten down with rising forecasts (f260067c4461)",
+        "Against: memory is -26.5% on five days and -41.3% on the month, the worst segment (digest segments)",
+        "Against: Micron halted its Taiwan plant over a labour dispute; Kospi is in a bear market (55ab8e78cd43, f11823fced17)"
+      ],
+      "change": "weaker",
+      "change_note": "-3: no new cycle evidence, a further -26.5% on five days and the Korean bear market; cheapness alone has not stopped the fall."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 62,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Sanders: the AI bet is fuelled by $3 trillion of debt and the cash flow numbers are thin (877647b17103)",
+        "Microsoft renting less AI compute would help its cash flow (5d8061fc0a52)",
+        "Against: hyperscalers -0.1% on five days, Amazon +7.9% (digest segments)"
+      ],
+      "change": "weaker",
+      "change_note": "-4: the group is the only one that held and Microsoft's discipline eases the squeeze; Oracle -11.2% on the month is the exception."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 78,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "A Fed hike is about 80% priced for December with CPI on Tuesday; the 10-year is 4.86% (c3351a72bd25)",
+        "Citi says sit out global tech until positioning is cleaner; Morgan Stanley expects more downside before a buy (32ad311ae236, 285ae395b7b1)",
+        "Against: VIX fell 9.2% and the Nasdaq rose 1.1% (digest tape)"
+      ],
+      "change": "unchanged",
+      "change_note": "Strategists agree positioning is not yet clean, and rates are rising again; the one-day bounce does not justify a change."
+    },
+    {
+      "id": "political-risk-to-data-centres",
+      "title": "A Democratic Congress raises policy risk for data-centre build-outs",
+      "stance": "bearish",
+      "confidence": 76,
+      "segments": ["hyperscalers", "datacenter_neocloud", "grid_electrical", "power_nuclear"],
+      "evidence": [
+        "Voters approved restrictions on new data centres across the US (79a1d0264e6e)",
+        "Sacks warns a permitting fight could stall the buildings every chip, cable and cooler needs (e82096e52bfa)",
+        "CoreWeave's CEO pledged to pay for power to the Texas governor-elect as backlash grows (522f747fe035)",
+        "Against: the power-equipment order jump suggests demand is not affected yet (e4bf390297a7)"
+      ],
+      "change": "stronger",
+      "change_note": "+4: restrictions now have a vote behind them and industry is already making concessions, though no law has passed."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "Cheap (Nvidia 11.7x forward) but the Huang probe adds headline risk; Marvell -28.1% on five days." },
+    "foundry_equipment": { "stance": "neutral", "note": "High margins and growth, -34% on the month, but 2% FCF yields; wait for a floor." },
+    "memory_storage": { "stance": "underweight", "note": "Worst segment at -41.3% on the month with a Micron fab halt." },
+    "networking_optical": { "stance": "neutral", "note": "Arista +1.1% holds; Lumentum -35.9% and Marvell's deal show the weak spots." },
+    "servers": { "stance": "neutral", "note": "Dell -22.6% on five days; no new fundamental news." },
+    "power_nuclear": { "stance": "overweight", "note": "Vistra record quarter; only the cash-generating names, not Centrus or NuScale." },
+    "grid_electrical": { "stance": "overweight", "note": "Hubbell +1.7% and record orders at Powell; policy fear, not orders, is the drag." },
+    "cooling_thermal": { "stance": "overweight", "note": "Trane -2.0% holds; Modine -25.6% shows weaker names break." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "Debt and Texas permits; Equinix -0.1% is the only sturdy name." },
+    "hyperscalers": { "stance": "neutral", "note": "Held at -0.1%; Amazon +7.9%, Oracle -11.2% on the month." },
+    "ai_software": { "stance": "underweight", "note": "-12.6% on five days; ServiceNow -3.0% the best, Datadog -23.9%." }
+  },
+  "risks": [
+    "A hot CPI on Tuesday would lock in the December hike and push the 10-year above 5%.",
+    "A CoreWeave miss or funding comment could reopen the neocloud and power sell-off.",
+    "Concrete data-centre moratoria or permit rules would hit grid, cooling and neocloud orders.",
+    "The Nvidia board probe into Huang, with a Nov. 11 congressional deadline, could widen into China export curbs.",
+    "Strategists see more downside before a floor, so a retest of last week's lows is plausible."
+  ],
+  "watch": [
+    "Tuesday's CPI and the 10-year against 5%.",
+    "CoreWeave earnings and any funding or Texas power commentary.",
+    "Constellation's Q3 print and guidance, following Vistra's raise.",
+    "Whether power and neocloud names hold Monday's bounce.",
+    "The Nov. 11 Nvidia deadline and any chip export bill."
+  ]
+}

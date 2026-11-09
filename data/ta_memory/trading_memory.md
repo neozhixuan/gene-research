@@ -214,7 +214,7 @@ The 5-day alpha of -24.1% represents a sharp immediate loss that invalidates the
 
 <!-- ENTRY_END -->
 
-[2026-10-29 | ONTO | Overweight | pending]
+[2026-10-29 | ONTO | Overweight | -14.0% | -11.3% | 5d | resolved:2026-11-06]
 
 DECISION:
 **Rating**: Overweight
@@ -227,9 +227,12 @@ DECISION:
 
 **Time Horizon**: 3-6 months
 
+REFLECTION:
+The -11.3% alpha over five days reflects a poor entry, though the window is too short to judge the validity of a medium-term fundamental recovery thesis. This drawdown underscores that the technical momentum indicators I dismissed as "lagging" actually signaled critical underlying weakness in institutional demand. Future analyses must prioritize confirming structural price support over fundamentals, as ignoring bearish technical signals leads to unnecessary exposure during liquidity-driven sell-offs.
+
 <!-- ENTRY_END -->
 
-[2026-10-29 | MU | Overweight | pending]
+[2026-10-29 | MU | Overweight | -22.0% | -19.3% | 5d | resolved:2026-11-06]
 
 DECISION:
 **Rating**: Overweight
@@ -241,6 +244,9 @@ DECISION:
 **Price Target**: 1125.0
 
 **Time Horizon**: 3-6 months
+
+REFLECTION:
+The 5-day alpha of -19.3% indicates a disastrous immediate directional call, though the window remains too short to invalidate the long-term fundamental thesis regarding valuation. This sharp drawdown directly undercuts the premise that the low P/E ratio offered a sufficient margin of safety against market volatility. Future analyses must incorporate a tighter quantitative screen for momentum-based selling pressure to avoid catching a falling knife during periods of high ATR.
 
 <!-- ENTRY_END -->
 
@@ -387,6 +393,36 @@ DECISION:
 **Executive Summary**: Maintain a zero position and keep all 10,000.00 USD in cash to preserve capital during a steep technical breakdown. Avoid new entries until ONTO demonstrates a durable technical base and confirmation of earnings support above key moving averages. Time horizon is 3-6 months.
 
 **Investment Thesis**: While the fundamental profile shows a compelling forward P/E of 13.34, a PEG ratio of 0.52, and a fortress current ratio of 9.73, the technical collapse and severe bearish momentum carry greater immediate weight. As highlighted in recent lessons (such as NVT and VRT), entering during a confirmed bearish trend without a reversal signal or consolidation pattern leads to severe directional failure and alpha loss. The stock is trading deep below its 200-day moving average with an RSI of 26.26, signaling intense institutional distribution and ongoing downside risks. The conservative analyst's emphasis on capital preservation and avoiding falling knives outweighs the aggressive analyst's valuation argument. However, because the fundamental balance sheet and long-term advanced packaging tailwinds provide significant underlying value, a direct Sell or short position is unwarranted, making a Hold stance appropriate until technical stabilization occurs.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-09 | ETN | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Initiate an Overweight stance on ETN with a reduced initial tranche of 0.25x (half of the proposed 0.5x allocation) via a limit order at the Bollinger Lower Band of 331.63. Scale in gradually as a price floor is confirmed, keeping total exposure capped at 1.5x with a stop loss at 304.69 over a 3-6 month time horizon.
+
+**Investment Thesis**: The debate demonstrates a clear tension between severe short-term technical headwinds and robust long-term fundamental strengths for ETN. The conservative and neutral analysts correctly highlight that the stock is caught in a sector-wide downdraft, marked by a death cross, trading below its 50-day and 200-day SMAs, and facing headwinds from 4.84% 10-year Treasury yields. Recent portfolio lessons from MU, ONTO, and NVT explicitly warn against ignoring bearish technical momentum or catching a falling knife during high volatility. However, the aggressive and neutral analysts emphasize that ETN is far from a distressed asset; it boasts record Q3 revenue of $8.95 billion, solid 17.85% operating margins, a forward P/E of 20.87, and a massive structural backlog tied to AI and data center electrification. To reconcile the immediate technical fragility with the fundamental moat, the neutral analyst's compromise—lowering the initial entry to the Bollinger Lower Band of 331.63—provides the necessary risk mitigation. This prevents repeating past mistakes of chasing falling prices while allowing the portfolio to capture the secular upside. The thesis would change if macro conditions trigger sustained order cancellations, or if the stop loss at 304.69 is breached.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-09 | NRG | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Maintain a Hold rating on NRG with no capital deployment ahead of the Q3 earnings catalyst. Keep the portfolio entirely in cash until the upcoming report clarifies margin stability, debt-servicing capabilities, and price stabilization above support.
+
+**Investment Thesis**: The debate presents a severe clash between an aggressive bull case emphasizing an attractive 8.40 forward P/E, a 0.3 PEG ratio, and strong structural data center power demand, versus a conservative/neutral bear case highlighting a 483% debt-to-equity ratio, a sub-1.0 current ratio, and a weak technical downtrend trading below major moving averages. Drawing from prior lessons in MU, ONTO, and NVT, ignoring bearish technical signals and high leverage during a confirmed downtrend leads to severe immediate drawdowns. The moderate argument successfully demonstrates that entering a high-beta, balance sheet-heavy stock before a binary earnings event is an uncompensated gamble rather than true alpha capture. Consequently, the evidence remains balanced between compelling long-term GARP potential and immediate structural vulnerability, warranting a Hold until the company proves it can navigate its debt load in the current macro environment.
 
 **Price Target**: not provided
 

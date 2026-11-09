@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-09",
+  "picks": [
+    {
+      "ticker": "ETN",
+      "segment": "grid_electrical",
+      "why": "Eaton grows revenue 28% with an 18% operating margin at 20.9x forward earnings, 28% off its high, in a segment the worldview rates overweight. Grid equipment is the physical bottleneck for data centres, and order strength at peers such as Powell supports it.",
+      "risk": "Data-centre permit restrictions slow orders, or the FCF yield of 2% proves too thin if the multiple compresses further.",
+      "thesis_ids": ["power-is-the-binding-constraint", "political-risk-to-data-centres"]
+    },
+    {
+      "ticker": "KLAC",
+      "segment": "foundry_equipment",
+      "why": "KLA earns a 45% operating margin on 29% revenue growth at 19.5x forward earnings, 55% off its high, and the watchlist covers the segment only through ASML. It is the highest-quality cash generator among the shortlisted equipment names.",
+      "risk": "A capex pause by chipmakers after the sell-off would cut orders, and the stock is still 24% below its 200-day average.",
+      "thesis_ids": ["ai-demand-exceeds-supply", "ai-trade-crowded-at-high-rates"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "TER", "reason": "Same segment as KLAC; weaker margin and the biggest 5-day drop in the group." },
+    { "ticker": "LRCX", "reason": "Same segment as KLAC; avoid two picks from one segment." },
+    { "ticker": "ALAB", "reason": "Near-zero FCF yield and 26.8x forward earnings after a 26% weekly fall; no price floor yet." },
+    { "ticker": "MRVL", "reason": "All-stock $115bn Lumentum deal adds integration risk and leaves a 17% margin." },
+    { "ticker": "NOW", "reason": "Software is underweight in the worldview." },
+    { "ticker": "NVDA", "reason": "Compute is neutral and the Huang board probe adds unquantified headline risk." }
+  ]
+}

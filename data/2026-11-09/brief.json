@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-09",
+  "session": "US open Mon 9 Nov, 22:30 SGT",
+  "written_at": "2026-11-09T20:10:00+08:00",
+  "lean": "wait",
+  "bottom_line": "The ratings mostly stand on fundamentals, but tonight is a poor time to start positions: CPI on Tuesday, a December Fed hike near 80% priced, CoreWeave earnings and the Nvidia CEO probe all land within days. Futures are only modestly higher after the worst week of the sell-off.",
+  "what_changed": [
+    "US futures were modestly higher early Monday: S&P 500 E-minis about +0.4%, Nasdaq 100 about +0.2%, Dow about +0.7%, after a rough week (touches the 'crowded AI trade at high rates' thesis).",
+    "Nvidia fell about 4% premarket after its board opened a probe into CEO Jensen Huang; the worldview names this and the Nov. 11 congressional deadline as a risk to chip stocks.",
+    "October CPI (Tuesday) and CoreWeave earnings (Tuesday, options imply a ~20.7% swing) are the next tests of the rates and neocloud-credit theses.",
+    "No notable after-hours AI earnings turned up for tonight; the last big print was AMD on Nov. 3 (revenue +45%, data centre 64% of sales)."
+  ],
+  "names": [
+    { "ticker": "ANET", "segment": "networking_optical", "rating": "Overweight", "rated_on": "2026-11-04", "rated_price": 169.91, "last_price": 170.8, "since_rated": 0.005, "catalyst": "", "take": "Held flat while peers fell; the segment is neutral in the worldview, so keep any start small." },
+    { "ticker": "ASML", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-02", "rated_price": 1565.9, "last_price": 1424.75, "since_rated": -0.09, "catalyst": "", "take": "Down 9% since rated; the rating's entry price is lower than today's, but the segment is neutral and a chip-capex pause is the risk." },
+    { "ticker": "DELL", "segment": "servers", "rating": "Overweight", "rated_on": "2026-11-03", "rated_price": 392.78, "last_price": 328.53, "since_rated": -0.164, "catalyst": "Earnings 24 Nov", "take": "Down 16% since rated and the servers segment is neutral; wait for the sell-off to stabilise before adding." },
+    { "ticker": "ETN", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-09", "rated_price": 341.72, "last_price": 341.72, "since_rated": 0.0, "catalyst": "", "take": "Rated today in an overweight segment; the cleanest fit with the worldview, though permit restrictions are the risk." },
+    { "ticker": "PWR", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-06", "rated_price": 509.06, "last_price": 540.9, "since_rated": 0.062, "catalyst": "", "take": "Up 6% since rated, so the entry is less attractive; ETN is the same segment at an unchanged price." },
+    { "ticker": "STX", "segment": "memory_storage", "rating": "Overweight", "rated_on": "2026-10-30", "rated_price": 700.47, "last_price": 460.99, "since_rated": -0.342, "catalyst": "", "take": "Rating and worldview disagree: memory is underweight and the stock is down 34% since rated. I would trust the worldview tonight." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-03", "rated_price": 224.24, "last_price": 182.86, "since_rated": -0.184, "catalyst": "", "take": "Down 18% since rated in an overweight segment; the thesis is intact but the price keeps falling, so scale in rather than start full." }
+  ],
+  "trust": "No ratings are graded yet (grading starts after 28 days). The 36 picks so far average -7.7% against QQQ, and Buy/Overweight picks -6.1%, which is better than the whole universe (-6.2%) only marginally and behind QQQ.",
+  "if_buying": [
+    "Overweight means a small starting position only; do not use a full-size position.",
+    "Prefer names in segments the worldview rates overweight (ETN, PWR, VRT) over STX, DELL and ASML.",
+    "If acting at the open, use limit orders: the first hour after a Monday gap in a VIX-23 market can swing widely.",
+    "Consider waiting until after Tuesday's CPI and CoreWeave results."
+  ],
+  "sources": [
+    { "title": "Stock market today: Dow, S&P 500, Nasdaq futures rise with Nvidia stock, AI trade in focus", "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html" },
+    { "title": "Wall St futures rise after rough week, but Nvidia unsettles investors - SRN News", "url": "https://srnnews.com/wall-st-futures-rise-after-rough-week-but-nvidia-unsettles-investors/" },
+    { "title": "AMD's data center revenue nearly doubles in Q3 and CEO Su expects growth to accelerate", "url": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html" }
+  ]
+}
