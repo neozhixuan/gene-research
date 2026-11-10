@@ -148,14 +148,16 @@
   "KLAC": {
     "segment": "foundry_equipment",
     "added": "2026-11-09",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-11-09",
         "rating": null,
         "kind": "new"
       }
-    ]
+    ],
+    "dropped": "2026-11-10",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "LITE": {
     "segment": "networking_optical",
@@ -228,6 +230,18 @@
     ],
     "dropped": "2026-11-09",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
+  },
+  "NVDA": {
+    "segment": "compute",
+    "added": "2026-11-10",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-11-10",
+        "rating": null,
+        "kind": "new"
+      }
+    ]
   },
   "NVT": {
     "segment": "grid_electrical",
@@ -329,14 +343,21 @@
   "STX": {
     "segment": "memory_storage",
     "added": "2026-10-30",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-10-30",
         "rating": "Overweight",
         "kind": "new"
+      },
+      {
+        "date": "2026-11-10",
+        "rating": "Hold",
+        "kind": "recheck"
       }
-    ]
+    ],
+    "dropped": "2026-11-10",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "TLN": {
     "segment": "power_nuclear",
@@ -380,6 +401,18 @@
         "date": "2026-11-03",
         "rating": "Overweight",
         "kind": "recheck"
+      }
+    ]
+  },
+  "VST": {
+    "segment": "power_nuclear",
+    "added": "2026-11-10",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-11-10",
+        "rating": "Overweight",
+        "kind": "new"
       }
     ]
   },

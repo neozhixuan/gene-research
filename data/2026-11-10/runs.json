@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "VST",
+    "segment": "power_nuclear",
+    "kind": "new"
+  },
+  {
+    "ticker": "STX",
+    "segment": "memory_storage",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "NVDA",
+    "segment": "compute",
+    "kind": "new"
+  }
+]

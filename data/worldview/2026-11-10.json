@@ -1,0 +1,151 @@
+{
+  "date": "2026-11-10",
+  "previous": "2026-11-09",
+  "headline": "Semis jumped 5.1% in a dip-buying rally, but the month is still -17.5% and a half-point December Fed hike is now on the table with CPI due.",
+  "regime": "Semis ETF +5.1% and Nasdaq +2.7% on the day, but the semis are -4.1% on five days and -17.5% on the month, and VIX is still +31% on the month at 19.97. The 10-year is 4.86% and Fed governor Waller put a half-point hike into the mix, so rates cap any rebound. Every AI segment bounced 3-11% on the day yet is down 20-30% on the month, except power (-11.5%) and hyperscalers (-8.2%). Power and hyperscalers are the only groups positive on five days, which fits a rebound of short covering, not new evidence.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 78,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "AAON posted record $707m sales, 84% revenue growth and raised its 2026 outlook (833e12a8ba51, 14844b0c7fe5)",
+        "Power is the only AI segment up on five days (+6.6%) and the best on the month (-11.5%) (digest segments)",
+        "NRG sold six gas plants for $4bn and raised its buyback to $3bn (7ae7703ab3be); X-energy got a construction permit for four reactors (0eb57beec65c)",
+        "Against: Vertiv fell 11% in a week as the Democratic sweep revived data-centre slowdown fears (c8718052ee86)",
+        "Against: AAON disclosed a first-half restatement; grid is -3.8% and cooling -7.6% on five days (833e12a8ba51, digest segments)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: AAON's raised outlook is fresh order evidence and power led on five days, though the restatement and the Vertiv drop keep it from moving further."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 60,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "TSMC October revenue rose 59.7% to NT$367bn on Nvidia and Apple orders (60ad92e4a222, 8ed37387914c)",
+        "Onto reported revenue of $410m, up nearly 90% on the year, with a record $1.3bn backlog (2eadf9cefb52, 8aad7e8ca2aa)",
+        "Neocloud GPU rental prices are rising even as the stocks fall (e7f92c850f5c)",
+        "Against: banks that funded neoclouds are hesitating, which can slow the supply of new capacity (a29afdc0468c)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: TSMC and Onto prints are hard demand data and GPU rental prices are rising; funding hesitancy is the offset."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 86,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "Banks that raced to fund CoreWeave, Nebius and Oracle are tightening lending rules (a29afdc0468c)",
+        "Jefferies and Morgan Stanley cut targets on powered-shell names; Cantor cut IREN to $47 from $99 (fdf0aec02b07, 8d5590988167, f507b8eea075)",
+        "CoreWeave is down 65% from its May high with a sentiment problem ahead of earnings (c41d345b9e46, 2f5894c17d90)",
+        "Against: GPU rental has never been more profitable, and Wells Fargo calls CoreWeave the highest-quality neocloud (e7f92c850f5c, 65c4387c8f3f)"
+      ],
+      "change": "unchanged",
+      "change_note": "Lenders are pulling back while the operating economics stay good; the CoreWeave print is still the test."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 40,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Micron jumped in the dip-buying session and Western Digital rebounded 9.9% after a 28% five-day fall (34d4705ffe6c, e22ab4bc08d6)",
+        "Against: memory is -14.7% on five days and -31.0% on the month, still the worst segment (digest segments)",
+        "Against: ETFs were net sellers of Micron on Nov. 6 (d52b19fe980c)"
+      ],
+      "change": "weaker",
+      "change_note": "-2: the segment is still the weakest on five days and there is no new cycle evidence beyond a bounce."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 60,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Alphabet lost nearly $500bn of market value on investor negativity about its spending (09e06c9e4d69)",
+        "Neocloud and Oracle borrowing is meeting tighter lending (a29afdc0468c)",
+        "Against: hyperscalers are +5.1% on five days and -8.2% on the month, the sturdiest group (digest segments)"
+      ],
+      "change": "weaker",
+      "change_note": "-2: the group is the strongest on five days, though Alphabet's loss shows investors still punish the spending."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 80,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "Waller put a half-point December hike into the mix, depending on CPI (d50ebaa3940f)",
+        "The 10-year is 4.86% and ai_software is -6.1% on five days and -23.1% on the month (digest tape and segments)",
+        "Anthropic mistakenly sent IPO terms to banks, exposing jitters over AI investment (c9221aa2e55f)",
+        "Against: the Nasdaq rose 2.7% and the semis 5.1% in one day as buyers returned (digest tape, 34d4705ffe6c)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: a half-point hike is a worse rate path than the market priced yesterday; the one-day rally does not offset it."
+    },
+    {
+      "id": "political-risk-to-data-centres",
+      "title": "A Democratic Congress raises policy risk for data-centre build-outs",
+      "stance": "bearish",
+      "confidence": 76,
+      "segments": ["hyperscalers", "datacenter_neocloud", "grid_electrical", "power_nuclear"],
+      "evidence": [
+        "Vertiv fell 11% in a week as the midterm sweep hit data-centre stocks over Texas fears (c8718052ee86)",
+        "Against: no new restriction was reported today, and power orders and permits for reactors continue (0eb57beec65c, 833e12a8ba51)"
+      ],
+      "change": "unchanged",
+      "change_note": "Market reaction continues but no law or moratorium appeared today."
+    },
+    {
+      "id": "nvidia-key-person-and-export-risk",
+      "title": "The Huang probe puts Nvidia, and China export rules, at risk",
+      "stance": "bearish",
+      "confidence": 55,
+      "segments": ["compute"],
+      "evidence": [
+        "Nvidia lost $190bn as Trump confirmed a new FBI probe; shareholders filed a class action (a74052017ff6, e2712d074f1e)",
+        "Moonshot AI accessed B300 servers through Super Micro, which may breach export controls (49e0e23d454f)",
+        "Against: Trump backed Huang, the board expressed confidence in him, and the stock bounced (0439ee046a8c, 34d4705ffe6c)"
+      ],
+      "change": "new",
+      "change_note": "Fresh governance and export-control story with a Nov. 11 deadline; the outcome is binary and unknown, so confidence is moderate."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "Nvidia at 11x forward earnings but under probe; AMD +8.9% on five days shows rotation, not safety." },
+    "foundry_equipment": { "stance": "neutral", "note": "TSMC +59.7% and Onto's $1.3bn backlog are strong, but -24% on the month and 2% FCF yields." },
+    "memory_storage": { "stance": "underweight", "note": "-31.0% on the month and -14.7% on five days; a bounce is not a floor." },
+    "networking_optical": { "stance": "neutral", "note": "Fabrinet +16.3% and Aaoi -16.6% on five days; the segment is split." },
+    "servers": { "stance": "neutral", "note": "Dell -11.8% on five days; Super Micro is tied to the export story." },
+    "power_nuclear": { "stance": "overweight", "note": "Only segment up on five days; prefer cash generators like Vistra and NRG over pre-revenue reactor names." },
+    "grid_electrical": { "stance": "overweight", "note": "Hubbell +1.8% holds; policy fear, not orders, is the drag." },
+    "cooling_thermal": { "stance": "overweight", "note": "AAON's record quarter and Trane +1.8% against Modine -13.9%; quality wins." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "Lenders are hesitating and most names burn cash." },
+    "hyperscalers": { "stance": "neutral", "note": "+5.1% on five days but Alphabet's $500bn loss shows capex worries." },
+    "ai_software": { "stance": "underweight", "note": "-6.1% on five days; Datadog -16.9%, no catalyst." }
+  },
+  "risks": [
+    "A hot CPI would lock in a half-point December hike and push the 10-year toward 5%.",
+    "The Nvidia probe and the Nov. 11 deadline could widen into China export curbs.",
+    "CoreWeave's earnings could confirm lenders' caution and reopen the neocloud sell-off.",
+    "Data-centre moratoria in Texas or elsewhere would hit grid, cooling and power orders.",
+    "Today's rally is dip-buying after a 17.5% monthly fall and could fade."
+  ],
+  "watch": [
+    "CPI and the 10-year against 5%.",
+    "CoreWeave and Nebius earnings, plus any bank funding comments.",
+    "Cisco's earnings for AI networking demand.",
+    "The Nvidia board probe and Nov. 11 congressional deadline.",
+    "Whether power holds its five-day lead if semis keep rebounding."
+  ]
+}

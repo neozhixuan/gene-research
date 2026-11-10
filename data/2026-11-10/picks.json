@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-10",
+  "picks": [
+    {
+      "ticker": "VST",
+      "segment": "power_nuclear",
+      "why": "Vistra trades at 14.2x forward earnings with 31% operating margin and 28% revenue growth, 29% below its high, so the price already carries a lot of the policy fear. It is a cash-generating way to own the power constraint, and the watchlist has no power_nuclear name active.",
+      "risk": "Data-centre restrictions or a hot CPI could keep power stocks falling, and the 2% FCF yield gives little cushion.",
+      "thesis_ids": ["power-is-the-binding-constraint", "political-risk-to-data-centres"]
+    },
+    {
+      "ticker": "NVDA",
+      "segment": "compute",
+      "why": "Nvidia is 11.2x forward earnings with 106% revenue growth and 66% operating margin, 27% off its high after losing $190bn on the Huang probe. The price now limits the downside if the probe fades, and TSMC's 59.7% sales jump shows demand is intact.",
+      "risk": "The probe widening into China export curbs or a governance change would make the cheap multiple a trap.",
+      "thesis_ids": ["ai-demand-exceeds-supply", "nvidia-key-person-and-export-risk"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "TER", "reason": "Foundry equipment is already covered by ASML and KLAC and the 2% FCF yield is thin." },
+    { "ticker": "LRCX", "reason": "Same segment as TER, already well covered by the watchlist." },
+    { "ticker": "ALAB", "reason": "Zero FCF yield and 30.6x forward earnings leave no downside cushion." },
+    { "ticker": "CORZ", "reason": "Cash burn of 23% of market value in an underweight segment." },
+    { "ticker": "MRVL", "reason": "Compute is limited to one pick, and Nvidia has the stronger margin and lower multiple." },
+    { "ticker": "CAMT", "reason": "Small cap, no FCF data and the segment is already covered." }
+  ]
+}

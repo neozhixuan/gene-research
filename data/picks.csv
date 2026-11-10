@@ -35,3 +35,6 @@ date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-11-09,ETN,new,grid_electrical,341.72,656.1,463.96,Overweight,Buy,Overweight
 2026-11-09,NRG,recheck,power_nuclear,88.29,656.1,463.96,Hold,Hold,Hold
 2026-11-09,KLAC,new,foundry_equipment,138.49,656.1,463.96,,,
+2026-11-10,VST,new,power_nuclear,133.92,679.35,487.41,Overweight,Buy,Overweight
+2026-11-10,STX,recheck,memory_storage,506.14,679.35,487.41,Hold,Hold,Hold
+2026-11-10,NVDA,new,compute,178.67,679.35,487.41,,,

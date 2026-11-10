@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-10",
+  "session": "US open Tue 10 Nov, 22:30 SGT",
+  "written_at": "2026-11-10T20:30:00+08:00",
+  "lean": "wait",
+  "bottom_line": "The ratings themselves are unchanged, but the October CPI lands at 21:30 SGT, an hour before the open, and Waller has said a hot core number puts a half-point December hike on the table. That is the worldview's top named risk, so wait for the print and the first half hour of trading before acting.",
+  "what_changed": [
+    "Index futures are roughly flat (S&P +0.1% to +0.2%, Nasdaq-100 about -0.3%) after Monday's biggest S&P gain since April; no overnight shock found.",
+    "CPI is expected at +0.3% headline and +0.2% core; Waller has set +0.3% core as the level that puts 50bp on the table. This touches the 'crowded at high rates' thesis (bearish 80).",
+    "Brent fell 3.6% to below $90, the first time since August, which eases inflation worries a little.",
+    "VIX is near 20, down from 23 last week, so the rebound is calm so far; semis are still -17.5% on the month.",
+    "No after-hours earnings from AI suppliers were found for tonight; Nvidia reports Nov 17, and the Huang probe deadline is Nov 11."
+  ],
+  "names": [
+    { "ticker": "ANET", "segment": "networking_optical", "rating": "Overweight", "rated_on": "2026-11-04", "rated_price": 169.91, "last_price": 186.17, "since_rated": 0.096, "catalyst": "", "take": "Up 9.6% since rated and Cisco reports this week; segment is neutral, so wait for a pullback." },
+    { "ticker": "ASML", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-02", "rated_price": 1565.9, "last_price": 1513.25, "since_rated": -0.034, "catalyst": "", "take": "Slightly below the rated price, but the segment is neutral and rate-sensitive; small size at most." },
+    { "ticker": "DELL", "segment": "servers", "rating": "Overweight", "rated_on": "2026-11-03", "rated_price": 392.78, "last_price": 346.31, "since_rated": -0.118, "catalyst": "Earnings 24 Nov", "take": "Down 11.8% since rated with no thesis news; the segment is neutral, so the rating and worldview disagree. Trust the neutral view tonight." },
+    { "ticker": "ETN", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-09", "rated_price": 341.72, "last_price": 359.3, "since_rated": 0.051, "catalyst": "", "take": "Rated yesterday and already +5.1%; segment overweight, so the rating and worldview agree, but avoid chasing the open." },
+    { "ticker": "PWR", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-06", "rated_price": 509.06, "last_price": 591.48, "since_rated": 0.162, "catalyst": "", "take": "Up 16.2% since rated, the biggest run on the list; the entry the agents saw is gone, so wait." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-03", "rated_price": 224.24, "last_price": 200.47, "since_rated": -0.106, "catalyst": "", "take": "Down 10.6% on Texas data-centre fears; segment is overweight and AAON's record quarter supports demand, but the policy risk is live." },
+    { "ticker": "VST", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-10", "rated_price": 133.92, "last_price": 133.92, "since_rated": 0.0, "catalyst": "", "take": "Rated today at the last close; power is the only AI segment up on five days, so it fits the worldview, but CPI comes first." }
+  ],
+  "trust": "None of the 39 picks is graded yet (grading starts after 28 days), and they average -3.9% against QQQ so far. Rated Buy or Overweight picks are at -2.0%, ahead of the screen's top name and a random shortlist pick but behind QQQ itself.",
+  "if_buying": [
+    "Overweight means a small starter position, not full size.",
+    "Let the CPI print and the first 30 minutes settle before placing orders; use limit orders if the open is volatile.",
+    "Prefer names that agree with the worldview (ETN, VRT, VST) over DELL and ANET, where the segment is only neutral.",
+    "Do not chase PWR after a 16% run."
+  ],
+  "sources": [
+    { "title": "Stock market today: Dow, S&P 500, Nasdaq trade mixed ahead of key inflation data", "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html" },
+    { "title": "Stock Market Today, Nov. 10: Markets Await the Consumer Inflation Report - TipRanks", "url": "https://www.tipranks.com/news/stock-market-today-nov-10-markets-await-the-consumer-inflation-report" },
+    { "title": "Waller puts 50 on the table before CPI", "url": "https://hawksmoorcapital.substack.com/p/daily-standup-nov-10" }
+  ]
+}
