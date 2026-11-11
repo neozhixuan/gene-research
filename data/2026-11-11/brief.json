@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-11",
+  "session": "US open Wed 11 Nov, 22:30 SGT",
+  "written_at": "2026-11-11T20:20:00+08:00",
+  "lean": "small",
+  "bottom_line": "The power and grid ratings mostly still hold tonight. Futures are higher (Nasdaq 100 about +1.4%) on CoreWeave's beat, but Tuesday's hot CPI realised the worldview's top risk, so start small. Don't chase a gap-up at the open; a bounce driven by one earnings report can fade with the 10-year near 5%.",
+  "what_changed": [
+    "CoreWeave beat on revenue and guidance after Tuesday's close and rose 16-18% after hours, lifting AI futures (touches 'AI demand outruns supply' and the neocloud credit thesis).",
+    "Nasdaq 100 futures were about +1.4% and S&P 500 futures +0.6% in Asian trading (not a 'wait' signal by itself).",
+    "Tuesday's hot CPI raised the odds of Fed hikes and the 10-year closed at 4.98%, hitting the worldview's first named risk.",
+    "No AI chip or data-centre earnings tonight; Cisco and Applied Materials report Thursday after the close."
+  ],
+  "names": [
+    { "ticker": "ANET", "segment": "networking_optical", "rating": "Overweight", "rated_on": "2026-11-04",
+      "rated_price": 169.91, "last_price": 185.02, "since_rated": 0.089,
+      "catalyst": "Cisco reports Thu 12 Nov (read-across)",
+      "take": "Up 8.9% since rated in a neutral segment; Cisco's print on Thursday is a cleaner entry signal than tonight's gap." },
+    { "ticker": "ASML", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-11",
+      "rated_price": 1507.85, "last_price": 1507.85, "since_rated": 0.0,
+      "catalyst": "Applied Materials reports Thu 12 Nov (read-across)",
+      "take": "Freshly re-rated at today's price; the segment is only neutral, so a small starter at most." },
+    { "ticker": "DELL", "segment": "servers", "rating": "Overweight", "rated_on": "2026-11-03",
+      "rated_price": 392.78, "last_price": 334.38, "since_rated": -0.149,
+      "catalyst": "Earnings 24 Nov",
+      "take": "Disagreement: rated Overweight but servers are now underweight on Texas moratorium fears; trust the worldview and wait for the 24 Nov results." },
+    { "ticker": "ETN", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-09",
+      "rated_price": 341.72, "last_price": 354.22, "since_rated": 0.037,
+      "catalyst": "",
+      "take": "Rating and segment agree; a small position is consistent with the rating." },
+    { "ticker": "PWR", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-06",
+      "rated_price": 509.06, "last_price": 583.14, "since_rated": 0.145,
+      "catalyst": "",
+      "take": "Already up 14.5% from the price the agents saw; wait for a pullback rather than buy the open." },
+    { "ticker": "TLN", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-11",
+      "rated_price": 361.18, "last_price": 361.18, "since_rated": 0.0,
+      "catalyst": "",
+      "take": "New pick today on a 750 MW seven-year capacity deal; rating and segment agree, so a small starter is reasonable." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-03",
+      "rated_price": 224.24, "last_price": 194.22, "since_rated": -0.134,
+      "catalyst": "",
+      "take": "Down 13.4% since rated on policy fears, not results; the cheaper entry fits the rating, but keep it small." },
+    { "ticker": "VST", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-10",
+      "rated_price": 133.92, "last_price": 131.18, "since_rated": -0.021,
+      "catalyst": "",
+      "take": "Slightly below the rated price in an overweight segment; the rating holds." }
+  ],
+  "trust": "No ratings are graded yet (grading starts after 28 days). On early marks, the picks are -3.8% vs QQQ, level with SMH and a random shortlist pick, behind the equal-weight universe (-3.2%), and Buy/Overweight picks are slightly better at -2.3%.",
+  "if_buying": [
+    "Overweight means a small starter only; add later if the thesis holds.",
+    "Prefer names where rating and segment agree and price hasn't run: TLN, VST, ETN, VRT.",
+    "Skip DELL until its 24 Nov earnings and PWR until it pulls back; give ANET until Cisco's print on Thursday.",
+    "Use limit orders: futures point to a gap-up open that may fade."
+  ],
+  "sources": [
+    { "title": "Nasdaq futures jump on CoreWeave earnings; hot CPI reinforces Fed hike bets (Investing.com)", "url": "https://investing.com/news/stock-market-news/us-stock-futures-tick-higher-after-wall-st-slips-on-hot-cpi-nvidia-losses-5017417" },
+    { "title": "Stock market today: Dow, S&P 500, Nasdaq slip as hot CPI fuels rate hike odds (Yahoo Finance)", "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html" },
+    { "title": "Stock Market Today: Dow Jones, S&P 500 Futures Rise (Benzinga)", "url": "https://www.benzinga.com/markets/equities/26/11/63132394/stock-market-today-dow-jones-sp-500-futures-rise-as-bessent-urges-us-china-to-de-risk-crwv-rgti-fnv-in-focus" },
+    { "title": "This week's earnings: AI infrastructure names dominate a thin calendar (Investing.com)", "url": "https://ph.investing.com/news/stock-market-news/this-weeks-earnings-ai-infrastructure-names-dominate-a-thin-calendar-93CH-2690206" }
+  ]
+}

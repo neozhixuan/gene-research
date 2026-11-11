@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-11",
+  "previous": "2026-11-10",
+  "headline": "Hot CPI pushed the 10-year to 4.98% and Goldman now expects more Fed tightening, but CoreWeave's beat-and-raise has AI futures bouncing into Wednesday's open.",
+  "regime": "The tape gave back Monday's bounce: Semis ETF -0.8% on the day, -6.7% on five days and -18.2% on the month, with the Nasdaq -8.0% on the month and in correction. The 10-year rose to 4.98% after a hot CPI, so rates are the ceiling on any rally. Every AI segment is down 14-32% on the month; only hyperscalers (+2.0%) and power (+1.4%) are positive on five days, while memory (-18.2%) and grid (-10.7%) led the fall. CoreWeave's print is lifting futures, but one earnings beat has not yet changed the trend.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 75,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Talen signed a seven-year 750 MW capacity agreement with an investment-grade counterparty (ac52a72cb2f3)",
+        "AAON jumped 22.7% as data-centre cooling sales rose 218% (67fa45f3b713); CoreWeave's contracted power passed 4.6 GW (d81825067750)",
+        "Against: Constellation's CEO says the US has 6-7 years of untapped power for data centres, so scarcity may be overstated (36bb33e0008f)",
+        "Against: SoftBank took a $3.7bn charge on power equipment and is reassessing its Ohio site; GE Vernova fell 4% (0a68be2242fd); grid is -10.7% on five days"
+      ],
+      "change": "weaker",
+      "change_note": "-3: Constellation's own CEO arguing power is not scarce and SoftBank's power-equipment write-off cut against the thesis, even with Talen's contract and AAON's orders."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 64,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "CoreWeave beat on revenue and raised its 2026 forecast to $13.3bn, with active power above 1.7 GW (d60ae3909efa, d81825067750)",
+        "TSMC's October sales rose 60% (cad2a5c934d9); OpenAI's revenue reportedly reached $10bn (b66c45db160a)",
+        "Netlist revenue rose 149% on AI demand (eff79dac6111)",
+        "Against: Super Micro's operating cash flow turned negative as receivables and inventory ballooned (9136df002da0)"
+      ],
+      "change": "stronger",
+      "change_note": "+4: CoreWeave's raise is the clearest end-demand data point in weeks and was the test named yesterday."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 82,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "CoreWeave's interest costs nearly tripled and it carries about $35bn of debt (d81825067750, 4f80da80ce16)",
+        "The screen still drops IREN, NBIS, CIFR, WULF, APLD and CRWV as cash-burners (shortlist)",
+        "Against: $9bn of planned customer prepayments eased debt concerns and neoclouds rallied (a0c0a3cc81ca, fcc978aa3962)"
+      ],
+      "change": "weaker",
+      "change_note": "-4: CoreWeave passed its earnings test and found a funding route that does not need banks; the debt load itself is unchanged."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 36,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Sandisk trades at 3x forward earnings with a 9% FCF yield after revenue of $11.0bn (shortlist, 1fad48666127)",
+        "ETFs bought a net $554.6m of Micron on Nov. 9 (7ccd9d888a5b)",
+        "Against: memory is -18.2% on five days and -31.9% on the month, still the worst segment; Sandisk -23.7% on five days (digest segments)"
+      ],
+      "change": "weaker",
+      "change_note": "-4: valuations are cheap but the tape keeps falling hardest here; cheapness is not a catalyst."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 60,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Hyperscalers are projected to spend $1.3tn on capex in 2027 (39f8f6c95f78)",
+        "Microsoft fell as Anthropic targets its Office business with new Claude tools (898a4d4fb65b, 2021b4900435)",
+        "Against: hyperscalers are +2.0% on five days, the best AI segment (digest segments)"
+      ],
+      "change": "unchanged",
+      "change_note": "No new cash-flow data; the Microsoft drop is a competition story, not a capex one."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 83,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "CPI came in hot and Goldman now pencils in additional Fed tightening; the 10-year is 4.98% (4160f995b23e, digest tape)",
+        "Healthcare leads tech by the widest gap in 25 years as investors cut AI exposure (626065e51eeb)",
+        "Anthropic seeks up to $1.4tn in its IPO and an analyst calls it the core driver of the AI trade (637bf8a78f37, c69763969b95)",
+        "Against: futures rose Wednesday as CoreWeave's results eased AI fears (22210ec353c5)"
+      ],
+      "change": "stronger",
+      "change_note": "+3: the hot CPI realised yesterday's top risk, and hanging the trade on one IPO is a crowding sign."
+    },
+    {
+      "id": "political-risk-to-data-centres",
+      "title": "A Democratic Congress raises policy risk for data-centre build-outs",
+      "stance": "bearish",
+      "confidence": 78,
+      "segments": ["hyperscalers", "datacenter_neocloud", "grid_electrical", "power_nuclear"],
+      "evidence": [
+        "Dell fell 12% in a week on Texas data-centre moratorium fears (0ddbf008bd75)",
+        "Credo and Lumentum sank 14% in a week as the midterm sweep hit AI data-centre stocks (e7b5095116fe)",
+        "Against: still no law or moratorium has been passed (digest)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: the 'moratorium, a ban' talk is spreading from cooling to servers and optics, though nothing is enacted."
+    },
+    {
+      "id": "nvidia-key-person-and-export-risk",
+      "title": "The Huang probe puts Nvidia, and China export rules, at risk",
+      "stance": "bearish",
+      "confidence": 60,
+      "segments": ["compute"],
+      "evidence": [
+        "A Super Micro co-founder was charged with routing banned servers to China, and the Singapore firm involved ties back to Nvidia allegations (caf7c9d6932a)",
+        "Nvidia is -18.3% on five days, the worst compute name; Alibaba plans to list its AI chip unit (digest segments, 8f2392aec88c)",
+        "Against: ETFs added Nvidia on Monday and some call it a bad-news buy (eb0c78fc809a, 79fc84612534)"
+      ],
+      "change": "stronger",
+      "change_note": "+5: a criminal charge makes the smuggling story concrete, and the stock is still falling hardest in compute."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "AMD +6.5% and NVDA -18.3% on five days; rotation inside compute, not a floor." },
+    "foundry_equipment": { "stance": "neutral", "note": "TSMC October +60% and -24% on the month; equipment makers are cheap-ish at ~18-20x with fat margins." },
+    "memory_storage": { "stance": "underweight", "note": "-18.2% on five days and -31.9% on the month; 3x earnings has not stopped the fall." },
+    "networking_optical": { "stance": "neutral", "note": "ANET +8.9% while AAOI -24.5% on five days; policy fear hit Credo and Lumentum." },
+    "servers": { "stance": "underweight", "note": "-12.3% on five days; Dell on moratorium fears and Super Micro burning cash and tied to smuggling." },
+    "power_nuclear": { "stance": "overweight", "note": "+1.4% on five days and Talen's 750 MW contract; Constellation's 'untapped power' remark is the watch item." },
+    "grid_electrical": { "stance": "overweight", "note": "-10.7% on five days on SoftBank and policy fears, but Quanta raised guidance; orders, not sentiment, decide." },
+    "cooling_thermal": { "stance": "overweight", "note": "AAON cooling sales +218% and Vertiv raised guidance; segment +3.3% on the day." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "CoreWeave passed its test, but interest costs nearly tripled and most names still burn cash." },
+    "hyperscalers": { "stance": "neutral", "note": "+2.0% on five days, but Microsoft faces a direct AI threat to Office." },
+    "ai_software": { "stance": "underweight", "note": "-7.8% on five days and -23.6% on the month; AI agents now threaten incumbents." }
+  },
+  "risks": [
+    "More Fed tightening after the hot CPI could push the 10-year through 5%.",
+    "A Texas or federal data-centre moratorium would hit grid, cooling, power and servers at once.",
+    "Criminal charges in the smuggling case could widen into new China export curbs on Nvidia.",
+    "A weak Anthropic IPO would remove what analysts now call the core driver of the AI trade.",
+    "If power is less scarce than assumed (Constellation's view), power and grid premiums compress."
+  ],
+  "watch": [
+    "Whether Wednesday's CoreWeave-led bounce holds through the close with the 10-year near 5%.",
+    "Nebius's Q3 report and any further neocloud prepayment deals.",
+    "Cisco's earnings for AI networking demand.",
+    "Fed speakers on the size of a December hike.",
+    "Any Texas legislative move on data-centre moratoria."
+  ]
+}

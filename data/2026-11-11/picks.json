@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-11",
+  "picks": [
+    {
+      "ticker": "TLN",
+      "segment": "power_nuclear",
+      "why": "Talen trades at 11.8x forward earnings with a 6% FCF yield and 96% revenue growth, and today's seven-year 750 MW capacity deal with an investment-grade buyer locks in cash flow. It is the cleanest overweight-segment name on the shortlist and adds a second power generator beside VST.",
+      "risk": "If Constellation's view that the US has years of untapped power is right, capacity prices and Talen's premium fall.",
+      "thesis_ids": ["power-is-the-binding-constraint"]
+    },
+    {
+      "ticker": "LRCX",
+      "segment": "foundry_equipment",
+      "why": "Lam has a 40% operating margin, 54% revenue growth and trades at 18.2x forward earnings after falling 49% from its high. TSMC's 60% October sales growth says wafer-capacity spending continues, which feeds etch and deposition orders.",
+      "risk": "A memory capex cut, given memory is the weakest segment, or new China export curbs would hit Lam's orders.",
+      "thesis_ids": ["ai-demand-exceeds-supply"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "SNDK", "reason": "Top score at 3x earnings, but memory is underweight and -23.7% on five days." },
+    { "ticker": "TER", "reason": "Same segment as LRCX with a lower margin and higher P/E." },
+    { "ticker": "ALAB", "reason": "Zero FCF yield at 30x earnings; fails the Buffett price test." },
+    { "ticker": "CORZ", "reason": "-23% FCF yield in an underweight, debt-funded segment." },
+    { "ticker": "MRVL", "reason": "Compute already covered by NVDA and only 2% FCF yield." },
+    { "ticker": "CAMT", "reason": "Small, no FCF data, and same segment as LRCX." }
+  ]
+}

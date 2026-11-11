@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "TLN",
+    "segment": "power_nuclear",
+    "kind": "new"
+  },
+  {
+    "ticker": "ASML",
+    "segment": "foundry_equipment",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "LRCX",
+    "segment": "foundry_equipment",
+    "kind": "new"
+  }
+]

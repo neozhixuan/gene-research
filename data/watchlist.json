@@ -20,6 +20,11 @@
         "date": "2026-11-02",
         "rating": "Overweight",
         "kind": "new"
+      },
+      {
+        "date": "2026-11-11",
+        "rating": "Overweight",
+        "kind": "recheck"
       }
     ]
   },
@@ -173,6 +178,20 @@
     "dropped": "2026-11-04",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
+  "LRCX": {
+    "segment": "foundry_equipment",
+    "added": "2026-11-11",
+    "status": "dropped",
+    "checks": [
+      {
+        "date": "2026-11-11",
+        "rating": null,
+        "kind": "new"
+      }
+    ],
+    "dropped": "2026-11-11",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
+  },
   "MU": {
     "segment": "memory_storage",
     "added": "2026-10-22",
@@ -234,14 +253,16 @@
   "NVDA": {
     "segment": "compute",
     "added": "2026-11-10",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-11-10",
         "rating": null,
         "kind": "new"
       }
-    ]
+    ],
+    "dropped": "2026-11-11",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "NVT": {
     "segment": "grid_electrical",
@@ -361,17 +382,15 @@
   },
   "TLN": {
     "segment": "power_nuclear",
-    "added": "2026-10-21",
-    "status": "dropped",
+    "added": "2026-11-11",
+    "status": "active",
     "checks": [
       {
-        "date": "2026-10-21",
-        "rating": "Hold",
+        "date": "2026-11-11",
+        "rating": "Overweight",
         "kind": "new"
       }
-    ],
-    "dropped": "2026-10-27",
-    "dropped_reason": "watchlist over 8; stalest non-positive name"
+    ]
   },
   "TSM": {
     "segment": "foundry_equipment",
