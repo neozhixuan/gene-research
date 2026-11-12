@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "AAON",
+    "segment": "cooling_thermal",
+    "kind": "new"
+  },
+  {
+    "ticker": "DELL",
+    "segment": "servers",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "TER",
+    "segment": "foundry_equipment",
+    "kind": "new"
+  }
+]

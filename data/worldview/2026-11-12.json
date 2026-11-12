@@ -1,0 +1,148 @@
+{
+  "date": "2026-11-12",
+  "previous": "2026-11-11",
+  "headline": "Nvidia's board is reportedly weighing ousting Jensen Huang, knocking Nasdaq futures just after a CoreWeave-led rally lifted the Semis ETF 4.8%.",
+  "regime": "Wednesday's close was a relief rally: Semis ETF +4.8%, memory +10.7% and networking +9.0% on the day after CoreWeave's beat-and-raise, but semis are still -14.2% on the month and every AI segment is down 8-27% on the month. The 10-year sits at 5.0% with the market pricing Fed hikes, and overnight Nvidia sank about 8% after hours on reports the board may remove Huang, with futures and European chips lower. Money is rotating within AI (AMD, Broadcom, power and cooling up on five days; Nvidia -13.2%) rather than leaving it, but the bounce has not yet survived a bad headline.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 76,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Power +11.4% and cooling +10.8% on five days, the best AI segments; AAON +31.0% (digest segments)",
+        "Quanta is growing faster than its March plan on power and data-centre demand (cf85d70ba4cd); Hubbell's data-centre sales rose more than 80% organically (6a3cacb3af7c)",
+        "Modine opened a new 682,000 sq ft chiller plant in Texas (ddba86653dab)",
+        "Against: Constellation's CEO still says there are 6-7 years of untapped power (36bb33e0008f); GE Vernova's Ontario SMR faces delays and cost overruns (d15f3619219d)"
+      ],
+      "change": "stronger",
+      "change_note": "+1: Quanta and Hubbell order data back the thesis and the tape rotated toward power and cooling while Nvidia fell; the 'untapped power' objection stands."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 64,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "Rental capacity is sold out even as analysts trim buildout forecasts (f748b25e30d2)",
+        "Memory shortage is lifting Micron and Sandisk; Micron's 2027 HBM is mostly sold (ada339a28e33, 54827fb23256)",
+        "Alphabet drew $5bn of orders for an AI debt sale (2eab7e76b00d)",
+        "Against: analysts are trimming the trillion-dollar buildout (f748b25e30d2)"
+      ],
+      "change": "unchanged",
+      "change_note": "Sold-out capacity and the memory shortage confirm yesterday's view; trimmed sell-side forecasts offset it."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 82,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "CoreWeave's $4bn debt plan faces an Nvidia-sized risk given its financial ties to the chipmaker (164f669ca506, e55766d207b9)",
+        "CoreWeave carries a $47bn debt load against a $133bn backlog (d7585dafb5e2)",
+        "Against: Morningstar calls the debt concerns overblown with $20bn available (cab5d5c5cb7e); segment +8.4% on five days"
+      ],
+      "change": "unchanged",
+      "change_note": "Nvidia's leadership crisis adds a new counterparty risk, but the five-day rally and Morningstar's view balance it."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 39,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Sandisk trades at 3.4x forward earnings with an 8% FCF yield and 73% operating margin (shortlist)",
+        "Memory +10.7% on the day as the AI memory shortage lifts Micron and Sandisk (digest segments, ada339a28e33)",
+        "Against: still -3.3% on five days and -26.7% on the month, the weakest segment over a month (digest segments)"
+      ],
+      "change": "stronger",
+      "change_note": "+3: the biggest one-day bounce of any segment and fresh shortage reporting; one day does not reverse a month."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 61,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Alphabet is borrowing in Asian bond markets to fund AI, drawing $5bn of orders (2eab7e76b00d)",
+        "Hyperscalers are projected to spend $1.3tn on capex in 2027 (prior worldview)",
+        "Against: hyperscalers held up best in the month (-8.0%) (digest segments)"
+      ],
+      "change": "stronger",
+      "change_note": "+1: a cash-rich hyperscaler issuing debt for AI is a sign capex exceeds internal cash flow."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 84,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "The 10-year is at 5.0% and gold fell below $4,000 on Fed-hike bets (digest tape, 79b4aa325214)",
+        "A strategist warns not to take the bait on a 'violent bounce' in tech (3130f1f48bc3); Bitcoin ETFs bled $1.4bn in five days (15eebd2f2fc0)",
+        "Against: the Semis ETF rose 4.8% in a day and VIX is down 35% on five days (digest tape)"
+      ],
+      "change": "stronger",
+      "change_note": "+1: the 10-year reached 5% and one Nvidia headline erased the bounce in futures, which is how crowded trades behave."
+    },
+    {
+      "id": "political-risk-to-data-centres",
+      "title": "A Democratic Congress raises policy risk for data-centre build-outs",
+      "stance": "bearish",
+      "confidence": 76,
+      "segments": ["hyperscalers", "datacenter_neocloud", "grid_electrical", "power_nuclear"],
+      "evidence": [
+        "Moratorium fears hit Dell, Credo and Lumentum last week (prior worldview)",
+        "Against: no new policy news today, and power (+11.4%) and grid (+3.7%) rose on five days (digest segments)"
+      ],
+      "change": "weaker",
+      "change_note": "-2: nothing new on moratoria and the most exposed segments rallied; the risk stays but is not building."
+    },
+    {
+      "id": "nvidia-key-person-and-export-risk",
+      "title": "The Huang probe puts Nvidia, and China export rules, at risk",
+      "stance": "bearish",
+      "confidence": 75,
+      "segments": ["compute"],
+      "evidence": [
+        "Nvidia's board reportedly met to decide Huang's fate and weighs an interim CEO; shares fell about 8% after hours (207b754f10a0, aeab6168ec7c, 653e629ff262)",
+        "Dan Ives values Nvidia at $225 without Huang versus $300 with him (e8399f502a10)",
+        "AMD and Broadcom rallied premarket as funds rotated out of Nvidia (b32b18dcf733, c7fbc00a5b36)"
+      ],
+      "change": "stronger",
+      "change_note": "+15: the key-person risk is now an active board process, not a probe; the contagion runs through CoreWeave and Nvidia's financing ties."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "AMD +13.1% and NVDA -13.2% on five days; Huang's possible ouster helps rivals as much as it hurts Nvidia." },
+    "foundry_equipment": { "stance": "neutral", "note": "+7.0% on five days led by ONTO; still -19.8% on the month with fat margins." },
+    "memory_storage": { "stance": "underweight", "note": "+10.7% in a day on the shortage, but -26.7% on the month; wait for the bounce to hold." },
+    "networking_optical": { "stance": "neutral", "note": "+6.5% on five days, COHR +20.2%; Cisco's print is the next demand test." },
+    "servers": { "stance": "underweight", "note": "-26.9% on the month; Dell and Super Micro tumbled on Nvidia ties and moratorium fears." },
+    "power_nuclear": { "stance": "overweight", "note": "+11.4% on five days, the best segment; Constellation's Q3 beat and new Peak+ contracts." },
+    "grid_electrical": { "stance": "overweight", "note": "Quanta ahead of plan and Hubbell data-centre sales +80%; +3.7% on five days." },
+    "cooling_thermal": { "stance": "overweight", "note": "+10.8% on five days, AAON +31%; Modine's new Texas chiller plant is live." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "+8.4% on five days, but CoreWeave's debt now carries Nvidia counterparty risk." },
+    "hyperscalers": { "stance": "neutral", "note": "-0.2% on five days; Alphabet funding AI with debt." },
+    "ai_software": { "stance": "underweight", "note": "-21.9% on the month; only ETF flows into Palantir in the news." }
+  },
+  "risks": [
+    "A disorderly Nvidia CEO change could spread to CoreWeave, Dell, Super Micro and every name tied to Nvidia's financing.",
+    "Friday's PPI could push the 10-year above 5% and harden December hike bets.",
+    "A Texas or federal data-centre moratorium would hit grid, cooling, power and servers at once.",
+    "A weak Anthropic IPO would remove what analysts call the core driver of the AI trade.",
+    "If power is less scarce than assumed (Constellation's view), power and grid premiums compress."
+  ],
+  "watch": [
+    "The Nvidia board's decision on Huang and the stock's reaction at the open.",
+    "Whether power, grid and cooling hold up if Nvidia sells off again (test of the rotation).",
+    "Friday's PPI and the 10-year around 5%.",
+    "Cisco's earnings for AI networking demand and Nebius's Q3 report.",
+    "Any Texas legislative move on data-centre moratoria."
+  ]
+}

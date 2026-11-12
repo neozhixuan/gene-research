@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-12",
+  "session": "US open Thu 12 Nov, 22:30 SGT",
+  "written_at": "2026-11-12T20:10:00+08:00",
+  "lean": "wait",
+  "bottom_line": "The ratings mostly still hold on their own numbers, but tonight's open is dominated by the Nvidia CEO story, which is the worldview's top named risk. Nasdaq futures are down 0.6-0.8% with Nvidia off 6-7% premarket and no board decision yet, so wait for the first hour and for any announcement before adding.",
+  "what_changed": [
+    "Nvidia fell about 8% after hours and 6-7% premarket on a WSJ report that its board may remove Jensen Huang; Bloomberg says a successor search is under way, with no decision yet. This is the worldview's 'disorderly Nvidia CEO change' risk.",
+    "Nasdaq-100 futures were down 0.6-0.8% and S&P 500 futures 0.3-0.4% early Thursday, erasing part of Wednesday's CoreWeave-led rally (Semis ETF +4.8%).",
+    "Money is rotating inside AI rather than leaving it: AMD rose about 4% and Broadcom about 2% after hours. That supports the power, grid and cooling rotation the worldview is watching.",
+    "Analysts told CNBC Nvidia could fall another 20% if Huang goes, which would hit names tied to Nvidia's financing first (CoreWeave, Dell)."
+  ],
+  "names": [
+    { "ticker": "AAON", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-12", "rated_price": 76.33, "last_price": 76.33, "since_rated": 0.0, "catalyst": "", "take": "Rated today in an overweight segment; already +31% on five days, so a small starter on weakness rather than chasing the open." },
+    { "ticker": "ANET", "segment": "networking_optical", "rating": "Overweight", "rated_on": "2026-11-04", "rated_price": 169.91, "last_price": 196.68, "since_rated": 0.158, "catalyst": "", "take": "Up 16% since rating in a neutral segment, and Cisco's results are a near-term read on AI networking; wait." },
+    { "ticker": "ASML", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-11", "rated_price": 1507.85, "last_price": 1534.42, "since_rated": 0.018, "catalyst": "Earnings 27 Jan", "take": "Close to the rated price, but European chips fell on the Nvidia news; the segment is only neutral, so let the open settle." },
+    { "ticker": "DELL", "segment": "servers", "rating": "Overweight", "rated_on": "2026-11-12", "rated_price": 373.68, "last_price": 373.68, "since_rated": 0.0, "catalyst": "Earnings 24 Nov", "take": "Rating and worldview disagree: servers are underweight and Dell is directly exposed to Nvidia turmoil. Trust the worldview tonight and wait." },
+    { "ticker": "ETN", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-09", "rated_price": 341.72, "last_price": 360.62, "since_rated": 0.055, "catalyst": "Earnings 2 Feb", "take": "Overweight segment, modest run since rating; a small position is consistent with the rating if it holds the open." },
+    { "ticker": "PWR", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-06", "rated_price": 509.06, "last_price": 607.94, "since_rated": 0.194, "catalyst": "", "take": "Up 19% since the agents saw it; the thesis is intact but the entry is much worse, so don't chase." },
+    { "ticker": "TLN", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-11", "rated_price": 361.18, "last_price": 378.71, "since_rated": 0.049, "catalyst": "", "take": "Rated yesterday, +5% since in the strongest segment; a small starter with a limit is reasonable after the open." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-03", "rated_price": 224.24, "last_price": 206.51, "since_rated": -0.079, "catalyst": "", "take": "8% below its rated price in an overweight segment; the cheapest entry on the list, but it lagged its segment, so start small." },
+    { "ticker": "VST", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-10", "rated_price": 133.92, "last_price": 133.45, "since_rated": -0.004, "catalyst": "", "take": "Flat since rating in an overweight segment; ETFs were net sellers, so a small starter only." }
+  ],
+  "trust": "None of the ratings has been graded yet (grading starts after 28 days). On 45 picks so far, the Buy/Overweight subset is +0.5% vs QQQ, no better than a random shortlist pick (+0.5%), so treat ratings as weak evidence.",
+  "if_buying": [
+    "Overweight means a small starter only; nothing here is rated Buy.",
+    "Skip the first 30-60 minutes: Nvidia news could land at any time and move the whole AI complex.",
+    "Prefer the overweight power, grid and cooling names near their rated prices (VRT, VST, TLN, ETN); wait on DELL, ANET and PWR.",
+    "Use limit orders; the VIX rose 4.6% and opens after big after-hours moves gap."
+  ],
+  "sources": [
+    { "title": "Stock Market Today, Nov. 12: U.S. Tech Stocks Fall on Nvidia CEO Uncertainty (TipRanks)", "url": "https://www.tipranks.com/news/stock-market-today-nov-12-u-s-tech-stocks-fall-on-nvidia-ceo-uncertainty" },
+    { "title": "Stock market today: S&P 500, Nasdaq futures sink as Nvidia CEO turmoil jolts confidence (Yahoo Finance)", "url": "https://sg.finance.yahoo.com/news/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html" },
+    { "title": "Nvidia Leadership Crisis Drags on U.S. Stock Futures, Pressures AI Trade (MarketScreener)", "url": "https://www.marketscreener.com/news/nvidia-leadership-crisis-drags-on-u-s-stock-futures-pressures-ai-trade-update-ce785ed8da8afe27" },
+    { "title": "AMD Stock Up 4.3% as WSJ Says Nvidia Board May Oust Huang (FinanceFeeds)", "url": "https://financefeeds.com/amd-stock-nvidia-huang-wsj-report-after-hours/" },
+    { "title": "AMD, Broadcom Stocks Gain as Investors Rotate Away From Nvidia (Benzinga)", "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63177290/amd-broadcom-stocks-gain-as-investors-rotate-away-from-nvidia-whats-going-on" }
+  ]
+}

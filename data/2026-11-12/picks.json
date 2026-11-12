@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-12",
+  "picks": [
+    { "ticker": "AAON", "segment": "cooling_thermal", "why": "Revenue is up 84% with a 12% operating margin at 20x forward earnings, still 49% below its 52-week high despite a 31% five-day rally on data-centre cooling orders. It is the only shortlist name in an overweight segment, and the watchlist covers cooling with Vertiv alone.",
+      "risk": "Free cash flow is negative (-2% yield) while it builds capacity, and only 4 analysts cover it, so one weak order quarter could undo the rally.", "thesis_ids": ["power-is-the-binding-constraint"] },
+    { "ticker": "TER", "segment": "foundry_equipment", "why": "Revenue up 70% with a 33% operating margin at 22x forward earnings, 46% below its high, as AI chip testing demand grows. Test is a bottleneck that scales with the chip volumes behind the demand-exceeds-supply thesis, and is uncorrelated with Nvidia's own leadership risk.",
+      "risk": "FCF yield is only 1% and analysts already call it fully priced; a cut in AI accelerator volumes would hit test orders first.", "thesis_ids": ["ai-demand-exceeds-supply"] }
+  ],
+  "passed_on": [
+    { "ticker": "SNDK", "reason": "Cheapest on numbers, but memory is underweight until the bounce holds." },
+    { "ticker": "HPE", "reason": "Cheap with 7% FCF yield, but servers are underweight and Dell already covers the segment." },
+    { "ticker": "ALAB", "reason": "32x forward earnings with no free cash flow; too expensive for the downside." },
+    { "ticker": "JBL", "reason": "5% operating margin in an underweight segment." },
+    { "ticker": "MRVL", "reason": "Compute is caught in the Nvidia contagion; only a 2% FCF yield." }
+  ]
+}

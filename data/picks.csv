@@ -41,3 +41,6 @@ date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-11-11,TLN,new,power_nuclear,361.18,674.76,483.63,Overweight,Buy,Overweight
 2026-11-11,ASML,recheck,foundry_equipment,1507.85,674.76,483.63,Overweight,Buy,Overweight
 2026-11-11,LRCX,new,foundry_equipment,222.39,674.76,483.63,,,
+2026-11-12,AAON,new,cooling_thermal,76.33,690.38,506.96,Overweight,Buy,Overweight
+2026-11-12,DELL,recheck,servers,373.68,690.38,506.96,Overweight,Buy,Overweight
+2026-11-12,TER,new,foundry_equipment,265.78,690.38,506.96,,,

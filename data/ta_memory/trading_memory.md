@@ -322,7 +322,7 @@ The 5-day alpha of -12.4% confirms the directional risk of the technical breakdo
 
 <!-- ENTRY_END -->
 
-[2026-11-03 | DELL | Overweight | pending]
+[2026-11-03 | DELL | Overweight | +0.4% | +1.3% | 5d | resolved:2026-11-11]
 
 DECISION:
 **Rating**: Overweight
@@ -335,9 +335,12 @@ DECISION:
 
 **Time Horizon**: 3-6 months
 
+REFLECTION:
+The 5-day alpha of +1.3% suggests a successful start to the directional call, though the 3-6 month horizon makes this short window insufficient to confirm the long-term thesis. This performance supports the decision to scale in gradually, as the volatility did not immediately trigger the wide stop-loss. In future analyses, I will more explicitly weigh the impact of recent insider selling against fundamental value to better calibrate the initial position size relative to technical momentum.
+
 <!-- ENTRY_END -->
 
-[2026-11-03 | VRT | Overweight | pending]
+[2026-11-03 | VRT | Overweight | +0.5% | +1.4% | 5d | resolved:2026-11-11]
 
 DECISION:
 **Rating**: Overweight
@@ -349,6 +352,9 @@ DECISION:
 **Price Target**: not provided
 
 **Time Horizon**: 3-6 months
+
+REFLECTION:
+The 5-day alpha of +1.4% against the SPY confirms an immediate favorable directional bias, though this window is too narrow to validate the long-term structural AI infrastructure thesis. This short-term outperformance supports the strategy of staged accumulation near support, as it validates the stock's resilience during periods of broader market consolidation. For future analyses, I will incorporate specific near-term technical volatility triggers to better time entry points within the broader multi-month thesis.
 
 <!-- ENTRY_END -->
 
@@ -495,6 +501,36 @@ DECISION:
 **Executive Summary**: Initiate a staged accumulation strategy in ASML to balance long-term fundamental strength with near-term technical volatility. Deploy capital in tranches, starting with an initial allocation of 1.5% at current levels, with the remainder reserved for deployment upon a confirmed reclaim of key moving averages. Maintain a medium-to-long term horizon of 3-6 months while using a wider stop-loss around the 1300 level to manage downside risk.
 
 **Investment Thesis**: The debate demonstrates that while the conservative analyst rightly highlights immediate headwinds—such as the breakdown below the 200 SMA, a declining RSI, and high ATR volatility—the neutral and aggressive analysts provide the superior operational synthesis through a value-driven, tiered entry plan. The fundamental case remains anchored by ASML's absolute monopoly in EUV lithography, 44% operating margins, a strong balance sheet with a 9% debt-to-equity ratio, and an attractive PEG ratio of 0.8. Rather than waiting passively for an all-clear or aggressively catching a falling knife with a single oversized tranche, a staggered capital deployment allows the portfolio to capitalize on valuation anomalies following the 20% correction while mitigating the risk of a continued technical pullback. The thesis would strengthen upon a confirmed reclaim of the 10 EMA and 200 SMA, and weaken if foundational foundry CapEx retrenchment severely compromises long-term demand.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-12 | AAON | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Initiate a staged accumulation in AAON with an initial tranche sized at 0.75x of a standard portfolio allocation to capture secular AI infrastructure growth. Manage downside volatility with a stop-loss set below the $70.00 support level, and scale into the full position upon a sustained breakout above the 50-day moving average of $76.73. The recommended holding period is 3-6 months.
+
+**Investment Thesis**: The investment thesis is driven by the explosive 218% year-over-year growth in AAON's BASX data center cooling segment, which validates its position as a vital beneficiary of the AI infrastructure expansion. Although the conservative and neutral analysts raised valid concerns regarding material weaknesses in internal controls, negative free cash flow of $122 million, and a share price trading below the 200-day SMA of $96.47, these risks are heavily outweighed by a compelling forward P/E of 19.88, a 0.87 PEG ratio, and strong institutional demand following a 20% post-earnings surge. The aggressive and neutral debates successfully demonstrate that the core industrial demand and undeniable revenue momentum outpace administrative and reporting friction. This stance would change if the internal control remediation leads to secondary restatements or if broader macroeconomic pressures cause a decisive technical breakdown below key structural support.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-12 | DELL | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Initiate a partial long position in DELL using a disciplined, staged entry to capture significant value from the $95B AI server backlog and 12.33 Forward P/E. Allocate an initial tranche of 12.5% of available cash, managing volatility risks below the 50 SMA while retaining dry powder for further accumulation if support holds or trends reverse. The recommended time horizon is 3-6 months.
+
+**Investment Thesis**: The debate reflects a classic clash between near-term technical deterioration and undeniable long-term fundamental demand. The conservative analyst accurately identifies legitimate risks—such as negative book value, a sub-1.0 current ratio (0.96), bearish MACD momentum, and heavy insider distribution by Silver Lake—which caution against rushing into a full-sized position. However, the aggressive and neutral analysts' arguments carry far more weight for a strategic allocation: DELL trades at an attractive Forward P/E of 12.33 underpinned by a massive $95 billion AI server backlog, and the price is stabilizing near the critical 200 SMA support zone of $340.20. Following the neutral analyst's balanced framework, deploying a moderate 12.5% initial tranche rather than an aggressive 25% or an overly timid 5% allows us to capture upside while maintaining sufficient liquidity to react to high ATR volatility. What would change this thesis is a decisive, high-volume breakdown below the 200 SMA support or a structural contraction in the AI server backlog.
 
 **Price Target**: not provided
 

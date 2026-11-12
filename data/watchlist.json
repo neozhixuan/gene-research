@@ -1,4 +1,16 @@
 {
+  "AAON": {
+    "segment": "cooling_thermal",
+    "added": "2026-11-12",
+    "status": "active",
+    "checks": [
+      {
+        "date": "2026-11-12",
+        "rating": "Overweight",
+        "kind": "new"
+      }
+    ]
+  },
   "ANET": {
     "segment": "networking_optical",
     "added": "2026-11-04",
@@ -93,6 +105,11 @@
         "date": "2026-11-03",
         "rating": "Overweight",
         "kind": "new"
+      },
+      {
+        "date": "2026-11-12",
+        "rating": "Overweight",
+        "kind": "recheck"
       }
     ]
   },
@@ -378,6 +395,20 @@
       }
     ],
     "dropped": "2026-11-10",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
+  },
+  "TER": {
+    "segment": "foundry_equipment",
+    "added": "2026-11-12",
+    "status": "dropped",
+    "checks": [
+      {
+        "date": "2026-11-12",
+        "rating": null,
+        "kind": "new"
+      }
+    ],
+    "dropped": "2026-11-12",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "TLN": {
