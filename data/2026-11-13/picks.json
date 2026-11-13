@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-13",
+  "picks": [
+    { "ticker": "AMAT", "segment": "foundry_equipment", "why": "Applied Materials just beat Q4 estimates on AI demand with 53% revenue growth and a 33% operating margin at 15.8x forward earnings, 48% off its high. It is a picks-and-shovels play on the demand thesis that does not depend on which chip designer wins after Huang's exit.",
+      "risk": "Tighter China export controls after the Nvidia smuggling reports would cut a large share of equipment sales.", "thesis_ids": ["ai-demand-exceeds-supply", "nvidia-key-person-and-export-risk"] },
+    { "ticker": "SNDK", "segment": "memory_storage", "why": "Sandisk trades at 3.2x forward earnings with an 8% FCF yield and 73% operating margin, still 60% off its high despite a week-long memory bounce. The watchlist has no memory name, and the price limits the downside if the shortage fades.",
+      "risk": "If the memory shortage is the cycle peak, earnings collapse and the low P/E is a value trap.", "thesis_ids": ["memory-supercycle-priced-as-peak", "ai-demand-exceeds-supply"] }
+  ],
+  "passed_on": [
+    { "ticker": "WDC", "reason": "Same memory exposure as SNDK at a higher multiple and only 2% FCF yield; avoid two picks from one segment." },
+    { "ticker": "HPE", "reason": "Servers are underweight and 8% operating margin is thin." },
+    { "ticker": "ALAB", "reason": "31.9x forward earnings with ~0% FCF yield fails the Buffett price test." },
+    { "ticker": "CLS", "reason": "Servers underweight; 8% margin and Nvidia-tied demand." },
+    { "ticker": "JBL", "reason": "Servers underweight; 5% operating margin." },
+    { "ticker": "CAMT", "reason": "Small cap with no FCF data; AMAT is the higher-quality equipment pick." }
+  ]
+}

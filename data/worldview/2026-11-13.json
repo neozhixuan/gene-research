@@ -1,0 +1,151 @@
+{
+  "date": "2026-11-13",
+  "previous": "2026-11-12",
+  "headline": "Jensen Huang resigned as Nvidia CEO with Colette Kress as interim, and the market absorbed it (S&P -0.4%) while 10-year yields posted their biggest surge since 2022.",
+  "regime": "The key-person shock landed and did not break the tape: S&P -0.4%, Semis ETF -1.0% on the day but +12.1% on five days, VIX 18.4 (-28% on five days). Rates are the real headwind: the 10-year is at 5.1% with Fed hikes being priced and BofA's Hartnett says stay risk-off until yields fall below 4.5%. Within AI the money keeps rotating away from Nvidia toward AMD/Broadcom and toward equipment and cooling, while leveraged neoclouds (Nebius -20%, CoreWeave -7%) take the punishment.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 76,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Samsung is reportedly in talks to buy Modine for AI cooling; MOD +28% (b82cf021486d, ca310f9d0c49)",
+        "Constellation +13% in a week on its second guidance raise this year (b962a2ecb79e); Oracle now books $16bn a year per gigawatt (a86f331cceb6)",
+        "Cooling +21.9% and power +16.5% on five days (digest segments)",
+        "Against: GE Vernova and Vertiv fell 12% in the week to Nov 10 on data-centre backlash (ab88af424ac8); power -2.1% on the day"
+      ],
+      "change": "unchanged",
+      "change_note": "A strategic bid for Modine and Constellation's raise support it, but power/grid lagged compute and equipment on five days and the backlash selloff is real; net flat."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 66,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "Applied Materials beat Q4 estimates and rose as CoreWeave's results eased hardware-demand fears (ecf89f0d6add, cba5b7fa705e)",
+        "Oracle's revenue per gigawatt rose 60% to $16bn on new AI contracts (a86f331cceb6); Coherent signed a $20bn AI customer deal (514334f7652b)",
+        "CoreWeave and Cisco results boosted AI sentiment (61fc602352ce)",
+        "Against: Burry warns of a coming chip glut (41d14b55338c); Oracle's backlog is about half OpenAI, which lost ~$13.5bn in Q3 (e34c4cd3f36f)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: AMAT's beat, Oracle's pricing and Coherent's deal are hard demand data; the OpenAI concentration risk caps it."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 84,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "Nebius fell ~20% after raising capex plans to $45bn and pushing revenue into 2027 (7fb5bb45d9c3, 194b5a850cb2)",
+        "CoreWeave sank ~7% after Huang's exit raised doubts about its biggest supplier and ally (752c03210070, 5d2698e583be)",
+        "Segment -4.1% on the day, the worst; all five neoclouds fail the quality gate (shortlist)",
+        "Against: Oppenheimer keeps a $150 target on CoreWeave (cd0d5087c368)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: Nebius's capex jump is exactly the debt-funded overreach the thesis describes, and the Nvidia shock hit this segment hardest."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 43,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Sandisk trades at 3.2x forward earnings with an 8% FCF yield and 73% operating margin; WDC at 7.7x (shortlist)",
+        "Memory +17.8% on five days; Micron is committing ~$1bn to Anthropic's placement as a key HBM supplier (digest segments, 91a51fa603be)",
+        "Against: -24.6% on the month and Micron moves 5%+ on a third of days (724128a09b2b); one buyer holds off on Sandisk above $900 (928b5b9fc2ad)"
+      ],
+      "change": "stronger",
+      "change_note": "+4: the bounce held for a full week (+17.8%) rather than one day, which was yesterday's test; volatility keeps confidence below 50."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 62,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Oracle's backlog is about half OpenAI, which could only 'scrape together $11bn' (e34c4cd3f36f); Oracle fails the cash-flow quality gate (shortlist)",
+        "Alphabet is borrowing to fund AI (prior worldview)",
+        "Against: hyperscalers are the steadiest AI segment, +3.9% on five days (digest segments)"
+      ],
+      "change": "stronger",
+      "change_note": "+1: Oracle's dependence on a loss-making customer shows how capex is being financed on promises, not cash."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 85,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "Bond yields saw their biggest surge since 2022 on Fed-hike expectations; 10-year 5.1% (30f9a5f61b8d, digest tape)",
+        "Hartnett: stay risk-off until yields fall below 4.5% (17e7048a2862); Bitcoin broke $70k on $1bn of liquidations (a925682c06d7)",
+        "Against: VIX -28% on five days and Wells Fargo dropped its call to avoid AI infrastructure (681d832f7613)"
+      ],
+      "change": "stronger",
+      "change_note": "+1: rates keep rising and leveraged speculation (crypto) is unwinding; the AI tape's resilience is the only counterpoint."
+    },
+    {
+      "id": "political-risk-to-data-centres",
+      "title": "A Democratic Congress raises policy risk for data-centre build-outs",
+      "stance": "bearish",
+      "confidence": 78,
+      "segments": ["hyperscalers", "datacenter_neocloud", "grid_electrical", "power_nuclear"],
+      "evidence": [
+        "GE Vernova and Vertiv fell 12% in a week as data-centre backlash hit AI power after the midterms (ab88af424ac8)",
+        "Texas data-centre regulations are weighing on Nebius (8202d87e0c06); Washington may tighten chip export controls (6be2e16a8c7c)",
+        "Against: no moratorium has passed; grid +13.4% on five days (digest segments)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: the backlash now shows in prices of the power suppliers and Texas rules are cited as a live drag."
+    },
+    {
+      "id": "nvidia-key-person-and-export-risk",
+      "title": "The Huang probe puts Nvidia, and China export rules, at risk",
+      "stance": "bearish",
+      "confidence": 80,
+      "segments": ["compute"],
+      "evidence": [
+        "Huang resigned; CFO Colette Kress is interim CEO (61fc602352ce, ff5f3a08ae53)",
+        "Banned Nvidia chips traced to a China data centre linked to Alice Huang; DOJ probing Super Micro smuggling (8fb9d2f57faf, 72f4186e8de3, d9897c8e452b)",
+        "AMD +44.7% vs NVDA -8.5% on five days (digest segments, 376969b970a5)",
+        "Against: the market weathered the exit and NVDA rose 2.3% premarket; Yardeni calls it a buying opportunity (964388513fa8, ca87f4eccd47, 6be2e16a8c7c)"
+      ],
+      "change": "stronger",
+      "change_note": "+5: the ouster happened and the scandal widened to export violations, which invites tighter controls; the key-person part is now realised, the export part is growing."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "AMD +44.7% and NVDA -8.5% on five days; rivals gain what Nvidia loses, but export risk hangs over all." },
+    "foundry_equipment": { "stance": "neutral", "note": "+20.6% on five days; AMAT beat Q4. Still -19.2% on the month." },
+    "memory_storage": { "stance": "neutral", "note": "Upgraded from underweight: +17.8% on five days held the bounce; Sandisk at 3.2x forward earnings." },
+    "networking_optical": { "stance": "neutral", "note": "+25.2% on five days, COHR's $20bn deal; -25.6% on the month." },
+    "servers": { "stance": "underweight", "note": "-28.0% on the month; Super Micro DOJ smuggling probe adds to Nvidia-tie risk." },
+    "power_nuclear": { "stance": "overweight", "note": "Constellation's guidance raise; -2.1% on the day and backlash risk." },
+    "grid_electrical": { "stance": "overweight", "note": "+13.4% on five days; GE Vernova's backlash drop is the warning." },
+    "cooling_thermal": { "stance": "overweight", "note": "+21.9% on five days, AAON +44.8%; Samsung eyeing Modine shows strategic value." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "-4.1% on the day; Nebius -20% on a $45bn capex plan, CoreWeave hit by Huang's exit." },
+    "hyperscalers": { "stance": "neutral", "note": "+3.9% on five days; Oracle's OpenAI-heavy backlog and Microsoft's outage." },
+    "ai_software": { "stance": "underweight", "note": "-21.7% on the month; nothing in the news to change it." }
+  },
+  "risks": [
+    "Tighter chip export controls after the China smuggling revelations would hit Nvidia, equipment and servers together.",
+    "The 10-year above 5% with Fed hikes priced could drag every long-duration AI name.",
+    "OpenAI's losses threaten Oracle's backlog and, through it, data-centre and power orders.",
+    "A Texas or federal data-centre moratorium would hit power, grid, cooling and servers at once.",
+    "Neocloud financing stress (Nebius, CoreWeave) could spread to their suppliers' order books."
+  ],
+  "watch": [
+    "Nvidia's first full session under interim CEO Kress and any news on a permanent CEO.",
+    "Any Commerce Department move on export controls after the smuggling reports.",
+    "10-year yield vs 5.1% and Fed speakers on December hikes.",
+    "Whether Samsung confirms a Modine bid and how cooling peers reprice.",
+    "Whether memory holds its five-day gain after Friday's -1.9%."
+  ]
+}

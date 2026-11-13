@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-13",
+  "session": "US open Fri 13 Nov, 22:30 SGT",
+  "written_at": "2026-11-13T20:05:00+08:00",
+  "lean": "small",
+  "bottom_line": "The ratings mostly hold: futures are flat to slightly up after the market absorbed Huang's resignation, and the power, grid and cooling names sit in segments the worldview still rates overweight. But October PPI lands before the open with the 10-year at 5.1%, and Nvidia reports on Tuesday, so start small rather than full.",
+  "what_changed": [
+    "S&P 500 futures about +0.2% and Nasdaq 100 roughly flat before October PPI (expected +0.4%); 10-year near 5.10%. Touches the 'crowded at high rates' thesis.",
+    "Nvidia named CFO Colette Kress interim CEO and confirmed Q3 results on Tue 17 Nov after the close; shares recovered slightly after hours. A near-term catalyst for every AI supplier.",
+    "Cisco beat with revenue +24% and a bigger AI forecast but was flat after hours on margin pressure from component shortages; Cerebras rose about 16% on a Microsoft deal.",
+    "Applied Materials reported after Thursday's close (the digest shows a Q4 beat); its 380.95 rating price predates the market's reaction."
+  ],
+  "names": [
+    { "ticker": "AAON", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-12", "rated_price": 76.33, "last_price": 78.8, "since_rated": 0.032, "catalyst": "", "take": "Segment overweight and only +3% since rated; a Samsung–Modine bid would support cooling multiples. Fine for a small start." },
+    { "ticker": "AMAT", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 380.95, "last_price": 380.95, "since_rated": 0.0, "catalyst": "Reported after Thursday's close; first reaction at the open", "take": "Segment is only neutral and the price will gap on the results; wait for the first half hour before buying." },
+    { "ticker": "ANET", "segment": "networking_optical", "rating": "Overweight", "rated_on": "2026-11-04", "rated_price": 169.91, "last_price": 206.63, "since_rated": 0.216, "catalyst": "", "take": "Up 22% since the agents rated it and the segment is neutral; the rated price is gone, so don't chase." },
+    { "ticker": "ASML", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-11", "rated_price": 1507.85, "last_price": 1497.12, "since_rated": -0.007, "catalyst": "", "take": "Near its rated price, but neutral segment and exposed to any tightening of China export rules after the smuggling reports." },
+    { "ticker": "DELL", "segment": "servers", "rating": "Overweight", "rated_on": "2026-11-12", "rated_price": 373.68, "last_price": 371.17, "since_rated": -0.007, "catalyst": "Earnings 24 Nov", "take": "Worldview rates servers underweight and Nvidia ties are the risk; trust the worldview tonight and wait for Nvidia's results on Tuesday." },
+    { "ticker": "ETN", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-09", "rated_price": 341.72, "last_price": 359.04, "since_rated": 0.051, "catalyst": "", "take": "Overweight segment, +5% since rated; reasonable for a small position." },
+    { "ticker": "PWR", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-06", "rated_price": 509.06, "last_price": 606.16, "since_rated": 0.191, "catalyst": "", "take": "Up 19% since rated; the thesis holds but the entry the agents saw is gone. Use a limit below the close or wait for a pullback." },
+    { "ticker": "TLN", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-11", "rated_price": 361.18, "last_price": 386.68, "since_rated": 0.071, "catalyst": "", "take": "Overweight segment, +7% since rated; power fell 2.1% Thursday on backlash risk, so size small." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 209.64, "last_price": 209.64, "since_rated": 0.0, "catalyst": "", "take": "Freshly re-rated Overweight for the third time at today's price; the cleanest candidate tonight." },
+    { "ticker": "VST", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-10", "rated_price": 133.92, "last_price": 134.51, "since_rated": 0.004, "catalyst": "", "take": "Flat since rated in an overweight segment; a small start is consistent with the rating." }
+  ],
+  "trust": "No ratings are graded yet (grading starts after 28 days). So far picks rated Buy/Overweight are +1.1% vs QQQ, ahead of the screen's no-AI #1 (-1.5%) and a random shortlist pick (-0.1%), but the sample is small and young.",
+  "if_buying": [
+    "Overweight means a small starter position, not full size.",
+    "Prefer names near their rated price in overweight segments (VRT, VST, AAON, ETN); skip ANET and PWR at these levels.",
+    "Wait on AMAT until it has traded after its results, and on DELL until Nvidia reports on 17 Nov.",
+    "Use limit orders: PPI at 21:30 SGT can swing the open."
+  ],
+  "sources": [
+    { "title": "Stock market today: Dow, S&P 500, Nasdaq futures hold steady as Nvidia tumult deepens (Yahoo Finance)", "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-110151154.html" },
+    { "title": "Wall Street futures mixed ahead of PPI data (Invezz)", "url": "https://invezz.com/news/2026/11/13/us-stock-futures-today-nvidia-microsoft-ppi-november-13/" },
+    { "title": "Stock Market Today: Nasdaq Up 3.2% for the Week as Kress Steps In at Nvidia (CoinCentral)", "url": "https://coincentral.com/stock-market-today-nasdaq-up-3-2-for-the-week-as-kress-steps-in-at-nvidia" },
+    { "title": "Cisco (CSCO) Stock Stalls After Hours Despite Earnings Beat and Bigger AI Forecast (CoinCentral)", "url": "https://coincentral.com/cisco-csco-stock-stalls-after-hours-despite-earnings-beat-and-bigger-ai-forecast" },
+    { "title": "Nvidia Shares Rise 0.99% After Hours as Jensen Huang Resigns (Benzinga)", "url": "https://benzinga.com/markets/equities/26/11/63228901/nvidia-shares-rise-after-hours-jensen-huang-resigns" }
+  ]
+}

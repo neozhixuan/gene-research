@@ -44,3 +44,6 @@ date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-11-12,AAON,new,cooling_thermal,76.33,690.38,506.96,Overweight,Buy,Overweight
 2026-11-12,DELL,recheck,servers,373.68,690.38,506.96,Overweight,Buy,Overweight
 2026-11-12,TER,new,foundry_equipment,265.78,690.38,506.96,,,
+2026-11-13,AMAT,new,foundry_equipment,380.95,688.17,501.73,Overweight,Buy,Overweight
+2026-11-13,VRT,recheck,cooling_thermal,209.64,688.17,501.73,Overweight,Buy,Overweight
+2026-11-13,SNDK,new,memory_storage,937.46,688.17,501.73,,,
