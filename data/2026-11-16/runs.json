@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "POWL",
+    "segment": "grid_electrical",
+    "kind": "new"
+  },
+  {
+    "ticker": "ANET",
+    "segment": "networking_optical",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "WDC",
+    "segment": "memory_storage",
+    "kind": "new"
+  }
+]

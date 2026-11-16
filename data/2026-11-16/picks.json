@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-16",
+  "picks": [
+    { "ticker": "POWL", "segment": "grid_electrical",
+      "why": "Powell makes the switchgear that connects data centres to the grid, earns a 20% operating margin and a 4% FCF yield at 20x forward earnings. At 56% off its high and 33% below its 200-day, the price already discounts a lot of bad news for a business on the bottleneck the worldview rates overweight.",
+      "risk": "Revenue growth is only 9%, so if data-centre orders slow or the backlog shrinks, the multiple has room to fall further.",
+      "thesis_ids": ["power-is-the-binding-constraint"] },
+    { "ticker": "WDC", "segment": "memory_storage",
+      "why": "Western Digital trades at 7.3x forward earnings with 56% revenue growth and a 41% operating margin, which prices it as if earnings are at a peak. The watchlist has no active memory name, and rising DRAM and storage pricing argues the cycle has further to run.",
+      "risk": "A 63% drop from the high shows how fast storage pricing can turn; a demand pause from hyperscalers would compress earnings quickly.",
+      "thesis_ids": ["memory-supercycle-priced-as-peak", "ai-demand-exceeds-supply"] }
+  ],
+  "passed_on": [
+    { "ticker": "HUBB", "reason": "Good business but only a 2% FCF yield and barely off its highs; POWL gives grid exposure at a lower price." },
+    { "ticker": "HPE", "reason": "Servers is underweight and an 8% operating margin leaves little cushion." },
+    { "ticker": "CLS", "reason": "Servers underweight; thin 8% margin despite 82% growth." },
+    { "ticker": "JBL", "reason": "Servers underweight; 5% operating margin." },
+    { "ticker": "ALAB", "reason": "31x forward earnings and no FCF yield; too expensive for the downside test." },
+    { "ticker": "CAMT", "reason": "Foundry equipment already covered by AMAT and ASML; no FCF data." }
+  ]
+}

@@ -47,3 +47,6 @@ date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-11-13,AMAT,new,foundry_equipment,380.95,688.17,501.73,Overweight,Buy,Overweight
 2026-11-13,VRT,recheck,cooling_thermal,209.64,688.17,501.73,Overweight,Buy,Overweight
 2026-11-13,SNDK,new,memory_storage,937.46,688.17,501.73,,,
+2026-11-16,POWL,new,grid_electrical,142.72,679.89,486.75,Hold,Hold,Hold
+2026-11-16,ANET,recheck,networking_optical,197.29,679.89,486.75,Overweight,Buy,Overweight
+2026-11-16,WDC,new,memory_storage,295.65,679.89,486.75,,,

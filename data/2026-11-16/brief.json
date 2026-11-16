@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-16",
+  "session": "US open Mon 16 Nov, 22:30 SGT",
+  "written_at": "2026-11-16T20:15:00+08:00",
+  "lean": "wait",
+  "bottom_line": "The ratings mostly still hold on their merits, but tonight is a poor night to start positions: Nasdaq futures are down about 0.7-0.8% and Nvidia reports Tuesday after the close, the first named risk in today's worldview. Waiting one or two sessions for Nvidia's reaction costs little against the overweight-only ratings.",
+  "what_changed": [
+    "Nasdaq-100 futures -0.7% to -0.8%, S&P futures -0.2% to -0.3%, Dow roughly flat; tech leads the weakness (touches 'AI trade is crowded at high rates').",
+    "Nvidia fell more than 2% in early trading on reports Jensen Huang may return; results are due Tuesday after the close (touches the Nvidia key-person thesis and the top worldview risk).",
+    "Anthropic's IPO is expected Thursday, a second binary event this week for AI valuations.",
+    "No after-hours earnings from AI suppliers since Friday's close were found."
+  ],
+  "names": [
+    { "ticker": "AAON", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-12", "rated_price": 76.33, "last_price": 80.25, "since_rated": 0.051, "catalyst": "", "take": "Cooling is the strongest segment; up 5% since rated, so a small starter is fine after Nvidia rather than chasing tonight." },
+    { "ticker": "AMAT", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 380.95, "last_price": 370.5, "since_rated": -0.027, "catalyst": "Earnings 11 Feb", "take": "Below its rated price, but chip equipment moves with Nvidia and export rules; wait for Tuesday's reaction." },
+    { "ticker": "ANET", "segment": "networking_optical", "rating": "Overweight", "rated_on": "2026-11-16", "rated_price": 197.29, "last_price": 197.29, "since_rated": 0.0, "catalyst": "", "take": "Freshly re-rated, but networking fell 5% Friday and Nasdaq futures are lower; wait for Nvidia." },
+    { "ticker": "ASML", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-11", "rated_price": 1507.85, "last_price": 1495.16, "since_rated": -0.008, "catalyst": "Earnings 27 Jan", "take": "Flat since rated; export-control risk is live this week, so no rush tonight." },
+    { "ticker": "DELL", "segment": "servers", "rating": "Overweight", "rated_on": "2026-11-12", "rated_price": 373.68, "last_price": 344.53, "since_rated": -0.078, "catalyst": "Earnings 24 Nov", "take": "Conflict: rated Overweight but the worldview has servers underweight and it is down 8%; trust the worldview and wait for Nvidia and Dell's own results on 24 Nov." },
+    { "ticker": "ETN", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-09", "rated_price": 341.72, "last_price": 352.97, "since_rated": 0.033, "catalyst": "Earnings 2 Feb", "take": "Grid held up in Friday's selloff; one of the better candidates for a small starter once Nvidia passes." },
+    { "ticker": "PWR", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-06", "rated_price": 509.06, "last_price": 602.01, "since_rated": 0.183, "catalyst": "", "take": "Already up 18% since the agents saw it; don't chase tonight, wait for a pullback." },
+    { "ticker": "TLN", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-11", "rated_price": 361.18, "last_price": 376.01, "since_rated": 0.041, "catalyst": "", "take": "Power is overweight and the stock is up 4%; fine as a small starter after Nvidia." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 209.64, "last_price": 202.07, "since_rated": -0.036, "catalyst": "", "take": "Below rated price in an overweight segment, but it trades with the Nvidia complex; wait one session." },
+    { "ticker": "VST", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-10", "rated_price": 133.92, "last_price": 133.01, "since_rated": -0.007, "catalyst": "", "take": "Flat since rated; the $269m impairment is a yellow flag, so keep any position small." }
+  ],
+  "trust": "No ratings are graded yet (grading starts after 28 days); the 51 picks so far average -2.1% vs QQQ, slightly behind a random shortlist pick (-1.8%) but ahead of the screen's #1 (-4.8%) and SMH (-3.5%).",
+  "if_buying": [
+    "Overweight means a small starter only; nothing on the list is rated Buy.",
+    "Prefer grid, power and cooling names (ETN, TLN, AAON) and wait until after Nvidia's Tuesday results.",
+    "Skip PWR tonight after its 18% run, and DELL until its 24 Nov results.",
+    "Use limit orders; the open is likely to be weak in tech."
+  ],
+  "sources": [
+    { "title": "Stock market today: Dow, S&P 500, Nasdaq futures little changed ahead of pivotal week for AI traders (Yahoo Finance)", "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-16-dow-sp-500-nasdaq-nvidia-oil-091631084.html" },
+    { "title": "Stock Market Today: Dow, S&P Live Updates for November 16 (Bloomberg)", "url": "https://www.bloomberg.com/news/articles/2026-11-15/stock-market-today-dow-s-p-live-updates" },
+    { "title": "Stock Market Today: Huang Comeback Talk Weighs on Nvidia Before Tuesday Earnings Report (CoinCentral)", "url": "https://coincentral.com/stock-market-today-huang-comeback-talk-weighs-on-nvidia-before-tuesday-earnings-report" },
+    { "title": "Stock Market Today, Nov. 16: U.S. Stocks Mixed Ahead of Nvidia Results and Anthropic IPO (TipRanks)", "url": "https://www.tipranks.com/news/stock-market-today-nov-16-u-s-stocks-mixed-ahead-of-nvidia-results-and-anthropic-ipo" }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-16",
+  "previous": "2026-11-13",
+  "headline": "Semis fell 3.0% and the Nasdaq is in correction as Nvidia's leadership limbo meets a 5.15% 10-year, heading into a week with Nvidia earnings and Anthropic's IPO, while cooling rose 6.2% against the tide.",
+  "regime": "Risk-off in hardware, risk-on in physical infrastructure: Semis ETF -3.0% on the day and -13.8% on the month, compute -5.0%, networking -5.1%, while cooling +6.2% (+23.8% on five days) and power/grid fell only 1-1.5%. The 10-year rose to 5.15% (+6.1% on five days), PPI is running 6.5% and Bitcoin is -12.8% on the week, so leverage is unwinding. The market is rewarding the bottleneck owners with cash flow and punishing debt-funded capacity and the Nvidia complex.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 78,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Cooling +6.2% on a day semis fell 3%; MOD +40.4% and CEG +12.1% on five days (digest segments)",
+        "Analysts frame power and cooling as where AI spend is flowing (94ebde59ea44, 9249b27235b3)",
+        "Against: Vistra booked a $269m impairment (ca64b95899a7); Bloom at 39x forward earnings (968554188d78); Cameco's CEO says AI isn't the reason to own nuclear (5b96df9745ca)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: the bottleneck segments held up in a broad AI selloff, which is the relative-strength test the thesis needs; Vistra's impairment keeps it from rising more."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 69,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "Michael Dell: H100 rents up 58% in a year to $3.10/hour; CoreWeave says older-GPU prices are rising (bdd89b8e2ef1)",
+        "AMD: 'demand is higher than supply' after an Oppenheimer upgrade (e9643687f32d)",
+        "Marvell is paying $115bn for Lumentum to own optical capacity (5db6a6a5e9eb)",
+        "Against: Chanos notes Nebius's 2027 guide is flat at $8-9m per MW (83f63cdb9822); Semis ETF -13.8% on the month"
+      ],
+      "change": "stronger",
+      "change_note": "+3: rising rental prices for three-year-old GPUs are hard evidence of scarcity and rebut the depreciation bear case."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 85,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "Nebius slashed its revenue outlook and analysts keep cutting targets (6530a07cc0f9, f6ad2e9c5c46); flat revenue per MW (83f63cdb9822)",
+        "IREN -63% in a year on debt-funded build-out worries (695d157207c9); KBW flags Bitdeer's export-control exposure (6563eb971d2b)",
+        "Segment -4.3% on the day; all neoclouds fail the quality gate (shortlist)",
+        "Against: CORZ +23.5% on five days; bullish CoreWeave calls (481cb73e293d)"
+      ],
+      "change": "stronger",
+      "change_note": "+1: more target cuts and Chanos's unit-economics critique; the CORZ bounce is a counterpoint but not about credit."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 43,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "DRAM now costs more than AI memory as HBM eats wafer capacity (3f9385969425); Micron expanded its buyback (ecb7e55a7235)",
+        "WDC at 7.3x forward earnings with a 41% operating margin (shortlist); memory +11.4% on five days",
+        "Against: -4.0% on the day and -24.1% on the month; WDC on short sellers' worst list after a 17% drop (88f6b5a987d7); DRAM price-fixing suit survives dismissal (42e7d480c58d)"
+      ],
+      "change": "unchanged",
+      "change_note": "Pricing evidence improved but the segment gave back 4% and the lawsuit adds a new tail; net flat."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 60,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Oracle fails the cash-flow quality gate (shortlist)",
+        "Prior: Oracle's backlog is about half OpenAI; Alphabet borrowing to fund AI (2026-11-13 worldview)",
+        "Against: hyperscalers +0.1% on the day, the steadiest AI segment; Microsoft shrugged off a global outage (f74c2d71718b); a federal 'national champions' plan would favour them (f04a0d1c458d)"
+      ],
+      "change": "weaker",
+      "change_note": "-2: Monday check: today's digest alone gives no new evidence for this; it survives on carry-forward while the tape treats hyperscalers as the safe haven."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 87,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "10-year 5.15%, +6.1% on five days; PPI 6.5% (digest tape, d9f7afa65a5e); Deutsche Bank warns rate-hike risk is underpriced (4c4285b37a7d)",
+        "Nasdaq in correction (4dbf2b10d1ae); Bitcoin -12.8% on the week (bfe1b0303333); investors scrambling to measure AI exposure (0dbf1e5110ce)",
+        "Against: Morgan Stanley says go 'max' overweight stocks (77c5090f2254)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: yields and inflation kept rising and the Nasdaq crossed into correction; one bullish strategist doesn't offset the tape."
+    },
+    {
+      "id": "political-risk-to-data-centres",
+      "title": "A Democratic Congress raises policy risk for data-centre build-outs",
+      "stance": "bearish",
+      "confidence": 75,
+      "segments": ["hyperscalers", "datacenter_neocloud", "grid_electrical", "power_nuclear"],
+      "evidence": [
+        "State elections are shifting where AI investment goes (68c1ffb74ed5); Washington is tightening chip exports (9249b27235b3)",
+        "Against: the administration plans AI 'national champions' including Nvidia, Amazon and Microsoft (f04a0d1c458d); grid and power outperformed today"
+      ],
+      "change": "weaker",
+      "change_note": "-3: Monday check: only thin support in today's digest, and federal policy is leaning pro-AI; largely survives on carry-forward."
+    },
+    {
+      "id": "nvidia-key-person-and-export-risk",
+      "title": "The Huang probe puts Nvidia, and China export rules, at risk",
+      "stance": "bearish",
+      "confidence": 80,
+      "segments": ["compute"],
+      "evidence": [
+        "Huang reportedly considering a return; the board faces a 'Huang problem' before earnings this week (c2c274adb878, 6936074d2869)",
+        "NVDA -12.8% on five days vs AMD +18.9%; compute -5.0% on the day (digest segments)",
+        "Tighter GPU export controls are being priced into Bitdeer and others (6563eb971d2b)",
+        "Against: median target $280, well above the price (91503a17348d)"
+      ],
+      "change": "unchanged",
+      "change_note": "The leadership question is now open in both directions and earnings will decide; no reason to move until then."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "-5.0% on the day; AMD gains what NVDA loses, Nvidia earnings this week." },
+    "foundry_equipment": { "stance": "neutral", "note": "+10.2% on five days but -17.6% on the month; export risk hangs over it." },
+    "memory_storage": { "stance": "neutral", "note": "DRAM pricing strong and WDC at 7.3x, but -24.1% on the month." },
+    "networking_optical": { "stance": "neutral", "note": "Marvell-Lumentum shows strategic value; -5.1% on the day." },
+    "servers": { "stance": "underweight", "note": "-23.9% on the month, thin margins; SMCI on short sellers' list." },
+    "power_nuclear": { "stance": "overweight", "note": "CEG +12.1% on five days; Vistra impairment is the warning." },
+    "grid_electrical": { "stance": "overweight", "note": "Only -1.1% in a hard tape; PWR +11.3% on five days." },
+    "cooling_thermal": { "stance": "overweight", "note": "+6.2% on the day, +23.8% on five; MOD +40.4%." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "-4.3% on the day; Nebius guide cut, IREN -63% in a year." },
+    "hyperscalers": { "stance": "neutral", "note": "Flat on the day; the market's safe haven within AI." },
+    "ai_software": { "stance": "underweight", "note": "-19.4% on the month; AI search hitting traffic plays like Reddit." }
+  },
+  "risks": [
+    "Nvidia earnings this week under an interim CEO could reset the whole compute and server complex.",
+    "The 10-year at 5.15% with 6.5% PPI makes a Fed hike live, hitting every long-duration AI name.",
+    "Tighter China export controls would hit compute, equipment and neocloud expansions together.",
+    "Neocloud financing stress could spill into supplier order books.",
+    "An Anthropic IPO stumble would dent the private-market AI valuations underpinning capex."
+  ],
+  "watch": [
+    "Nvidia's earnings and any decision on Huang's return.",
+    "Anthropic's IPO pricing and first-day trade.",
+    "10-year vs 5.15% and Fed Chair Warsh's lean on hikes.",
+    "Whether cooling holds its +23.8% five-day run or reverses.",
+    "Sandisk's 8-for-1 split on Nov 19 and memory's reaction."
+  ]
+}
