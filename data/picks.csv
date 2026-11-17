@@ -50,3 +50,6 @@ date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-11-16,POWL,new,grid_electrical,142.72,679.89,486.75,Hold,Hold,Hold
 2026-11-16,ANET,recheck,networking_optical,197.29,679.89,486.75,Overweight,Buy,Overweight
 2026-11-16,WDC,new,memory_storage,295.65,679.89,486.75,,,
+2026-11-17,HUBB,new,grid_electrical,424.43,661.75,461.9,Hold,Hold,Hold
+2026-11-17,PWR,recheck,grid_electrical,585.9,661.75,461.9,Overweight,Hold,Hold
+2026-11-17,AVGO,new,compute,333.4,661.75,461.9,,,

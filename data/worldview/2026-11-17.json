@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-17",
+  "previous": "2026-11-16",
+  "headline": "Semis fell 5.1% and the S&P 1.9% on new US chip-export licensing for Southeast Asia and Brazil hours before Nvidia reports under an interim CEO, and this time even power and cooling sold off.",
+  "regime": "Broad de-risking: Semis ETF -5.1% on the day and -15.8% on the month, Nasdaq -2.5%, every AI segment red, with networking -7.5% and memory -6.7% worst. Unlike last week the bottleneck trade gave no shelter: power_nuclear -4.4% (-8.9% on five days) and cooling -3.8%, though grid held best at -2.5%. The 10-year eased to 5.12% and VIX is 22.6, but BofA calls long semis the most crowded trade and the CAPE is above 40, so positioning, not fundamentals, is driving the tape into Nvidia earnings and Thursday's Anthropic IPO.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 76,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Powell beat with EPS surprise +47% on strong order growth (442c282e11b4, 097d65fe5f02); MasTec power-delivery EBITDA +132%, record $8.9bn backlog (5e5850b18e93)",
+        "NRG sells gas plants at $1,400/kW while building 1.5 GW new (125231320745); Google signs 50 MW geothermal PPA (3330f17fc67f); Meta prepays Oklo's fuel (ba318ad59f70)",
+        "Anthropic commits ~$900bn to its own data centres through 2045 (05ac421dcec0)",
+        "Against: power_nuclear -4.4% on the day and -8.9% on five days, SMR -21.5%; cooling -3.8% on the day"
+      ],
+      "change": "weaker",
+      "change_note": "-2: order and pricing evidence keeps improving, but the segments lost their relative-strength edge today, which was last week's main support."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 66,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "Anthropic's ~$900bn data-centre commitment (05ac421dcec0); Amphenol orders hit $12bn (e34ce3e81066)",
+        "CoreWeave's strong quarter eased the AI-spend worry (d65953390977); Dell's AI server backlog converting (1f4a79119453)",
+        "Against: Nebius plans $3+ of spend per $1 of revenue and fell 31% in three days (b53edcf59604); Akash launching compute forwards signals commoditising pricing (3e308438d1d5); new licensing cuts addressable demand (e73b3d3c7bf2)"
+      ],
+      "change": "weaker",
+      "change_note": "-3: demand signals are intact but export licensing for SE Asia and Brazil removes buyers, and Nvidia's report tonight is the real test."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 87,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "Nebius -31% in three days on a spend plan of $3+ per $1 of revenue (b53edcf59604); NBIS -24.3% on five days",
+        "CoreWeave leaning on insurer lenders for 'unlimited' AI debt (ceb850fe6bf4); CoreWeave, Oracle, Nebius plunge on Nvidia fallout (d68f4d9006ae)",
+        "Amazon sold data-centre shells at a 7% cap rate, pressuring DC valuations (084b4cc5d3e6)",
+        "Against: CORZ +6.8% on five days; Situational Awareness rebought Nebius (a0b7e98c5428)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: Nebius's capex-to-revenue ratio and CoreWeave's widening lender base are direct evidence of debt-funded growth under strain."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 41,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Prior: DRAM pricing strong as HBM eats wafer capacity; WDC at 7.3x forward (2026-11-16 worldview)",
+        "Situational Awareness rebought SanDisk (a0b7e98c5428); Cramer prefers Micron's balance sheet (e36f236f6ad1)",
+        "Against: segment -6.7% on the day and -26.6% on the month; Druckenmiller sold SanDisk (1a9966bdc278); export curbs hit MU overnight (e73b3d3c7bf2)"
+      ],
+      "change": "weaker",
+      "change_note": "-2: no new pricing data and the segment keeps falling; holding mostly on valuation and carry-forward."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 61,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Amazon is monetising data-centre shells via Blackstone sale-leaseback at a 7% cap rate (084b4cc5d3e6), a sign capex needs outside funding",
+        "Oracle still fails the cash-flow quality gate (shortlist); Alphabet down 25% from its high (f99ee9349c47)",
+        "Against: hyperscalers -3.2%, still steadier than hardware; strategists favour hyperscalers if the 10-year stays capped (96d7c6c06a67)"
+      ],
+      "change": "stronger",
+      "change_note": "+1: the Amazon sale-leaseback is fresh evidence that capex is straining balance sheets."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 89,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "BofA: long semis is the most crowded trade by far (52f42334e781); CAPE above 40 for the third time in ~30 years (84abd339bc14)",
+        "Semis ETF -5.1% on the day, -15.8% on the month; Nasdaq -7.3% on the month; Bitcoin -20.3% on the month",
+        "Fed Chair Warsh treating AI as a macro force (39a269901112); 10-year 5.12%",
+        "Against: 10-year eased slightly; Nvidia now the cheapest Magnificent Seven at ~20x (9a2214f4d581, 8c93fca105b0)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: the crowding survey plus another 5% semis drop confirm the unwind; yields easing a touch is the only offset."
+    },
+    {
+      "id": "political-risk-to-data-centres",
+      "title": "A Democratic Congress raises policy risk for data-centre build-outs",
+      "stance": "bearish",
+      "confidence": 72,
+      "segments": ["hyperscalers", "datacenter_neocloud", "grid_electrical", "power_nuclear"],
+      "evidence": [
+        "Voters push back on data centres even as O'Leary calls AI the top use of capital (a1f26cd469fb)",
+        "Against: federal AI exports programme backing sovereign infrastructure (ccf636184ade); no new state or congressional action today"
+      ],
+      "change": "weaker",
+      "change_note": "-3: still only thin, indirect support in the digest; policy risk is showing up in export rules rather than domestic siting."
+    },
+    {
+      "id": "nvidia-key-person-and-export-risk",
+      "title": "The Huang probe puts Nvidia, and China export rules, at risk",
+      "stance": "bearish",
+      "confidence": 84,
+      "segments": ["compute"],
+      "evidence": [
+        "Board rules out Huang's return (8089242ee56a); Nvidia earnings tonight under an interim CEO (ae47df53af4e)",
+        "Nvidia to stop supplying operators renting >50% to Chinese customers (e70be3312df3); SE Asia and Brazil now need US licences (e73b3d3c7bf2)",
+        "Nvidia halved its Nokia stake (2a674abcabc3); NVDA -12.6% on five days",
+        "Against: ~20x P/E, cheapest in the Magnificent Seven (9a2214f4d581); Tepper added Nvidia (e41191298b02)"
+      ],
+      "change": "stronger",
+      "change_note": "+4: the export risk became concrete rules today and the Huang question closed against a return, ahead of a print with no founder on the call."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "-5.8% on the day on new export licensing; AVGO +4.4% on five days is the exception; Nvidia reports tonight." },
+    "foundry_equipment": { "stance": "neutral", "note": "-6.1% on the day; export licences widen beyond China." },
+    "memory_storage": { "stance": "neutral", "note": "-6.7% on the day, -26.6% on the month; cheap but no catalyst." },
+    "networking_optical": { "stance": "neutral", "note": "Worst on the day at -7.5%; ETFs selling ALAB and CRDO." },
+    "servers": { "stance": "underweight", "note": "-20.3% on the month on thin margins, though HPE and JBL now trade near 10x." },
+    "power_nuclear": { "stance": "overweight", "note": "-8.9% on five days with SMR -21.5%, but NRG's $1,400/kW sale shows asset value." },
+    "grid_electrical": { "stance": "overweight", "note": "Best segment at -2.5%; Powell beat and MasTec backlog record." },
+    "cooling_thermal": { "stance": "overweight", "note": "-3.8% on the day after a +9.6% five-day run; AAON estimates rising." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "Nebius -31% in three days; DC shells re-priced at a 7% cap rate." },
+    "hyperscalers": { "stance": "neutral", "note": "-3.2%, steadiest AI segment; Amazon sale-leaseback hints at capex strain." },
+    "ai_software": { "stance": "underweight", "note": "-19.2% on the month; Cloudflare at 38x sales with margins sliding." }
+  },
+  "risks": [
+    "A weak Nvidia print or guide tonight under an interim CEO could extend the semis drawdown past -16% on the month.",
+    "Export licensing spreading beyond China (SE Asia, Brazil) shrinks the market for compute, equipment and memory.",
+    "An Anthropic IPO stumble on Thursday would hit private AI valuations and the capex plans built on them.",
+    "Crowded positioning plus a 5%+ 10-year can force selling even in quality bottleneck names, as power showed today.",
+    "Data-centre cap rates resetting to 7% would pressure DC REITs and the financing of new builds."
+  ],
+  "watch": [
+    "Nvidia's results and guide after the close, especially China/export commentary and data-centre revenue.",
+    "Anthropic's IPO pricing and Thursday's first trade under ANT.",
+    "Whether grid (-2.5%) keeps leading or power and cooling resume outperformance.",
+    "10-year relative to 5.12% and any Warsh comment on hikes.",
+    "Sandisk's split on Nov 19 and memory's response to export rules."
+  ]
+}

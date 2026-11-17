@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "HUBB",
+    "segment": "grid_electrical",
+    "kind": "new"
+  },
+  {
+    "ticker": "PWR",
+    "segment": "grid_electrical",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "AVGO",
+    "segment": "compute",
+    "kind": "new"
+  }
+]

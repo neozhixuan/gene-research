@@ -59,16 +59,16 @@
   },
   "AVGO": {
     "segment": "compute",
-    "added": "2026-10-29",
+    "added": "2026-11-17",
     "status": "dropped",
     "checks": [
       {
-        "date": "2026-10-29",
+        "date": "2026-11-17",
         "rating": null,
         "kind": "new"
       }
     ],
-    "dropped": "2026-11-02",
+    "dropped": "2026-11-17",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "CIEN": {
@@ -158,16 +158,16 @@
   },
   "HUBB": {
     "segment": "grid_electrical",
-    "added": "2026-10-28",
+    "added": "2026-11-17",
     "status": "dropped",
     "checks": [
       {
-        "date": "2026-10-28",
-        "rating": null,
+        "date": "2026-11-17",
+        "rating": "Hold",
         "kind": "new"
       }
     ],
-    "dropped": "2026-10-30",
+    "dropped": "2026-11-17",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "JBL": {
@@ -378,6 +378,11 @@
         "date": "2026-11-06",
         "rating": "Overweight",
         "kind": "new"
+      },
+      {
+        "date": "2026-11-17",
+        "rating": "Overweight",
+        "kind": "recheck"
       }
     ]
   },

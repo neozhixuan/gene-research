@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-17",
+  "claude": {
+    "input_tokens": 29,
+    "output_tokens": 10469,
+    "cache_read_tokens": 833404,
+    "cache_write_tokens": 54118,
+    "model_calls": 13,
+    "source": "transcript",
+    "brief": {
+      "input_tokens": 6,
+      "output_tokens": 3240,
+      "cache_read_tokens": 232857,
+      "cache_write_tokens": 8053,
+      "model_calls": 3
+    }
+  },
+  "gemini": {
+    "calls": 33,
+    "input_tokens": 110257,
+    "output_tokens": 14696
+  },
+  "tradingagents_runs": 2
+}

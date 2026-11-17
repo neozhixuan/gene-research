@@ -394,7 +394,7 @@ The 5-day alpha of +18.4% demonstrates that the Hold rating significantly underp
 
 <!-- ENTRY_END -->
 
-[2026-11-06 | PWR | Overweight | pending]
+[2026-11-06 | PWR | Overweight | -0.9% | +0.7% | 5d | resolved:2026-11-16]
 
 DECISION:
 **Rating**: Overweight
@@ -407,9 +407,12 @@ DECISION:
 
 **Time Horizon**: 3-6 months
 
+REFLECTION:
+The +0.7% alpha relative to the SPY suggests my directional call was accurate, though the five-day window is too short to fully judge the longer-term thesis. This positive relative performance supports the view that fundamental demand and a robust backlog can provide a floor even while the stock remains technically challenged. Moving forward, I will prioritize stricter entry discipline by waiting for a confirmed reversal candle rather than relying solely on Bollinger Band oversold signals.
+
 <!-- ENTRY_END -->
 
-[2026-11-06 | ONTO | Hold | pending]
+[2026-11-06 | ONTO | Hold | +1.4% | +3.1% | 5d | resolved:2026-11-16]
 
 DECISION:
 **Rating**: Hold
@@ -421,6 +424,9 @@ DECISION:
 **Price Target**: not provided
 
 **Time Horizon**: 3-6 months
+
+REFLECTION:
+The 3.1% alpha over the five-day window suggests the bearish technical concerns were premature, though this timeframe is too narrow to invalidate a multi-month thesis on institutional distribution. While the performance undercuts the decision to stay sidelined, the fundamental undervaluation remains the core catalyst for the stock's resilience. Moving forward, I will prioritize identifying localized mean-reversion signals in oversold assets to avoid missing short-term relief rallies despite an overarching bearish technical trend.
 
 <!-- ENTRY_END -->
 
@@ -597,6 +603,36 @@ DECISION:
 **Executive Summary**: Initiate a scaled position in ANET up to a standard 1.0x allocation to capture multi-year AI infrastructure demand. Execute a split-entry strategy by buying half at the current price of $197.29 and scaling the remainder near the 50-day SMA at $192.93, while maintaining a wider stop loss at $182.00 to account for the $11.99 ATR.
 
 **Investment Thesis**: The bull case wins on the strength of structural data center demand, a 43.8% operating margin, and a solid financial fortress that positions the company as an essential utility for the AI transition rather than a discretionary vendor. While the conservative analyst highlights valid risks including a 32.68 Forward P/E, a 5.1% 10-Year Treasury yield, and insider selling through pre-planned 10b5-1 plans, these headwinds are outweighed by the industrial-scale demand and constructive technical setup, including a bullish MACD crossover and support above the 50-day and 200-day moving averages. To balance the high volatility signaled by the $11.99 ATR against potential macroeconomic multiple compression, a phased entry and a widened stop-loss at $182.00 provide necessary protection. The thesis would change to bearish if the stock breaks decisively below key moving average support and triggers the stop loss.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-17 | HUBB | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Initiate a defensive stance by maintaining our 10,000 USD cash position without immediate market orders. Set a GTC limit order to acquire a minor starter stake (20% of cash) near the $417 technical support level. Monitor the upcoming earnings for any compression in operating margins or downward revisions to the 18.5% sales growth forecast.
+
+**Investment Thesis**: The decision to maintain a Hold rating is anchored in the direct tension between HUBB's exceptional fundamental performance—highlighted by an 80% organic surge in data center sales, a 23.43% ROE, and robust operational execution—and severe macroeconomic and technical headwinds. The conservative and neutral analysts correctly emphasize that HUBB is trading below its 50-day and 200-day moving averages and the VWMA of $433.66, signaling ongoing institutional distribution and validating the pressure from a restrictive 5.15% 10-year Treasury yield and a 128.87% debt-to-equity ratio. While the aggressive analyst presents a compelling long-term thesis regarding structural AI electrification demand and a more attractive forward P/E of 18.40, entering aggressively now ignores clear downward momentum and volume-weighted selling pressure. Drawing from prior lessons in similar technically challenged situations (such as the PWR overweight outcome), rigorous entry discipline is necessary rather than catching falling knives prematurely. A staged entry at the $417 support level balances the aggressive desire to capture fundamental value with conservative risk management.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-17 | PWR | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Initiate an initial pilot position utilizing 20% to 30% of available capital within the current $540 to $585 accumulation range to capitalize on the stabilizing MACD histogram and secular demand. Scale in further only upon a confirmed volume breakout above the $600 resistance, while maintaining a strict stop-loss discipline if support at $540 fails.
+
+**Investment Thesis**: The investment thesis is driven by the undeniable structural tailwinds highlighted by the aggressive and neutral analysts, specifically Quanta Services' crucial role in the AI data center build-up, grid modernization, and a robust revenue guidance of over $41 billion backed by a record backlog. While the conservative analyst correctly notes the macro headwinds of a 5.15% 10-year Treasury yield and execution risks, the neutral analyst provides the superior tactical synthesis: the current price action reflects bottoming signals via a positive MACD histogram rather than a structural breakdown, making an accumulation strategy superior to complete inaction or heavy chasing. Past portfolio lessons on ANET and MU caution that sitting on the sidelines due to lagging technical indicators often leads to missing sharp mean-reversion rallies when fundamental values are exceptionally strong. The thesis would change if interest rate pressures force severe project delays or if the price decisively breaches the $540 support level.
 
 **Price Target**: not provided
 

@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-17",
+  "picks": [
+    {
+      "ticker": "HUBB",
+      "segment": "grid_electrical",
+      "why": "Hubbell grows revenue 25% with a 20% operating margin at 18.4x forward earnings, 25% off its high, in grid_electrical, the best-holding segment today. Powell's beat and MasTec's record power backlog show utility and data-centre grid orders are still accelerating.",
+      "risk": "If utilities slow capex as rates stay above 5%, or the stock's 2% FCF yield reflects inventory build rather than timing, the multiple has room to fall.",
+      "thesis_ids": ["power-is-the-binding-constraint"]
+    },
+    {
+      "ticker": "AVGO",
+      "segment": "compute",
+      "why": "Broadcom grows revenue 86% with a 49% operating margin at 17.2x forward earnings and was the only compute name up on five days (+4.4%), giving custom-silicon exposure that does not depend on Nvidia's leadership. The watchlist has no compute name, and it is 33% off its high.",
+      "risk": "Export licensing for SE Asia and Brazil or a weak Nvidia print could drag all AI silicon lower regardless of Broadcom's custom-chip mix, and Tepper's exit shows crowded holders are selling.",
+      "thesis_ids": ["ai-demand-exceeds-supply", "nvidia-key-person-and-export-risk"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "HPE", "reason": "Cheapest at 9.8x with 8% FCF yield, but servers is underweight on 8% operating margins." },
+    { "ticker": "JBL", "reason": "Servers underweight; 5% operating margin contract manufacturing." },
+    { "ticker": "CLS", "reason": "Servers underweight and -50% off its high with weak trend." },
+    { "ticker": "ALAB", "reason": "28x forward with ~0% FCF yield; ETF selling and networking worst segment today." },
+    { "ticker": "TSM", "reason": "Foundry already covered by AMAT and ASML; export licensing risk." },
+    { "ticker": "CAMT", "reason": "Small cap -40% below its 200-day with no FCF data." }
+  ]
+}
