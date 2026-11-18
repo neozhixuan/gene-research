@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-18",
+  "session": "US open Wed 18 Nov, 22:30 SGT",
+  "written_at": "2026-11-18T20:15:00+08:00",
+  "lean": "small",
+  "bottom_line": "The ratings mostly hold: Nvidia beat and raised overnight and futures are up about 0.5-0.7% (Nasdaq about 1%), and most names sit below the price the agents rated them at. Keep it small because VIX is still 24, the S&P is below its 200-day and the Anthropic IPO prices this week, so a gap-up open can fade.",
+  "what_changed": [
+    "Nvidia revenue $115.8bn vs $109.1bn expected, Q4 guide $130bn vs $125.1bn; the stock is up about 3-4% premarket. This strengthens the 'AI demand exceeds supply' thesis.",
+    "S&P futures +0.5-0.7% and Nasdaq-100 +0.9-1.4%, on course for the first up day in five sessions, after Tuesday's -1.0%.",
+    "Chip and neocloud names lead premarket (CoreWeave +5.7%, Nebius +7.3%, TSMC +3%), so money may rotate toward chips rather than the power and cooling names that make up most of the watchlist.",
+    "Nvidia assumes no China data-centre revenue and confirmed Huang will not return; export risk is now priced in rather than new."
+  ],
+  "names": [
+    { "ticker": "AAON", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-12", "rated_price": 76.33, "last_price": 78.71, "since_rated": 0.031, "catalyst": "", "take": "Slightly above the rated price in an overweight segment; a small starter is fine." },
+    { "ticker": "AMAT", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 380.95, "last_price": 349.23, "since_rated": -0.083, "catalyst": "Earnings 11 Feb", "take": "8% below the rated price and the chip chain should lead tonight, but the segment is only neutral, so keep it small." },
+    { "ticker": "ANET", "segment": "networking_optical", "rating": "Overweight", "rated_on": "2026-11-16", "rated_price": 197.29, "last_price": 186.42, "since_rated": -0.055, "catalyst": "", "take": "Networking led Tuesday and gets a direct lift from Nvidia's guide; neutral segment, so small." },
+    { "ticker": "ASML", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-11", "rated_price": 1507.85, "last_price": 1383.11, "since_rated": -0.083, "catalyst": "Earnings 27 Jan", "take": "8% cheaper than when rated; export licensing still weighs on the segment, so small." },
+    { "ticker": "DELL", "segment": "servers", "rating": "Overweight", "rated_on": "2026-11-12", "rated_price": 373.68, "last_price": 322.79, "since_rated": -0.136, "catalyst": "Earnings 24 Nov", "take": "Conflict: rated Overweight but the worldview rates servers underweight. I'd trust the worldview and wait for the 24 Nov results." },
+    { "ticker": "ETN", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-18", "rated_price": 337.11, "last_price": 337.11, "since_rated": 0.0, "catalyst": "Earnings 2 Feb", "take": "Re-rated today at the last close; grid is the steadiest overweight segment, so a small starter is fine." },
+    { "ticker": "PWR", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-17", "rated_price": 585.9, "last_price": 598.53, "since_rated": 0.022, "catalyst": "", "take": "Already 2% above the rated price; use a limit near the rated level." },
+    { "ticker": "TLN", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-11", "rated_price": 361.18, "last_price": 354.71, "since_rated": -0.018, "catalyst": "", "take": "Power is -8.3% on five days and may lag a chip-led open; small only." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 209.64, "last_price": 190.37, "since_rated": -0.092, "catalyst": "", "take": "9% below the rated price and fell on its own product news; rated Overweight three times, a small starter is reasonable." },
+    { "ticker": "VST", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-10", "rated_price": 133.92, "last_price": 127.15, "since_rated": -0.051, "catalyst": "", "take": "The oldest rating, and the stock is 41% off its high with regulators scrutinising its DC deals; wait for power to stabilise." }
+  ],
+  "trust": "Only 2 of 57 ratings are graded so far. Buy/Overweight picks average -1.8% vs QQQ, which beats the screen-only (-6.3%), random-shortlist (-3.1%) and SMH (-4.8%) baselines but still trails simply holding QQQ.",
+  "if_buying": [
+    "Overweight means a small starter, not a full position; tonight favour grid (ETN, PWR) and the names below their rated price (VRT, ANET).",
+    "Use limit orders: futures imply a gap up, and 24 VIX opens can reverse within the first hour.",
+    "Wait on DELL until its 24 Nov earnings and on VST until power stops falling."
+  ],
+  "sources": [
+    { "title": "Stock market today: Dow, S&P 500, Nasdaq futures rise after Nvidia clears hurdle (Yahoo Finance)", "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-18-dow-sp-500-nasdaq-nvidia-anthropic-ipo-090613569.html" },
+    { "title": "Stock Market Today: Dow, S&P Live Updates for November 18, 2026 (Bloomberg)", "url": "https://www.bloomberg.com/news/articles/2026-11-17/stock-market-today-dow-s-p-live-updates" },
+    { "title": "Nvidia earnings spark rally in shares and neoclouds despite Huang scandal (CNBC)", "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html" },
+    { "title": "AMD, Broadcom, CoreWeave stocks rise on Nvidia earnings beat (Yahoo Finance)", "url": "https://finance.yahoo.com/markets/stocks/article/amd-broadcom-tsmc-stocks-rise-on-nvidia-earnings-coreweave-nebius-shares-also-rally-220159436.html" }
+  ]
+}

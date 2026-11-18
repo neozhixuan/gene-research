@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "NVT",
+    "segment": "grid_electrical",
+    "kind": "new"
+  },
+  {
+    "ticker": "ETN",
+    "segment": "grid_electrical",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "CRDO",
+    "segment": "networking_optical",
+    "kind": "new"
+  }
+]

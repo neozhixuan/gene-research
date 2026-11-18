@@ -101,16 +101,16 @@
   },
   "CRDO": {
     "segment": "networking_optical",
-    "added": "2026-11-02",
+    "added": "2026-11-18",
     "status": "dropped",
     "checks": [
       {
-        "date": "2026-11-02",
+        "date": "2026-11-18",
         "rating": null,
         "kind": "new"
       }
     ],
-    "dropped": "2026-11-03",
+    "dropped": "2026-11-18",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "DELL": {
@@ -139,6 +139,11 @@
         "date": "2026-11-09",
         "rating": "Overweight",
         "kind": "new"
+      },
+      {
+        "date": "2026-11-18",
+        "rating": "Overweight",
+        "kind": "recheck"
       }
     ]
   },
@@ -300,26 +305,16 @@
   },
   "NVT": {
     "segment": "grid_electrical",
-    "added": "2026-10-23",
+    "added": "2026-11-18",
     "status": "dropped",
     "checks": [
       {
-        "date": "2026-10-23",
-        "rating": "Overweight",
-        "kind": "new"
-      },
-      {
-        "date": "2026-10-28",
-        "rating": "Overweight",
-        "kind": "recheck"
-      },
-      {
-        "date": "2026-11-02",
+        "date": "2026-11-18",
         "rating": "Hold",
-        "kind": "recheck"
+        "kind": "new"
       }
     ],
-    "dropped": "2026-11-03",
+    "dropped": "2026-11-18",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "ONTO": {

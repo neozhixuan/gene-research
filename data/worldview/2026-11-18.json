@@ -1,0 +1,207 @@
+{
+  "date": "2026-11-18",
+  "previous": "2026-11-17",
+  "headline": "Nvidia beat and raised after a down day (revenue $115.8bn, +103%; fiscal 2028 growth guided to 75%), pointing futures higher, but the tape it lands on is S&P -1.0%, VIX +38% on five days and power and software still selling.",
+  "regime": "Tuesday's close set a fragile base: S&P -1.0%, Nasdaq -0.7%, Semis ETF -0.4% and -16.1% on the month, VIX 24.2 (+38% on five days). Inside AI the chip chain held up best (networking +2.2%, compute +1.8%) while power_nuclear (-2.3%, -8.3% on five days), datacenter_neocloud and ai_software (-3.5%) kept selling ahead of the Anthropic IPO. Nvidia's beat-and-raise after the close gives the chip chain a fundamental floor, but the 10-year at 5.1% and talk of further Fed hikes keep the multiple ceiling low.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 74,
+      "segments": [
+        "power_nuclear",
+        "grid_electrical",
+        "cooling_thermal"
+      ],
+      "evidence": [
+        "Powell record fiscal 2026: $710m quarterly orders, $2.7bn backlog (ba448b4f9c93, db4d07824fe5); POWL +9.2% on five days",
+        "Vertiv adds 800 VDC systems for AI compute pods and an ATLAS lab for new silicon (bd0a614a472f, 0fcb5a21dc79); MOD +25.9% on five days",
+        "Eisman: the real AI risk is local governments slowing data-centre construction, i.e. siting and power, not chips (5974dfb23790)",
+        "Against: power_nuclear -2.3% on the day and -8.3% on five days; NuScale -22% to a 52-week low on a late Canadian SMR (f2008a9ac1b7); Thiel swapped all utilities into a chip ETF (c2ea0a7c009e); Vertiv -7% and 50% off its May high (44fb5127936e, d1d5b2e01ebf)"
+      ],
+      "change": "weaker",
+      "change_note": "-2: order books (Powell, Vertiv) keep confirming the constraint, but money rotated back into chips on the Nvidia print and nuclear is breaking down on execution delays."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 71,
+      "segments": [
+        "compute",
+        "servers",
+        "networking_optical",
+        "foundry_equipment"
+      ],
+      "evidence": [
+        "Nvidia revenue +103% to a record ~$116bn quarter and fiscal 2028 growth raised to 75% on the Rubin ramp (4c31f8df1c05, 0aee2f823527, 1fe125e227b4)",
+        "SpaceX $40bn AI compute bet financed by Goldman and Apollo (28431a1614e1); Huang says he 'could just give all this capacity to Elon' (182f8c500c41)",
+        "Networking +2.2% and compute +1.8% on the day; Dell and Coherent rallied on the print (6fb091d2c7b1)",
+        "Against: Nvidia ends licensed Hopper sales to China (ce1ea0b459ee) and assumes no China data-centre revenue in its outlook"
+      ],
+      "change": "stronger",
+      "change_note": "+5: the single most important demand datapoint came in well above expectations with a higher forward guide."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 84,
+      "segments": [
+        "datacenter_neocloud"
+      ],
+      "evidence": [
+        "Situational Awareness dumped CoreWeave as its book shrank to $1.6bn (fbadea3b28d4); Huang's 'give it all to Elon' remark is bad news for CoreWeave (182f8c500c41)",
+        "NBIS -20.9% on five days; MARA AI leases could slip into next year (fecf490b688a); quality gate still drops CRWV, NBIS, IREN, CORZ, CIFR, WULF, APLD",
+        "Against: Nvidia calls neoclouds its 'biggest sustained bet' and will keep financing them, 'disciplined' (4b1560d014f5); Blackstone's $5bn AWS DC deal lifts Cipher (1be077d40f53)"
+      ],
+      "change": "weaker",
+      "change_note": "-3: Nvidia explicitly committing to keep funding the ecosystem lowers near-term refinancing risk, though 'disciplined' and the Elon remark say that support is selective."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 40,
+      "segments": [
+        "memory_storage"
+      ],
+      "evidence": [
+        "SK hynix at a 52-week low, 38% off its September high, still called 'ridiculously cheap' (65514c937512); Nvidia's 75% growth guide implies more HBM",
+        "Against: segment -26.6% on the month; DRAM price-fixing suit against MU, Samsung and SK hynix survives dismissal (618c2bf03846); ETFs net sellers of SNDK (8fcc9f9c8830)"
+      ],
+      "change": "weaker",
+      "change_note": "-1: the Nvidia guide helps the demand side, but a live price-fixing case is a new overhang and price action still gives no confirmation; largely a carry-forward."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 63,
+      "segments": [
+        "hyperscalers"
+      ],
+      "evidence": [
+        "Blackstone REIT buys 75% of 13 AWS buildings for ~$5bn (1be077d40f53), the second Amazon sale-leaseback signal in two days",
+        "Oracle -10% on the month and still fails the quality gate (5712e8bf9c35); hyperscalers -1.6% on the day, -3.7% on five",
+        "Against: Microsoft raised its dividend (fd6324b20b43), a sign cash flow still covers payouts"
+      ],
+      "change": "stronger",
+      "change_note": "+2: the AWS deal size confirms hyperscalers are recycling data-centre assets to fund capex."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 86,
+      "segments": [
+        "compute",
+        "memory_storage",
+        "ai_software"
+      ],
+      "evidence": [
+        "S&P -1.0% into the print and below its 200-day (30a9b3bf61b5); VIX +38% on five days; JPMorgan expects more volatility after the beat (e6aff7aa5ca6)",
+        "Fed seen tightening further (5a0e5acd4245, 1ba892926891); 10-year 5.1%; Eisman puts AI-bust recession odds at 30% (bf5aa3445638)",
+        "Software sold off into the Anthropic IPO, CRM worst (df5de910c92b); ai_software -21.8% on the month",
+        "Against: Nvidia at ~20x with doubled earnings undercuts the bubble case for the leaders"
+      ],
+      "change": "weaker",
+      "change_note": "-3: the earnings justification for the leaders got much stronger; crowding and rates still dominate until the tape confirms the print."
+    },
+    {
+      "id": "political-risk-to-data-centres",
+      "title": "A Democratic Congress raises policy risk for data-centre build-outs",
+      "stance": "bearish",
+      "confidence": 72,
+      "segments": [
+        "hyperscalers",
+        "datacenter_neocloud",
+        "grid_electrical",
+        "power_nuclear"
+      ],
+      "evidence": [
+        "Eisman: local governments slowing data-centre construction is the biggest AI risk (5974dfb23790)",
+        "House Democrats probe Lutnick over Cantor's Nvidia losses (69abe3766ef1); Vistra faces regulator scrutiny on DC deals (9309bf1a10e4)"
+      ],
+      "change": "unchanged",
+      "change_note": "Fresh commentary and a congressional probe, but still no concrete siting or rate action; confidence held."
+    },
+    {
+      "id": "nvidia-key-person-and-export-risk",
+      "title": "The Huang probe puts Nvidia, and China export rules, at risk",
+      "stance": "bearish",
+      "confidence": 76,
+      "segments": [
+        "compute"
+      ],
+      "evidence": [
+        "Board shot down Huang's offer to return (d751570c4c26); former sales chief tied to customers in the spy scandal (6b2b8764e2dc)",
+        "Nvidia ends licensed Hopper shipments to China (ce1ea0b459ee)",
+        "Against: the company delivered a record quarter and raised guidance without its founder (4c31f8df1c05, 0aee2f823527)"
+      ],
+      "change": "weaker",
+      "change_note": "-8: the business did not miss a beat under the interim CEO, so key-person risk is now mostly governance headlines; China exit is a known, sized loss."
+    }
+  ],
+  "segments": {
+    "compute": {
+      "stance": "neutral",
+      "note": "+1.8% on the day after Nvidia's beat-and-raise; AVGO +2.9% on five days, NVDA still -8.0%."
+    },
+    "foundry_equipment": {
+      "stance": "neutral",
+      "note": "-0.1% on the day; TSM -9.3% on five days despite the Rubin ramp."
+    },
+    "memory_storage": {
+      "stance": "neutral",
+      "note": "-26.6% on the month; cheap but a DRAM price-fixing suit survives."
+    },
+    "networking_optical": {
+      "stance": "neutral",
+      "note": "Best on the day at +2.2%; optical called the next bottleneck, ALAB adds Hyve."
+    },
+    "servers": {
+      "stance": "underweight",
+      "note": "-1.2% on the day, SMCI -13.1% on five days; HPE and JBL cheap at ~10x but margins thin."
+    },
+    "power_nuclear": {
+      "stance": "overweight",
+      "note": "-8.3% on five days, SMR -21.6%; keep weight in cash-generative IPPs, not SMR hopes."
+    },
+    "grid_electrical": {
+      "stance": "overweight",
+      "note": "+0.3%, steadiest bottleneck; Powell record $2.7bn backlog."
+    },
+    "cooling_thermal": {
+      "stance": "overweight",
+      "note": "+6.3% on five days with MOD +25.9%; Vertiv weak on its own news."
+    },
+    "datacenter_neocloud": {
+      "stance": "underweight",
+      "note": "-7.0% on five days; Nvidia backing helps but SA fund exited CoreWeave."
+    },
+    "hyperscalers": {
+      "stance": "neutral",
+      "note": "-1.6%; Amazon sells AWS buildings to Blackstone to fund capex."
+    },
+    "ai_software": {
+      "stance": "underweight",
+      "note": "Worst on the day at -3.5% as the Anthropic IPO pulls money from incumbents."
+    }
+  },
+  "risks": [
+    "If Nvidia's beat fades by the close and the Anthropic IPO stumbles, sellers stay in control into year-end.",
+    "Further Fed hikes with a 5.1% 10-year cap multiples even as AI earnings rise.",
+    "Nuclear execution delays (Canadian SMR late and over budget) spill into power-segment valuations.",
+    "Local opposition to data-centre siting slows the build-out that underpins the bottleneck trade.",
+    "Neocloud financing depends on Nvidia's 'disciplined' support; any pullback hits CoreWeave and peers first."
+  ],
+  "watch": [
+    "Anthropic IPO pricing and first-day trade, and whether software keeps bleeding.",
+    "Whether compute and networking hold today's gains or the Semis ETF resumes falling.",
+    "Power_nuclear after -8.3% on five days: does CEG's relative strength spread to VST and TLN?",
+    "10-year vs 5.1% and any Warsh comment on further hikes.",
+    "Sandisk's split on Nov 19 and memory's reaction to the price-fixing suit."
+  ]
+}

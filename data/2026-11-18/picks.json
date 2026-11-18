@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-18",
+  "picks": [
+    {
+      "ticker": "NVT",
+      "segment": "grid_electrical",
+      "why": "nVent grows revenue 44% with an 18% operating margin and positive free cash flow at 15.5x forward earnings, yet trades 41% off its high and 25% below its 200-day. It is a direct play on the power-is-the-binding-constraint thesis in the steadiest overweight segment, where Powell's record backlog confirms demand.",
+      "risk": "If the rotation back into chips persists and data-centre siting slows, electrical enclosure and liquid-cooling orders could stall and the multiple compress further.",
+      "thesis_ids": ["power-is-the-binding-constraint"]
+    },
+    {
+      "ticker": "CRDO",
+      "segment": "networking_optical",
+      "why": "Credo grows revenue 115% with a 32% operating margin at only 12.8x forward earnings after a 60% fall, so the price already discounts a sharp slowdown. Nvidia's 75% growth guide on the Rubin ramp feeds directly into connectivity demand, and the watchlist holds only ANET in this segment.",
+      "risk": "Free cash flow is thin at a 1% yield and customer concentration is high, so one hyperscaler cutting active-cable orders would break the growth story.",
+      "thesis_ids": ["ai-demand-exceeds-supply"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "HPE", "reason": "Best cash yield (8% FCF, 9.7x) but servers are underweight on thin 8% margins." },
+    { "ticker": "CLS", "reason": "Servers underweight; 8% margins and a 3% FCF yield." },
+    { "ticker": "ALAB", "reason": "29.6x forward with ~0% FCF yield; CRDO is the cheaper networking exposure." },
+    { "ticker": "JBL", "reason": "Servers underweight; 5% operating margin." },
+    { "ticker": "TSM", "reason": "Quality name but foundry is neutral and already covered by AMAT and ASML." },
+    { "ticker": "CAMT", "reason": "Small cap, no FCF data, foundry already covered." }
+  ]
+}
