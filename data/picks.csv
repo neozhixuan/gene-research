@@ -56,3 +56,6 @@ date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-11-18,NVT,new,grid_electrical,109.19,656.95,460.1,Hold,Hold,Hold
 2026-11-18,ETN,recheck,grid_electrical,337.11,656.95,460.1,Overweight,Buy,Overweight
 2026-11-18,CRDO,new,networking_optical,123.95,656.95,460.1,,,
+2026-11-19,MU,new,memory_storage,705.27,659.51,459.54,Overweight,Buy,Overweight
+2026-11-19,VST,recheck,power_nuclear,125.58,659.51,459.54,Overweight,Buy,Overweight
+2026-11-19,TSM,new,foundry_equipment,362.62,659.51,459.54,,,

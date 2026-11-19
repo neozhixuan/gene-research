@@ -682,3 +682,33 @@ DECISION:
 
 <!-- ENTRY_END -->
 
+[2026-11-19 | MU | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Initiate gradual accumulation of MU in tranches to build toward a standard overweight position, utilizing a scaled entry rather than a lump-sum to manage high volatility. Implement stop-loss parameters near technical support while maintaining exposure to the 2027 HBM structural tailwind over a 3-6 month horizon.
+
+**Investment Thesis**: The investment thesis is anchored by Micron Technology, Inc.'s elite financial fundamentals, including an operating margin of 74.59%, a net profit margin of 63.80%, near-zero debt with a debt-to-equity ratio of 0.04x, and structural High-Bandwidth Memory constraints through 2027 that justify its low forward P/E as a market mispricing. While conservative concerns regarding the 200 SMA breach and high volatility with an ATR of 57.56 highlight legitimate short-term cyclical and technical risks, they are outweighed by the generational profitability and overwhelming structural demand for AI infrastructure. To mitigate the risk of catching a falling knife during high-beta selloffs, capital will be deployed via scaled tranches rather than a single lump-sum commitment. This thesis would be invalidated if macroeconomic pressures or a liquidity squeeze break key technical support levels, causing a catastrophic breakdown in the broader semiconductor cycle.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-19 | VST | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Initiate a disciplined accumulation strategy in VST by deploying a fractional initial tranche at current levels near the 125.58 price point. Manage downside risk with a defined stop-loss around the 117.27 support zone while retaining dry powder to scale in remaining allocations as technical and macro conditions stabilize over a 3-6 month time horizon.
+
+**Investment Thesis**: The bull argument ultimately carries the day because the fundamental demand story for VST is anchored by an overwhelming structural shift in power generation needs driven by the AI infrastructure revolution, particularly in Texas. While the bear case correctly highlights real risks including a 336% debt-to-equity ratio, high interest rate headwinds, and a medium-term technical downtrend below the moving averages, the bull thesis is supported by robust operational cash flow generation of $4.07 billion, a low forward P/E of 12.87, and an authorized $1.5 billion share buyback that indicates strong board-level confidence. The neutral analyst's tiered entry proposal successfully addresses the technical volatility by recommending a scaled accumulation rather than a lump-sum deployment, balancing the fundamental value proposition against ongoing macroeconomic pressure. The thesis would change if sustained selling pressure breaches the 117.27 stop-loss level or if adverse regulatory changes impair data center expansion plans.
+
+**Price Target**: 196.0
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+

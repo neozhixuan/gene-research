@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-19",
+  "session": "US open Thu 19 Nov, 22:30 SGT",
+  "written_at": "2026-11-19T20:10:00+08:00",
+  "lean": "small",
+  "bottom_line": "The ratings mostly hold tonight: futures are up (S&P about +0.6% to +1.1%, Nasdaq 100 +1% to +2%) on Anthropic's record $83 IPO, and no new news hits the buy-side names. The one thing that matters is ANT's first trade: if it opens or slips below $83, that is the worldview's first named risk and a reason to wait.",
+  "what_changed": [
+    "Anthropic priced the biggest IPO on record at $83 and lists today as ANT; Nasdaq 100 futures rose as much as 2% overnight, fading to about +1% by mid-morning ET (worldview risk 1: IPO below offer).",
+    "Wednesday's close was weak under the surface: S&P -0.2%, Dow -1.1%, and a six-day slide put MSCI ACWI near its lowest close since April.",
+    "Nvidia's after-hours pop after its beat disappeared at the open, a 'problem for the AI boom trade' (thesis: AI trade crowded at high rates).",
+    "No after-hours earnings on Nov 19 found for AI suppliers; jobless claims are due before the open."
+  ],
+  "names": [
+    { "ticker": "AAON", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-12", "rated_price": 76.33, "last_price": 79.8, "since_rated": 0.045, "catalyst": "", "take": "Up modestly since rated in an overweight segment; a small starter fits." },
+    { "ticker": "AMAT", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 380.95, "last_price": 352.3, "since_rated": -0.075, "catalyst": "Earnings 11 Feb", "take": "Cheaper than rated, but the segment is only neutral; small size only if the semis bounce holds after the open." },
+    { "ticker": "ANET", "segment": "networking_optical", "rating": "Overweight", "rated_on": "2026-11-16", "rated_price": 197.29, "last_price": 193.94, "since_rated": -0.017, "catalyst": "", "take": "Near the rated price and the best-holding name in a neutral segment; small starter is fine." },
+    { "ticker": "ASML", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-11", "rated_price": 1507.85, "last_price": 1395.27, "since_rated": -0.075, "catalyst": "Earnings 27 Jan", "take": "Down 7.5% since rated in a neutral segment; rating and worldview differ, trust the more cautious worldview and keep it small." },
+    { "ticker": "DELL", "segment": "servers", "rating": "Overweight", "rated_on": "2026-11-12", "rated_price": 373.68, "last_price": 313.11, "since_rated": -0.162, "catalyst": "Earnings 24 Nov", "take": "Servers are underweight and it is -16% since rated with earnings in five days; wait for the report." },
+    { "ticker": "ETN", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-18", "rated_price": 337.11, "last_price": 338.34, "since_rated": 0.004, "catalyst": "Earnings 2 Feb", "take": "Fresh rating at the same price in an overweight segment; the cleanest small starter tonight." },
+    { "ticker": "MU", "segment": "memory_storage", "rating": "Overweight", "rated_on": "2026-11-19", "rated_price": 705.27, "last_price": 705.27, "since_rated": 0.0, "catalyst": "Earnings 23 Dec", "take": "Rated today; very cheap but memory is neutral and volatile, so use a limit order and a small size." },
+    { "ticker": "PWR", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-17", "rated_price": 585.9, "last_price": 602.6, "since_rated": 0.029, "catalyst": "", "take": "Up 2.9% since rated in an overweight segment; fine for a small starter, don't chase a gap up." },
+    { "ticker": "TLN", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-11", "rated_price": 361.18, "last_price": 360.18, "since_rated": -0.003, "catalyst": "", "take": "Flat since rated, but power sold off 11% on five days after SoftBank's turbine cancellation; small at most." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 209.64, "last_price": 194.48, "since_rated": -0.072, "catalyst": "", "take": "Three Overweights and 7% cheaper, but it lags its own segment; small starter with a limit." },
+    { "ticker": "VST", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-19", "rated_price": 125.58, "last_price": 125.58, "since_rated": 0.0, "catalyst": "", "take": "Re-rated Overweight today; a large fund exited in Q3 and power is falling, so keep it small." }
+  ],
+  "trust": "Only 4 ratings are graded so far (grading starts after 28 days). On ungraded returns, Buy/Overweight picks average -1.1% vs QQQ, ahead of the no-AI screen (-6.3%), random shortlist picks (-2.4%) and SMH (-5.1%), but still behind just holding QQQ.",
+  "if_buying": [
+    "Overweight means a small starter, not a full position; nothing is rated Buy.",
+    "Wait for ANT's opening print before adding AI names; a break below $83 is the cue to hold off.",
+    "Skip DELL until its 24 Nov earnings; prefer ETN, PWR and AAON in the overweight segments.",
+    "Use limit orders: futures are gapping up after a weak week and the open may fade as Nvidia's did."
+  ],
+  "sources": [
+    { "title": "Stock Market Today: Dow, S&P Live Updates for November 19, 2026 - Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-18/stock-market-today-dow-s-p-live-updates" },
+    { "title": "Daily Market Outlook, November 19, 2026 - Tickmill", "url": "https://tickmill.com/blog/daily-market-outlook-november-19-2026" },
+    { "title": "Stock Market: Will S&P 500 Open Up or Down Today? - Benzinga", "url": "https://www.benzinga.com/markets/prediction-markets/26/11/63418031/stock-market-will-sp-500-open-up-or-down-today-81" },
+    { "title": "The market's verdict on Nvidia earnings is a problem for the AI boom trade", "url": "https://investinglive.com/stocks/the-market-s-verdict-on-nvidia-earnings-is-a-problem-for-the-ai-boom-trade" }
+  ]
+}

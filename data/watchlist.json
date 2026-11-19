@@ -233,32 +233,15 @@
   },
   "MU": {
     "segment": "memory_storage",
-    "added": "2026-10-22",
-    "status": "dropped",
+    "added": "2026-11-19",
+    "status": "active",
     "checks": [
       {
-        "date": "2026-10-22",
+        "date": "2026-11-19",
         "rating": "Overweight",
         "kind": "new"
-      },
-      {
-        "date": "2026-10-26",
-        "rating": "Hold",
-        "kind": "recheck"
-      },
-      {
-        "date": "2026-10-29",
-        "rating": "Overweight",
-        "kind": "recheck"
-      },
-      {
-        "date": "2026-11-04",
-        "rating": "Hold",
-        "kind": "recheck"
       }
-    ],
-    "dropped": "2026-11-04",
-    "dropped_reason": "watchlist over 8; stalest non-positive name"
+    ]
   },
   "NRG": {
     "segment": "power_nuclear",
@@ -442,16 +425,16 @@
   },
   "TSM": {
     "segment": "foundry_equipment",
-    "added": "2026-10-30",
+    "added": "2026-11-19",
     "status": "dropped",
     "checks": [
       {
-        "date": "2026-10-30",
+        "date": "2026-11-19",
         "rating": null,
         "kind": "new"
       }
     ],
-    "dropped": "2026-11-02",
+    "dropped": "2026-11-19",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "VRT": {
@@ -485,6 +468,11 @@
         "date": "2026-11-10",
         "rating": "Overweight",
         "kind": "new"
+      },
+      {
+        "date": "2026-11-19",
+        "rating": "Overweight",
+        "kind": "recheck"
       }
     ]
   },
