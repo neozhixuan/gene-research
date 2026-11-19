@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-19",
+  "picks": [
+    {
+      "ticker": "MU",
+      "segment": "memory_storage",
+      "why": "At 3.4x forward earnings with a 75% operating margin, a 4% FCF yield and revenue +379%, Micron prices in a deep earnings collapse while sitting 44% off its high. It is the cleanest test of the memory-priced-as-peak thesis and fills the watchlist's empty memory slot.",
+      "risk": "If HBM and DRAM pricing roll over as AI capex slows, earnings could fall faster than the multiple implies, as in past memory busts.",
+      "thesis_ids": ["memory-supercycle-priced-as-peak", "ai-demand-exceeds-supply"]
+    },
+    {
+      "ticker": "TSM",
+      "segment": "foundry_equipment",
+      "why": "TSMC earns a 58% operating margin on +51% revenue at 15.5x forward, 26% off its high after a -12.3% week. Every AI accelerator, from Nvidia's Rubin to Broadcom's ~$115bn AI guide, runs through it, so it is the highest-quality way to own the demand thesis.",
+      "risk": "A Taiwan or tariff shock, or an AI capex pause, would hit it regardless of quality.",
+      "thesis_ids": ["ai-demand-exceeds-supply"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "HPE", "reason": "Servers underweight; 8% operating margin." },
+    { "ticker": "ALAB", "reason": "30x forward with ~0% FCF yield; no Buffett margin of safety." },
+    { "ticker": "JBL", "reason": "Servers underweight; 5% operating margin." },
+    { "ticker": "CLS", "reason": "Servers underweight; thin margins, -26% vs 200-day." },
+    { "ticker": "CAMT", "reason": "Small cap in a segment already covered; no FCF data." },
+    { "ticker": "LITE", "reason": "~0% FCF and stock tied to Marvell merger ratio; China import curb risk." }
+  ]
+}

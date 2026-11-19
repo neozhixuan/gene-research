@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "MU",
+    "segment": "memory_storage",
+    "kind": "new"
+  },
+  {
+    "ticker": "VST",
+    "segment": "power_nuclear",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "TSM",
+    "segment": "foundry_equipment",
+    "kind": "new"
+  }
+]

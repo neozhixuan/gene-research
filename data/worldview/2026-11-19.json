@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-19",
+  "previous": "2026-11-18",
+  "headline": "Anthropic priced the largest IPO on record at $83 and global chip stocks rallied into its debut, but Nvidia fell on its beat-and-raise and the Semis ETF is still -9.3% on five days, so the tape has not yet confirmed the AI earnings.",
+  "regime": "Wednesday's close was a stalemate: S&P -0.2%, Nasdaq +0.4%, Semis ETF -0.1% (-9.3% on five days, -16.2% on the month), VIX 22.0 (-10.4% on the day but +17.6% on five). Nvidia's record print did not change the narrative (519c0d0233f8); Anthropic's record IPO lifted futures and chips overseas (5ddb3341f176, 9eceb81c90d6). Inside AI only cooling is up on five days (+6.1%, MOD +29.3%); power_nuclear fell again (-1.5%, -11.1% on five) and neoclouds are -13.7% on five. The 10-year at 5.07% still caps multiples.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 72,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Modexus investor day sets new long-term targets, most revenue now data centres (454db59864d5, f79142b406b8); cooling +6.1% on five days, MOD +29.3%",
+        "nVent shows 4GW+ of deployed liquid cooling and a 2.3MW CDU at SC26 (9c23bb96b1fb); Cramer list: server start dates depend on when the utility delivers power (311834eb44fb)",
+        "GE Vernova raised its year-end gas turbine goal to 130GW (536bea878b9a); Capital Group opened a $176m Constellation position (4584fd21ea43); POWL +6.3% on five days",
+        "Against: SoftBank took a $3.7bn loss cancelling 13GW of turbines (52246e99036f); power_nuclear -11.1% on five days, SMR -25.2%; a $6.9bn fund sold all its Vistra (0e687497d94f)"
+      ],
+      "change": "weaker",
+      "change_note": "-2: cooling order evidence keeps strengthening, but SoftBank cancelling 13GW of turbines is the first hard sign that power commitments can be unwound, and power stocks keep falling."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 71,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "Anthropic raised a record ~$81bn at its IPO (c0b1bad6b1fd, 4632852cddb6) and its spending plan lifted AI cloud stocks (2ad8c09fad83)",
+        "Broadcom guides AI revenue to ~$115bn in fiscal 2027 (ff003f038d7a); SpaceX funds most of a 10GW build from cash flow (7733e3026f4c); Morgan Stanley sees $1.6tn AI capex from 8 firms in 2027 (d61f95f8b023)",
+        "Dell backlog 'keeps inflating' (1aea01ed95fd); Everpure beat (c5cbe393a371)",
+        "Against: Nvidia fell on its record print (519c0d0233f8); Nebius cut 2026 guidance on third-party data-centre delays (19dcb95b3de2), i.e. supply-side, not demand"
+      ],
+      "change": "unchanged",
+      "change_note": "Anthropic's raise adds funded demand, but Nvidia trading down on the beat shows the market is not paying for it yet; held at 71."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 85,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "CoreWeave co-founder bought $30m of bonds after selling $1.2bn+ of stock (60a0e6fe0fed, 52a94e2241dd); floating-rate funds now buying CoreWeave debt (dd50150a0843)",
+        "Nebius cut its 2026 revenue range to $3.0-3.2bn on data-centre delays (19dcb95b3de2); NBIS -30.9% on five days; segment -13.7%",
+        "Quality gate still drops CRWV, NBIS, IREN, CORZ, CIFR, WULF, APLD",
+        "Against: neoclouds rose ahead of the Anthropic debut (2ad8c09fad83)"
+      ],
+      "change": "stronger",
+      "change_note": "+1: an insider choosing the bonds over the stock and a Nebius guide-down are credit-style signals; the Anthropic bounce was one day."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 43,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "MU at ~3.4x forward earnings with 75% operating margin and revenue +379%, 44% off its high (shortlist); 'may be 16% undervalued' on AI supply news (f6c1d7b65bcf)",
+        "Seagate launches an AI-oriented drive platform (c992c16f61f9); memory +1.0% on the day",
+        "Against: MU -40% from its peak 'as cracks appear in the AI boom' (76133bfdc6a3); ETFs net sellers of MU (f8c2a5627654); segment -20.7% on the month"
+      ],
+      "change": "stronger",
+      "change_note": "+3: a 3.4x forward P/E with a 4% FCF yield is a Buffett-style margin of safety if earnings only halve; price still gives no confirmation."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 64,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Morgan Stanley: 8 companies to spend $1.6tn on AI infrastructure in 2027 (d61f95f8b023)",
+        "Alphabet down 30% (94c57604297a) and giving Gemini Tasks away free against Anthropic (efc3aa1dd67f); ORCL -11.3% on five days and fails the quality gate",
+        "Against: SpaceX says cash flow funds most of its build (7733e3026f4c); AMZN +0.6% on five days"
+      ],
+      "change": "stronger",
+      "change_note": "+1: free AI as a competitive weapon means more spend with less pricing power."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 86,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "Nvidia fell despite rock-solid earnings (519c0d0233f8); ECB warns AI mega-IPOs could echo past credit bubbles (57d514591a64)",
+        "Leveraged and sector ETFs sold across the board on Nov 17 (9fee92d00f82, afa5aa14ef93, 103c257a48f4); Klement sold all his stocks (6a0338a89bcf)",
+        "10-year 5.07%, VIX +17.6% on five days; Semis ETF -16.2% on the month",
+        "Against: Anthropic's record IPO cleared, showing deep appetite for AI paper (5ddb3341f176)"
+      ],
+      "change": "unchanged",
+      "change_note": "The IPO shows demand for new AI supply, which is itself a crowding sign; held."
+    },
+    {
+      "id": "political-risk-to-data-centres",
+      "title": "A Democratic Congress raises policy risk for data-centre build-outs",
+      "stance": "bearish",
+      "confidence": 74,
+      "segments": ["hyperscalers", "datacenter_neocloud", "grid_electrical", "power_nuclear"],
+      "evidence": [
+        "Texas resumes data-centre approvals weeks before a new government that plans to halt all approvals (8b2907c03e09)",
+        "Washington drafting limits on Chinese optical transceiver imports for data centres (ca37f379d1bb)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: first concrete report of an incoming government planning to halt data-centre approvals."
+    },
+    {
+      "id": "nvidia-key-person-and-export-risk",
+      "title": "The Huang probe puts Nvidia, and China export rules, at risk",
+      "stance": "bearish",
+      "confidence": 73,
+      "segments": ["compute"],
+      "evidence": [
+        "'Nvidia's turmoil has me spooked' retail commentary (73469958e18e); Nvidia fell after its print (519c0d0233f8)",
+        "Against: no new probe or export news today; Nvidia's 13F shows it still funding the ecosystem (60357cd62d41)"
+      ],
+      "change": "weaker",
+      "change_note": "-3: no new governance or export news; the thesis now survives mostly on carry-forward and the stock's failure to rally."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "+0.7% on the day but -7.7% on five; NVDA fell on its beat, AVGO +2.6%." },
+    "foundry_equipment": { "stance": "neutral", "note": "-9.8% on five days, TSM -12.3%; quality intact, price now 26% off highs." },
+    "memory_storage": { "stance": "neutral", "note": "-20.7% on the month; MU at 3.4x forward is the cheapest quality in the universe." },
+    "networking_optical": { "stance": "neutral", "note": "-11.9% on five days, AAOI -27% on a $550m offering; ANET held up." },
+    "servers": { "stance": "underweight", "note": "-9.9% on five days, SMCI -19.9%; Dell backlog strong but margins thin." },
+    "power_nuclear": { "stance": "overweight", "note": "-11.1% on five days; SoftBank turbine cancellation hurts, stay in cash-generative IPPs." },
+    "grid_electrical": { "stance": "overweight", "note": "-4.2% on five days, POWL +6.3%; steadiest bottleneck." },
+    "cooling_thermal": { "stance": "overweight", "note": "Only segment up on five days (+6.1%); MOD +29.3% on investor day." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "-13.7% on five days; insider buys bonds not stock, Nebius guides down." },
+    "hyperscalers": { "stance": "neutral", "note": "-3.8% on five days; Alphabet -30%, free AI pressures pricing." },
+    "ai_software": { "stance": "underweight", "note": "+1.8% on the day, -20% on the month; Anthropic listing competes for the same money." }
+  },
+  "risks": [
+    "Anthropic trades below its $83 offer and the AI IPO window shuts, hitting sentiment across the chain.",
+    "More power-equipment cancellations like SoftBank's 13GW unwind the bottleneck trade's order books.",
+    "A 5%+ 10-year and further Fed hikes keep compressing multiples even as AI earnings rise.",
+    "An incoming government halting data-centre approvals slows the build-out.",
+    "Neocloud credit stress spreads from equity to bonds."
+  ],
+  "watch": [
+    "ANT's first-day close versus the $83 offer, and whether software and neoclouds follow it.",
+    "Whether NVDA and the Semis ETF hold above Wednesday's lows after the failed post-earnings rally.",
+    "GEV and power_nuclear reaction to the SoftBank turbine cancellation.",
+    "Walmart's results and the 10-year versus 5.07%.",
+    "MU and memory after Sandisk's split today."
+  ]
+}

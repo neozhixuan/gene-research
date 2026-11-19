@@ -466,7 +466,7 @@ The -3.2% alpha shows the directional call was correctly cautious, though the fi
 
 <!-- ENTRY_END -->
 
-[2026-11-10 | VST | Overweight | pending]
+[2026-11-10 | VST | Overweight | -5.9% | -2.0% | 5d | resolved:2026-11-18]
 
 DECISION:
 **Rating**: Overweight
@@ -479,9 +479,12 @@ DECISION:
 
 **Time Horizon**: 3-6 months
 
+REFLECTION:
+The 5-day alpha of -2.0% confirms the trade underperformed during this brief window, though this timeframe is insufficient to judge the 3-6 month structural thesis. The immediate drawdown undercuts the notion that the oversold RSI provided a definitive floor, highlighting that momentum technicals remain a significant headwind. Future analyses must prioritize wait-for-confirmation signals even more strictly, as entry during a downward trend—even with strong fundamentals—exposes capital to unnecessary volatility.
+
 <!-- ENTRY_END -->
 
-[2026-11-10 | STX | Hold | pending]
+[2026-11-10 | STX | Hold | -6.5% | -2.6% | 5d | resolved:2026-11-18]
 
 DECISION:
 **Rating**: Hold
@@ -493,6 +496,9 @@ DECISION:
 **Price Target**: not provided
 
 **Time Horizon**: 3-6 months
+
+REFLECTION:
+The -2.6% alpha relative to the SPY over five days underscores the immediate cost of my patience, though this timeframe remains too truncated to invalidate a 3-6 month thesis. This underperformance highlights the risk of standing aside during a volatility-driven selloff when institutional distribution was clearly already underway. For future analyses, I must more aggressively weigh negative technical momentum against attractive valuation multiples to avoid missing clear signals of a breakdown.
 
 <!-- ENTRY_END -->
 
