@@ -59,3 +59,6 @@ date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-11-19,MU,new,memory_storage,705.27,659.51,459.54,Overweight,Buy,Overweight
 2026-11-19,VST,recheck,power_nuclear,125.58,659.51,459.54,Overweight,Buy,Overweight
 2026-11-19,TSM,new,foundry_equipment,362.62,659.51,459.54,,,
+2026-11-20,HPE,new,servers,45.49,645.04,447.48,Hold,Hold,Hold
+2026-11-20,ASML,recheck,foundry_equipment,1356.2,645.04,447.48,Hold,Hold,Hold
+2026-11-20,MRVL,new,compute,138.47,645.04,447.48,,,

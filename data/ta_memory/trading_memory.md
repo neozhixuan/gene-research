@@ -502,7 +502,7 @@ The -2.6% alpha relative to the SPY over five days underscores the immediate cos
 
 <!-- ENTRY_END -->
 
-[2026-11-11 | TLN | Overweight | pending]
+[2026-11-11 | TLN | Overweight | -8.0% | -2.5% | 5d | resolved:2026-11-19]
 
 DECISION:
 **Rating**: Overweight
@@ -515,9 +515,12 @@ DECISION:
 
 **Time Horizon**: 3-6 months
 
+REFLECTION:
+The 5-day alpha of -2.5% indicates a sharp short-term retracement, though this window is too narrow to invalidate a multi-month thesis focused on structural power demand. While the immediate price action confirms the high volatility highlighted in my risk assessment, it undercuts the expectation that the $3 billion buyback would provide a firm near-term price floor. For future entries on high-beta names, I will explicitly tie position scaling to specific technical levels or ATR-based volatility zones rather than general portfolio percentages to better survive rapid sentiment shifts.
+
 <!-- ENTRY_END -->
 
-[2026-11-11 | ASML | Overweight | pending]
+[2026-11-11 | ASML | Overweight | -9.4% | -4.0% | 5d | resolved:2026-11-19]
 
 DECISION:
 **Rating**: Overweight
@@ -529,6 +532,9 @@ DECISION:
 **Price Target**: not provided
 
 **Time Horizon**: 3-6 months
+
+REFLECTION:
+The 5-day alpha of -4.0% shows that the immediate directional call failed to anticipate the intense selling pressure, though the window is too short to validate the 3-6 month thesis. This sharp drawdown reinforces the cautionary note regarding the breakdown below the 200 SMA, suggesting the technical risk was underestimated relative to the fundamental value proposition. Moving forward, I must mandate a confirmed technical trend reversal before initiating any long positions, regardless of how attractive the valuation metrics appear.
 
 <!-- ENTRY_END -->
 
@@ -707,6 +713,36 @@ DECISION:
 **Investment Thesis**: The bull argument ultimately carries the day because the fundamental demand story for VST is anchored by an overwhelming structural shift in power generation needs driven by the AI infrastructure revolution, particularly in Texas. While the bear case correctly highlights real risks including a 336% debt-to-equity ratio, high interest rate headwinds, and a medium-term technical downtrend below the moving averages, the bull thesis is supported by robust operational cash flow generation of $4.07 billion, a low forward P/E of 12.87, and an authorized $1.5 billion share buyback that indicates strong board-level confidence. The neutral analyst's tiered entry proposal successfully addresses the technical volatility by recommending a scaled accumulation rather than a lump-sum deployment, balancing the fundamental value proposition against ongoing macroeconomic pressure. The thesis would change if sustained selling pressure breaches the 117.27 stop-loss level or if adverse regulatory changes impair data center expansion plans.
 
 **Price Target**: 196.0
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-20 | HPE | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Maintain a Hold rating on HPE with 0% current portfolio allocation, preserving all 10,000 USD in cash. Avoid initiating a position until the technical trend stabilizes above the 200-day moving average and regulatory headwinds are resolved over a 3-6 month horizon.
+
+**Investment Thesis**: The investment thesis balances the compelling long-term fundamental valuation against severe near-term technical and operational headwinds. The aggressive case points to a rock-solid free cash flow of $4.74 billion, a forward P/E of 9.61, and strong enterprise AI positioning. However, the conservative and neutral analyses highlight significant friction, including an active FAA regulatory investigation that halts installations, a pronounced medium-term downtrend trading below moving averages, and consistent insider selling by executives. While the 200-day SMA at 42.49 provides a historical support floor, entering now carries substantial risk of catching a falling knife during margin compression and operational bottlenecks. Weighing these arguments, the fundamental value proposition is counterbalanced by unresolved regulatory risks and negative technical momentum, making a Hold rating appropriate until clear reversal signals emerge.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-20 | ASML | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Maintain a Hold stance on ASML to avoid high near-term volatility and downward momentum while preserving liquidity. Do not deploy fresh capital or initiate a position until technical indicators confirm a sustained reversal above key moving averages. Monitor the 1319.09 support level and broader macroeconomic conditions closely over a 3-6 month horizon.
+
+**Investment Thesis**: The conservative and neutral analysts provide the superior operational synthesis by highlighting the severe near-term risks posed by heavy downside momentum, an ATR of 66.41, and positioning well below both the 50-day and 200-day SMAs. While the aggressive analyst champions ASML's undeniable fundamental moat and EUV monopoly, entering a high-beta asset during an active technical breakdown exposes the portfolio to unnecessary capital impairment. Past decisions on ASML similarly warn against layering into a technical breakdown prematurely despite attractive valuation multiples. The thesis to hold would change to an accumulation stance upon a confirmed technical trend reversal and reclaim of key moving averages, or weaken further if macro headwinds and foundry CapEx retrenchment deepen the fundamental downtrend.
+
+**Price Target**: not provided
 
 **Time Horizon**: 3-6 months
 

@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-20",
+  "picks": [
+    {
+      "ticker": "HPE",
+      "segment": "servers",
+      "why": "At 9.5x forward earnings with an 8% FCF yield and revenue +34%, HPE is the cheapest cash-generative way to own AI server demand, and it is still 7% above its 200-day while the Semis ETF fell 18% on the month. Servers held best on a -2% day, and the watchlist covers the segment only through DELL.",
+      "risk": "An 8% operating margin leaves little room if AI server pricing tightens or Juniper-deal debt weighs while hyperscaler orders slow.",
+      "thesis_ids": ["ai-demand-exceeds-supply"]
+    },
+    {
+      "ticker": "MRVL",
+      "segment": "compute",
+      "why": "Marvell has halved again to 18.8x forward with revenue +36% and a 17% operating margin, and the Credo patent settlement removes a key risk (78cb9af84d22). Custom silicon and networking give compute exposure without the Nvidia export and key-person risk, and the watchlist has no compute name.",
+      "risk": "A 2% FCF yield gives a thin cushion if hyperscaler custom-chip programmes are cut in a capex pullback.",
+      "thesis_ids": ["ai-demand-exceeds-supply", "ai-trade-crowded-at-high-rates"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "ALAB", "reason": "29.6x forward with no FCF yield; too crowded-trade-priced for a VIX-30 tape." },
+    { "ticker": "JBL", "reason": "Second servers name; HPE has the higher FCF yield and margin." },
+    { "ticker": "CLS", "reason": "Second servers name and -27% vs 200d; momentum still broken." },
+    { "ticker": "CAMT", "reason": "Small cap, no FCF data, foundry already covered by AMAT and ASML." },
+    { "ticker": "LITE", "reason": "Cheap at 13.3x but ~0% FCF and transceiver-ban noise; stock crashing despite +137% sales." },
+    { "ticker": "NOW", "reason": "ai_software is underweight; Anthropic competes for the same budgets." }
+  ]
+}

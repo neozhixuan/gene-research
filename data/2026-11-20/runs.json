@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "HPE",
+    "segment": "servers",
+    "kind": "new"
+  },
+  {
+    "ticker": "ASML",
+    "segment": "foundry_equipment",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "MRVL",
+    "segment": "compute",
+    "kind": "new"
+  }
+]

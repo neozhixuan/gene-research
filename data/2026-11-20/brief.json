@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-20",
+  "session": "US open Fri 20 Nov, 22:30 SGT",
+  "written_at": "2026-11-20T20:15:00+08:00",
+  "lean": "wait",
+  "bottom_line": "The ratings are not broken, but tonight is a poor time to start them: Nasdaq-100 futures are down roughly 1-1.5% after a 2% fall on Thursday, and Asia sold chips hard overnight. Most names are flat to down since rating, so there is no chasing risk, but the worldview's 'VIX near 30 forces de-leveraging' risk is live; let the open settle first.",
+  "what_changed": [
+    "Nasdaq-100 futures -1.1% to -1.5% and S&P futures -0.4% to -0.6% pre-market; Anthropic's IPO failed to lift sentiment (crowded-AI-trade thesis, VIX risk).",
+    "Kospi -4.3% and Nikkei -4% overnight; Taiwan heading for its worst week since 1990 on the chip sell-off.",
+    "Hunterbrook short report on AMD's chip financing: AMD -7.7% Thursday and -2.3% after hours (export/financing risk widening beyond Nvidia, a named risk).",
+    "Keysight beat (revenue +41%) is the one AI-supplier positive; Intuit -10% after hours weighs on software."
+  ],
+  "names": [
+    { "ticker": "AAON", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-12", "rated_price": 76.33, "last_price": 77.08, "since_rated": 0.010, "catalyst": "", "take": "Overweight segment holding up best; a small starter is reasonable after the open settles." },
+    { "ticker": "AMAT", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 380.95, "last_price": 338.93, "since_rated": -0.110, "catalyst": "Earnings 11 Feb", "take": "Segment is neutral and Asian chip stocks fell hard overnight; trust the neutral segment tonight and wait." },
+    { "ticker": "ANET", "segment": "networking_optical", "rating": "Overweight", "rated_on": "2026-11-16", "rated_price": 197.29, "last_price": 189.59, "since_rated": -0.039, "catalyst": "", "take": "Segment neutral; Nasdaq weakness likely hits it at the open, so wait for a lower limit." },
+    { "ticker": "DELL", "segment": "servers", "rating": "Overweight", "rated_on": "2026-11-12", "rated_price": 373.68, "last_price": 312.54, "since_rated": -0.164, "catalyst": "Earnings 24 Nov", "take": "Down 16% since rated and reporting Tuesday; wait for the print rather than buying before it." },
+    { "ticker": "ETN", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-18", "rated_price": 337.11, "last_price": 330.57, "since_rated": -0.019, "catalyst": "Earnings 2 Feb", "take": "Fresh rating in an overweight segment, near the rated price; a small limit order is fine." },
+    { "ticker": "MU", "segment": "memory_storage", "rating": "Overweight", "rated_on": "2026-11-19", "rated_price": 705.27, "last_price": 690.44, "since_rated": -0.021, "catalyst": "Earnings 17 Dec", "take": "Segment neutral and Korean memory peers fell with the Kospi; wait." },
+    { "ticker": "PWR", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-17", "rated_price": 585.9, "last_price": 587.43, "since_rated": 0.003, "catalyst": "", "take": "Steady at the rated price with a dividend raise; small starter on weakness only." },
+    { "ticker": "TLN", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-11", "rated_price": 361.18, "last_price": 355.91, "since_rated": -0.015, "catalyst": "", "take": "Power segment still sliding on five days; wait for the open." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 209.64, "last_price": 184.99, "since_rated": -0.118, "catalyst": "", "take": "Three Overweights but -12% since; trades like AI beta, so wait for the open to settle." },
+    { "ticker": "VST", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-19", "rated_price": 125.58, "last_price": 124.15, "since_rated": -0.011, "catalyst": "", "take": "Fresh rating near the rated price; small limit order only if futures stabilise." }
+  ],
+  "trust": "Only 6 ratings are graded so far. New picks average -4.5% vs QQQ, about the same as the equal-weight universe (-4.4%) and a random shortlist pick (-3.8%); the Buy/Overweight subset (-1.3%) is better, but the sample is too small to lean on.",
+  "if_buying": [
+    "Overweight means a small starter only; tonight, half of that.",
+    "Prefer the overweight segments near their rated price: ETN, PWR, AAON, VST.",
+    "Wait on DELL until after its 24 Nov results, and on AMAT, ANET and MU while chips are under pressure.",
+    "Use limit orders; skip the first 30 minutes of a gap-down open."
+  ],
+  "sources": [
+    { "title": "Stock Market Today, Nov. 20: Futures Wobble as Anthropic IPO Fails to Lift Sentiment (TipRanks)", "url": "https://www.tipranks.com/news/stock-market-today-nov-20-futures-wobble-as-anthropic-ipo-fails-to-lift-sentiment" },
+    { "title": "Stock Market Today: Dow Jones, S&P 500 Futures Fall as Trump Weighs Iran Decision (Benzinga)", "url": "https://www.benzinga.com/markets/equities/26/11/63465508/stock-market-today-dow-jones-sp-500-futures-fall-as-trump-weighs-iran-decision-intu-rost-keys-in-focus" },
+    { "title": "Stock Futures Fall as Global Markets Extend Losses (IC)", "url": "https://www.ic.com/blog/stock-futures-fall-as-global-markets-extend-losses-20-november-ic/" },
+    { "title": "Chip selloff sends Taiwan toward worst week since 1990 (MarketScreener)", "url": "https://marketscreener.com/news/chip-selloff-sends-taiwan-toward-worst-week-since-1990-asia-stocks-fall-ce785ed2d18df420" },
+    { "title": "After-Hours Technology Earnings: Thursday, November 19, 2026", "url": "https://analysisofficial.substack.com/p/after-hours-technology-earnings-thursday-828" },
+    { "title": "AMD Follows NVIDIA to Be Shorted, Share Price Plunges Nearly 8% (36Kr)", "url": "https://eu.36kr.com/en/p/4077478014505860" }
+  ]
+}

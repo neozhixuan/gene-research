@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-20",
+  "previous": "2026-11-19",
+  "headline": "Anthropic's debut faded into an ugly reversal that pushed the S&P 500 down 2% to new lows on a six-session losing streak, with VIX near 30, so the AI trade is now being sold regardless of earnings.",
+  "regime": "Risk-off: S&P -2.0% (-5.5% on five days), Nasdaq -2.2%, Semis ETF -2.6% (-10.8% on five, -18.1% on the month), VIX 29.8 (+54.6% on five). It is the worst stretch since the 2025 tariff shock (609a9937df7e); Anthropic opened 34% above its offer and gave most of it back (b69f76fca650, c1ce285bc9e4). The only relief is the 10-year easing to 5.05% as Treasuries rally (242dbba914eb). Inside AI, cooling is the only segment up on five days (+1.9%, MOD +26.8%) and POWL +12%; compute and neoclouds lost 4.2% on the day.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 73,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Senate nears a vote on a landmark permitting bill for transmission (8efe8edf3fa7); Senate passed a bipartisan bill backing nuclear (9fac5c0e55b7)",
+        "Constellation beat and raised guidance (65891e147a26); NRG earnings reset the 2027 story (74c271dba9eb); Quanta lifted its dividend 18% (0e649e7580c6)",
+        "Cooling +1.9% on five days while Semis fell 10.8%; POWL +12.0%",
+        "Against: power_nuclear -11.1% on five days, SMR -20.9%; GEV 34% off its July high despite three guidance raises (7eaa623b93c6)"
+      ],
+      "change": "stronger",
+      "change_note": "+1: the permitting bill and cash-generative IPP beats are real; relative strength of cooling and grid in a crash supports the bottleneck view."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 71,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "Nvidia raised supply commitments to $390bn, mostly memory (4c63f632edc8); Micron customers lock in supply for years not yet started (7a955d097e46)",
+        "Lumentum sales +137% (2e751b1f923c); Keysight beat (a638aa06b38d); AI chip estimates keep rising as prices fall (9bdad13574f9)",
+        "Against: 'cracks in the AI capex boom' (f74fd1e23913); US offshore chip rule cuts Alibaba capex (dc310d483b7f)"
+      ],
+      "change": "unchanged",
+      "change_note": "Order and supply-commitment data still point up; the selloff is about multiples, not demand. Held at 71."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 87,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "CRWV, IREN, NBIS extend the selloff as the Anthropic rally fades (26937d62e218); segment -14.0% on five days, IREN -26.0%",
+        "CoreWeave faces supply risk from the Chinese transceiver ban (a003a92a7da1); heavy CRWV trading on financing costs (770254a1ec5b)",
+        "Applied Digital down ~71% (ca7eae8eb858); quality gate still drops CRWV, NBIS, IREN, CORZ, CIFR, WULF, APLD",
+        "Against: Bernstein keeps Buy on IREN at $55 (a17df8439fd7)"
+      ],
+      "change": "stronger",
+      "change_note": "+2: worst segment again, and a new regulatory supply risk lands on the most levered name."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 43,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Nvidia's $390bn of commitments are mostly memory (4c63f632edc8); multi-year DRAM contracts (7a955d097e46); MU reports Dec 17 (26a973b8bb8a)",
+        "Memory -0.2% on the day, best segment",
+        "Against: TrendForce turns bearish on 2027 NAND prices (6015d47ee7a0), SNDK -19.4% on five days; Whale Rock exits WDC (da5e9359c4cb); ETFs net sellers of MU (d6aece52f2cb)"
+      ],
+      "change": "unchanged",
+      "change_note": "DRAM evidence got better and NAND evidence got worse; the thesis now rests on MU/DRAM, not NAND. Held at 43."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 64,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Hyperscalers -3.1% on the day, ORCL -13.0% on five days and fails the quality gate",
+        "'Cracks in the AI capex boom' commentary (f74fd1e23913)",
+        "Against: AMZN only -3.8% on five days; index funds still buying Apple and Microsoft (c012bd255528)"
+      ],
+      "change": "unchanged",
+      "change_note": "No new capex or cash-flow data today; held."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 89,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "Six-session S&P losing streak, worst since 2025 tariffs (609a9937df7e); Nasdaq new lows after an ugly reversal (c1ce285bc9e4)",
+        "Citi stays risk-averse (d1f1765d1b5f); 20 tech stocks down 25-76% from highs (561604389e15); Burry victory lap (6624e5addc42)",
+        "VIX 29.8, +54.6% on five days; Semis ETF -18.1% on the month",
+        "Against: 10-year eased to 5.05% (242dbba914eb); Tom Lee calls it 'max pain' (d9e944c921f5)"
+      ],
+      "change": "stronger",
+      "change_note": "+3: the IPO-day reversal is a classic distribution signal; a VIX near 30 confirms forced de-risking."
+    },
+    {
+      "id": "political-risk-to-data-centres",
+      "title": "A Democratic Congress raises policy risk for data-centre build-outs",
+      "stance": "bearish",
+      "confidence": 72,
+      "segments": ["hyperscalers", "datacenter_neocloud", "grid_electrical", "power_nuclear"],
+      "evidence": [
+        "Chinese optical transceiver ban moves forward despite industry pushback (a003a92a7da1); new offshore AI-chip rule (dc310d483b7f)",
+        "Against: Senate nears a landmark permitting bill (8efe8edf3fa7) and passed a bipartisan nuclear bill (9fac5c0e55b7)"
+      ],
+      "change": "weaker",
+      "change_note": "-2: bipartisan permitting and nuclear bills cut against the 'approvals halt' risk, even as trade rules tighten."
+    },
+    {
+      "id": "nvidia-key-person-and-export-risk",
+      "title": "The Huang probe puts Nvidia, and China export rules, at risk",
+      "stance": "bearish",
+      "confidence": 78,
+      "segments": ["compute"],
+      "evidence": [
+        "Muddy Waters short on Nvidia export compliance (e1c29976ae2d); short seller names Nvidia's former top sales executive in a $2.5bn China chip case (f06ca678980f)",
+        "Nvidia ~30% off as the post-Huang sell-off 'gets uglier' (2bd9dd2c7a35, 8761d72594a1); AMD faces similar export allegations (42d04e044479); compute -4.2% on the day",
+        "Against: Nvidia still raising supply commitments (4c63f632edc8)"
+      ],
+      "change": "stronger",
+      "change_note": "+5: two short-seller reports and AMD allegations turn yesterday's carried-forward thesis into a live one."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "neutral", "note": "-4.2% on the day, -12.1% on five; export short reports hit NVDA and AMD, AVGO held best." },
+    "foundry_equipment": { "stance": "neutral", "note": "-10.5% on five days; quality intact, no new order data." },
+    "memory_storage": { "stance": "neutral", "note": "Best on the day (-0.2%); DRAM contracts strong, NAND outlook turning down." },
+    "networking_optical": { "stance": "neutral", "note": "-12.6% on five days, AAOI -25.3%; LITE growth +136% but transceiver ban adds noise." },
+    "servers": { "stance": "neutral", "note": "Raised from underweight: held best on the day (-0.9%) and HPE, JBL, CLS trade at 10-11x forward." },
+    "power_nuclear": { "stance": "overweight", "note": "-11.1% on five days, but CEG and NRG beats and nuclear policy support cash-generative IPPs." },
+    "grid_electrical": { "stance": "overweight", "note": "-5.5% on five days, POWL +12%; permitting bill is a tailwind." },
+    "cooling_thermal": { "stance": "overweight", "note": "Only segment up on five days (+1.9%), MOD +26.8%." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "-14.0% on five days, IREN -26%; transceiver ban adds supply risk." },
+    "hyperscalers": { "stance": "neutral", "note": "-6.9% on five days, ORCL -13%; AMZN steadiest." },
+    "ai_software": { "stance": "underweight", "note": "-20.9% on the month; only cybersecurity (CRWD +5.9%) is bid." }
+  },
+  "risks": [
+    "Anthropic breaks its $83 offer and the AI IPO window shuts, extending the sell-off across the chain.",
+    "Export-compliance cases widen from Nvidia to AMD and suppliers, with fines or new rules.",
+    "VIX near 30 forces further de-leveraging even in quality bottleneck names.",
+    "A 5%+ 10-year keeps compressing multiples if the Treasury rally fails.",
+    "Neocloud credit stress spreads from equity to bonds and cancels orders upstream."
+  ],
+  "watch": [
+    "ANT versus its $83 offer on Friday and whether the S&P breaks its six-day losing streak.",
+    "NVDA and AMD response to the short-seller export reports.",
+    "Senate vote on the permitting bill and grid/power reaction.",
+    "VIX versus 30 and the 10-year versus 5%.",
+    "Jacobs Q4 results for data-centre engineering demand (725e39fa1da0)."
+  ]
+}

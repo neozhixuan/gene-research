@@ -43,7 +43,7 @@
   "ASML": {
     "segment": "foundry_equipment",
     "added": "2026-11-02",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-11-02",
@@ -54,8 +54,15 @@
         "date": "2026-11-11",
         "rating": "Overweight",
         "kind": "recheck"
+      },
+      {
+        "date": "2026-11-20",
+        "rating": "Hold",
+        "kind": "recheck"
       }
-    ]
+    ],
+    "dropped": "2026-11-20",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "AVGO": {
     "segment": "compute",
@@ -149,16 +156,16 @@
   },
   "HPE": {
     "segment": "servers",
-    "added": "2026-10-23",
+    "added": "2026-11-20",
     "status": "dropped",
     "checks": [
       {
-        "date": "2026-10-23",
+        "date": "2026-11-20",
         "rating": "Hold",
         "kind": "new"
       }
     ],
-    "dropped": "2026-10-28",
+    "dropped": "2026-11-20",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "HUBB": {
@@ -229,6 +236,20 @@
       }
     ],
     "dropped": "2026-11-11",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
+  },
+  "MRVL": {
+    "segment": "compute",
+    "added": "2026-11-20",
+    "status": "dropped",
+    "checks": [
+      {
+        "date": "2026-11-20",
+        "rating": null,
+        "kind": "new"
+      }
+    ],
+    "dropped": "2026-11-20",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "MU": {

@@ -1,0 +1,1880 @@
+[
+  {
+    "i": "c1ce285bc9e4",
+    "t": "Dow Jones Futures: Techs Fall, Anthropic Tumbles After Ugly Market Reversal To New Lows",
+    "l": "https://finance.yahoo.com/m/9e02231d-41cd-31ac-b37f-993325b8a4ca/dow-jones-futures%3A-techs.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:47:44+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "Tech futures fell after the market suffered an ugly reversal, with the S&P 500 and Nasdaq hitting new lows. Anthropic retreated late after rising its IPO debut."
+  },
+  {
+    "i": "d1f1765d1b5f",
+    "t": "Citi warns a key stock-market signal is close to flashing red",
+    "l": "https://www.marketwatch.com/story/citi-warns-a-key-stock-market-signal-is-close-to-flashing-red-5cbee1c3?mod=mw_rss_topstories",
+    "s": "marketwatch.com",
+    "p": "2026-11-20T11:45:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "Having turned risk averse more than a month ago, Citi strategists find no compelling reason to go more positive risk assets yet, despite the steep decline. If sentiment deteriorates further, buying long-duration bonds is"
+  },
+  {
+    "i": "d9c6ccee7892",
+    "t": "If You Had Invested $5,000 in Amazon Stock 20 Years Ago, Here's How Much You'd Have Today",
+    "l": "https://www.fool.com/investing/2026/11/20/if-youd-invested-5000-in-company-name-stock-20-years-ago-heres-how-much-youd-have-today/?.tsrc=rss",
+    "s": "fool.com",
+    "p": "2026-11-20T11:40:02+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "It's more than just the largest company in the world by sales."
+  },
+  {
+    "i": "83cc11935434",
+    "t": "AI Chips Today - AI Revolution Drives VR and AR Market Expansion",
+    "l": "https://finance.yahoo.com/technology/ai/articles/ai-chips-today-ai-revolution-113737070.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:37:37+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "The virtual and augmented reality (VR and AR) market is set for substantial growth, expected to expand from $32.3 billion in 2025 to $156.2 billion by 2031, marking a compound annual growth rate of 30.7%. This accelerati"
+  },
+  {
+    "i": "dd86771a4cff",
+    "t": "2 Farm ETFs Own What Every Grocery Store Depends On",
+    "l": "https://247wallst.com/investing/etf/2026/11/20/2-farm-etfs-own-what-every-grocery-store-depends-on/?.tsrc=rss",
+    "s": "247wallst.com",
+    "p": "2026-11-20T11:36:07+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Two funds beat the S&P 500 this past year, yet both lagged it badly over five. One spreads bets across the food chain while the other leans on a single tractor maker. Which approach fits your portfolio?"
+  },
+  {
+    "i": "8fac25aedaa5",
+    "t": "These 3 ETFs Could Set You Up for Life With Next to No Effort on Your Part",
+    "l": "https://www.fool.com/investing/2026/11/20/these-3-etfs-could-set-you-up-for-life-with-next-to-no-effort-on-your-part/?.tsrc=rss",
+    "s": "fool.com",
+    "p": "2026-11-20T11:36:02+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "Want to build a well-diversified portfolio with just three ETFs? VOO, IXUS, and BND have got you covered."
+  },
+  {
+    "i": "82dee4455f8e",
+    "t": "If a Bear Market Is Coming in 2027, History Says This 1 Simple Move Can Protect Your Investments",
+    "l": "https://www.fool.com/investing/2026/11/20/if-a-bear-market-is-coming-in-2027-history-says-this-1-simple-move-can-protect-your-investments/?.tsrc=rss",
+    "s": "fool.com",
+    "p": "2026-11-20T11:35:02+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Bear markets are typically short-lived, but this investing behavior can have long-term consequences for building wealth."
+  },
+  {
+    "i": "8761d72594a1",
+    "t": "3 Warren Buffett Rules That Make Nvidia Stock a Buy at Today's Price",
+    "l": "https://www.fool.com/investing/2026/11/20/3-warren-buffett-rules-that-make-nvidia-stock-a-buy-at-today-s-price/?.tsrc=rss",
+    "s": "fool.com",
+    "p": "2026-11-20T11:35:02+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Nvidia has lost nearly 30% of its value amid ongoing scandals with its former CEO, Jensen Huang."
+  },
+  {
+    "i": "06426927bbac",
+    "t": "Social Buzz: Wallstreetbets Stocks Mostly Lower Pre-Bell Friday; Sandisk, AMD to Decline",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/social-buzz-wallstreetbets-stocks-mostly-113227780.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:32:27+00:00",
+    "k": [
+      "AMD"
+    ],
+    "g": "compute",
+    "c": 0,
+    "r": 1,
+    "m": "The most-talked-about stocks in the Reddit subforum Wallstreetbets were mostly lower hours before Fr"
+  },
+  {
+    "i": "1cbb1f347bc6",
+    "t": "Is Comfort Systems USA Stock Increasing Your Market Risk?",
+    "l": "https://www.trefis.com/stock/fix/articles/627253/is-comfort-systems-usa-stock-increasing-your-market-risk/2026-11-20?.tsrc=rss",
+    "s": "trefis.com",
+    "p": "2026-11-20T11:31:33+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Today's big story: Will 2027 Be A 2022 Repeat For Stocks."
+  },
+  {
+    "i": "2bd9dd2c7a35",
+    "t": "The post earnings slide in Nvidia stock is getting uglier by the day",
+    "l": "https://finance.yahoo.com/markets/stocks/article/the-post-earnings-slide-in-nvidia-stock-is-getting-uglier-by-the-day-112801786.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:28:01+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "The Nvidia sell-off refuses to let up in the post Jensen Huang era."
+  },
+  {
+    "i": "42d04e044479",
+    "t": "AMD Trades at Triple Nvidia's Forward P/E as Regulatory Risks Mount",
+    "l": "https://finance.yahoo.com/technology/articles/amd-trades-triple-nvidias-forward-112653297.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:26:53+00:00",
+    "k": [
+      "AMD"
+    ],
+    "g": "compute",
+    "c": 1,
+    "r": 1,
+    "m": "The chipmaker disputes allegations involving U.S.-blacklisted Chinese companies and says it complies with export controls."
+  },
+  {
+    "i": "a5c461eeef0e",
+    "t": "Why Firefly Aerospace Stock Dropped This Week",
+    "l": "https://www.fool.com/coverage/market-movers/2026/11/20/why-firefly-aerospace-stock-dropped-this-week/?.tsrc=rss",
+    "s": "fool.com",
+    "p": "2026-11-20T11:23:02+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "There's more than one reason this space stock is falling to Earth."
+  },
+  {
+    "i": "d2c14604b1c3",
+    "t": "What Is Constellation Brands No Longer Telling Shareholders?",
+    "l": "https://www.trefis.com/stock/stz/articles/627278/what-is-constellation-brands-no-longer-telling-shareholders/2026-11-20?.tsrc=rss",
+    "s": "trefis.com",
+    "p": "2026-11-20T11:22:53+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Today's big story: Will 2027 Be A 2022 Repeat For Stocks."
+  },
+  {
+    "i": "af6e622513de",
+    "t": "Has Buying Bloom Energy Stock's Dips Paid Off?",
+    "l": "https://www.trefis.com/stock/be/articles/627181/has-buying-bloom-energy-stocks-dips-paid-off/2026-11-20?.tsrc=rss",
+    "s": "trefis.com",
+    "p": "2026-11-20T11:22:53+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Today's big story: Will 2027 Be A 2022 Repeat For Stocks."
+  },
+  {
+    "i": "242dbba914eb",
+    "t": "Treasuries Rally as Equity Futures, Gold Decline Amid Central Bank Policy Signals, Commerzbank Says",
+    "l": "https://finance.yahoo.com/economy/policy/articles/treasuries-rally-equity-futures-gold-112101894.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:21:01+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "Treasuries continue to rally, equity futures edge lower, oil prices fluctuate and gold prices declin"
+  },
+  {
+    "i": "16fbca952885",
+    "t": "Anthropic Stock Falls as Reality Hits Home",
+    "l": "https://finance.yahoo.com/m/f3f10f27-e4ae-3ed1-8b6c-5673257de3a2/anthropic-stock-falls-as.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:21:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "The market environment has changed since SpaceX’s own public listing in June, so get ready for some wild trading sessions."
+  },
+  {
+    "i": "ca7eae8eb858",
+    "t": "Applied Digital Fell Nearly 71%: Trim Or Add?",
+    "l": "https://www.trefis.com/stock/apld/articles/627217/applied-digital-fell-nearly-71-trim-or-add/2026-11-20?.tsrc=rss",
+    "s": "trefis.com",
+    "p": "2026-11-20T11:18:34+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "Today's big story: Will 2027 Be A 2022 Repeat For Stocks."
+  },
+  {
+    "i": "0e165ae93647",
+    "t": "Cathie Wood Buys $90 Million of Anthropic Stock While Trimming Nvidia",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-buys-90-million-111752335.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:17:52+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "ARK Invest buys into Anthropic's record IPO while reducing Nvidia exposure amid regulatory scrutiny."
+  },
+  {
+    "i": "9bdad13574f9",
+    "t": "3 AI Chip Stocks Trading Cheap Despite Rising Earnings Estimates",
+    "l": "https://finance.yahoo.com/technology/ai/articles/3-ai-chip-stocks-trading-111137714.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:11:37+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "AI linked semiconductor stocks have been hit hard even as earnings estimates keep climbing. This creates a rare setup where sentiment looks washed out while the fundamental story still leans on persistent AI demand. Inve"
+  },
+  {
+    "i": "172be6b88e08",
+    "t": "Perpetual Futures Are Surging in Popularity, But They Are Also Facing Mounting Controversy. Here's What Crypto Investors Need to Know.",
+    "l": "https://www.fool.com/investing/2026/11/20/perpetual-futures-are-surging-in-popularity-but-they-are-also-facing-mounting-controversy-heres-what-crypto-investors-need-to-know/?.tsrc=rss",
+    "s": "fool.com",
+    "p": "2026-11-20T11:10:01+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Perps are coming to the U.S., and not just for crypto."
+  },
+  {
+    "i": "0b0ec918fc56",
+    "t": "Gold Price Today on November 20, 2026",
+    "l": "https://www.usatoday.com/story/money/investing/2026/11/20/gold-price-on-november-20-2026/92874871007/?.tsrc=rss",
+    "s": "usatoday.com",
+    "p": "2026-11-20T11:09:15+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "As of November 20, 2026, the price of gold is $3,586.45 per ounce. See updated daily gold price, historical gold price charts, percentage changes and gold trends at USA TODAY Money."
+  },
+  {
+    "i": "bd4924f969b1",
+    "t": "AI Unease Undermines Wall Street Pre-Bell; Asia, Europe Off",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/ai-unease-undermines-wall-street-110827735.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:08:27+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Wall Street futures pointed moderately lower pre-bell Friday, as traders again balked at lofty valua"
+  },
+  {
+    "i": "1a914e688abe",
+    "t": "Robinhood Markets vs. SoFi Technologies: Which Financial Stock Is a Better Buy for 2027?",
+    "l": "https://www.fool.com/coverage/better-buy/2026/11/20/robinhood-markets-vs-sofi-technologies-which-financial-stock-is-a-better-buy-for-2027/?.tsrc=rss",
+    "s": "fool.com",
+    "p": "2026-11-20T11:08:01+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Robinhood's revenue jumped 51.6% last year, but SoFi trades at a lower forward multiple, and that gap could matter more than either growth story."
+  },
+  {
+    "i": "009d9f1ba22c",
+    "t": "Is Lowe's a Buy After Its Latest Earnings Report?",
+    "l": "https://www.fool.com/investing/2026/11/20/is-lowes-a-buy-after-its-latest-earnings-report/?.tsrc=rss",
+    "s": "fool.com",
+    "p": "2026-11-20T11:07:02+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "Both its sales and profitability figures required closer scrutiny."
+  },
+  {
+    "i": "689e24a0f53a",
+    "t": "Is Coca-Cola (KO) the Best Stock to Own During a Market Sell-Off?",
+    "l": "https://www.fool.com/investing/2026/11/20/is-coca-cola-ko-the-best-stock-to-own-during-a-market-sell-off/?.tsrc=rss",
+    "s": "fool.com",
+    "p": "2026-11-20T11:06:01+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "The world’s top beverage maker is a reliable safe-haven stock."
+  },
+  {
+    "i": "02ce6ae82f5a",
+    "t": "What iShares Global Tech ETF (IXN) Bought: Apple Leads on Wednesday",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/ishares-global-tech-etf-ixn-110523985.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:05:23+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "The fund added $118.6 million in new positions, led by a $23.0 million purchase of Apple, with 77 positions increased and none decreased."
+  },
+  {
+    "i": "656e05d2aae6",
+    "t": "UBS flags further euro downside as dollar strength keeps EUR/USD under pressure",
+    "l": "https://finance.yahoo.com/markets/currencies/articles/ubs-flags-further-euro-downside-110522289.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:05:22+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Investing.com -- The euro looks vulnerable to further near-term weakness against the dollar, UBS strategists say, and cut their EUR/USD forecasts for 2027."
+  },
+  {
+    "i": "10eacf6ac8a8",
+    "t": "iShares Russell 1000 Growth (IWF) Buys $15.6 Million More NVIDIA on Wednesday",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/ishares-russell-1000-growth-iwf-110519980.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:05:19+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "The fund added $132.8 million in new positions on Wednesday, led by a $15.6 million purchase of NVIDIA."
+  },
+  {
+    "i": "dc310d483b7f",
+    "t": "Alibaba Lost Offshore AI Chip Access Days Before Earnings. Its Capex Line Shows What That Costs",
+    "l": "https://www.tikr.com/blog/alibaba-lost-offshore-ai-chip-access-days-before-earnings-its-capex-line-shows-what-that-costs?ref=yahoofinance&tlnk=yf-261120-fxg4pjqm&.tsrc=rss",
+    "s": "tikr.com",
+    "p": "2026-11-20T11:05:17+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "Key TakeawaysAlibaba reported on Thursday, Nov. 19, the day a US rule cutting Chinese companies off from AI chips in data centers abroad took effect, and said the rule will weigh on cloud growth next year."
+  },
+  {
+    "i": "4b471197ce0c",
+    "t": "Direxion Daily S&P 500 Bull 3X (SPXL) Sells $16.2 Million of Apple on Nov. 18",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/direxion-daily-p-500-bull-110505993.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:05:05+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "The leveraged ETF sold $154.1 million of stock and bought nothing, cutting 382 positions while increasing none."
+  },
+  {
+    "i": "fabb30266793",
+    "t": "State Street Industrial Select Sector SPDR (XLI) Adds GE and RTX on Wednesday",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/state-street-industrial-select-sector-110501357.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:05:01+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "The fund bought $169.2 million of stocks, adding to 82 positions and selling none, with $11.3 million of General Electric the largest purchase."
+  },
+  {
+    "i": "05d87f0ea185",
+    "t": "Apple seems to be building its own AI agent. This could be bad news for Meta’s Muse.",
+    "l": "https://www.marketwatch.com/story/apple-seems-to-be-building-its-own-ai-agent-this-could-be-bad-news-for-metas-muse-8d9be2a7?mod=mw_rss_topstories",
+    "s": "marketwatch.com",
+    "p": "2026-11-20T11:05:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Shares in Apple climbed in premarket trading after the company posted a number of job openings seeking engineers to help build an agentic artificial-intelligence system."
+  },
+  {
+    "i": "5a700afd8e12",
+    "t": "What State Street Consumer Discretionary SPDR (XLY) Bought: Amazon Leads on Nov. 18",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/state-street-consumer-discretionary-spdr-110457372.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:04:57+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "The $22.83 billion fund bought $172.9 million of stock and sold nothing, lifting all 47 positions."
+  },
+  {
+    "i": "ac8ab24ffcf3",
+    "t": "What Capital Group Growth ETF (CGGR) Bought: Meta Leads on Wednesday",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/capital-group-growth-etf-cggr-110447110.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:04:47+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "Capital Group Growth ETF (CGGR) added $183.5 million in new buying across 88 positions on Wednesday, with Meta Platforms topping the list at $11.9 million."
+  },
+  {
+    "i": "0d23d14233e9",
+    "t": "iShares A.I. Innovation and Tech Active ETF (BAI) Buys $14.3 Million More AMD on Nov. 18",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/ishares-innovation-tech-active-etf-110443799.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:04:43+00:00",
+    "k": [
+      "AMD"
+    ],
+    "g": "compute",
+    "c": 0,
+    "r": 1,
+    "m": "The fund bought $155.6 million more than it sold, lifting 35 positions and trimming four, with Advanced Micro Devices its largest addition."
+  },
+  {
+    "i": "c054b6e3ec79",
+    "t": "What JPMorgan U.S. Tech Leaders ETF (JTEK) Bought: Meta Leads on Wednesday",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-u-tech-leaders-etf-110432251.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:04:32+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "The fund added $190.3 million across all 37 holdings, with Meta Platforms' $12.5 million purchase the largest."
+  },
+  {
+    "i": "daa6999caae8",
+    "t": "Capital Group Core Equity (CGUS) Buys $25.4 Million More Intel on Nov. 18",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/capital-group-core-equity-cgus-110426396.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:04:26+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "The ETF bought $25.4 million of Intel and $16.8 million of Meta while selling $37.6 million of Nvidia."
+  },
+  {
+    "i": "0e67a31f05a3",
+    "t": "State Street Comm Services SPDR (XLC) Buys $54.7 Million More META on Nov. 18",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/state-street-comm-services-spdr-110418329.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:04:18+00:00",
+    "k": [
+      "META"
+    ],
+    "g": "hyperscalers",
+    "c": 0,
+    "r": 1,
+    "m": "The fund added $264.0 million across all 22 of its positions, led by a $54.7 million increase in Meta Platforms."
+  },
+  {
+    "i": "567195bbbe19",
+    "t": "State Street SPDR Portfolio S&P 500 (SPYM) Adds Apple and Microsoft on Nov. 18",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/state-street-spdr-portfolio-p-110411294.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:04:11+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "The fund bought $429.4 million of stock, lifting 501 positions and trimming none, with Apple and Microsoft the largest additions."
+  },
+  {
+    "i": "c012bd255528",
+    "t": "State Street Tech Select Sector SPDR (XLK) Adds Apple and Microsoft on Nov. 18",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/state-street-tech-select-sector-110407505.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:04:07+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "The fund bought $434.1 million of stock, lifting all 76 positions, led by $74.4 million of Apple and $54.6 million of Microsoft."
+  },
+  {
+    "i": "22f763ff5a39",
+    "t": "Invesco NASDAQ 100 ETF (QQQM) Adds Apple and Microsoft on Nov. 18",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/invesco-nasdaq-100-etf-qqqm-110401447.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:04:01+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "The fund bought $180.7 million of stock, boosting 100 positions and trimming none."
+  },
+  {
+    "i": "fb354be15395",
+    "t": "Alphabet Faces New Scrutiny After Google Removes 19,000 YouTube Channels",
+    "l": "https://finance.yahoo.com/technology/articles/alphabet-faces-scrutiny-google-removes-110359578.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:03:59+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "Indonesia is demanding an explanation of Google's content moderation methods after a large-scale removal of government-supportive accounts."
+  },
+  {
+    "i": "0d1483ca38b7",
+    "t": "What SPDR Dow Jones Industrial Avg ETF (DIA) Bought: Goldman Leads on Nov. 18",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/spdr-dow-jones-industrial-avg-110357839.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:03:57+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "The fund added $536.8 million in new buying across 29 positions, led by a $57.0 million purchase of Goldman Sachs."
+  },
+  {
+    "i": "333f076e1f27",
+    "t": "INVESCO QQQ (QQQ) Sells Apple and Microsoft on Nov. 18",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/invesco-qqq-qqq-sells-apple-110342108.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:03:42+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "The fund sold $1.15 billion of stock and bought nothing, cutting 100 positions while adding none."
+  },
+  {
+    "i": "19186355d5a1",
+    "t": "SPDR S&P 500 ETF (SPY) Sells Apple and Microsoft on Nov. 18",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/spdr-p-500-etf-spy-110339564.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:03:39+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "The fund sold $11.62 billion of stock and bought nothing, cutting 502 positions while adding none."
+  },
+  {
+    "i": "d6aece52f2cb",
+    "t": "ETFs Are Net Sellers of Micron Technology (MU) on Nov. 18",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/etfs-net-sellers-micron-technology-110313234.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:03:13+00:00",
+    "k": [
+      "MU"
+    ],
+    "g": "memory_storage",
+    "c": 1,
+    "r": 1,
+    "m": "ETFs sold $126.6 million of Micron Technology on Wednesday, Nov. 18."
+  },
+  {
+    "i": "8bbadcb658bd",
+    "t": "Tesla (TSLA) Sees $136.7 Million in Net ETF Selling on Wednesday",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/tesla-tsla-sees-136-7-110310126.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:03:10+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "ETFs pulled $136.7 million from Tesla on Nov. 18, with 33 funds buying and 24 selling."
+  },
+  {
+    "i": "331e77027e2e",
+    "t": "ETFs Are Net Sellers of Johnson & Johnson (JNJ) on Wednesday",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/etfs-net-sellers-johnson-johnson-110303332.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T11:03:03+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "ETFs sold a net $144.2 million of Johnson & Johnson on Wednesday, Nov. 18."
+  },
+  {
+    "i": "c9dfb055f51e",
+    "t": "When Nvidia Falls 30%, How Far Does AMD Fall?",
+    "l": "https://www.trefis.com/stock/amd/articles/627166/when-nvidia-falls-30-how-far-does-amd-fall/2026-11-20?.tsrc=rss",
+    "s": "trefis.com",
+    "p": "2026-11-20T11:01:10+00:00",
+    "k": [
+      "AMD"
+    ],
+    "g": "compute",
+    "c": 0,
+    "r": 1,
+    "m": "Today's big story: Will 2027 Be A 2022 Repeat For Stocks."
+  },
+  {
+    "i": "73469958e18e",
+    "t": "‘Nvidia’s turmoil has me spooked’: Should I sell my stocks and buy real estate — or ride out the storm?",
+    "l": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
+    "s": "marketwatch.com",
+    "p": "2026-11-20T11:00:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Tempted to ditch stocks for property or CDs? Take a deep breath before making any sudden moves."
+  },
+  {
+    "i": "f6b6de9682da",
+    "t": "I’m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?",
+    "l": "https://www.marketwatch.com/story/were-in-our-50s-and-terrified-of-a-market-crash-should-we-put-400-000-of-our-1-million-retirement-savings-into-an-annuity-1943f240?mod=mw_rss_topstories",
+    "s": "marketwatch.com",
+    "p": "2026-11-20T11:00:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "“We have a house worth $450,000. Our combined annual income is $125,000.”"
+  },
+  {
+    "i": "2b4903023185",
+    "t": "Nvidia’s SEC Probe Isn’t Going Away, Even as a Blowout Quarter and a CEO Shake-Up Steal the Spotlight",
+    "l": "https://www.tikr.com/blog/nvidias-sec-probe-isnt-going-away-even-as-a-blowout-quarter-and-a-ceo-shake-up-steal-the-spotlight?ref=yahoofinance&tlnk=yf-261120-69rqpvg4&.tsrc=rss",
+    "s": "tikr.com",
+    "p": "2026-11-20T10:20:31+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "Key TakeawaysNVIDIA reported $115. 8 billion of quarterly revenue, up 103%, as the Wall Street Journal reported an SEC civil probe into whether its disclosures misled investors."
+  },
+  {
+    "i": "954bb96bc704",
+    "t": "My husband spent $80,000 on a boat, yet says my plans for a $100,000 pottery studio are irresponsible. Who’s right?",
+    "l": "https://www.marketwatch.com/story/my-husband-spent-80-000-on-a-boat-yet-says-my-plans-for-a-100-000-pottery-studio-are-irresponsible-whos-right-1a69436a?mod=mw_rss_topstories",
+    "s": "marketwatch.com",
+    "p": "2026-11-20T10:15:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "“We have $2.9 million in retirement accounts. That includes some money that we inherited about 10 years ago.”"
+  },
+  {
+    "i": "609a9937df7e",
+    "t": "Here’s what happened next after previous times the S&P 500 losing streak reached six sessions",
+    "l": "https://www.marketwatch.com/story/heres-what-happened-next-after-previous-times-the-s-p-500-losing-streak-reached-six-sessions-13ff7704?mod=mw_rss_topstories",
+    "s": "marketwatch.com",
+    "p": "2026-11-20T10:08:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "For markets, it’s been a week from hell — or, more accurately, the worst stretch for the S&P 500 since the “liberation day” tariffs of 2025 — but the history of six-session losing streaks actually points to some better n"
+  },
+  {
+    "i": "83bd314268e8",
+    "t": "How Bear Grylls lived in the harsh conditions of his own home on an abandoned island with ‘no power, no water, no roof’",
+    "l": "https://www.marketwatch.com/story/how-bear-grylls-lived-in-the-harsh-conditions-of-his-own-home-on-an-abandoned-island-with-no-power-no-water-no-roof-8c3e17c4?mod=mw_rss_topstories",
+    "s": "marketwatch.com",
+    "p": "2026-11-20T10:01:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Bear Grylls made an unusual choice with his wife, Shara Grylls decades ago—buying a starter home on an abandoned island instead of a London flat."
+  },
+  {
+    "i": "ed1bcd1a3553",
+    "t": "Poland opens door to CfD support for private small nuclear reactors",
+    "l": "http://www.intellinews.com/poland-opens-door-to-cfd-support-for-private-small-nuclear-reactors-487043/?.tsrc=rss",
+    "s": "intellinews.com",
+    "p": "2026-11-20T09:51:21+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Poland sees the state price guarantee backing its first nuclear plant as the basic support for small modular reactors too, a deputy energy minister said, wnp. pl reported on November 17."
+  },
+  {
+    "i": "2e577ef73d69",
+    "t": "Could Applied Digital Actually Climb 265%? Or Is B. Riley Totally Wrong?",
+    "l": "https://www.tikr.com/blog/could-applied-digital-actually-climb-265-or-is-b-riley-totally-wrong?ref=yahoofinance&tlnk=yf-261120-242qmwqj&.tsrc=rss",
+    "s": "tikr.com",
+    "p": "2026-11-20T09:43:19+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Key TakeawaysB. Riley still rates Applied Digital a Buy with a $51 target, 265% above the share price after a 72% fall from the stock’s May high."
+  },
+  {
+    "i": "54a1247f4fae",
+    "t": "72% Upside for GE Vernova? Bernstein Thinks So, and Here’s How It Gets to $1,298",
+    "l": "https://www.tikr.com/blog/72-upside-for-ge-vernova-bernstein-thinks-so-and-heres-how-it-gets-to-1298?ref=yahoofinance&tlnk=yf-261120-hqqgj6jr&.tsrc=rss",
+    "s": "tikr.com",
+    "p": "2026-11-20T09:40:56+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "Key TakeawaysBernstein reiterated its Outperform rating and $1,298 price target on GE Vernova on Nov. 17."
+  },
+  {
+    "i": "800d616f1fda",
+    "t": "Evercore’s $325 Target Says Vertiv’s Selloff Went Too Far",
+    "l": "https://www.tikr.com/blog/evercores-325-target-says-vertivs-selloff-went-too-far?ref=yahoofinance&tlnk=yf-261120-8wf76qh6&.tsrc=rss",
+    "s": "tikr.com",
+    "p": "2026-11-20T09:36:35+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "Key TakeawaysEvercore ISI kept its $325 price target on Vertiv on Nov. 18, 76% above the Nov."
+  },
+  {
+    "i": "d8d062edb478",
+    "t": "Nvidia Added $111 Billion of Supply Commitments in a Quarter, Mostly Memory. Micron Is Still Priced Like a Bust",
+    "l": "https://www.tikr.com/blog/nvidia-added-111-billion-of-supply-commitments-in-a-quarter-mostly-memory-micron-is-still-priced-like-a-bust?ref=yahoofinance&tlnk=yf-261120-v94hx7gc&.tsrc=rss",
+    "s": "tikr.com",
+    "p": "2026-11-20T09:34:18+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "Key TakeawaysNVIDIA’s supply commitments rose to $390 billion from $279 billion in one quarter, mostly for multi-year memory purchases. Micron trades at 4."
+  },
+  {
+    "i": "a17df8439fd7",
+    "t": "IREN Has Lost 70% in a Year. Bernstein Still Sees $55",
+    "l": "https://www.tikr.com/blog/iren-has-lost-70-in-a-year-bernstein-still-sees-55?ref=yahoofinance&tlnk=yf-261120-64g3hhvm&.tsrc=rss",
+    "s": "tikr.com",
+    "p": "2026-11-20T08:20:18+00:00",
+    "k": [
+      "IREN"
+    ],
+    "g": "datacenter_neocloud",
+    "c": 1,
+    "r": 1,
+    "m": "Key TakeawaysIREN has lost 70% of its value in a year, and Bernstein kept its Buy rating and $55 target on Nov. 16, about 278% above today’s price."
+  },
+  {
+    "i": "6015d47ee7a0",
+    "t": "SNDK Stock Falls Overnight: NAND Price Forecast Turns Bearish For 2027, According To TrendForce",
+    "l": "https://stocktwits.com/news-articles/markets/equity/sndk-stock-falls-overnight-nand-price-forecast-turns-bearish-for-2027-according-to-trend-force/cNbSJomR9Kh?.tsrc=rss",
+    "s": "stocktwits.com",
+    "p": "2026-11-20T08:19:23+00:00",
+    "k": [
+      "SNDK"
+    ],
+    "g": "memory_storage",
+    "c": 1,
+    "r": 1,
+    "m": "TrendForce cited rising supply and weaker Chinese SSD demand, despite U.S. AI-driven growth."
+  },
+  {
+    "i": "c4d4e98dcb9c",
+    "t": "Tech Valuation Plunge Brings Some Opportunities",
+    "l": "https://finance.yahoo.com/technology/ai/articles/tech-valuation-plunge-brings-opportunities-072702092.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T07:27:02+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "The sharp drop in the valuations of technology stocks, especially those linked to the artificial intelligence trade, is fueling debate over whether too much negativity has already been priced in."
+  },
+  {
+    "i": "0e649e7580c6",
+    "t": "Quanta Services (PWR) Shares Moved, So What Is Drawing Attention Now?",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/quanta-services-pwr-shares-moved-071251057.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T07:12:51+00:00",
+    "k": [
+      "PWR"
+    ],
+    "g": "grid_electrical",
+    "c": 1,
+    "r": 1,
+    "m": "Quanta Services (PWR) put income directly on the table, with its board approving a quarterly dividend of $0.13 per share, an 18% lift versus the October 2026 payout. Quanta Services shares have eased in recent sessions, "
+  },
+  {
+    "i": "4fbdefc99d6a",
+    "t": "NuScale Power (SMR) Stock Fair Value Falls As Analysts Weigh Liquidity Against Delays",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/nuscale-power-smr-stock-fair-071038428.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T07:10:38+00:00",
+    "k": [
+      "SMR"
+    ],
+    "g": "power_nuclear",
+    "c": 0,
+    "r": 1,
+    "m": "NuScale Power is back in focus after analysts marked down their fair value estimate from US$10.38 to US$8.59, which is reshaping the price target conversation around the stock. The shift comes as recent research weighs N"
+  },
+  {
+    "i": "26937d62e218",
+    "t": "CRWV, IREN, NBIS Stocks Extend Neocloud Selloff As Anthropic IPO Rally Fades – Michael Burry Takes A Victory Lap",
+    "l": "https://stocktwits.com/news-articles/markets/equity/crwv-iren-nbis-stocks-extend-neocloud-selloff-as-anthropic-ipo-rally-fades-michael-burry-takes-a-victory-lap/cNbSEj6R9KJ?.tsrc=rss",
+    "s": "stocktwits.com",
+    "p": "2026-11-20T06:21:09+00:00",
+    "k": [
+      "CRWV",
+      "IREN",
+      "NBIS"
+    ],
+    "g": "datacenter_neocloud",
+    "c": 1,
+    "r": 1,
+    "m": "An after-hours dip in Anthropic’s stock added pressure on AI-linked stocks."
+  },
+  {
+    "i": "a003a92a7da1",
+    "t": "Why Is CoreWeave (CRWV) Facing New Supply Chain Risk From A US Ban?",
+    "l": "https://finance.yahoo.com/technology/ai/articles/why-coreweave-crwv-facing-supply-061626242.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T06:16:26+00:00",
+    "k": [
+      "CRWV"
+    ],
+    "g": "datacenter_neocloud",
+    "c": 1,
+    "r": 1,
+    "m": "CoreWeave (NasdaqGS:CRWV) now faces a U.S. ban on Chinese optical transceivers that moves forward despite industry pushback. Major U.S. cloud providers that compete with CoreWeave are backing the restriction, aligning th"
+  },
+  {
+    "i": "1e9a7ffbf560",
+    "t": "Could Tesla Become The Next Lumentum? Gary Black Warns A SpaceX Stock Deal Could Send TSLA Down 25%",
+    "l": "https://stocktwits.com/news-articles/markets/equity/could-tesla-become-next-lumentum-gary-black-spacex-stock-deal-send-tsla-down/cNbSEW5R9K7?.tsrc=rss",
+    "s": "stocktwits.com",
+    "p": "2026-11-20T06:15:59+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Lumentum CEO Michael Hurlston said upcoming earnings and a merger filing could help win back shareholders."
+  },
+  {
+    "i": "5c92ecab340f",
+    "t": "What Is Teradyne (TER) Bringing To Edge AI With Omnyx Edge?",
+    "l": "https://finance.yahoo.com/technology/ai/articles/teradyne-ter-bringing-edge-ai-061542323.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T06:15:42+00:00",
+    "k": [
+      "TER"
+    ],
+    "g": "foundry_equipment",
+    "c": 0,
+    "r": 1,
+    "m": "Teradyne (NasdaqGS:TER) introduced Omnyx Edge, an inline board test platform for physical and edge AI devices. The new system extends the existing Omnyx family, which previously focused on high performance computing and "
+  },
+  {
+    "i": "9fac5c0e55b7",
+    "t": "Entergy And 2 More Nuclear Power Stocks To Watch",
+    "l": "https://finance.yahoo.com/energy/articles/entergy-2-more-nuclear-power-061330177.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T06:13:30+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "Fresh momentum for nuclear power is coming from policy, not hype. The US Senate just passed the Bipartisan American Affordability and Jobs Act, which aims to speed up permits and modernize transmission lines for energy p"
+  },
+  {
+    "i": "2c7239204327",
+    "t": "3 Undervalued Tech Stocks With P E Under 19",
+    "l": "https://finance.yahoo.com/technology/articles/3-undervalued-tech-stocks-p-051742708.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T05:17:42+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Anthropic’s huge IPO has soaked up attention and cash, yet it also reminded investors how crowded high profile AI trades have become. That is where quieter, cheaper looking tech stocks can start to matter. When sentiment"
+  },
+  {
+    "i": "60e0b6f578ac",
+    "t": "Can NuScale Power (SMR) Keep Trading Below Book Value?",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/nuscale-power-smr-keep-trading-051649409.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T05:16:49+00:00",
+    "k": [
+      "SMR"
+    ],
+    "g": "power_nuclear",
+    "c": 0,
+    "r": 1,
+    "m": "NuScale Power has seen its share price fall sharply over the past year, and that kind of drop puts fresh focus on what the company is actually worth on paper through its book value. With the stock back under the spotligh"
+  },
+  {
+    "i": "bfa3ecdf8181",
+    "t": "AI sell-off: These sectors held firm as tech slumped in Oct, Nov",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/ai-sell-off-sectors-held-044523371.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T04:45:23+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Investing.com -- Semiconductors, software, and memory stocks fell hard through October and early-November amid mounting questions over the long-term artificial intelligence trade."
+  },
+  {
+    "i": "7a955d097e46",
+    "t": "Micron CEO’s Nvidia message comes with warning for 2027",
+    "l": "https://www.thestreet.com/investing/micron-ceo-nvidia-warning-2027-supply-already-sold-out?.tsrc=rss",
+    "s": "thestreet.com",
+    "p": "2026-11-20T04:33:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "Micron’s chief says customers are locking in supply for years that haven’t started, a shift that could change how investors read the stock."
+  },
+  {
+    "i": "4c63f632edc8",
+    "t": "Nvidia Just Raised Its Supply Commitments to $390 Billion, Mostly for Memory. Micron Is the Memory Stock I'd Buy.",
+    "l": "https://www.fool.com/investing/2026/11/19/nvidia-just-raised-its-supply-commitments-to-usd390-billion-mostly-for-memory-micron-is-the-memory-stock-i-d-buy/?.tsrc=rss",
+    "s": "fool.com",
+    "p": "2026-11-20T04:27:02+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "If the AI chip giant is locking in memory for years, why is the memory maker's stock off around 42% from its peak?"
+  },
+  {
+    "i": "71fd8dfcf405",
+    "t": "Michael Burry Says He ‘Tried to Warn’ About Nvidia, CoreWeave: Shay Boloor Comes Back With ‘I Also Warned Everyone About Rain Once…’",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/michael-burry-says-tried-warn-033416913.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T03:34:16+00:00",
+    "k": [
+      "CRWV",
+      "NBIS"
+    ],
+    "g": "datacenter_neocloud",
+    "c": 0,
+    "r": 1,
+    "m": "Michael Burry clashed with Futurum Equities’ Shay Boloor on Thursday after the ‘Big Short’ investor said he had warned about the artificial intelligence stock sell-off ahead of time, a claim that was quickly disputed. Bu"
+  },
+  {
+    "i": "74c271dba9eb",
+    "t": "NRG Energy (NRG) Looks Repriced As Strong Earnings And 2027 Outlook Reset The Story",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/nrg-energy-nrg-looks-repriced-031206334.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T03:12:06+00:00",
+    "k": [
+      "NRG"
+    ],
+    "g": "power_nuclear",
+    "c": 1,
+    "r": 1,
+    "m": "Why NRG Energy’s latest earnings matter for shareholders NRG Energy (NRG) just delivered third quarter and year to date results that reshaped the profit picture, reaffirmed earnings guidance for 2026, outlined expectatio"
+  },
+  {
+    "i": "d9e944c921f5",
+    "t": "Tom Lee Says Anthropic Debut Selloff Feels Like ‘Max Pain’: Will Tech Rebound?",
+    "l": "https://beincrypto.com/tom-lee-anthropic-ipo-max-pain/?.tsrc=rss",
+    "s": "beincrypto.com",
+    "p": "2026-11-20T03:05:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "Tom Lee says the Anthropic debut selloff feels like max pain, as ANT slides from its open and the S&P 500 drops 2%."
+  },
+  {
+    "i": "f4418ee26ec5",
+    "t": "Michael Burry Says He Warned on AI With NVIDIA and CoreWeave: Big Short Déjà Vu?",
+    "l": "https://beincrypto.com/michael-burry-warned-nvidia-coreweave-nebius/?.tsrc=rss",
+    "s": "beincrypto.com",
+    "p": "2026-11-20T02:19:22+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Michael Burry says he warned investors about Nvidia, CoreWeave, and Nebius as shares fell, while holding bearish puts."
+  },
+  {
+    "i": "a62a1fec7a6d",
+    "t": "Nvidia Backed AI Data Center Demand Puts Schneider Electric Stock In Focus",
+    "l": "https://finance.yahoo.com/technology/ai/articles/nvidia-backed-ai-data-center-021420909.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T02:14:20+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "AI returned to center stage when Anthropic’s IPO created about $81.3b in equity value and attracted heavyweight backers such as Nvidia, Google, Amazon, and Microsoft. That level of capital directed toward compute and pow"
+  },
+  {
+    "i": "95ad5f6096db",
+    "t": "What Investors Overlooked Before IREN Fell 67%",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/investors-overlooked-iren-fell-67-021218970.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-20T02:12:18+00:00",
+    "k": [
+      "IREN"
+    ],
+    "g": "datacenter_neocloud",
+    "c": 0,
+    "r": 1,
+    "m": "If you had backed IREN on 19 November 2025, attracted by vertically integrated power assets and headline AI cloud contracts, the outcome would have been brutal. Holding IREN over the past year would have meant a 66.9% lo"
+  },
+  {
+    "i": "d7beb6714e75",
+    "t": "My wife is bankrolling her family’s trips to New York and it’s draining our savings. Should I ask her to stop?",
+    "l": "https://www.marketwatch.com/story/my-wife-pays-thousands-of-dollars-for-her-family-to-visit-from-argentina-how-can-i-convince-her-to-stop-9381351c?mod=mw_rss_topstories",
+    "s": "marketwatch.com",
+    "p": "2026-11-20T01:22:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "“Hotel rooms can cost as much as $400 per night.”"
+  },
+  {
+    "i": "6624e5addc42",
+    "t": "Michael Burry Says He Tried to Warn You About Nvidia, CoreWeave and Nebius. Here's What the 'Big Short' Investor Saw",
+    "l": "https://www.fool.com/investing/2026/11/19/michael-burry-says-he-tried-to-warn-you-about-nvidia-coreweave-and-nebius-stocks-here-s-what-the-big-short-investor-saw/?.tsrc=rss",
+    "s": "fool.com",
+    "p": "2026-11-20T01:03:36+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "The famed investor took a victory lap as AI stocks slid again on Thursday."
+  },
+  {
+    "i": "7d49d20c49c2",
+    "t": "Steve Eisman Says “Incentives Trump Ethics Every Time.” The Lesson for Today’s Investors",
+    "l": "https://247wallst.com/investing/2026/11/19/steve-eisman-says-incentives-trump-ethics-every-time-the-lesson-for-todays-investors/?.tsrc=rss",
+    "s": "247wallst.com",
+    "p": "2026-11-20T00:07:12+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "The warning signs of the 2008 crash sat in public data for years, yet banks, raters, and regulators all looked away. Steve Eisman explains what blinded them and four checks retirees can run before trusting the next polis"
+  },
+  {
+    "i": "5b8b2722c633",
+    "t": "After Anthropic’s ‘bittersweet’ IPO, here’s what lies ahead",
+    "l": "https://www.marketwatch.com/story/after-anthropics-bittersweet-ipo-heres-what-lies-ahead-8c32fdb7?mod=mw_rss_topstories",
+    "s": "marketwatch.com",
+    "p": "2026-11-19T23:56:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "Retail investors showed up, but Anthropic has so far failed to provide a broad lift to the technology sector."
+  },
+  {
+    "i": "c216f1469456",
+    "t": "NRG Energy (NRG) Stock Looks Undervalued As Asset Sale Reshapes Earnings",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/nrg-energy-nrg-stock-looks-232018965.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T23:20:18+00:00",
+    "k": [
+      "NRG"
+    ],
+    "g": "power_nuclear",
+    "c": 0,
+    "r": 1,
+    "m": "NRG Energy has seen its share price retreat sharply this year after a long stretch of strong gains, which puts a fresh spotlight on whether the current valuation still lines up with what its earnings can support. With ma"
+  },
+  {
+    "i": "76100766100d",
+    "t": "Core Scientific (CORZ) Stock May Trade At A Premium After AI Data Center Filing",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/core-scientific-corz-stock-may-231938032.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T23:19:38+00:00",
+    "k": [
+      "CORZ"
+    ],
+    "g": "datacenter_neocloud",
+    "c": 0,
+    "r": 1,
+    "m": "Core Scientific has shifted its story from Bitcoin mining to AI focused data centers, and the share price has fallen year to date. The question now is whether the current valuation makes sense when you line that price up"
+  },
+  {
+    "i": "ad8a38260368",
+    "t": "These were the only stocks that rose amid the stock market’s wipeout Thursday",
+    "l": "https://www.marketwatch.com/story/these-were-the-only-stocks-that-rose-amid-the-stock-markets-wipeout-thursday-1eaf32ba?mod=mw_rss_topstories",
+    "s": "marketwatch.com",
+    "p": "2026-11-19T23:11:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "All 11 sectors of the S&P 500 declined — 10 of them by more than 1% — but cybersecurity stocks bucked the weakness."
+  },
+  {
+    "i": "4971dc0a6c99",
+    "t": "Tesla’s Cybercab “Has Arrived” in Dallas. That’s a Growing Threat to Uber",
+    "l": "https://www.tikr.com/blog/teslas-cybercab-has-arrived-in-dallas-thats-a-growing-threat-to-uber?ref=yahoofinance&tlnk=yf-261120-m4qj6rjf&.tsrc=rss",
+    "s": "tikr.com",
+    "p": "2026-11-19T23:00:55+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Key TakeawaysTesla brought its Cybercab to Dallas on Nov. 19, two days after Alphabet’s Waymo paused freeway rides across its US markets."
+  },
+  {
+    "i": "770254a1ec5b",
+    "t": "Stock Market Today, Nov. 19: CoreWeave Falls as Profit-Taking Follows Anthropic IPO Pricing Above Range",
+    "l": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-coreweave-falls-as-profit-taking-follows-anthropic-ipo-pricing-above-range/?.tsrc=rss",
+    "s": "fool.com",
+    "p": "2026-11-19T22:53:05+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "Heavy trading in CoreWeave shares came as investors weighed financing costs and demand for AI cloud capacity, today, Nov. 19, 2026."
+  },
+  {
+    "i": "1a25ad04ca9a",
+    "t": "Is Johnson Controls Stock Engineered To Make You Money?",
+    "l": "https://www.trefis.com/stock/jci/articles/626792/is-johnson-controls-stock-engineered-to-make-you-money/2026-11-19?.tsrc=rss",
+    "s": "trefis.com",
+    "p": "2026-11-19T22:41:52+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Today’s big story: Could Anthropic Stock Fall 25."
+  },
+  {
+    "i": "561604389e15",
+    "t": "Is Tech in a Bear Market? 20 Tech Stocks Fall Up to 76% From Highs",
+    "l": "https://beincrypto.com/tech-stocks-bear-market-record-highs/?.tsrc=rss",
+    "s": "beincrypto.com",
+    "p": "2026-11-19T22:40:39+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "Kobeissi Letter data shows 20 tech stocks down 25% to 76% from record highs as the S&P 500 sheds over $6 trillion."
+  },
+  {
+    "i": "335074836455",
+    "t": "Morgan Stanley’s Vintage Values 2027: 5 Stocks Analysts See Climbing Further",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-vintage-values-2027-223235273.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T22:32:35+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Bloomberg reported on November 13, 2026, that one bank’s strategists expect the S&P 500 to reach 8,700 within 12 months. They also see earnings growth slowing to 11% in 2027 from 36% in 2026. That gap matters because slo"
+  },
+  {
+    "i": "052d1b480463",
+    "t": "Why Every Honeywell Investor Is Looking At This One Number",
+    "l": "https://www.trefis.com/stock/hon/articles/626822/why-every-honeywell-investor-is-looking-at-this-one-number/2026-11-19?.tsrc=rss",
+    "s": "trefis.com",
+    "p": "2026-11-19T22:20:15+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Today’s big story: Could Anthropic Stock Fall 25."
+  },
+  {
+    "i": "78cb9af84d22",
+    "t": "Marvell Technology (MRVL) Settles AI Networking Patent Dispute And Clears A Key Risk",
+    "l": "https://finance.yahoo.com/technology/ai/articles/marvell-technology-mrvl-settles-ai-220953345.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T22:09:53+00:00",
+    "k": [
+      "MRVL"
+    ],
+    "g": "compute",
+    "c": 0,
+    "r": 1,
+    "m": "Marvell Technology (NasdaqGS:MRVL) and Credo Technology Group reached a confidential settlement resolving their patent dispute over Active Electrical Cable technology used in data centers. The agreement concludes litigat"
+  },
+  {
+    "i": "a838f44036cb",
+    "t": "Oklo (OKLO) Wins DOE Clearance On A Narrative That Still Points To Higher Fair Value",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/oklo-oklo-wins-doe-clearance-220914556.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T22:09:14+00:00",
+    "k": [
+      "OKLO"
+    ],
+    "g": "power_nuclear",
+    "c": 0,
+    "r": 1,
+    "m": "Oklo (OKLO) just received U.S. Department of Energy clearance for unrestricted operations at its Groves Isotope Test Reactor, moving the facility into a research and training phase that could influence investor views. Ok"
+  },
+  {
+    "i": "da5e9359c4cb",
+    "t": "Whale Rock Dumps Western Digital. Buy the AI Storage Dip for 113% Upside.",
+    "l": "https://www.barchart.com/story/news/8926082/whale-rock-dumps-western-digital-buy-the-ai-storage-dip-for-113-upside?.tsrc=rss",
+    "s": "barchart.com",
+    "p": "2026-11-19T22:03:17+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "Whale Rock Capital has exited its entire Western Digital position, but the hedge fund's move contrasts with the company's strong financial performance."
+  },
+  {
+    "i": "8d12479a1b9b",
+    "t": "5 Energy Stocks to Benefit from Anthropic’s $1.5 Trillion Debut",
+    "l": "https://finance.yahoo.com/energy/articles/5-energy-stocks-benefit-anthropic-220000406.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T22:00:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Anthropic priced its IPO at $83 and raised $81.3 billion. Five energy stocks, from Caterpillar to Hut 8, sell into its gas generator and grid power needs."
+  },
+  {
+    "i": "f74fd1e23913",
+    "t": "Cracks in the \"AI\" Cap-Ex Boom Have Emerged",
+    "l": "https://finance.yahoo.com/technology/ai/articles/cracks-ai-cap-ex-boom-215000924.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T21:50:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "As a Share Investor, Should You Worry?"
+  },
+  {
+    "i": "432c173f4fc4",
+    "t": "Micron (MU) Dips More Than Broader Market: What You Should Know",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/micron-mu-dips-more-broader-214503318.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T21:45:03+00:00",
+    "k": [
+      "MU"
+    ],
+    "g": "memory_storage",
+    "c": 0,
+    "r": 1,
+    "m": "In the most recent trading session, Micron (MU) closed at $690.44, indicating a -2.1% shift from the previous trading day."
+  },
+  {
+    "i": "a638aa06b38d",
+    "t": "Keysight (KEYS) Tops Q4 Earnings and Revenue Estimates",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/keysight-keys-tops-q4-earnings-212002771.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T21:20:02+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "Keysight (KEYS) delivered earnings and revenue surprises of +7.44% and +2.82%, respectively, for the quarter ended October 2026. Do the numbers hold clues to what lies ahead for the stock?"
+  },
+  {
+    "i": "e4089cf646da",
+    "t": "Chip Stocks Waver On Anthropic IPO, AI Prospects, AMD Short",
+    "l": "https://finance.yahoo.com/m/cc197e22-85d3-3a44-97b9-12111805ce48/chip-stocks-waver-on.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T21:18:59+00:00",
+    "k": [
+      "AMD"
+    ],
+    "g": "compute",
+    "c": 0,
+    "r": 1,
+    "m": "Chip stocks wobbled Thursday as investors debated the strength of the artificial intelligence megatrend."
+  },
+  {
+    "i": "b69f76fca650",
+    "t": "Nvidia, AMD, Micron Sink as Anthropic Closes 17% Above IPO Price",
+    "l": "https://decrypt.co/383669/nvidia-amd-micron-ai-stocks-sink-anthropic-ipo-price?.tsrc=rss",
+    "s": "decrypt.co",
+    "p": "2026-11-19T21:12:06+00:00",
+    "k": [
+      "AMD"
+    ],
+    "g": "compute",
+    "c": 0,
+    "r": 1,
+    "m": "Anthropic shares opened 34% above their $83 IPO price before giving up much of the gain, while Nvidia, AMD and other AI stocks slid across Wall Street."
+  },
+  {
+    "i": "8efe8edf3fa7",
+    "t": "Senate Nears a Vote on a Landmark Permitting Bill. Here’s Who Could Benefit.",
+    "l": "https://finance.yahoo.com/m/6ba98f9f-3795-349c-9a75-f3d493a67943/senate-nears-a-vote-on-a.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T21:07:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "The bill could speed up pipeline and transmission projects. For electric utilities, the outlook is more mixed."
+  },
+  {
+    "i": "26a973b8bb8a",
+    "t": "Micron Technology to Report Fiscal First Quarter Results on December 17, 2026",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-report-fiscal-first-210100248.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T21:01:00+00:00",
+    "k": [
+      "MU"
+    ],
+    "g": "memory_storage",
+    "c": 1,
+    "r": 1,
+    "m": "BOISE, Idaho, Nov. 19, 2026 (GLOBE NEWSWIRE) -- Micron Technology, Inc. (Nasdaq: MU) announced today that it will hold its fiscal first quarter earnings conference call on Thursday, Dec. 17, 2026, at 2:30 p.m. Mountain t"
+  },
+  {
+    "i": "80cf5d42563f",
+    "t": "Could $1,000 in Oklo Stock Set You Up for Life by 2035?",
+    "l": "https://www.fool.com/investing/2026/11/19/could-in-oklo-stock-set-you-up-for-life-by-2035/?.tsrc=rss",
+    "s": "fool.com",
+    "p": "2026-11-19T20:50:02+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Oklo stock is as jittery as an electron. Can this volatile nuclear stock deliver explosive gains by 2035?"
+  },
+  {
+    "i": "e479d6383f63",
+    "t": "Retail Demand Wasn’t As Strong As It Was for SpaceX",
+    "l": "https://finance.yahoo.com/m/d4e3f8b5-3629-3bbd-9835-1d6d31f2e741/retail-demand-wasn%E2%80%99t-as.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T20:34:46+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": "Five big brokerage firms received a chunk of Anthropic shares at the IPO price of $83."
+  },
+  {
+    "i": "7a78d3ef29c1",
+    "t": "What Is The True Hidden Price Of Quanta Services Stock?",
+    "l": "https://www.trefis.com/stock/pwr/articles/626828/what-is-the-true-hidden-price-of-quanta-services-stock/2026-11-19?.tsrc=rss",
+    "s": "trefis.com",
+    "p": "2026-11-19T20:33:01+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Today’s big story: Could Anthropic Stock Fall 25."
+  },
+  {
+    "i": "2e751b1f923c",
+    "t": "Lumentum’s sales surged 137%—so why is its stock crashing?",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/lumentum-sales-surged-137-why-202833709.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T20:28:33+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "Investing.com and Yahoo Finance LLC may earn commission or revenue on some items through the links below."
+  },
+  {
+    "i": "9b800636e5b2",
+    "t": "Bernstein Sees 95% Upside in SpaceX, and the Reason Has Nothing to Do With Data Centers in Space",
+    "l": "https://www.tikr.com/blog/bernstein-sees-95-upside-in-spacex-and-the-reason-has-nothing-to-do-with-data-centers-in-space?ref=yahoofinance&tlnk=yf-261120-5m5hhv93&.tsrc=rss",
+    "s": "tikr.com",
+    "p": "2026-11-19T20:26:34+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Key TakeawaysBernstein kept its Buy rating and $268 price target on SpaceX on Nov. 19, 95% above the stock’s price after a 29% slide from its June high."
+  },
+  {
+    "i": "8e81086e9b5f",
+    "t": "Marvell Stock Halved Again. What Does Its Cash Say?",
+    "l": "https://www.trefis.com/stock/mrvl/articles/626972/own-marvell-its-cash-says-2022-not-2006/2026-11-19?.tsrc=rss",
+    "s": "trefis.com",
+    "p": "2026-11-19T20:25:57+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Today's big story: Could Anthropic Stock Fall 25."
+  },
+  {
+    "i": "65891e147a26",
+    "t": "Constellation Energy (CEG) Following Its Earnings Beat And Guidance Hike Looks Cheap Versus Fair Value",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/constellation-energy-ceg-following-earnings-201045909.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T20:10:45+00:00",
+    "k": [
+      "CEG"
+    ],
+    "g": "power_nuclear",
+    "c": 1,
+    "r": 1,
+    "m": "Constellation Energy (CEG) is back in focus after its third quarter report, with sales of US$9.55b and net income of US$1.84b, as well as raised full year adjusted operating earnings guidance. Constellation Energy’s thir"
+  },
+  {
+    "i": "59abf939b81b",
+    "t": "Oklo Just Dropped 22% in a Month. What Would It Take to Get OKLO Stock to $25?",
+    "l": "https://247wallst.com/investing/2026/11/19/oklo-just-dropped-22-in-a-month-what-would-it-take-to-get-oklo-stock-to-25/?.tsrc=rss",
+    "s": "247wallst.com",
+    "p": "2026-11-19T20:05:32+00:00",
+    "k": [
+      "OKLO"
+    ],
+    "g": "power_nuclear",
+    "c": 0,
+    "r": 1,
+    "m": "Oklo has no operating power plant, a $3.1 billion cash cushion, and a stock that keeps sliding while Wall Street's targets sit far above it. The real question is which milestones could change the story, and which could b"
+  },
+  {
+    "i": "f06ca678980f",
+    "t": "Short Seller Raises Questions About Nvidia's Former Top Sales Executive. $2.5 Billion China Chip Case In Focus.",
+    "l": "https://www.ibtimes.com/former-nvidia-sales-chief-china-ai-server-scheme-3809981?.tsrc=rss",
+    "s": "ibtimes.com",
+    "p": "2026-11-19T19:49:17+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 1,
+    "r": 1,
+    "m": "A short seller's report has drawn Nvidia's former top sales executive into scrutiny surrounding an alleged $2.5 billion China chip-diversion scheme. The reported personal connection remains unverified."
+  },
+  {
+    "i": "f5f12ccba857",
+    "t": "Samsung's $7 billion AI target could change everyday tech",
+    "l": "https://www.thestreet.com/investing/samsung-modine-manufacturing-7-billion-ai-target-cooling-data-center?.tsrc=rss",
+    "s": "thestreet.com",
+    "p": "2026-11-19T19:47:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Samsung’s next big AI move could benefit American consumers."
+  },
+  {
+    "i": "e1c29976ae2d",
+    "t": "Muddy Waters Has Issued a New Short Call on Nvidia. I Still Expect NVDA Stock to Grind Higher.",
+    "l": "https://www.barchart.com/story/news/8922932/muddy-waters-has-issued-a-new-short-call-on-nvidia-i-still-expect-nvda-stock-to-grind-higher?.tsrc=rss",
+    "s": "barchart.com",
+    "p": "2026-11-19T18:53:26+00:00",
+    "k": [
+      "NVDA"
+    ],
+    "g": "compute",
+    "c": 1,
+    "r": 1,
+    "m": "Muddy Waters issued a new short call on Nvidia, focusing on export-compliance risks around chips potentially reaching China, hours before the company reported $115.8 billion in revenue."
+  },
+  {
+    "i": "ce4bb9ece434",
+    "t": "Anthropic's Record IPO: Can It Lift AI Stocks?",
+    "l": "https://finance.yahoo.com/technology/ai/articles/anthropics-record-ipo-lift-ai-185300518.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T18:53:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Shares of Anthropic have priced above expectations, is this a positive catalyst for the rest of AI stocks?"
+  },
+  {
+    "i": "2a7c03ba1e46",
+    "t": "5 Best Affordable Blue Chip Stocks to Buy Now",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/5-best-affordable-blue-chip-185125200.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T18:51:25+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Blue-chip stocks are often associated with established businesses, strong financial positions, and the ability to generate returns over extended periods. However, even companies with substantial competitive advantages ca"
+  },
+  {
+    "i": "803c8d2b8286",
+    "t": "Nvidia, Intel, Micron and Dell Stocks Jump as Anthropic Massive IPO Sparks Rally",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/nvidia-intel-micron-dell-stocks-185029536.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T18:50:29+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Anthropic's Blockbuster IPO Sparks Fresh Rally in Nvidia, Intel, Micron and Dell"
+  },
+  {
+    "i": "829c1075d94d",
+    "t": "Dell’s AI Server Business Could Unlock a New Growth Phase in 2027",
+    "l": "https://247wallst.com/investing/2026/11/19/dells-ai-server-business-could-unlock-a-new-growth-phase-in-2027/?.tsrc=rss",
+    "s": "247wallst.com",
+    "p": "2026-11-19T18:33:11+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Dell has soared this year, then stumbled hard, and one prominent publication is already telling investors to sell. A closer look at the backlog, the earnings math, and the risks shows why a much higher price may still be"
+  },
+  {
+    "i": "a7a15933c711",
+    "t": "Qualcomm lays off 100s amid global restructuring, raises $4 billion",
+    "l": "https://www.thestreet.com/employment/qualcomm-lays-off-100s-amid-global-restructuring-raises-4-billion?.tsrc=rss",
+    "s": "thestreet.com",
+    "p": "2026-11-19T18:33:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Filings confirm hundreds of permanent job cuts as the chipmaker raises billions in debt and shifts its focus toward AI and data centers."
+  },
+  {
+    "i": "50d318122c86",
+    "t": "Could Investing $1,000 a Year in NuScale Power Make You Rich?",
+    "l": "https://www.fool.com/investing/2026/11/19/could-investing-1000-a-year-in-nuscale-power-make-you-rich/?.tsrc=rss",
+    "s": "fool.com",
+    "p": "2026-11-19T18:25:02+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "NuScale has ambitious plans for small-scale nuclear reactors."
+  },
+  {
+    "i": "6a0fbf0cf56f",
+    "t": "$100,000 in Dominion Energy and Exelon Could Pay $3,846 a Year in Dividends",
+    "l": "https://247wallst.com/investing/2026/11/19/100000-in-dominion-energy-and-exelon-could-pay-3846-a-year-in-dividends/?.tsrc=rss",
+    "s": "247wallst.com",
+    "p": "2026-11-19T16:47:43+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "One utility has raised its payout every year since a 2022 split, while the other has frozen its dividend for years and faces a merger vote. Which one deserves the bigger spot in a retiree's monthly income plan?"
+  },
+  {
+    "i": "3d15f5496468",
+    "t": "Vertiv's 800 VDC Push Boosts AI Prospects: Can It Beat APH and SMCI?",
+    "l": "https://finance.yahoo.com/technology/ai/articles/vertivs-800-vdc-push-boosts-164600968.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T16:46:00+00:00",
+    "k": [
+      "SMCI",
+      "VRT"
+    ],
+    "g": "servers",
+    "c": 0,
+    "r": 1,
+    "m": "VRT's expanding 800 VDC portfolio and surging AI infrastructure demand fuel growth prospects amid stiff competition from Amphenol and Super Micro Computer."
+  },
+  {
+    "i": "725e39fa1da0",
+    "t": "Jacobs to Report Q4 Earnings: What to Expect From the Stock?",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/jacobs-report-q4-earnings-expect-164000419.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T16:40:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "J's fiscal Q4 earnings and revenues are expected to rise 20.6% and14.6%, respectively, fueled by AI infrastructure and data center demand."
+  },
+  {
+    "i": "7eaa623b93c6",
+    "t": "GE Vernova Is Down 34% From Its July High Despite 3 Guidance Raises. Is It Time to Buy?",
+    "l": "https://www.tikr.com/blog/ge-vernova-stock-down-35-percent-guidance-raises-buy?ref=yahoofinance&tlnk=yf-261119-9mr8jmc3&.tsrc=rss",
+    "s": "tikr.com",
+    "p": "2026-11-19T16:36:05+00:00",
+    "k": [
+      "GEV",
+      "VRT"
+    ],
+    "g": "grid_electrical",
+    "c": 1,
+    "r": 1,
+    "m": "Key TakeawaysGE Vernova (GEV:NYSE) is down 34% from its July high, even though it raised its 2026 guidance after each of its last three reports. The biggest drops came from outside the company, in selloffs that also hit "
+  },
+  {
+    "i": "b185567f4e0f",
+    "t": "A $24 Billion Fund Just Bought These 3 Stocks",
+    "l": "https://www.tikr.com/blog/a-24-billion-fund-just-bought-these-3-stocks-2?ref=yahoofinance&tlnk=yf-261119-m5jq8qw7&.tsrc=rss",
+    "s": "tikr.com",
+    "p": "2026-11-19T16:31:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Key TakeawaysPolen Capital’s three biggest new or added positions last quarter were Meta Platforms, EMCOR and Quanta Services, according to its 13F filed Nov. 13."
+  },
+  {
+    "i": "b4247445ee62",
+    "t": "XLU vs VPU: Which Utility ETF Gets More From the AI Power Rush?",
+    "l": "https://247wallst.com/investing/etf/2026/11/19/xlu-vs-vpu-which-utility-etf-gets-more-from-the-ai-power-rush/?.tsrc=rss",
+    "s": "247wallst.com",
+    "p": "2026-11-19T16:12:14+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Two cheap utility funds deliver nearly identical returns, yet they hold very different bets on who profits from data centers' hunger for electricity. The gap hides in how each fund treats its giants and its long tail of "
+  },
+  {
+    "i": "6f1316ef4e39",
+    "t": "Should Investors Buy, Sell or Hold MasTec Stock After Q3 Earnings?",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/investors-buy-sell-hold-mastec-160700501.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T16:07:00+00:00",
+    "k": [
+      "MTZ"
+    ],
+    "g": "grid_electrical",
+    "c": 0,
+    "r": 1,
+    "m": "Can MTZ's record backlog, surging Power Delivery growth and expanding data center opportunities offset segment weakness and a premium valuation?"
+  },
+  {
+    "i": "ca933e8b0da3",
+    "t": "NuScale Power Expands Everstar AI Use to Boost Project Efficiency",
+    "l": "https://finance.yahoo.com/technology/ai/articles/nuscale-power-expands-everstar-ai-155300140.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T15:53:00+00:00",
+    "k": [
+      "SMR"
+    ],
+    "g": "power_nuclear",
+    "c": 0,
+    "r": 1,
+    "m": "SMR expands Everstar's AI platform to streamline nuclear project workflows, reduce administrative tasks and accelerate SMR commercialization."
+  },
+  {
+    "i": "26c438a78a6f",
+    "t": "Bloom Energy Surpasses Its Industry in a Year: How to Play the Stock?",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/bloom-energy-surpasses-industry-play-153700334.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T15:37:00+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "BE's 57% stock rally, surging AI data center demand and strong earnings outlook boost its appeal, but premium valuation raises entry-point concerns"
+  },
+  {
+    "i": "38634c7348ec",
+    "t": "Quanta vs. Primoris: Which Infrastructure Stock Is the Better Buy?",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/quanta-vs-primoris-infrastructure-stock-153200778.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T15:32:00+00:00",
+    "k": [
+      "PRIM",
+      "PWR"
+    ],
+    "g": "grid_electrical",
+    "c": 0,
+    "r": 1,
+    "m": "Can PWR's record backlog, strong cash flow and rising earnings estimates outweigh PRIM's recovery potential in the race for infrastructure growth?"
+  },
+  {
+    "i": "e0a9f0b3c914",
+    "t": "What Erste Group Doubts About GE Vernova (GEV) Next Year",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/erste-group-doubts-ge-vernova-151756375.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T15:17:56+00:00",
+    "k": [
+      "GEV"
+    ],
+    "g": "grid_electrical",
+    "c": 0,
+    "r": 1,
+    "m": "We just published a list of the Analysts Turned Bearish on These 10 Stocks on Wednesday and GE Vernova (NYSE:GEV) ranked 7th on this list. Wall Street’s November opened with a sharp break for technology shares. On Novemb"
+  },
+  {
+    "i": "e01f0b9638c7",
+    "t": "The Concern Behind Erste Group’s Call on Eaton (ETN)",
+    "l": "https://finance.yahoo.com/markets/stocks/articles/concern-behind-erste-group-call-151651946.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T15:16:51+00:00",
+    "k": [
+      "ETN"
+    ],
+    "g": "grid_electrical",
+    "c": 0,
+    "r": 1,
+    "m": "We just published a list of the Analysts Turned Bearish on These 10 Stocks on Wednesday and Eaton (NYSE:ETN) ranked 8th on this list. Wall Street’s November opened with a sharp break for technology shares. On November 3,"
+  },
+  {
+    "i": "a76adcfe27dc",
+    "t": "Solenis and Vertiv Partner to Advance Liquid Cooling Management for AI Data Centers",
+    "l": "https://finance.yahoo.com/technology/ai/articles/solenis-vertiv-partner-advance-liquid-130000305.html?.tsrc=rss",
+    "s": "Yahoo Finance",
+    "p": "2026-11-19T13:00:00+00:00",
+    "k": [
+      "VRT"
+    ],
+    "g": "cooling_thermal",
+    "c": 0,
+    "r": 1,
+    "m": "Solenis, a leading global provider of fluid and water management solutions, today announced a strategic partnership with Vertiv (NYSE: VRT), a global leader in critical digital infrastructure, to help data center operato"
+  },
+  {
+    "i": "150419383434",
+    "t": "4 Stocks Analysts and Hedge Funds Surprisingly Prefer Over Tesla",
+    "l": "https://247wallst.com/investing/2026/11/19/4-stocks-analysts-and-hedge-funds-surprisingly-prefer-over-tesla/?.tsrc=rss",
+    "s": "247wallst.com",
+    "p": "2026-11-19T12:39:06+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Tesla keeps winning the headlines while its core profits shrink and its stock trades at a staggering multiple. Meanwhile, four quieter companies powering AI, advertising, and space are earning something Tesla can't: near"
+  },
+  {
+    "i": "80bb170b1bfd",
+    "t": "Are You Overpaying For Vertiv Stock Versus Its Rivals?",
+    "l": "https://www.trefis.com/stock/vrt/articles/626729/are-you-overpaying-for-vertiv-stock-versus-its-rivals/2026-11-19?.tsrc=rss",
+    "s": "trefis.com",
+    "p": "2026-11-19T12:08:04+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Today's big story: Could Anthropic Stock Fall 25."
+  },
+  {
+    "i": "3074911e40a1",
+    "t": "How Much Of Amphenol Stock Rides On One Market?",
+    "l": "https://www.trefis.com/stock/aph/articles/626802/how-much-of-amphenol-stock-rides-on-one-market/2026-11-19?.tsrc=rss",
+    "s": "trefis.com",
+    "p": "2026-11-19T11:26:35+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Today's big story: Could Anthropic Stock Fall 25."
+  },
+  {
+    "i": "2dfeeab13836",
+    "t": "Parker Hannifin Stock Is Waiting On One Answer",
+    "l": "https://www.trefis.com/stock/ph/articles/626843/parker-hannifin-stock-is-waiting-on-one-answer/2026-11-19?.tsrc=rss",
+    "s": "trefis.com",
+    "p": "2026-11-19T11:18:20+00:00",
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": "Today's big story: Could Anthropic Stock Fall 25."
+  },
+  {
+    "i": "72816d7a71a6",
+    "t": "Big Pharma, with eye on Anthropic, says AI is shrinking drug discovery timelines",
+    "l": "https://www.investing.com/news/stock-market-news/big-pharma-with-eye-on-anthropic-says-ai-is-shrinking-drug-discovery-timelines-5041287",
+    "s": "investing.com",
+    "p": null,
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": ""
+  },
+  {
+    "i": "9cc88b13f4c7",
+    "t": "HSBC upgrades Tesla, more than doubles target on SpaceX merger potential",
+    "l": "https://www.investing.com/news/stock-market-news/hsbc-upgrades-tesla-more-than-doubles-target-on-spacex-merger-potential-5041374",
+    "s": "investing.com",
+    "p": null,
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": ""
+  },
+  {
+    "i": "7cf963dd09d2",
+    "t": "Analysis-Scientists are learning more about the rare Ebola virus in Congo outbreak",
+    "l": "https://www.investing.com/news/stock-market-news/analysisscientists-are-learning-more-about-the-rare-ebola-virus-in-congo-outbreak-5041257",
+    "s": "investing.com",
+    "p": null,
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": ""
+  },
+  {
+    "i": "8b5ee7b02fb5",
+    "t": "Scout24 shares fall 6% as J.P. Morgan flags AI threat to property portals",
+    "l": "https://www.investing.com/news/stock-market-news/scout24-shares-fall-6-as-jp-morgan-flags-ai-threat-to-property-portals-5041347",
+    "s": "investing.com",
+    "p": null,
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": ""
+  },
+  {
+    "i": "7d0eef477f94",
+    "t": "Commerzbank CEO raises 2026 profit outlook as UniCredit takeover nears",
+    "l": "https://www.investing.com/news/stock-market-news/commerzbank-ceo-raises-2026-profit-outlook-as-unicredit-takeover-nears-5041313",
+    "s": "investing.com",
+    "p": null,
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": ""
+  },
+  {
+    "i": "189c3ba5ebe7",
+    "t": "Why is Oklo stock lower and volatile today?",
+    "l": "https://www.investing.com/news/stock-market-news/why-is-oklo-stock-lower-and-volatile-today-93CH-5041314",
+    "s": "investing.com",
+    "p": null,
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": ""
+  },
+  {
+    "i": "cc5ca1a3cd04",
+    "t": "’Black Friday’ brings consumer spending into focus for AI-rocked market",
+    "l": "https://www.investing.com/news/stock-market-news/black-friday-brings-consumer-spending-into-focus-for-airocked-market-5041258",
+    "s": "investing.com",
+    "p": null,
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": ""
+  },
+  {
+    "i": "abad2e584a7b",
+    "t": "Why is Eastman Chemical stock sliding today?",
+    "l": "https://www.investing.com/news/stock-market-news/why-is-eastman-chemical-stock-sliding-today-93CH-5041308",
+    "s": "investing.com",
+    "p": null,
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": ""
+  },
+  {
+    "i": "c2b7015a7ea4",
+    "t": "Robinhood faces shareholder challenge as SEC loosens proxy oversight",
+    "l": "https://www.investing.com/news/stock-market-news/robinhood-faces-shareholder-challenge-as-sec-loosens-proxy-oversight-5041256",
+    "s": "investing.com",
+    "p": null,
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 0,
+    "m": ""
+  },
+  {
+    "i": "d2ba2e4edc3f",
+    "t": "Why is SVRN stock sliding today?",
+    "l": "https://www.investing.com/news/stock-market-news/why-is-svrn-stock-sliding-today-93CH-5041243",
+    "s": "investing.com",
+    "p": null,
+    "k": [],
+    "g": "market_macro",
+    "c": 0,
+    "r": 1,
+    "m": ""
+  }
+]
