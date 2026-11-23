@@ -1,0 +1,160 @@
+{
+  "date": "2026-11-23",
+  "previous": "2026-11-20",
+  "headline": "A reported SEC probe of Nvidia's accounting gave semis their worst week in 25 years (Semis ETF -17.8% on five days) and pushed the Nasdaq 100 into a bear market, so the AI sell-off has turned from multiples to trust in the numbers.",
+  "regime": "Capitulation-grade risk-off: S&P -3.7% on the day and -8.6% on five (seven straight down days, fa4dcd770d7e), Nasdaq -10.0%, Semis ETF -10.6% on the day and -28.1% on the month, VIX 30. Nvidia fell 14% on a Reuters report of an SEC accounting probe (48ee83401e31) and neoclouds lost 22.3% on five days. The bottleneck trades held up best: cooling -9.9% and grid -11.3% on five days with POWL +3.9%, and the 10-year eased to 4.91%. Monday futures bounced hard (8aa8cc003363, 3cb5a6b96b53) and Morgan Stanley calls it a 'fat pitch' (777d6156866a), but nothing in the news yet resolves the accounting or financing questions.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 73,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "GE Vernova's gas-turbine slots are 80% sold through 2032 (e2953244c682); Oracle's gigawatt Shackelford campus is fully permitted (bdc1583b7a49)",
+        "SpaceX's $74bn of AI campuses push power, water and grid into focus (cf2e6d5f46fc); grids straining under data-centre load (54ff3be9f60e)",
+        "Cooling -9.9% and grid -11.3% on five days versus compute -19.6%; POWL +3.9% and a Zacks Strong Buy (8fed47d43b6e)",
+        "Against: SoftBank's $3.7bn power-equipment charge (e2953244c682); Baird cuts VRT to Neutral, target $320 to $200 (f8d92690dda5); power_nuclear -16.2% on five days, SMR -27.9%"
+      ],
+      "change": "unchanged",
+      "change_note": "Monday sketch from the digest alone produced this thesis independently (backlog plus relative strength). GEV backlog and Oracle permitting offset the SoftBank charge and VRT downgrade; held at 73."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 66,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "SpaceX adds ~500MW of AI compute a month, aiming for 1GW a month by end-2027 (8a28560cd7d6); Nvidia estimates keep rising (5228c3f50523)",
+        "Server makers asking for higher prices, HPE +6% (be67e5342218); Lumentum CEO says physics favours fiber (47730e3951ad)",
+        "Against: part of demand is vendor- or off-balance-sheet-financed: SpaceX sold $32bn of AI chip debt off its balance sheet (242058b8d07e), Citi sizes Nvidia-financed DRAM demand at 12% (d0a6c7476a68)"
+      ],
+      "change": "weaker",
+      "change_note": "-5: demand data is still strong, but today shows how much of it rests on financing structures that are now under scrutiny. In the Monday sketch it held only in a softer form."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 90,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "Chanos: CoreWeave needs '$4 of capital for every $1 of revenue' (9b369e6dfe07); Nadella: 'selling to one or two customers is not a business' (1a707069f719)",
+        "New US curbs threaten neoclouds' Southeast Asia business (2231e1c04381); WULF CEO won't sign a lease in a 'terrible market' (f296876325f5)",
+        "Segment -22.3% on five days, IREN -34.9%; quality gate drops CRWV, NBIS, IREN, CORZ, CIFR, WULF, APLD",
+        "Against: Monday premarket rally in CRWV, IREN, NBIS (2231e1c04381); Anthropic IPO signals demand for CRWV (7aae06a9b455)"
+      ],
+      "change": "stronger",
+      "change_note": "+3: worst segment again, with new regulatory curbs and prominent customer-concentration and capital-intensity critiques."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 38,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Citi: even a full stop to Nvidia-linked financing cuts DRAM demand only ~12% (d0a6c7476a68); Micron rebounding (08a17ae8b7f8); MU revenue past $130bn (25a87f32bf51)",
+        "Against: Morningstar sees a NAND bust for SanDisk (93c4a4cfa19c); memory -36.4% on the month, worst segment; ETFs net sellers of STX (3a55a5cd6605)"
+      ],
+      "change": "weaker",
+      "change_note": "-5: the Monday sketch did not produce this thesis; it survives mainly because it was carried forward. The DRAM case holds, NAND keeps weakening."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 64,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Hyperscalers -11.4% on five days, ORCL -19.3% and still fails the quality gate; ETFs net sellers of META and GOOGL (adabe827e2be, a98e2ae83673)",
+        "Against: Alphabet at ~18-19x forward with $200bn+ in SpaceX and Anthropic stakes (29b15a4897e8); MSFT -7.3%, best in the segment"
+      ],
+      "change": "unchanged",
+      "change_note": "No new capex or cash-flow data; ORCL weakness fits, Alphabet's valuation cuts against. Held."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 84,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "Semis' worst week in 25 years (8aa8cc003363); Nasdaq 100 in a bear market (66ad81709100); seven-day S&P losing streak (fa4dcd770d7e)",
+        "Bitcoin hit a two-year low with record ETF outflows (9817826d5b98); Buffett 'pin lies in wait for every bubble' (080fef1588c1)",
+        "Against: Morgan Stanley sees capitulation and a 'fat pitch' (777d6156866a); steep slides rebounded 91% of the time (064109a1fe94); 10-year down to 4.91%"
+      ],
+      "change": "weaker",
+      "change_note": "-5: the thesis has largely played out (Semis -28% on the month) and positioning looks washed out; rates are now easing, not rising."
+    },
+    {
+      "id": "nvidia-key-person-and-export-risk",
+      "title": "The Huang probe puts Nvidia, and China export rules, at risk",
+      "stance": "bearish",
+      "confidence": 82,
+      "segments": ["compute"],
+      "evidence": [
+        "Reuters: SEC probing Nvidia's accounting, stock -14% Friday (48ee83401e31); Singapore billings questioned (d4320f22ba53); NVDA -22.9% on five days",
+        "Huang's exit threatens the China turnaround (5bf44922048c)",
+        "Against: Trump administration pushes Huang's reinstatement, NVDA bounces (7eef5a787308, e65a5efb5454)"
+      ],
+      "change": "stronger",
+      "change_note": "+4: an SEC accounting probe is more serious than short-seller reports; the reinstatement push only partly offsets it."
+    },
+    {
+      "id": "vendor-financed-ai-demand",
+      "title": "Vendor and off-balance-sheet financing is propping up AI demand",
+      "stance": "bearish",
+      "confidence": 62,
+      "segments": ["compute", "datacenter_neocloud", "memory_storage"],
+      "evidence": [
+        "SpaceX sold $32bn of AI chip debt structured off its balance sheet (242058b8d07e)",
+        "Citi models a stop to Nvidia-linked financing (d0a6c7476a68); SEC probe touches Nvidia's billings (d4320f22ba53)",
+        "Anthropic prospectus carries a ~$1tn compute commitment (4d989ae16997); Chanos on CoreWeave capital intensity (9b369e6dfe07)"
+      ],
+      "change": "new",
+      "change_note": "New: four separate items today point at the financing loop behind chip demand, which the Monday sketch surfaced as the main new risk."
+    },
+    {
+      "id": "political-risk-to-data-centres",
+      "title": "A Democratic Congress raises policy risk for data-centre build-outs",
+      "stance": "bearish",
+      "confidence": 60,
+      "segments": ["hyperscalers", "datacenter_neocloud", "grid_electrical", "power_nuclear"],
+      "evidence": [
+        "Oracle's permitting win shows the backlash 'hasn't won yet' (bdc1583b7a49); bipartisan permitting and nuclear bills last week",
+        "Trade-rule risk (neocloud curbs, 2231e1c04381) is covered by the export and neocloud theses"
+      ],
+      "change": "retired",
+      "change_note": "Retired: the Monday sketch found no evidence for it; it survived only by carry-forward, and permitting news argues against it."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "underweight", "note": "Cut from neutral: -19.6% on five days, NVDA -22.9% on an SEC accounting probe; AVGO held best." },
+    "foundry_equipment": { "stance": "neutral", "note": "-17.0% on five days; CAMT best; quality and cheap multiples intact (ONTO 13x)." },
+    "memory_storage": { "stance": "neutral", "note": "-36.4% on the month; DRAM resilient per Citi, NAND bust risk per Morningstar." },
+    "networking_optical": { "stance": "neutral", "note": "-19.8% on five days, AAOI -34%; LITE and ALAB growth intact but momentum broken." },
+    "servers": { "stance": "neutral", "note": "-16.2% on five days; JBL held best and server makers are raising prices (be67e5342218)." },
+    "power_nuclear": { "stance": "overweight", "note": "-16.2% on five days, but GEV slots sold through 2032; prefer cash-generative IPPs over SMR." },
+    "grid_electrical": { "stance": "overweight", "note": "Second-best segment (-11.3%), POWL +3.9%; demand is physical and backlogged." },
+    "cooling_thermal": { "stance": "overweight", "note": "Best segment (-9.9% on five days), though Baird cut VRT on valuation." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "Worst segment (-22.3%), IREN -34.9%; capital intensity and new SE Asia curbs." },
+    "hyperscalers": { "stance": "neutral", "note": "-11.4% on five days, ORCL -19.3%; Alphabet at ~19x with valuable stakes." },
+    "ai_software": { "stance": "underweight", "note": "-27.8% on the month; CRWD buying ZS for $43.9bn (95c0ffee526b) is the only bid." }
+  },
+  "risks": [
+    "The SEC probe finds misstated Nvidia revenue, forcing estimate cuts across the whole supply chain.",
+    "Vendor and off-balance-sheet financing dries up, cancelling orders at neoclouds first and suppliers next.",
+    "Monday's bounce fails and the Nasdaq 100 bear market deepens through a thin holiday week.",
+    "Ackman's recession warning (9650227cae8b) comes true and hits even backlogged power and grid names.",
+    "Anthropic breaks its IPO price and shuts the AI financing window."
+  ],
+  "watch": [
+    "Whether Monday's premarket rebound holds into the close, and VIX versus 30.",
+    "Any SEC or Nvidia statement on the accounting probe, and the Huang reinstatement decision.",
+    "HPE results (6da1be89e14e) and Dell Q4 (4f2abf991a5c) for server pricing and AI backlog.",
+    "PCE inflation and the 10-year versus 4.9% (e2ccfb97fd03).",
+    "Grid and cooling relative strength versus compute if the rebound broadens."
+  ]
+}

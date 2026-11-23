@@ -538,7 +538,7 @@ The 5-day alpha of -4.0% shows that the immediate directional call failed to ant
 
 <!-- ENTRY_END -->
 
-[2026-11-12 | AAON | Overweight | pending]
+[2026-11-12 | AAON | Overweight | -6.3% | +2.3% | 5d | resolved:2026-11-20]
 
 DECISION:
 **Rating**: Overweight
@@ -551,9 +551,12 @@ DECISION:
 
 **Time Horizon**: 3-6 months
 
+REFLECTION:
+The 5-day alpha of +2.3% relative to the S&P 500 confirms short-term relative strength despite the absolute price decline, though this window is too narrow to validate the long-term secular growth thesis. This performance undercuts the efficacy of my technical entry triggers, as the stock failed to hold its structural support during a period of market volatility. I will integrate a more rigorous assessment of recent internal control remediations into future entry criteria to avoid catching assets amid administrative overhang.
+
 <!-- ENTRY_END -->
 
-[2026-11-12 | DELL | Overweight | pending]
+[2026-11-12 | DELL | Overweight | -19.3% | -10.7% | 5d | resolved:2026-11-20]
 
 DECISION:
 **Rating**: Overweight
@@ -565,6 +568,9 @@ DECISION:
 **Price Target**: not provided
 
 **Time Horizon**: 3-6 months
+
+REFLECTION:
+The 5-day alpha of -10.7% confirms the immediate directional call was poorly timed, though this short window is insufficient to judge the 3-6 month fundamental thesis regarding the AI server backlog. The rapid decline undercuts the reliance on the 200 SMA as a reliable technical floor, suggesting the stock’s momentum was weaker than anticipated. Moving forward, I will prioritize a stricter stop-loss trigger based on relative strength rather than assuming long-term valuation support will prevent immediate downside volatility.
 
 <!-- ENTRY_END -->
 
@@ -743,6 +749,36 @@ DECISION:
 **Investment Thesis**: The conservative and neutral analysts provide the superior operational synthesis by highlighting the severe near-term risks posed by heavy downside momentum, an ATR of 66.41, and positioning well below both the 50-day and 200-day SMAs. While the aggressive analyst champions ASML's undeniable fundamental moat and EUV monopoly, entering a high-beta asset during an active technical breakdown exposes the portfolio to unnecessary capital impairment. Past decisions on ASML similarly warn against layering into a technical breakdown prematurely despite attractive valuation multiples. The thesis to hold would change to an accumulation stance upon a confirmed technical trend reversal and reclaim of key moving averages, or weaken further if macro headwinds and foundry CapEx retrenchment deepen the fundamental downtrend.
 
 **Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-23 | JBL | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Maintain a Hold position on JBL with zero new capital deployment, preserving the 10,000 USD in cash. Avoid aggressive dip-buying or premature test positions given the uncontained 14.21 ATR volatility and bearish technical trend. Instruct the trader to wait for structural stabilization above the 200-day SMA before considering any active exposure.
+
+**Investment Thesis**: The evidence remains finely balanced between undeniable fundamental value and severe macroeconomic/structural headwinds, justifying a Hold stance rather than forcing a directional bias. On the positive side, JBL boasts a high ROE of 66.37%, an attractive Forward P/E of 10.18, and a PEG ratio of 0.82, making it a compelling candidate for the AI infrastructure build-out. However, the conservative and neutral warnings regarding a heavy 268.34% debt-to-equity ratio, a 5.04% 10-year Treasury yield, thin 2.9% profit margins, and a weak technical posture (MACD at -12.75, trading well below the 200-day SMA) represent genuine balance-sheet vulnerabilities. Recent portfolio lessons with stocks like ASML and DELL demonstrate that entering long positions during primary downtrends without a confirmed technical reversal leads to rapid drawdowns. Consequently, capital preservation takes precedence until earnings projections validate low valuation metrics without raising balance sheet risks or until the technical trend proves a sustained reversal above the 200-day SMA.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-23 | TLN | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Maintain a zero position and a Hold stance on TLN. Wait for the stock to reclaim the 50-day moving average at $338.19 or test the lower Bollinger Band support at $316.48 before deploying any of the available $10,000.00 USD cash balance over a 3-6 month time horizon.
+
+**Investment Thesis**: The investment thesis is built on the synthesis of the risk debate, where the aggressive analyst's thematic optimism is neutralized by the conservative analyst's legitimate balance sheet concerns. While the company benefits from long-term secular growth driven by AI data center power contracts and a compelling forward P/E, the severe structural vulnerabilities—highlighted by a 596.9% Debt-to-Equity ratio, a current ratio of 0.89, a trailing net loss of $254 million, and ongoing insider selling between $345 and $382—create too much near-term risk. Furthermore, the technical breakdown below both the 50-day and 200-day moving averages alongside high volatility (ATR of 20.13) confirms that institutional distribution is currently active. Previous lessons from ASML and DELL demonstrate that relying solely on valuation support without a confirmed technical trend reversal leads to immediate downside volatility. Therefore, preserving capital and maintaining a Hold stance is the most disciplined approach until balance sheet stabilization or a clear technical reversal materializes. What would change this thesis is a decisive reclaim of the 50-day SMA signalling a trend change, or an adverse regulatory ruling/interest rate spike that further compromises the heavy debt load.
+
+**Price Target**: 367.31
 
 **Time Horizon**: 3-6 months
 

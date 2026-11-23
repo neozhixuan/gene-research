@@ -62,3 +62,6 @@ date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-11-20,HPE,new,servers,45.49,645.04,447.48,Hold,Hold,Hold
 2026-11-20,ASML,recheck,foundry_equipment,1356.2,645.04,447.48,Hold,Hold,Hold
 2026-11-20,MRVL,new,compute,138.47,645.04,447.48,,,
+2026-11-23,JBL,new,servers,225.77,608.45,400.06,Hold,Hold,Hold
+2026-11-23,TLN,recheck,power_nuclear,332.92,608.45,400.06,Hold,Hold,Hold
+2026-11-23,MTZ,new,grid_electrical,144.71,608.45,400.06,,,

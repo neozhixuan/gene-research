@@ -184,16 +184,16 @@
   },
   "JBL": {
     "segment": "servers",
-    "added": "2026-10-26",
+    "added": "2026-11-23",
     "status": "dropped",
     "checks": [
       {
-        "date": "2026-10-26",
-        "rating": null,
+        "date": "2026-11-23",
+        "rating": "Hold",
         "kind": "new"
       }
     ],
-    "dropped": "2026-10-28",
+    "dropped": "2026-11-23",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "KLAC": {
@@ -250,6 +250,20 @@
       }
     ],
     "dropped": "2026-11-20",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
+  },
+  "MTZ": {
+    "segment": "grid_electrical",
+    "added": "2026-11-23",
+    "status": "dropped",
+    "checks": [
+      {
+        "date": "2026-11-23",
+        "rating": null,
+        "kind": "new"
+      }
+    ],
+    "dropped": "2026-11-23",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "MU": {
@@ -435,14 +449,21 @@
   "TLN": {
     "segment": "power_nuclear",
     "added": "2026-11-11",
-    "status": "active",
+    "status": "dropped",
     "checks": [
       {
         "date": "2026-11-11",
         "rating": "Overweight",
         "kind": "new"
+      },
+      {
+        "date": "2026-11-23",
+        "rating": "Hold",
+        "kind": "recheck"
       }
-    ]
+    ],
+    "dropped": "2026-11-23",
+    "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "TSM": {
     "segment": "foundry_equipment",

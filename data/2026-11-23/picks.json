@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-23",
+  "picks": [
+    { "ticker": "JBL", "segment": "servers", "why": "Jabil trades at 10.2x forward with a 6% FCF yield and 29% revenue growth, and was the best server name on five days (-11.2%) as server makers start raising prices. It is a cash-generative way to own AI build-out demand without the accounting and financing questions now hanging over compute.",
+      "risk": "If vendor-financed AI orders are cut, its thin 5% operating margin leaves little cushion.", "thesis_ids": ["ai-demand-exceeds-supply", "vendor-financed-ai-demand"] },
+    { "ticker": "MTZ", "segment": "grid_electrical", "why": "MasTec is the only shortlist name in an overweight segment, at 11.8x forward with 30% revenue growth from transmission and data-centre construction. It is a direct play on grid as the binding constraint, now 67% off its high.",
+      "risk": "A 67% drawdown and 5% operating margin may signal company-specific execution or margin problems rather than just the AI sell-off.", "thesis_ids": ["power-is-the-binding-constraint"] }
+  ],
+  "passed_on": [
+    { "ticker": "ONTO", "reason": "Top score and cheap at 13x, but foundry equipment is neutral and already covered by AMAT." },
+    { "ticker": "CLS", "reason": "9x forward but a 3% FCF yield; JBL is the stronger cash-flow pick in servers." },
+    { "ticker": "ALAB", "reason": "25x forward with ~0% FCF yield in a broken-momentum segment." },
+    { "ticker": "LITE", "reason": "No free cash flow and tangled in the Marvell bid; optical is neutral." },
+    { "ticker": "CAMT", "reason": "Small and in a neutral segment already covered." },
+    { "ticker": "NOW", "reason": "AI software is underweight." }
+  ]
+}

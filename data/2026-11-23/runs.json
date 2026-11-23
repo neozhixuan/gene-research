@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "JBL",
+    "segment": "servers",
+    "kind": "new"
+  },
+  {
+    "ticker": "TLN",
+    "segment": "power_nuclear",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "MTZ",
+    "segment": "grid_electrical",
+    "kind": "new"
+  }
+]

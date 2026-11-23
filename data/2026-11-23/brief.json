@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-23",
+  "session": "US open Mon 23 Nov, 22:30 SGT",
+  "written_at": "2026-11-23T20:05:00+08:00",
+  "lean": "wait",
+  "bottom_line": "Most ratings predate the reported SEC probe of Nvidia's accounting, which hits the worldview's top-named risk, and the names are already 2-26% below where they were rated. Futures are up 2-3.5% tonight, but a gap-up bounce after the worst week since 2020 is tactical until it holds through a close.",
+  "what_changed": [
+    "S&P futures up ~2.6% and Nasdaq-100 futures up ~3.5% early Monday after the Nasdaq's ~10% weekly fall, its biggest since March 2020 (CP24, Invezz).",
+    "Since most ratings: Reuters reported an SEC probe of Nvidia's accounting (NVDA -14% Friday), the worldview's first named risk and its 'vendor financing' thesis.",
+    "Thin holiday week: PCE inflation Wednesday, markets shut Thursday, early close Friday (CP24, TipRanks).",
+    "No after-hours AI-supplier results found for tonight; Dell reports 24 Nov."
+  ],
+  "names": [
+    { "ticker": "AAON", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-12", "rated_price": 76.33, "last_price": 75.21, "since_rated": -0.015, "catalyst": "", "take": "Overweight segment and close to its rated price; cooling held best in the sell-off. The cleanest of the list if you act at all." },
+    { "ticker": "AMAT", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 380.95, "last_price": 302.63, "since_rated": -0.206, "catalyst": "Earnings 11 Feb", "take": "Down 21% and segment only neutral; the rating predates the Nvidia probe, so trust the worldview over the rating tonight." },
+    { "ticker": "ANET", "segment": "networking_optical", "rating": "Overweight", "rated_on": "2026-11-16", "rated_price": 197.29, "last_price": 167.62, "since_rated": -0.15, "catalyst": "", "take": "Neutral segment, -15% with no company news; tied to Nvidia sentiment, so wait for the bounce to hold." },
+    { "ticker": "DELL", "segment": "servers", "rating": "Overweight", "rated_on": "2026-11-12", "rated_price": 373.68, "last_price": 278.02, "since_rated": -0.256, "catalyst": "Earnings 24 Nov", "take": "Reports tomorrow; wait for the result and AI backlog comments rather than buy into the print." },
+    { "ticker": "ETN", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-18", "rated_price": 337.11, "last_price": 311.33, "since_rated": -0.076, "catalyst": "Earnings 2 Feb", "take": "Overweight segment, held roughly in line with QQQ; a candidate for a small start if the open holds." },
+    { "ticker": "MU", "segment": "memory_storage", "rating": "Overweight", "rated_on": "2026-11-19", "rated_price": 705.27, "last_price": 594.51, "since_rated": -0.157, "catalyst": "Earnings 17 Dec", "take": "Neutral segment and the memory thesis is down to 38; directly exposed to the Nvidia financing question. Wait." },
+    { "ticker": "PWR", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-17", "rated_price": 585.9, "last_price": 559.03, "since_rated": -0.046, "catalyst": "", "take": "Overweight segment and beating QQQ since rated; the rating and worldview agree." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 209.64, "last_price": 166.24, "since_rated": -0.207, "catalyst": "", "take": "Down 21% and Baird cut it to Neutral on valuation; segment still overweight, but let the downgrade settle first." },
+    { "ticker": "VST", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-19", "rated_price": 125.58, "last_price": 115.25, "since_rated": -0.082, "catalyst": "", "take": "Overweight segment, cash-generative IPP; fine for a small start only if the rebound holds past the first hour." }
+  ],
+  "trust": "Only 8 ratings are graded so far. Buy/Overweight picks average -4.5% vs QQQ: better than the screen's #1 (-20.0%) and random picks (-8.1%), but behind simply holding QQQ.",
+  "if_buying": [
+    "Overweight means a small starter position, not full size; tonight, half of that at most.",
+    "Prefer the names where rating and worldview agree: PWR, ETN, AAON, VST.",
+    "Skip DELL until after its 24 Nov results; hold off on MU, AMAT and ANET while the Nvidia probe is open.",
+    "Use limit orders: a 2-3% futures gap after a 10% week can reverse within the first hour."
+  ],
+  "sources": [
+    { "title": "US futures climb and world shares are mixed as big tech stocks fall in Asia (CP24)", "url": "https://www.cp24.com/news/money/2026/11/23/us-futures-climb-and-world-shares-are-mixed-as-big-tech-stocks-fall-in-asia/" },
+    { "title": "Nasdaq futures rise over 900 points: 5 things to know before Wall Street opens (Invezz)", "url": "https://invezz.com/news/2026/11/23/us-stock-futures-today-nvidia-ai-rebound-fed-november-23/" },
+    { "title": "Stock Market Today, Nov. 23: Markets See a Boost After Last Week's AI Selloff (TipRanks)", "url": "https://www.tipranks.com/news/stock-market-today-nov-23-markets-see-a-boost-after-last-weeks-ai-selloff" }
+  ]
+}
