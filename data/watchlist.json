@@ -280,31 +280,16 @@
   },
   "NRG": {
     "segment": "power_nuclear",
-    "added": "2026-10-22",
+    "added": "2026-11-24",
     "status": "dropped",
     "checks": [
       {
-        "date": "2026-10-22",
-        "rating": "Overweight",
+        "date": "2026-11-24",
+        "rating": "Hold",
         "kind": "new"
-      },
-      {
-        "date": "2026-10-27",
-        "rating": "Hold",
-        "kind": "recheck"
-      },
-      {
-        "date": "2026-10-30",
-        "rating": "Overweight",
-        "kind": "recheck"
-      },
-      {
-        "date": "2026-11-09",
-        "rating": "Hold",
-        "kind": "recheck"
       }
     ],
-    "dropped": "2026-11-09",
+    "dropped": "2026-11-24",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "NVDA": {
@@ -337,21 +322,16 @@
   },
   "ONTO": {
     "segment": "foundry_equipment",
-    "added": "2026-10-29",
+    "added": "2026-11-24",
     "status": "dropped",
     "checks": [
       {
-        "date": "2026-10-29",
-        "rating": "Overweight",
+        "date": "2026-11-24",
+        "rating": null,
         "kind": "new"
-      },
-      {
-        "date": "2026-11-06",
-        "rating": "Hold",
-        "kind": "recheck"
       }
     ],
-    "dropped": "2026-11-06",
+    "dropped": "2026-11-24",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "POWL": {

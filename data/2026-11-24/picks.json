@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-24",
+  "picks": [
+    {
+      "ticker": "NRG",
+      "segment": "power_nuclear",
+      "why": "NRG trades at 10.2x forward earnings with a 7% FCF yield and 24% revenue growth, the cheapest cash generator on the shortlist in an overweight segment the watchlist covers only through VST. It is a direct way to own power scarcity without SMR-style cash burn, and it led its segment over five days (+4.0%).",
+      "risk": "Power prices or capacity auctions soften as data-centre load forecasts get cut, and its debt from the LS Power deal weighs harder in a credit squeeze.",
+      "thesis_ids": ["power-is-the-binding-constraint"]
+    },
+    {
+      "ticker": "ONTO",
+      "segment": "foundry_equipment",
+      "why": "Onto grows revenue 88% with a 23% operating margin yet trades at 14.8x forward earnings, 51% off its high, as advanced-packaging inspection rides AI chip demand. It tops the screen and diversifies the watchlist away from AMAT's front-end exposure.",
+      "risk": "A pause in CoWoS and HBM packaging capex after the SEC probe or financing stress would hit its order book quickly.",
+      "thesis_ids": ["ai-demand-exceeds-supply"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "PRIM", "reason": "Grid is overweight, but revenue is shrinking 10% and operating margin is 3%." },
+    { "ticker": "CLS", "reason": "Servers are neutral and HPE's sell-off on a beat shows margin pressure; 8% operating margin." },
+    { "ticker": "ALAB", "reason": "30.7x forward and ~0% FCF yield; little downside protection." },
+    { "ticker": "CIEN", "reason": "Networking is neutral and the watchlist already has ANET." },
+    { "ticker": "LITE", "reason": "Strong growth but ~0% FCF yield; prefer ONTO for the hardware slot." },
+    { "ticker": "CAMT", "reason": "Same segment as ONTO with slower growth and a higher multiple." }
+  ]
+}

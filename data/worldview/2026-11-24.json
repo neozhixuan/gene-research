@@ -1,0 +1,147 @@
+{
+  "date": "2026-11-24",
+  "previous": "2026-11-23",
+  "headline": "Jensen Huang's reinstatement at Nvidia sparked a $3tn relief rally (Semis ETF +15%, Nasdaq +6.5%, best day since April 2025), but VIX rose to 28.8 and NVDA is already -5% premarket, so trust is repaired only on the surface.",
+  "regime": "Violent relief rally inside a correction: Semis ETF +15.0% on the day but -15.0% on the month, Nasdaq +6.5% / -8.0%, and VIX rose 8% to 28.8 even as stocks ripped. The leaders were the most beaten-down names (networking +16.5%, compute +15.2%, neoclouds +14.1%), while cooling (+1.7%) and grid (-0.7%) remain the only segments roughly flat on five days and cooling is still positive on the month. The SEC accounting probe has not been resolved (96a2c3e167db) and Goldman flags lingering uncertainty (6646bf0c7cc5); history says the week after a day like this is usually rocky (8c6d8e6d81b1).",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 74,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Cooling +0.4% on the month versus compute -20.4%; grid -5.7% on the month, the steadiest AI segments through the sell-off",
+        "Samsung in early talks to buy Modine for data-centre cooling (5d734285bd56); POWL fiscal Q4 sales $397m, net income $82m, upgrades (d025e5d5d77e)",
+        "BWXT raises guidance and gains AP1000 qualification (a9394c0cd136, 86e0e7ae559b); 'an unpowered data center is just a warehouse' (592940800d2c)",
+        "Against: power_nuclear -6.1% on five days with SMR -17.3%; Baird's VRT downgrade still stands (e1ea6b1f1ebf)"
+      ],
+      "change": "stronger",
+      "change_note": "+1: strategic M&A interest in cooling (Samsung/Modine) and POWL's results add real-economy evidence; the bottleneck names lagged the bounce, which is consistent with lower beta, not weaker demand."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 67,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "HPE posts its strongest growth ever and raises FY27 guidance on AI demand (5cbf604f9909, cdbce256de9e); Coherent CEO says 2027 is 'basically booked out' (5e02b0590338)",
+        "Applied Digital claims $41bn of contracted leases after a hyperscaler deal (23dac1252bca); Micron at 9.5x trailing earnings (22b16db80b34)",
+        "Against: HPE fell 9.6% despite the beat (af6f7423e003); Dell's gross margins have fallen five straight quarters on component costs (d481894d314a)"
+      ],
+      "change": "stronger",
+      "change_note": "+1: HPE's raise and Coherent's booked-out 2027 confirm demand, but the market did not reward HPE, so the gain is small."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 89,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "IREN faces a $6bn funding gap in 'more selective' capital markets (003b290855c2); IREN and APLD still down 50%+ on the year (9f91df4c7026)",
+        "HPE explicitly avoids financing 'neocloud or high-risk customers' (6956374c3154); Situational Awareness sold its whole CoreWeave stake (147c97688426)",
+        "Against: CRWV +22% and IREN +24% Monday (f52e9e35a51d, 488b278d264c); APLD's $41bn of leases (23dac1252bca)"
+      ],
+      "change": "weaker",
+      "change_note": "-1: the bounce was sharp, but the segment is still -6.7% on five days and a large vendor now refuses to finance neoclouds; credit stress is intact."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 40,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "Micron at 9.5x the $74 a share it earned in FY26 (22b16db80b34); ETFs bought $193m of MU Friday (4649068b5bb0)",
+        "Sandisk +15% on strong NAND demand (61c2c698abf4)",
+        "Against: analysts warn NAND pricing could weaken in 2027 (61c2c698abf4); memory still -24.3% on the month, SNDK -19.4% on five days"
+      ],
+      "change": "stronger",
+      "change_note": "+2: single-digit multiples on record earnings are the Buffett case; NAND risk keeps confidence below 50."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 64,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Hyperscalers rose only 6.1% on a 15% semis day and are -3.1% on five days",
+        "Trump threatens a 'tremendous tax' on overseas data centres (111109883bf5), adding cost risk to MSFT, AMZN, GOOGL",
+        "Against: ETFs net buyers of META Friday (ae46d1d4eb1b)"
+      ],
+      "change": "unchanged",
+      "change_note": "No new capex or cash-flow data; the overseas data-centre tax threat adds risk but is not yet policy. Held."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 80,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "Retail 'epic' buying of NVDA (7a87d31b745d); a single CEO decision moved the market $3tn (6a6f10118f93), showing how concentrated the trade is",
+        "VIX rose to 28.8 on an up day; BofA's Hartnett stays risk-off until spring (f5240617928d); Buffett's record cash pile (2d10accdfb97)",
+        "Against: 10-year flat at 4.92%; Semis still -15% on the month, so much of the froth is out"
+      ],
+      "change": "weaker",
+      "change_note": "-4: the washout was partly reversed in one session; concentration risk is obvious but positioning was cleaned out last week."
+    },
+    {
+      "id": "nvidia-key-person-and-export-risk",
+      "title": "The Huang probe puts Nvidia, and China export rules, at risk",
+      "stance": "bearish",
+      "confidence": 70,
+      "segments": ["compute"],
+      "evidence": [
+        "Huang reinstated unanimously 11 days after resigning (6a6f10118f93); NVDA +31% Monday (7a87d31b745d)",
+        "SEC probe still open, analysts float $92 downside (56d8bceada1a); NVDA -5% premarket as Goldman flags uncertainty (6646bf0c7cc5)",
+        "Nvidia 'now intertwined with Washington' (a3130b8367cc), a governance concern"
+      ],
+      "change": "weaker",
+      "change_note": "-12: the key-person risk is resolved, but the SEC probe and board-governance questions remain, so the thesis survives at lower confidence."
+    },
+    {
+      "id": "vendor-financed-ai-demand",
+      "title": "Vendor and off-balance-sheet financing is propping up AI demand",
+      "stance": "bearish",
+      "confidence": 62,
+      "segments": ["compute", "datacenter_neocloud", "memory_storage"],
+      "evidence": [
+        "HPE refuses to finance neocloud or high-risk customers (6956374c3154); IREN's $6bn gap (003b290855c2)",
+        "APLD's $41bn of 'contracted' revenue raises questions about how much is funded (23dac1252bca)"
+      ],
+      "change": "unchanged",
+      "change_note": "New items fit but add no new financing evidence at Nvidia; held at 62."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "underweight", "note": "+15.2% on the day but -20.4% on the month; the SEC probe is unresolved and NVDA is -5% premarket." },
+    "foundry_equipment": { "stance": "neutral", "note": "Flat on five days (+0.1%), CAMT +7.3%; cheap multiples (ONTO 14.8x) with strong growth." },
+    "memory_storage": { "stance": "neutral", "note": "MU at 9.5x trailing earnings; NAND pricing risk in 2027 keeps it neutral." },
+    "networking_optical": { "stance": "neutral", "note": "Led the bounce (+16.5%), ALAB +9.8% on five days; Coherent says 2027 is booked out." },
+    "servers": { "stance": "neutral", "note": "HPE beat-and-raise sold off 9.6%; margin squeeze from component costs; Dell reports tonight." },
+    "power_nuclear": { "stance": "overweight", "note": "-6.1% on five days, SMR -17.3%, but NRG +4.0% and BWXT raised guidance; prefer cash-generative IPPs." },
+    "grid_electrical": { "stance": "overweight", "note": "Steadiest after cooling (-5.7% on the month); POWL results and upgrades." },
+    "cooling_thermal": { "stance": "overweight", "note": "Only AI segment up on the month (+0.4%); Samsung's talks to buy Modine validate the niche." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "Bounce leaves it -6.7% on five days; IREN's $6bn funding gap, HPE won't finance neoclouds." },
+    "hyperscalers": { "stance": "neutral", "note": "Lagged the rally (+6.1%); overseas data-centre tax threat is a new cost risk." },
+    "ai_software": { "stance": "underweight", "note": "-28.2% on the month, weakest bounce (+4.1%)." }
+  },
+  "risks": [
+    "The SEC probe finds misstated Nvidia revenue, forcing estimate cuts across the whole supply chain.",
+    "The relief rally fails in a 'rocky' following week (8c6d8e6d81b1) with VIX still near 29.",
+    "Vendor and off-balance-sheet financing dries up, cancelling neocloud orders first and supplier orders next.",
+    "An overseas data-centre tax (111109883bf5) disrupts hyperscaler build plans and supplier order books.",
+    "Recession or a 2027 NAND price drop hits even cheap, backlogged names."
+  ],
+  "watch": [
+    "Dell Q3 results tonight (47aeef5938f6): AI server backlog and gross margin.",
+    "Whether NVDA's -5% premarket (6646bf0c7cc5) drags semis back, and whether VIX falls below 25.",
+    "Any SEC or Nvidia statement on the accounting probe.",
+    "Samsung–Modine deal terms and read-across to cooling valuations (5d734285bd56).",
+    "Core Scientific's ERCOT Batch Zero ruling on Texas data-centre power (6ebf730b8a24)."
+  ]
+}
