@@ -8,6 +8,11 @@
         "date": "2026-11-12",
         "rating": "Overweight",
         "kind": "new"
+      },
+      {
+        "date": "2026-11-25",
+        "rating": "Overweight",
+        "kind": "recheck"
       }
     ]
   },
@@ -198,17 +203,15 @@
   },
   "KLAC": {
     "segment": "foundry_equipment",
-    "added": "2026-11-09",
-    "status": "dropped",
+    "added": "2026-11-25",
+    "status": "active",
     "checks": [
       {
-        "date": "2026-11-09",
-        "rating": null,
+        "date": "2026-11-25",
+        "rating": "Overweight",
         "kind": "new"
       }
-    ],
-    "dropped": "2026-11-10",
-    "dropped_reason": "watchlist over 8; stalest non-positive name"
+    ]
   },
   "LITE": {
     "segment": "networking_optical",
@@ -395,21 +398,16 @@
   },
   "STX": {
     "segment": "memory_storage",
-    "added": "2026-10-30",
+    "added": "2026-11-25",
     "status": "dropped",
     "checks": [
       {
-        "date": "2026-10-30",
-        "rating": "Overweight",
+        "date": "2026-11-25",
+        "rating": null,
         "kind": "new"
-      },
-      {
-        "date": "2026-11-10",
-        "rating": "Hold",
-        "kind": "recheck"
       }
     ],
-    "dropped": "2026-11-10",
+    "dropped": "2026-11-25",
     "dropped_reason": "watchlist over 8; stalest non-positive name"
   },
   "TER": {

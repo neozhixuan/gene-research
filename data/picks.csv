@@ -67,3 +67,6 @@ date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-11-23,MTZ,new,grid_electrical,144.71,608.45,400.06,,,
 2026-11-24,NRG,new,power_nuclear,97.72,651.03,460.18,Hold,Hold,Hold
 2026-11-24,ONTO,new,foundry_equipment,190.99,651.03,460.18,,,
+2026-11-25,KLAC,new,foundry_equipment,133.65,638.1,426.75,Overweight,Buy,Overweight
+2026-11-25,AAON,recheck,cooling_thermal,75.05,638.1,426.75,Overweight,Buy,Overweight
+2026-11-25,STX,new,memory_storage,482.48,638.1,426.75,,,

@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-25",
+  "session": "US open Wed 25 Nov, 22:30 SGT",
+  "written_at": "2026-11-25T20:40:00+08:00",
+  "lean": "wait",
+  "bottom_line": "The ratings do not hold well tonight: Nasdaq-100 futures were down about 2% and S&P futures about 1% before the PCE inflation print, extending yesterday's 7.3% semis drop. The worldview's own risks (credit stress, hot inflation) are live, so wait for PCE and the first hour before acting on any Overweight.",
+  "what_changed": [
+    "Futures fell early Wednesday: Nasdaq-100 -2.1% to -2.6%, S&P 500 -0.9% to -1.5% depending on the hour, on AI worries ahead of October PCE; Korea -6.2%, Nikkei -2.8%. Touches the 'AI trade crowded' thesis and the PCE risk.",
+    "Dell beat, raised its full-year forecast to $202bn with a $132bn AI backlog, and gross margin near 21% vs ~19.2% expected; shares moved only ~1-4% after hours. Supports the demand thesis, but the market keeps selling beats.",
+    "HPE -16% on lower Cloud & AI margins and ADI -17% despite a beat show guidance, not results, is driving prices.",
+    "US markets close Thursday for Thanksgiving, so tonight's session is followed by a holiday and a thin Friday."
+  ],
+  "names": [
+    { "ticker": "AAON", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-25", "rated_price": 75.05, "last_price": 75.05, "since_rated": 0.0, "catalyst": "", "take": "Freshly re-rated in the steadiest segment; the best candidate if you act at all, small and on a limit." },
+    { "ticker": "AMAT", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 380.95, "last_price": 323.76, "since_rated": -0.15, "catalyst": "Earnings 11 Feb", "take": "Down 15% since rated with semis futures weak again; the segment is only neutral, so wait." },
+    { "ticker": "ANET", "segment": "networking_optical", "rating": "Overweight", "rated_on": "2026-11-16", "rated_price": 197.29, "last_price": 168.56, "since_rated": -0.146, "catalyst": "Earnings 9 Feb", "take": "Neutral segment, high-beta to the chip tape; wait for the sell-off to settle." },
+    { "ticker": "DELL", "segment": "servers", "rating": "Overweight", "rated_on": "2026-11-12", "rated_price": 373.68, "last_price": 295.28, "since_rated": -0.21, "catalyst": "Earnings 25 Feb", "take": "Rating and worldview disagree: servers are underweight and Dell holds $4.4bn of lower-grade receivables; trust the worldview and skip tonight despite the beat." },
+    { "ticker": "ETN", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-18", "rated_price": 337.11, "last_price": 319.27, "since_rated": -0.053, "catalyst": "Earnings 2 Feb", "take": "Overweight segment with a record backlog; a small limit order below the open is reasonable after PCE." },
+    { "ticker": "KLAC", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-25", "rated_price": 133.65, "last_price": 133.65, "since_rated": 0.0, "catalyst": "Earnings 28 Jan", "take": "Rated at yesterday's close, but semis futures point lower again; wait for a calmer open." },
+    { "ticker": "MU", "segment": "memory_storage", "rating": "Overweight", "rated_on": "2026-11-19", "rated_price": 705.27, "last_price": 629.79, "since_rated": -0.107, "catalyst": "Earnings 17 Dec", "take": "TrendForce's DRAM cut and BNP's 54% target cut hit the memory thesis directly; wait for the 17 Dec report." },
+    { "ticker": "PWR", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-17", "rated_price": 585.9, "last_price": 589.64, "since_rated": 0.006, "catalyst": "Earnings 18 Feb", "take": "The only name above its rated price and beating QQQ; holds up, but contractors like AGX and PRIM sold hard, so size small." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 209.64, "last_price": 173.82, "since_rated": -0.171, "catalyst": "Earnings 10 Feb", "take": "Down 17% since rated and trades with chips despite the cooling story; wait for it to stop falling." },
+    { "ticker": "VST", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-19", "rated_price": 125.58, "last_price": 120.72, "since_rated": -0.039, "catalyst": "", "take": "Overweight segment at ~7x operating cash flow; a small position after PCE fits the rating." }
+  ],
+  "trust": "Only 12 ratings are graded so far; the 71 picks average -8.0% vs QQQ, and Buy/Overweight picks (-5.9%) beat the screen's no-AI #1 (-20.7%) and random picks (-9.1%) but trail QQQ itself.",
+  "if_buying": [
+    "Wait for the PCE print and at least the first 30 minutes; futures are down about 1-2%.",
+    "Overweight means a small starter position; prefer the overweight segments (AAON, ETN, VST, PWR).",
+    "Skip DELL and MU tonight: their segments' outlook has weakened since they were rated.",
+    "Use limit orders; VIX above 30 and a holiday-thinned week make opening prints unreliable."
+  ],
+  "sources": [
+    { "title": "Stock market today: Dow, S&P 500, Nasdaq futures fall ahead of inflation data (Yahoo Finance)", "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html" },
+    { "title": "US Stock Index Futures Slide as AI Worries Fuel Tech Losses (Bloomberg)", "url": "https://www.bloomberg.com/news/articles/2026-11-25/us-stock-index-futures-slide-as-ai-worries-fuel-tech-losses" },
+    { "title": "Stock Market Today, Nov. 25: Wall Street Braces for Inflation Data (TipRanks)", "url": "https://www.tipranks.com/news/stock-market-today-nov-25-wall-street-braces-for-inflation-data-after-tech-led-selloff" },
+    { "title": "Dell lifts its annual sales forecast to $202 billion as AI server orders hit a record (Startup Fortune)", "url": "https://startupfortune.com/dell-lifts-its-annual-sales-forecast-to-202-billion-as-ai-server-orders-hit-a-record/" },
+    { "title": "Earnings Hints & Reports — November 24, 2026 — Evening Update (Everhint)", "url": "https://www.everhint.com/earnings-hints-reports-november-24-2026-evening-update-last-24-hours-pacific-time/" }
+  ]
+}

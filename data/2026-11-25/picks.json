@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-25",
+  "picks": [
+    {
+      "ticker": "KLAC",
+      "segment": "foundry_equipment",
+      "why": "KLA earns a 43% operating margin on 29% revenue growth and trades at 18.9x forward after falling 56% from its high, the Buffett-style quality name in the shortlist. Process control is spent on every advanced node whoever wins the chip race, so it leans on the demand thesis without depending on neocloud credit.",
+      "risk": "If TrendForce-style order pullbacks spread to foundry and memory capex budgets, 2027 tool orders fall and the multiple is not cheap enough to absorb it.",
+      "thesis_ids": ["ai-demand-exceeds-supply", "ai-trade-crowded-at-high-rates"]
+    },
+    {
+      "ticker": "STX",
+      "segment": "memory_storage",
+      "why": "Seagate trades at 7.4x forward earnings with a 40% operating margin and 61% revenue growth, 58% below its high. It is an HDD maker, so it sits outside the DRAM price cut that hit Micron, and tests whether the memory sell-off has overshot.",
+      "risk": "If hyperscalers cut storage capex alongside DRAM orders, peak-cycle earnings make the 7x multiple a trap.",
+      "thesis_ids": ["memory-supercycle-priced-as-peak"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "PRIM", "reason": "Only overweight-segment name, but revenue -10% and a 3% operating margin fail the quality bar." },
+    { "ticker": "CLS", "reason": "Servers now underweight; 8% operating margin and -16.8% on five days." },
+    { "ticker": "ALAB", "reason": "26x forward with ~0% FCF yield; being dumped (398f83de19ae)." },
+    { "ticker": "CIEN", "reason": "Networking already covered by ANET; lower margins than KLAC." },
+    { "ticker": "LITE", "reason": "~0% FCF yield; networking already covered." },
+    { "ticker": "CAMT", "reason": "Same segment as KLAC with no FCF data and a $4.4bn cap." }
+  ]
+}

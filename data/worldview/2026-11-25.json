@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-25",
+  "previous": "2026-11-24",
+  "headline": "The Huang relief rally reversed within a session: Semis ETF -7.3% with every AI hardware segment down 4-10%, VIX up 15% to 30.4, and CoreWeave bonds at record lows.",
+  "regime": "The correction has resumed: S&P 500 -0.5% (in correction territory, 35bdecbbaa11), Nasdaq -1.5%, Semis ETF -7.3% on the day and -21.2% on the month, VIX 30.35 (+65% on the month). Servers (-10.0%), networking (-9.3%) and neoclouds (-8.8%) led losses while cooling (-4.4% on the month) and grid (-10.3%) remain the least damaged AI segments. Credit is now the transmission channel: CoreWeave bonds at record lows (94e10ab53b31, 60e1975b9db2) and record CDS spreads for ORCL, GOOGL and CRWV (abcdb381e840), with money rotating into defensives (d04c2b829685).",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 73,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Cooling -4.4% and grid -10.3% on the month versus compute -26.0% and servers -27.4%",
+        "Dell vets backlog for customers' access to 'land and power' (cdd2413c594a); Eaton's record backlog and margins (3f135902498d); BWXT $8.56bn backlog (2503f911564c)",
+        "Evercore still sees 58% upside in VRT despite a target cut (782856eadfbb); Bloom Energy revenue +138% (85a7596865cb)",
+        "Against: power-construction peers sold hard, AGX -10.1% on a JPM cut (ddb4d64aa62c), NVT -8.4% (67c4c4574bdc), PRIM -17.4% on five days"
+      ],
+      "change": "weaker",
+      "change_note": "-1: relative strength held, but grid and power contractors now trade with the chip tape, so the segments are not a hiding place in a credit-led sell-off."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 64,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "Dell AI server sales more than doubled and it raised its annual forecast (cdd2413c594a, 1ba1685e1fe1); AAOI signs a four-year 800G supply deal with a Tier 1 hyperscaler (1ab93ccfc104)",
+        "Huang: Vera Rubin generates $40bn revenue per gigawatt vs $25bn for Grace Blackwell (3750767109de)",
+        "Against: Dell fell 4.4% on a blowout quarter (8597703a983e); TrendForce cuts DRAM pricing as Chinese cloud orders pull back (0c93535c5ef4); chips sold on renewed doubts over AI spending returns (5b511980573c)"
+      ],
+      "change": "weaker",
+      "change_note": "-3: Dell confirms order flow, but TrendForce's note is the first hard data point of softer demand from a cloud customer group."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 92,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "All four CoreWeave bond issues at record lows (94e10ab53b31, 60e1975b9db2); record CDS spreads on CRWV, ORCL, GOOGL (abcdb381e840)",
+        "Nscale may shelve its $35bn IPO (50b79da0489c); APLD -33% in a month despite a hyperscaler lease (24128f8b2b87); TeraWulf's Muskie has no tenant (c40cf59e73d2)",
+        "Neocloud segment -8.8% on the day, -13.6% on five days"
+      ],
+      "change": "stronger",
+      "change_note": "+3: Monday's bounce fully reversed and bond markets, not just equities, are now pricing neocloud default risk."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 34,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "STX at 7.4x forward earnings with 40% operating margin; Micron still at a single-digit multiple",
+        "Against: TrendForce lowers its DRAM pricing forecast (0c93535c5ef4); BNP cuts its MU target 54% (efcd9d248cd3); memory -29.6% on the month"
+      ],
+      "change": "weaker",
+      "change_note": "-6: a cut to DRAM price forecasts is exactly the evidence that the low multiples may be correct; the case now rests on HDD and NAND rather than DRAM."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 66,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Record CDS spreads on ORCL and GOOGL (abcdb381e840): credit markets now charge for hyperscaler capex",
+        "SpaceX's $32bn AI chip debt weighs on it (1689f0d78bcb); AI fears spreading to software loans with a 2028-29 debt wall (056afef49a5a)",
+        "Against: hyperscalers only -1.3% on the day, GOOGL -0.4% on five days"
+      ],
+      "change": "stronger",
+      "change_note": "+2: rising CDS spreads on GOOGL and ORCL show debt-funded capex is being priced, even if the equities held up."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 83,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "Semis -7.3% the day after +15%; VIX 30.35; S&P 500 in correction (35bdecbbaa11); Anthropic below its IPO price (f7d97f5a5074)",
+        "Rotation into defensives (d04c2b829685); 10-year still 4.9%",
+        "Against: JPMorgan sees S&P 8,200 and argues adoption, not capex, will carry the trade (75159a38f6ea)"
+      ],
+      "change": "stronger",
+      "change_note": "+3: the one-day reversal of the relief rally shows positioning was not cleaned out; buyers are not defending the highs."
+    },
+    {
+      "id": "nvidia-key-person-and-export-risk",
+      "title": "The Huang probe puts Nvidia, and China export rules, at risk",
+      "stance": "bearish",
+      "confidence": 70,
+      "segments": ["compute"],
+      "evidence": [
+        "NVDA extends losses as the Huang rally fades (923b22716354); Trump says 'not too late' for a US stake in Nvidia (db4df91a30f3)",
+        "Nvidia reinstated Huang 'amid compliance' focus (0777531a3a4d); new US tariffs on 16 partners (a9e58ccfd5c7)"
+      ],
+      "change": "unchanged",
+      "change_note": "No news on the SEC probe; a possible government stake adds governance risk but offsets with political protection. Held."
+    },
+    {
+      "id": "vendor-financed-ai-demand",
+      "title": "Vendor and off-balance-sheet financing is propping up AI demand",
+      "stance": "bearish",
+      "confidence": 66,
+      "segments": ["compute", "datacenter_neocloud", "memory_storage"],
+      "evidence": [
+        "Dell carries $4.4bn of lower-grade receivables while HPE won't finance neoclouds (f11f13bc682c)",
+        "Dell says its backlog is vetted for customers' access to capital (cdd2413c594a), an admission that some buyers lack it"
+      ],
+      "change": "stronger",
+      "change_note": "+4: the Dell receivables figure is the first quantified vendor-credit exposure in this run."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "underweight", "note": "-7.3% on the day, -26.0% on the month; the Huang rally has faded and the SEC probe is open." },
+    "foundry_equipment": { "stance": "neutral", "note": "-6.5% on the day but -6.3% on five days; high-margin toolmakers with net cash, CAMT flat on five days." },
+    "memory_storage": { "stance": "neutral", "note": "-29.6% on the month; TrendForce DRAM cut and BNP's MU downgrade, but HDD names trade at 7x forward." },
+    "networking_optical": { "stance": "neutral", "note": "-9.3% on the day; ALAB and CRDO dumped, but AAOI's four-year 800G deal and COHR insider buying." },
+    "servers": { "stance": "underweight", "note": "-10.0% on the day; Dell's beat sold off and it holds $4.4bn of lower-grade receivables." },
+    "power_nuclear": { "stance": "overweight", "note": "-4.4% on the day, -14.8% on the month; cash-generative IPPs (VST 7.2x operating cash flow) over SMR developers." },
+    "grid_electrical": { "stance": "overweight", "note": "-10.3% on the month, POWL +2.1% on five days; Eaton record backlog, but contractors (AGX, PRIM) sold hard." },
+    "cooling_thermal": { "stance": "overweight", "note": "Steadiest segment, -3.1% on five days and -4.4% on the month; MOD +1.1% on five days." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "-13.6% on five days; CoreWeave bonds at record lows, Nscale IPO in doubt." },
+    "hyperscalers": { "stance": "neutral", "note": "-1.3% on the day, but record CDS spreads on GOOGL and ORCL." },
+    "ai_software": { "stance": "underweight", "note": "-28.1% on the month; AI fears spreading to software loans (056afef49a5a)." }
+  },
+  "risks": [
+    "CoreWeave's bond rout becomes a default or covenant event, cutting orders through the whole supplier chain.",
+    "DRAM price cuts spread to HBM and NAND, breaking the memory earnings base.",
+    "Fresh US tariffs on 16 trading partners (a9e58ccfd5c7) raise component costs and squeeze hardware margins.",
+    "The SEC probe finds misstated Nvidia revenue, forcing estimate cuts across the chain.",
+    "Hot PCE inflation data keeps the 10-year near 4.9% and multiples under pressure."
+  ],
+  "watch": [
+    "PCE inflation data (d488dfd824e4) and whether the 10-year breaks below 4.85%.",
+    "CoreWeave bond prices and CDS on ORCL and GOOGL (abcdb381e840).",
+    "Whether VIX holds above 30 or retreats after the semis reversal.",
+    "Follow-through on TrendForce's DRAM cut ahead of Micron's December report (f6dc257ebe8e).",
+    "Whether cooling and grid hold their relative strength if semis fall again."
+  ]
+}

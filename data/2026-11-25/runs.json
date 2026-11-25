@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "KLAC",
+    "segment": "foundry_equipment",
+    "kind": "new"
+  },
+  {
+    "ticker": "AAON",
+    "segment": "cooling_thermal",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "STX",
+    "segment": "memory_storage",
+    "kind": "new"
+  }
+]
