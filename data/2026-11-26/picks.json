@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-26",
+  "picks": [
+    {
+      "ticker": "LITE",
+      "segment": "networking_optical",
+      "why": "Lumentum trades at 11.9x forward earnings with +136% revenue growth and a 23% operating margin after falling 58% from its high, and its CEO says there is no slowdown in orders (8c13f60ff2d1). Optical links are a physical bottleneck of the build-out, and the watchlist covers networking only with ANET.",
+      "risk": "A ~0% FCF yield means growth is capex-funded, so a hyperscaler capex cut would hit both orders and cash at once.",
+      "thesis_ids": ["ai-demand-exceeds-supply", "power-is-the-binding-constraint"]
+    },
+    {
+      "ticker": "LRCX",
+      "segment": "foundry_equipment",
+      "why": "Lam has the highest operating margin on the shortlist (37%) with +54% revenue growth at 15.1x forward earnings, 58% off its high. A net-cash toolmaker is the Buffett-style way to own chip capacity without neocloud credit risk.",
+      "risk": "Export curbs or a TSM pause on US fabs (8e6f3b9f563d) would cut equipment orders.",
+      "thesis_ids": ["ai-demand-exceeds-supply"]
+    }
+  ],
+  "passed_on": [
+    { "ticker": "CLS", "reason": "Servers is underweight; 8% operating margin and -21.1% on five days as the export halt hits server makers." },
+    { "ticker": "ALAB", "reason": "26.3x forward with ~0% FCF yield; less downside protection than LITE in the same segment." },
+    { "ticker": "NVDA", "reason": "Compute underweight; the SE Asia shipment halt and Huang testimony are unresolved." },
+    { "ticker": "CAMT", "reason": "Smaller, no FCF data; LRCX is the stronger foundry pick." },
+    { "ticker": "CIEN", "reason": "14% operating margin and 20.5x forward; LITE cheaper with faster growth." },
+    { "ticker": "NOW", "reason": "AI software is underweight." }
+  ]
+}

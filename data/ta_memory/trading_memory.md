@@ -646,7 +646,7 @@ The 5-day alpha of -7.7% marks a poor start to the trade, though this window is 
 
 <!-- ENTRY_END -->
 
-[2026-11-17 | HUBB | Hold | pending]
+[2026-11-17 | HUBB | Hold | +0.5% | +2.4% | 5d | resolved:2026-11-25]
 
 DECISION:
 **Rating**: Hold
@@ -659,9 +659,12 @@ DECISION:
 
 **Time Horizon**: 3-6 months
 
+REFLECTION:
+The +2.4% alpha over five days demonstrates short-term relative strength, though this window is too narrow to confirm the validity of the medium-term thesis. This outperformance suggests that the fundamental demand drivers may be starting to stabilize price action despite the broader technical headwinds identified in my analysis. Moving forward, I will quantify a specific "time-based" trigger for when technical support breaches should invalidate a fundamental value thesis, preventing prolonged waiting periods in high-conviction names.
+
 <!-- ENTRY_END -->
 
-[2026-11-17 | PWR | Overweight | pending]
+[2026-11-17 | PWR | Overweight | -6.2% | -4.3% | 5d | resolved:2026-11-25]
 
 DECISION:
 **Rating**: Overweight
@@ -673,6 +676,9 @@ DECISION:
 **Price Target**: not provided
 
 **Time Horizon**: 3-6 months
+
+REFLECTION:
+The 5-day alpha of -4.3% confirms a poor directional entry, though this window is too short to invalidate a 3-6 month secular thesis. The sharp drawdown undercuts the MACD-based "bottoming" signal, suggesting that reliance on oscillator stabilization failed to account for immediate macro volatility. For future setups, I will demand a confirmed price breakout above a clear technical pivot before initiating a pilot position, rather than attempting to catch a falling knife based on secondary indicators.
 
 <!-- ENTRY_END -->
 
@@ -834,6 +840,36 @@ DECISION:
 **Executive Summary**: Initiate a scaled position in KLAC to capture its elite fundamentals while respecting ongoing technical friction. Deploy a 5% portfolio allocation in staggered tranches—starting with a 1.5% toe-hold at current levels and laddering additional capital closer to support or upon short-term momentum confirmation—while widening the stop-loss to 122.00 to account for high ATR volatility.
 
 **Investment Thesis**: The decision is anchored by the synthesis of KLAC's robust fundamental strengths and its challenging technical posture. The bull case highlights elite metrics including an ROE of 91.38%, 42.64% operating margins, strong free cash flow generation, and structural demand for its yield management tools in AI chip fabrication, supported by a compelling forward P/E of 18.85. The bear case rightly notes genuine headwinds, such as the stock trading below its primary moving averages, ongoing insider selling, potential export control risks, and a wide 11.18 ATR that makes tight stops vulnerable to noise. Rather than an all-in aggressive purchase or a paralyzed wait-and-see stance, the neutral compromise offers the most robust strategy: layering into the name via tranches and widening the stop-loss to 122.00. This balances capital preservation with immediate exposure to a high-quality market leader oversold by broad sector contagion. The thesis would be invalidated if export controls severely impair forward revenue guidance or if structural macroeconomic deterioration breaks down fundamental support levels completely.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-26 | LITE | Sell | pending]
+
+DECISION:
+**Rating**: Sell
+
+**Executive Summary**: Initiate a short position in LITE at the current price of 476.58, sized at 1% of the portfolio. Maintain strict risk control with a tighter stop-loss at 550.00 to protect capital against high volatility, and avoid any long exposure until the technical downtrend reverses.
+
+**Investment Thesis**: The bearish case is decisively stronger, driven by severe operational losses including a TTM net loss of $6.58 billion, a momentum collapse with the stock trading well below its 50 and 200 SMAs, negative MACD momentum, and insider selling. While the aggressive bull case highlights a forward P/E of 11.87 and a forward EPS of 40.13, these metrics rely on optimistic assumptions in a high-interest-rate environment where the 10-year Treasury yield sits at 4.91% and merger uncertainty clouds the horizon. The moderate path advocated by the neutral observer confirms that shorting is the path of least resistance due to the broken technicals, while a tighter stop-loss at 550.00 appropriately manages the high ATR of 70.38. A fundamental shift to a positive stance would require verified technical stabilization—such as the RSI moving above 40 and the price reclaiming the 50 SMA—alongside a credible path to net profitability.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-11-26 | DELL | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Maintain a Hold rating on DELL with no current position. Await definitive technical support, a MACD crossover, or a confirmed reclamation of short-term moving averages before risking capital, while keeping cash ready to deploy if the price tests the lower Bollinger Band around $252.89.
+
+**Investment Thesis**: The debate demonstrates a stark divergence between a deep value bull case supported by a massive $132.3 billion AI server backlog and a cheap 9.69 forward P/E, versus a cautious bear case emphasizing severe institutional selling by Silver Lake, negative free cash flow of $462.5 million, Nvidia export constraints, and a decisive primary downtrend well below the 200-day SMA ($350.23). While the neutral analyst proposed a phased accumulation strategy using a 20% probe entry, the evidence remains balanced between structural growth potential and hostile technical momentum accompanied by high volatility (ATR of $38.04). Past lessons with high-beta tech names like ANET and PWR confirm that attempting to catch falling knives before technical stabilization leads to immediate drawdowns. Therefore, a disciplined Hold is warranted until the price proves its floor or the negative cash burn reverses. What would change this thesis is a confirmed technical reversal above the 10-day EMA accompanied by a bullish MACD crossover.
 
 **Price Target**: not provided
 

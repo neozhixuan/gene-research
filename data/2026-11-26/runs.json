@@ -1,0 +1,17 @@
+[
+  {
+    "ticker": "LITE",
+    "segment": "networking_optical",
+    "kind": "new"
+  },
+  {
+    "ticker": "DELL",
+    "segment": "servers",
+    "kind": "recheck"
+  },
+  {
+    "ticker": "LRCX",
+    "segment": "foundry_equipment",
+    "kind": "new"
+  }
+]

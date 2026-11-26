@@ -1,0 +1,147 @@
+{
+  "date": "2026-11-26",
+  "previous": "2026-11-25",
+  "headline": "The sell-off slowed into Thanksgiving (S&P -0.2%, VIX down to 27.1) but Nvidia halted AI server shipments to four Southeast Asian countries, turning export rules from a tail risk into lost shipments.",
+  "regime": "Still a correction, now losing momentum: S&P 500 -0.2% and Nasdaq -0.6% after an intraday reversal off the lows (6b2dab688c84), VIX eased 4% to 27.11 but is +47% on the month, Semis ETF -1.0% (-22.0% on the month). Memory (-3.2%) and hyperscalers (-1.6%) led losses while cooling (+1.1%), servers (+0.7%) and power (+0.1%) rose. Credit stress widened beyond neoclouds: Oracle bond yields hit 9% (245e01c2bbb3) and Alphabet's CDS is at a record (0f9b2519c446), though CoreWeave's GPU-backed loan got investment-grade ratings (e231c7770721). The Fed is priced 98% for a December hike with inflation at 3.8% (13b9be94b245), so falling prices have not yet made AI hardware cheap money.",
+  "theses": [
+    {
+      "id": "power-is-the-binding-constraint",
+      "title": "Power, grid and cooling, not chips, limit the AI build-out",
+      "stance": "bullish",
+      "confidence": 75,
+      "segments": ["power_nuclear", "grid_electrical", "cooling_thermal"],
+      "evidence": [
+        "Cooling +1.1% on the day and -3.2% on the month versus compute -26.9% and memory -34.2%",
+        "SpaceX will pay $3.6bn to upgrade the grid for one Arizona supercomputer (0512e7c451cc); Anthropic earns '$80 a year per watt' of GPUs (943fbeaa4e33)",
+        "GE Vernova raised revenue, margin and FCF guidance (3f37c9238fd1); VRT added to Zacks Strong Buy (98cd06e9f712); Morgan Stanley defends Bloom at $335 (9dc52252302a)",
+        "Against: analysts keep cutting GEV and NVT targets (cea838c31e0b, bc69afaf23b3); PRIM -13.1% on five days"
+      ],
+      "change": "stronger",
+      "change_note": "+2: the segments held up again on a down day, and a $3.6bn grid bill for a single site puts a hard price on power as the constraint."
+    },
+    {
+      "id": "ai-demand-exceeds-supply",
+      "title": "AI compute demand still outruns supply",
+      "stance": "bullish",
+      "confidence": 62,
+      "segments": ["compute", "servers", "networking_optical", "foundry_equipment"],
+      "evidence": [
+        "Dell record $132.3bn backlog (4ea625ef7709) and companies deferring PCs for AI servers (c3aad093541d); Lumentum CEO: 'we haven't seen any slowdown' (8c13f60ff2d1)",
+        "APLD signed an 18-year 150 MW hyperscaler lease (d7b37f172a3a); Astera expands Orion with Hyve (6e53808937f2)",
+        "Against: Nvidia halts server shipments to four SE Asian countries (dc3088114162, 52481589c4b7); unconfirmed SpaceX GPU rental price cuts and falling GPU rental prices (5e0a63d42920, 5f1843f2aee5); HPE inventory at an 18-quarter high (4ea625ef7709)"
+      ],
+      "change": "weaker",
+      "change_note": "-2: order books are intact, but the export halt removes a demand channel and falling GPU rental prices are the first sign supply is catching up."
+    },
+    {
+      "id": "leveraged-neoclouds-under-credit-stress",
+      "title": "Debt-funded neoclouds are where the AI cycle breaks first",
+      "stance": "bearish",
+      "confidence": 91,
+      "segments": ["datacenter_neocloud"],
+      "evidence": [
+        "IREN -80% in six months on financing uncertainty and falling GPU rental prices (5f1843f2aee5); CoreWeave's bonds still distressed (5e0a63d42920, 686ea764332f)",
+        "Neocloud segment -14.4% on five days, CORZ -23.0%",
+        "Against: CoreWeave's $4.5bn Meta-backed GPU loan won investment-grade ratings (e231c7770721, dd02de9e4950)"
+      ],
+      "change": "weaker",
+      "change_note": "-1: an investment-grade rating on the Meta-backed loan shows contracted capacity can still be financed; the thesis holds for uncontracted capacity."
+    },
+    {
+      "id": "memory-supercycle-priced-as-peak",
+      "title": "Memory is priced as if this is the peak of the cycle",
+      "stance": "bullish",
+      "confidence": 33,
+      "segments": ["memory_storage"],
+      "evidence": [
+        "MU 50.5% below its record close (d91b7ad1c020) with 86.8% gross margin last quarter (3eb6660dd3d7); MU products exempt from new tariffs (8a0b3f58d33f)",
+        "Nvidia-Kioxia flash rack test lifted MU and SNDK intraday (e786ad404364)",
+        "Against: memory -3.2% on the day, -34.2% on the month; Micron's Taiwan expansion faces labour disruption (a46614ab5021, 78fd712de4c8)"
+      ],
+      "change": "weaker",
+      "change_note": "-1: cheap gets cheaper; a peak 86.8% gross margin is itself the reason the market expects mean reversion."
+    },
+    {
+      "id": "hyperscaler-capex-squeezes-cash-flow",
+      "title": "Hyperscaler capex is eating their free cash flow",
+      "stance": "bearish",
+      "confidence": 70,
+      "segments": ["hyperscalers"],
+      "evidence": [
+        "Oracle bond yields hit 9% (245e01c2bbb3); Alphabet's CDS at a record (0f9b2519c446)",
+        "Amazon's total debt doubled in the year to Sep 30 (9c8f5c074365)",
+        "Hyperscalers -1.6% on the day, the worst segment after memory and foundry"
+      ],
+      "change": "stronger",
+      "change_note": "+4: 9% Oracle yields and Amazon's doubled debt quantify how much of the capex is borrowed."
+    },
+    {
+      "id": "ai-trade-crowded-at-high-rates",
+      "title": "The AI trade is crowded and rates are high",
+      "stance": "bearish",
+      "confidence": 80,
+      "segments": ["compute", "memory_storage", "ai_software"],
+      "evidence": [
+        "98% odds of a December Fed hike, inflation 3.8% (13b9be94b245, a172325bea70); 10-year 4.85%",
+        "Leveraged ETFs dumping NVDA (7185cf9122ec); SOXX sold $793m led by AMD (55ed616f0f01)",
+        "Against: Burry exits Nasdaq shorts and goes mostly long (86ce1234f980, 8bdf311c801c); Deutsche Bank sees a bottom soon and S&P 9,000 by end-2027 (dfeb4c9d7e2e); VIX -4.2%"
+      ],
+      "change": "weaker",
+      "change_note": "-3: contrarian buyers (Burry, Deutsche) are appearing and VIX is easing, a sign positioning is being cleaned out, though rates have not helped."
+    },
+    {
+      "id": "nvidia-key-person-and-export-risk",
+      "title": "The Huang probe puts Nvidia, and China export rules, at risk",
+      "stance": "bearish",
+      "confidence": 76,
+      "segments": ["compute"],
+      "evidence": [
+        "Nvidia told partners to halt AI server shipments to four SE Asian countries; Dell and Super Micro told buyers orders cannot ship (dc3088114162, 52481589c4b7, 4b67bcd54bb2)",
+        "Halt comes ahead of Huang's Congress testimony (52481589c4b7)",
+        "Against: NVDA was the best compute name on five days (-1.1%) and trades at 9x forward earnings"
+      ],
+      "change": "stronger",
+      "change_note": "+6: export risk became an actual shipment halt affecting Nvidia, Dell and Super Micro orders."
+    },
+    {
+      "id": "vendor-financed-ai-demand",
+      "title": "Vendor and off-balance-sheet financing is propping up AI demand",
+      "stance": "bearish",
+      "confidence": 67,
+      "segments": ["compute", "datacenter_neocloud", "memory_storage"],
+      "evidence": [
+        "CoreWeave's $4.5bn loan is collateralised by GPUs tied to a Meta contract (dd66d56034a2), so GPU value backs the debt",
+        "HPE sold off on its CFO's comments on who profits from the build-out (8a2897ae9f7c)"
+      ],
+      "change": "stronger",
+      "change_note": "+1: GPU-backed lending grows; falling GPU rental prices (5e0a63d42920) would erode that collateral."
+    }
+  ],
+  "segments": {
+    "compute": { "stance": "underweight", "note": "-26.9% on the month; Nvidia's SE Asia shipment halt and AMD -23.4% on five days." },
+    "foundry_equipment": { "stance": "neutral", "note": "-1.7% on the day; high-margin toolmakers, but TSM may make its Texas fab conditional (8e6f3b9f563d)." },
+    "memory_storage": { "stance": "neutral", "note": "Worst segment, -3.2% on the day, -34.2% on the month; cheap but margins at peak." },
+    "networking_optical": { "stance": "neutral", "note": "-11.2% on five days; LITE CEO sees no slowdown, COHR a Zacks Strong Buy." },
+    "servers": { "stance": "underweight", "note": "+0.7% on the day but export halt hits Dell and SMCI orders; HPE inventory at an 18-quarter high." },
+    "power_nuclear": { "stance": "overweight", "note": "-6.7% on five days; CCJ -1.4%, CEG closed its 4.4 GW gas sale; avoid SMR (lawsuit, 3cbdc3203818)." },
+    "grid_electrical": { "stance": "overweight", "note": "-10.6% on the month, HUBB +0.5% on five days; GEV raised guidance; $3.6bn SpaceX grid bill." },
+    "cooling_thermal": { "stance": "overweight", "note": "Steadiest segment, +1.1% on the day, -3.2% on the month; VRT a Zacks Strong Buy." },
+    "datacenter_neocloud": { "stance": "underweight", "note": "-14.4% on five days; IREN -80% in six months, GPU rental prices falling." },
+    "hyperscalers": { "stance": "neutral", "note": "-1.6% on the day; Oracle bonds at 9%, Alphabet CDS at a record." },
+    "ai_software": { "stance": "underweight", "note": "-28.6% on the month; PLTR +4.4% on five days is the exception." }
+  },
+  "risks": [
+    "Export curbs widen beyond four SE Asian countries, cutting Nvidia and server-maker shipments further.",
+    "A December Fed hike with 3.8% inflation pushes the 10-year back above 4.9%.",
+    "Falling GPU rental prices impair the collateral behind GPU-backed neocloud debt.",
+    "Oracle or Alphabet credit stress forces a capex cut, the direct hit to every supplier segment.",
+    "Micron's Taiwan labour dispute disrupts memory supply plans."
+  ],
+  "watch": [
+    "Black Friday half-day session: does the futures bounce (d4135876739e) hold for semis?",
+    "Scope of Nvidia's SE Asia halt and Huang's Congress testimony.",
+    "Oracle bond yields around 9% and Alphabet CDS.",
+    "Whether VIX falls below 25, which would support the Deutsche bottom call.",
+    "Cooling and grid relative strength versus the Semis ETF."
+  ]
+}

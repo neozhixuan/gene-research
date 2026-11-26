@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-26",
+  "session": "US open Fri 27 Nov, 22:30 SGT (half day, closes 13:00 ET; markets shut Thu 26 Nov for Thanksgiving)",
+  "written_at": "2026-11-26T20:15:00+08:00",
+  "lean": "small",
+  "bottom_line": "Most ratings still hold, but only as small starter positions: the nine Overweight names are mostly below their rated prices and the overweight segments (cooling, grid, power) held up best again. Friday is a thin half-day after a correction, and Nvidia's SE Asia shipment halt is a named worldview risk, so size small and don't chase the open.",
+  "what_changed": [
+    "US stocks are closed Thursday for Thanksgiving; Friday trades a half day to 13:00 ET (Newsweek, CME schedule).",
+    "Wednesday's close: S&P -0.2% and Nasdaq -0.6% after recovering from steeper intraday losses; VIX -4.2% to 27.1 (Yahoo live blog).",
+    "Nvidia halted AI server shipments to four SE Asian countries; Dell and Super Micro told buyers orders cannot ship. This hits the export-risk thesis directly.",
+    "Futures pointed higher into Black Friday before the holiday; no news dated after the Wednesday close turned up in searches.",
+    "Oracle bond yields hit 9% and Alphabet CDS at a record: the hyperscaler capex-credit risk is still building."
+  ],
+  "names": [
+    { "ticker": "AAON", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-25", "rated_price": 75.05, "last_price": 75.73, "since_rated": 0.009, "catalyst": "", "take": "Rated yesterday near today's price in the steadiest segment; a small start is consistent with the rating." },
+    { "ticker": "AMAT", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 380.95, "last_price": 311.18, "since_rated": -0.183, "catalyst": "Earnings 11 Feb", "take": "Down 18% since rated and the segment is neutral; the rating is two weeks stale, so I'd trust the neutral segment view and wait." },
+    { "ticker": "ANET", "segment": "networking_optical", "rating": "Overweight", "rated_on": "2026-11-16", "rated_price": 197.29, "last_price": 163.99, "since_rated": -0.169, "catalyst": "Earnings 9 Feb", "take": "Down 17% with the networking sell-off; neutral segment disagrees with the rating, so wait for the tape to stabilise." },
+    { "ticker": "ETN", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-18", "rated_price": 337.11, "last_price": 317.81, "since_rated": -0.057, "catalyst": "Earnings 2 Feb", "take": "Cheaper than when rated in an overweight segment with a record backlog; a small start fits." },
+    { "ticker": "KLAC", "segment": "foundry_equipment", "rating": "Overweight", "rated_on": "2026-11-25", "rated_price": 133.65, "last_price": 134.2, "since_rated": 0.004, "catalyst": "Earnings 28 Jan", "take": "Fresh rating, flat since; the segment is only neutral, so keep any position very small." },
+    { "ticker": "MU", "segment": "memory_storage", "rating": "Overweight", "rated_on": "2026-11-19", "rated_price": 705.27, "last_price": 601.25, "since_rated": -0.148, "catalyst": "Earnings 17 Dec", "take": "Down 15%, memory the worst segment and the memory thesis down to 33; wait for the 17 Dec report rather than buy before it." },
+    { "ticker": "PWR", "segment": "grid_electrical", "rating": "Overweight", "rated_on": "2026-11-17", "rated_price": 585.9, "last_price": 565.47, "since_rated": -0.035, "catalyst": "Earnings 18 Feb", "take": "Slightly below the rated price and ahead of QQQ; segment and rating agree, so a small start fits." },
+    { "ticker": "VRT", "segment": "cooling_thermal", "rating": "Overweight", "rated_on": "2026-11-13", "rated_price": 209.64, "last_price": 173.37, "since_rated": -0.173, "catalyst": "Earnings 10 Feb", "take": "Down 17% but rated Overweight three times and added to Zacks Strong Buy; segment agrees, small start with a limit order." },
+    { "ticker": "VST", "segment": "power_nuclear", "rating": "Overweight", "rated_on": "2026-11-19", "rated_price": 125.58, "last_price": 121.32, "since_rated": -0.034, "catalyst": "", "take": "Cash-generative IPP in an overweight segment, ahead of QQQ since rated; a small start fits." }
+  ],
+  "trust": "Only 14 of 74 ratings are graded so far (grading starts after 28 days). Buy/Overweight picks average -5.9% vs QQQ: better than the no-AI screen (-20.0%) and random picks (-8.7%), but behind simply holding QQQ.",
+  "if_buying": [
+    "Overweight means a small starter position, not full size; the track record so far does not beat QQQ.",
+    "Favour names where segment and rating agree: AAON, ETN, PWR, VRT, VST.",
+    "Wait on MU until its 17 Dec earnings, and on AMAT and ANET while their segments are neutral.",
+    "Friday is a thin half-day; use limit orders and avoid the first 15 minutes."
+  ],
+  "sources": [
+    { "title": "Is the Stock Market Open on Thanksgiving Day 2026? - Newsweek", "url": "https://www.newsweek.com/stock-market-thanksgiving-2026-12761725" },
+    { "title": "Thanksgiving 2026 CME Futures & Stock Market Hours", "url": "https://tradeluma.app/blog/thanksgiving-2026-cme-futures-holiday-trading-hours" },
+    { "title": "Stock market today: Dow erases losses to end positive, S&P 500 and Nasdaq recover ground amid AI sell-off", "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html" },
+    { "title": "AI infrastructure stocks continue their slide, but Anthropic closes higher - SiliconANGLE", "url": "https://siliconangle.com/2026/11/25/ai-infrastructure-stocks-continue-their-slide-but-anthropic-closes-higher" }
+  ]
+}

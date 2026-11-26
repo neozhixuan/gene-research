@@ -70,3 +70,6 @@ date,ticker,kind,segment,price,qqq,smh,rating,trader,research_manager
 2026-11-25,KLAC,new,foundry_equipment,133.65,638.1,426.75,Overweight,Buy,Overweight
 2026-11-25,AAON,recheck,cooling_thermal,75.05,638.1,426.75,Overweight,Buy,Overweight
 2026-11-25,STX,new,memory_storage,482.48,638.1,426.75,,,
+2026-11-26,LITE,new,networking_optical,476.58,633.93,422.46,Sell,Sell,Underweight
+2026-11-26,DELL,recheck,servers,297.06,633.93,422.46,Hold,Hold,Hold
+2026-11-26,LRCX,new,foundry_equipment,185.01,633.93,422.46,,,
